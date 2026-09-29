@@ -1,0 +1,13 @@
+{
+  "title": "Machine Learning in Production",
+  "url": "https://www.deeplearning.ai/courses/machine-learning-in-production/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "DeepLearning.AI",
+  "creator": "DeepLearning.AI",
+  "language": "en",
+  "difficulty": "intermediate",
+  "durationMinutes": 1500,
+  "skills": []
+}

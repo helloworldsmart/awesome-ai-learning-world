@@ -1,0 +1,13 @@
+{
+  "title": "PostgreSQL Documentation",
+  "url": "https://www.postgresql.org/docs/current/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "docs",
+  "provider": "PostgreSQL",
+  "creator": "PostgreSQL Global Development Group",
+  "language": "en",
+  "difficulty": "intermediate",
+  "durationMinutes": 900,
+  "skills": []
+}

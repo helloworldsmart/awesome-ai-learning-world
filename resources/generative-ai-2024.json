@@ -1,0 +1,335 @@
+{
+  "title": "李宏毅 Generative AI 2024",
+  "url": "https://speech.ee.ntu.edu.tw/~hylee/genai/2024-spring.php",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "國立臺灣大學",
+  "creator": "李宏毅",
+  "language": "zh-TW",
+  "difficulty": "intermediate",
+  "durationMinutes": 3600,
+  "skills": [],
+  "units": [
+    {
+      "title": "【生成式AI導論 2024】第0講：課程說明 (17:15 有芙莉蓮雷)",
+      "durationMinutes": 26,
+      "durationSeconds": 1540,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "AVIKFXLCPY8",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第0講：課程說明 (17:15 有芙莉蓮雷)",
+          "url": "https://www.youtube.com/watch?v=AVIKFXLCPY8&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第1講：生成式AI是什麼？",
+      "durationMinutes": 29,
+      "durationSeconds": 1769,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "JGtqpQXfJis",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第1講：生成式AI是什麼？",
+          "url": "https://www.youtube.com/watch?v=JGtqpQXfJis&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第2講：今日的生成式人工智慧厲害在哪裡？從「工具」變為「工具人」",
+      "durationMinutes": 26,
+      "durationSeconds": 1566,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "glBhOQ1_RkE",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第2講：今日的生成式人工智慧厲害在哪裡？從「工具」變為「工具人」",
+          "url": "https://www.youtube.com/watch?v=glBhOQ1_RkE&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第3講：訓練不了人工智慧？你可以訓練你自己 (上) — 神奇咒語與提供更多資訊",
+      "durationMinutes": 35,
+      "durationSeconds": 2075,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "A3Yx35KrSN0",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第3講：訓練不了人工智慧？你可以訓練你自己 (上) — 神奇咒語與提供更多資訊",
+          "url": "https://www.youtube.com/watch?v=A3Yx35KrSN0&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第4講：訓練不了人工智慧？你可以訓練你自己 (中) — 拆解問題與使用工具",
+      "durationMinutes": 47,
+      "durationSeconds": 2842,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "lwe3_x50_uw",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第4講：訓練不了人工智慧？你可以訓練你自己 (中) — 拆解問題與使用工具",
+          "url": "https://www.youtube.com/watch?v=lwe3_x50_uw&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第5講：訓練不了人工智慧？你可以訓練你自己 (下) — 讓語言彼此合作，把一個人活成一個團隊 (開頭有芙莉蓮雷，慎入)",
+      "durationMinutes": 25,
+      "durationSeconds": 1520,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "inebiWdQW-4",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第5講：訓練不了人工智慧？你可以訓練你自己 (下) — 讓語言彼此合作，把一個人活成一個團隊 (開頭有芙莉蓮雷，慎入)",
+          "url": "https://www.youtube.com/watch?v=inebiWdQW-4&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第6講：大型語言模型修練史 — 第一階段: 自我學習，累積實力 (熟悉機器學習的同學從 15:00 開始看起即可)",
+      "durationMinutes": 34,
+      "durationSeconds": 2066,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "cCpErV7To2o",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第6講：大型語言模型修練史 — 第一階段: 自我學習，累積實力 (熟悉機器學習的同學從 15:00 開始看起即可)",
+          "url": "https://www.youtube.com/watch?v=cCpErV7To2o&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第7講：大型語言模型修練史 — 第二階段: 名師指點，發揮潛力 (兼談對 ChatGPT 做逆向工程與 LLaMA 時代的開始)",
+      "durationMinutes": 38,
+      "durationSeconds": 2299,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "Q9cNkUPXUB8",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第7講：大型語言模型修練史 — 第二階段: 名師指點，發揮潛力 (兼談對 ChatGPT 做逆向工程與 LLaMA 時代的開始)",
+          "url": "https://www.youtube.com/watch?v=Q9cNkUPXUB8&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第8講：大型語言模型修練史 — 第三階段: 參與實戰，打磨技巧 (Reinforcement Learning from Human Feedback, RLHF)",
+      "durationMinutes": 37,
+      "durationSeconds": 2219,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "v12IKvF6Cj8",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第8講：大型語言模型修練史 — 第三階段: 參與實戰，打磨技巧 (Reinforcement Learning from Human Feedback, RLHF)",
+          "url": "https://www.youtube.com/watch?v=v12IKvF6Cj8&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第9講：以大型語言模型打造的AI Agent (14:50 教你怎麼打造芙莉蓮一級魔法使考試中出現的泥人哥列姆)",
+      "durationMinutes": 25,
+      "durationSeconds": 1486,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "bJZTJ7MjYqg",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第9講：以大型語言模型打造的AI Agent (14:50 教你怎麼打造芙莉蓮一級魔法使考試中出現的泥人哥列姆)",
+          "url": "https://www.youtube.com/watch?v=bJZTJ7MjYqg&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第10講：今日的語言模型是如何做文字接龍的 — 淺談Transformer (已經熟悉 Transformer 的同學可略過本講)",
+      "durationMinutes": 38,
+      "durationSeconds": 2296,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "uhNsUCb2fJI",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第10講：今日的語言模型是如何做文字接龍的 — 淺談Transformer (已經熟悉 Transformer 的同學可略過本講)",
+          "url": "https://www.youtube.com/watch?v=uhNsUCb2fJI&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第11講：大型語言模型在「想」什麼呢？ — 淺談大型語言模型的可解釋性",
+      "durationMinutes": 45,
+      "durationSeconds": 2716,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "rZzfqkfZhY8",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第11講：大型語言模型在「想」什麼呢？ — 淺談大型語言模型的可解釋性",
+          "url": "https://www.youtube.com/watch?v=rZzfqkfZhY8&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第12講：淺談檢定大型語言模型能力的各種方式",
+      "durationMinutes": 46,
+      "durationSeconds": 2772,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "Hk8Z0uhmWg4",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第12講：淺談檢定大型語言模型能力的各種方式",
+          "url": "https://www.youtube.com/watch?v=Hk8Z0uhmWg4&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第13講：淺談大型語言模型相關的安全性議題 (上) — 亡羊補牢、語言模型的偏見、有多少人用 ChatGPT 寫論文審查意見",
+      "durationMinutes": 32,
+      "durationSeconds": 1924,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "MSnvknLywUc",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第13講：淺談大型語言模型相關的安全性議題 (上) — 亡羊補牢、語言模型的偏見、有多少人用 ChatGPT 寫論文審查意見",
+          "url": "https://www.youtube.com/watch?v=MSnvknLywUc&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第14講：淺談大型語言模型相關的安全性議題 (下) — 欺騙大型語言模型",
+      "durationMinutes": 16,
+      "durationSeconds": 932,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "CNTondxaguo",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第14講：淺談大型語言模型相關的安全性議題 (下) — 欺騙大型語言模型",
+          "url": "https://www.youtube.com/watch?v=CNTondxaguo&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第15講：為什麼語言模型用文字接龍，圖片生成不用像素接龍呢？— 淺談生成式人工智慧的生成策略",
+      "durationMinutes": 45,
+      "durationSeconds": 2727,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "QbwQR9sjWbs",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第15講：為什麼語言模型用文字接龍，圖片生成不用像素接龍呢？— 淺談生成式人工智慧的生成策略",
+          "url": "https://www.youtube.com/watch?v=QbwQR9sjWbs&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding",
+      "durationMinutes": 13,
+      "durationSeconds": 762,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "MAbGgsWKrg8",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding",
+          "url": "https://www.youtube.com/watch?v=MAbGgsWKrg8&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第17講：有關影像的生成式AI (上) — AI 如何產生圖片和影片 (Sora 背後可能用的原理)",
+      "durationMinutes": 50,
+      "durationSeconds": 2970,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "5H2bVEmYDNg",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第17講：有關影像的生成式AI (上) — AI 如何產生圖片和影片 (Sora 背後可能用的原理)",
+          "url": "https://www.youtube.com/watch?v=5H2bVEmYDNg&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "【生成式AI導論 2024】第18講：有關影像的生成式AI (下) — 快速導讀經典影像生成方法 (VAE, Flow, Diffusion, GAN) 以及與生成的影片互動",
+      "durationMinutes": 37,
+      "durationSeconds": 2221,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "OYN_GvAqv-A",
+      "resources": [
+        {
+          "title": "【生成式AI導論 2024】第18講：有關影像的生成式AI (下) — 快速導讀經典影像生成方法 (VAE, Flow, Diffusion, GAN) 以及與生成的影片互動",
+          "url": "https://www.youtube.com/watch?v=OYN_GvAqv-A&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "title": "GPT-4o 背後可能的語音技術猜測",
+      "durationMinutes": 38,
+      "durationSeconds": 2293,
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+      "sourceKey": "CgQ3lUOpXgc",
+      "resources": [
+        {
+          "title": "GPT-4o 背後可能的語音技術猜測",
+          "url": "https://www.youtube.com/watch?v=CgQ3lUOpXgc&list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI",
+          "type": "video",
+          "role": "primary",
+          "language": "zh-Hant"
+        }
+      ]
+    }
+  ]
+}

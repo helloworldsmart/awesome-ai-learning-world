@@ -1,0 +1,13 @@
+{
+  "title": "CS50: Introduction to Computer Science",
+  "url": "https://pll.harvard.edu/course/cs50-introduction-computer-science",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Harvard University",
+  "creator": "David J. Malan",
+  "language": "en",
+  "difficulty": "beginner",
+  "durationMinutes": 4500,
+  "skills": []
+}

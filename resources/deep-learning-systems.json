@@ -1,0 +1,13 @@
+{
+  "title": "Deep Learning Systems",
+  "url": "https://dlsyscourse.org/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "CMU",
+  "creator": "Tianqi Chen, Zico Kolter",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 4800,
+  "skills": []
+}

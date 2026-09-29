@@ -1,0 +1,13 @@
+{
+  "title": "Learning Transferable Visual Models (CLIP)",
+  "url": "https://arxiv.org/abs/2103.00020",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Radford et al.",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 120,
+  "skills": []
+}

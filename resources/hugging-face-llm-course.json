@@ -1,0 +1,13 @@
+{
+  "title": "Hugging Face LLM Course",
+  "url": "https://huggingface.co/learn/llm-course/chapter1/1",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Hugging Face",
+  "creator": "Hugging Face",
+  "language": "en",
+  "difficulty": "beginner",
+  "durationMinutes": 2400,
+  "skills": []
+}

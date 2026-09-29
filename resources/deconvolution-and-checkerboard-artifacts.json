@@ -1,0 +1,13 @@
+{
+  "title": "Deconvolution and Checkerboard Artifacts",
+  "url": "https://distill.pub/2016/deconv-checkerboard/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "article",
+  "provider": "Distill",
+  "creator": "Odena et al.",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 30,
+  "skills": []
+}

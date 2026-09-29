@@ -1,0 +1,13 @@
+{
+  "title": "MIT 6.5840 — Distributed Systems",
+  "url": "https://pdos.csail.mit.edu/6.824/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "MIT",
+  "creator": "MIT PDOS",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 5400,
+  "skills": []
+}

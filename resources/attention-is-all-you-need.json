@@ -1,0 +1,13 @@
+{
+  "title": "Attention Is All You Need",
+  "url": "https://arxiv.org/abs/1706.03762",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Vaswani et al.",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 120,
+  "skills": []
+}

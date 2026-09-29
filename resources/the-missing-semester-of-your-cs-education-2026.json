@@ -1,0 +1,13 @@
+{
+  "title": "The Missing Semester of Your CS Education — 2026",
+  "url": "https://missing.csail.mit.edu/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "MIT",
+  "creator": "MIT CSAIL",
+  "language": "en",
+  "difficulty": "beginner",
+  "durationMinutes": 720,
+  "skills": []
+}

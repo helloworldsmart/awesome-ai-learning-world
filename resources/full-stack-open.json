@@ -1,0 +1,13 @@
+{
+  "title": "Full Stack Open",
+  "url": "https://fullstackopen.com/en/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "University of Helsinki",
+  "creator": "University of Helsinki",
+  "language": "en",
+  "difficulty": "beginner",
+  "durationMinutes": 6000,
+  "skills": []
+}

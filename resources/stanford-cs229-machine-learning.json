@@ -1,0 +1,13 @@
+{
+  "title": "Stanford CS229 — Machine Learning",
+  "url": "https://cs229.stanford.edu/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Stanford",
+  "creator": "Stanford CS229",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 4800,
+  "skills": []
+}

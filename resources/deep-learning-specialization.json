@@ -1,0 +1,13 @@
+{
+  "title": "Deep Learning Specialization",
+  "url": "https://www.deeplearning.ai/specializations/deep-learning/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "DeepLearning.AI",
+  "creator": "DeepLearning.AI",
+  "language": "en",
+  "difficulty": "beginner",
+  "durationMinutes": 6000,
+  "skills": []
+}

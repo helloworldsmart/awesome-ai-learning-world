@@ -1,0 +1,13 @@
+{
+  "title": "Dive into Deep Learning",
+  "url": "https://d2l.ai/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "D2L.ai",
+  "creator": "Zhang, Lipton, Li, Smola",
+  "language": "en",
+  "difficulty": "intermediate",
+  "durationMinutes": 6000,
+  "skills": []
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Effective Go",
+  "url": "https://go.dev/doc/effective_go",
+  "kind": "resource",
+  "status": "todo",
+  "type": "docs",
+  "provider": "go.dev",
+  "creator": "The Go Authors",
+  "language": "en",
+  "difficulty": "intermediate",
+  "durationMinutes": 180,
+  "skills": []
+}

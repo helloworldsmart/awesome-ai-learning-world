@@ -1,0 +1,13 @@
+{
+  "title": "Deep Learning (Goodfellow, Bengio, Courville)",
+  "url": "https://www.deeplearningbook.org/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "MIT Press",
+  "creator": "Goodfellow, Bengio & Courville",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 3000,
+  "skills": []
+}

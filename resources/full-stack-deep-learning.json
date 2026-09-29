@@ -1,0 +1,13 @@
+{
+  "title": "Full Stack Deep Learning",
+  "url": "https://fullstackdeeplearning.com/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Full Stack Deep Learning",
+  "creator": "Charles Frye et al.",
+  "language": "en",
+  "difficulty": "intermediate",
+  "durationMinutes": 2400,
+  "skills": []
+}

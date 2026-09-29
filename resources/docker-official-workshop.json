@@ -1,0 +1,13 @@
+{
+  "title": "Docker — Official Workshop",
+  "url": "https://docs.docker.com/get-started/workshop/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "docs",
+  "provider": "Docker",
+  "creator": "Docker",
+  "language": "en",
+  "difficulty": "beginner",
+  "durationMinutes": 300,
+  "skills": []
+}

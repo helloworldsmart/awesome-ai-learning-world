@@ -1,0 +1,13 @@
+{
+  "title": "Kubernetes Documentation",
+  "url": "https://kubernetes.io/docs/home/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "docs",
+  "provider": "kubernetes.io",
+  "creator": "CNCF",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 900,
+  "skills": []
+}

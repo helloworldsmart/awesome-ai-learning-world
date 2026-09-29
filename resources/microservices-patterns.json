@@ -1,0 +1,13 @@
+{
+  "title": "Microservices Patterns",
+  "url": "https://microservices.io/patterns/index.html",
+  "kind": "resource",
+  "status": "todo",
+  "type": "article",
+  "provider": "microservices.io",
+  "creator": "Chris Richardson",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 480,
+  "skills": []
+}

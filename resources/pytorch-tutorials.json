@@ -1,0 +1,13 @@
+{
+  "title": "PyTorch Tutorials",
+  "url": "https://docs.pytorch.org/tutorials/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "docs",
+  "provider": "PyTorch",
+  "creator": "PyTorch Team",
+  "language": "en",
+  "difficulty": "intermediate",
+  "durationMinutes": 600,
+  "skills": []
+}

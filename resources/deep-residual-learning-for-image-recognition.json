@@ -1,0 +1,13 @@
+{
+  "title": "Deep Residual Learning for Image Recognition",
+  "url": "https://arxiv.org/abs/1512.03385",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "He et al.",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 90,
+  "skills": []
+}

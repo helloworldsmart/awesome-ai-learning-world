@@ -1,0 +1,13 @@
+{
+  "title": "Stanford CS228 — Probabilistic Graphical Models",
+  "url": "https://cs.stanford.edu/~ermon/cs228/index.html",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Stanford",
+  "creator": "Stefano Ermon",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 4200,
+  "skills": []
+}

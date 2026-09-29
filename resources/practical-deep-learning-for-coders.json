@@ -1,0 +1,13 @@
+{
+  "title": "Practical Deep Learning for Coders",
+  "url": "https://course.fast.ai/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "fast.ai",
+  "creator": "Jeremy Howard",
+  "language": "en",
+  "difficulty": "beginner",
+  "durationMinutes": 4200,
+  "skills": []
+}

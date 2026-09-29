@@ -1,0 +1,13 @@
+{
+  "title": "Batch Normalization",
+  "url": "https://arxiv.org/abs/1502.03167",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Ioffe & Szegedy",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 60,
+  "skills": []
+}

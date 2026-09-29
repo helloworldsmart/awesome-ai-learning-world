@@ -1,0 +1,13 @@
+{
+  "title": "Harvard CS50's Introduction to Artificial Intelligence with Python",
+  "url": "https://cs50.harvard.edu/ai/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Harvard",
+  "creator": "David J. Malan",
+  "language": "en",
+  "difficulty": "beginner",
+  "durationMinutes": 3600,
+  "skills": []
+}

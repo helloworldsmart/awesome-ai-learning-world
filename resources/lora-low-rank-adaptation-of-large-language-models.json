@@ -1,0 +1,13 @@
+{
+  "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+  "url": "https://arxiv.org/abs/2106.09685",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Hu et al.",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 75,
+  "skills": []
+}

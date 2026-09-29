@@ -1,0 +1,13 @@
+{
+  "title": "Redis: Develop with Redis",
+  "url": "https://redis.io/docs/latest/develop/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "docs",
+  "provider": "Redis",
+  "creator": "Redis Ltd.",
+  "language": "en",
+  "difficulty": "intermediate",
+  "durationMinutes": 300,
+  "skills": []
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Terraform Tutorials",
+  "url": "https://developer.hashicorp.com/terraform/tutorials",
+  "kind": "resource",
+  "status": "todo",
+  "type": "docs",
+  "provider": "HashiCorp",
+  "creator": "HashiCorp",
+  "language": "en",
+  "difficulty": "intermediate",
+  "durationMinutes": 600,
+  "skills": []
+}

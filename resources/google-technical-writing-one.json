@@ -1,0 +1,13 @@
+{
+  "title": "Google Technical Writing One",
+  "url": "https://developers.google.com/tech-writing/one",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Google",
+  "creator": "Google",
+  "language": "en",
+  "difficulty": "beginner",
+  "durationMinutes": 180,
+  "skills": []
+}

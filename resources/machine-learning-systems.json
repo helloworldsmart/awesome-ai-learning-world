@@ -1,0 +1,13 @@
+{
+  "title": "Machine Learning Systems",
+  "url": "https://mlsysbook.ai/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Harvard",
+  "creator": "Vijay Janapa Reddi",
+  "language": "en",
+  "difficulty": "advanced",
+  "durationMinutes": 4800,
+  "skills": []
+}
