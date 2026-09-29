@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "MIT OpenCourseWare",
-  "creator": "MIT",
+  "creator": "Patrick Henry Winston",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 2400,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

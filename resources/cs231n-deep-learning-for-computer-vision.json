@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "Stanford University",
-  "creator": "Stanford Vision Lab",
+  "creator": "Fei-Fei Li, Ehsan Adeli, Justin Johnson, Zane Durante, Tiange Xiang",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 1800,
+  "difficulty": "",
+  "durationMinutes": 1600,
   "skills": []
 }

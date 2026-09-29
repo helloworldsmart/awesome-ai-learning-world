@@ -1,5 +1,5 @@
 {
-  "title": "李宏毅 Machine Learning 2026 Spring",
+  "title": "Machine Learning 2026 Spring",
   "url": "https://speech.ee.ntu.edu.tw/~hylee/ml/2026-spring.php",
   "kind": "resource",
   "status": "todo",
@@ -7,7 +7,7 @@
   "provider": "國立臺灣大學",
   "creator": "李宏毅",
   "language": "zh-TW",
-  "difficulty": "intermediate",
-  "durationMinutes": 4800,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

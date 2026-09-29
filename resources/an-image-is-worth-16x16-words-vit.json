@@ -1,5 +1,5 @@
 {
-  "title": "An Image is Worth 16x16 Words (ViT)",
+  "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
   "url": "https://arxiv.org/abs/2010.11929",
   "kind": "resource",
   "status": "todo",
@@ -7,7 +7,7 @@
   "provider": "arXiv",
   "creator": "Dosovitskiy et al.",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 90,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

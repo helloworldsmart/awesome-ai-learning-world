@@ -1,5 +1,5 @@
 {
-  "title": "Deep Learning Foundations to Stable Diffusion",
+  "title": "Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion",
   "url": "https://course.fast.ai/Lessons/part2.html",
   "kind": "resource",
   "status": "todo",
@@ -7,7 +7,7 @@
   "provider": "fast.ai",
   "creator": "Jeremy Howard",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 4200,
+  "difficulty": "",
+  "durationMinutes": 1800,
   "skills": []
 }

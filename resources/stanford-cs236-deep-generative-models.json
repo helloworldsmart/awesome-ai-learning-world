@@ -4,10 +4,10 @@
   "kind": "resource",
   "status": "todo",
   "type": "course",
-  "provider": "cs236.stanford.edu",
-  "creator": "cs236.stanford.edu",
+  "provider": "Stanford",
+  "creator": "Stefano Ermon",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 4200,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

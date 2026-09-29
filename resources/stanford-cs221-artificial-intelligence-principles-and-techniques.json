@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "Stanford",
-  "creator": "Stanford CS221",
+  "creator": "Percy Liang",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 3000,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

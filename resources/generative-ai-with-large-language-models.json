@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "DeepLearning.AI",
-  "creator": "DeepLearning.AI",
+  "creator": "Antje Barth, Chris Fregly, Shelbee Eigenbrode, Mike Chambers",
   "language": "en",
-  "difficulty": "beginner",
-  "durationMinutes": 900,
+  "difficulty": "intermediate",
+  "durationMinutes": 798,
   "skills": []
 }

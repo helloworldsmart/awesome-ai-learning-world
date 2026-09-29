@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "docs",
   "provider": "kubernetes.io",
-  "creator": "CNCF",
+  "creator": "The Kubernetes Authors",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 900,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

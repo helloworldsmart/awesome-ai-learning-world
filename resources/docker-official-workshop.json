@@ -7,7 +7,7 @@
   "provider": "Docker",
   "creator": "Docker",
   "language": "en",
-  "difficulty": "beginner",
-  "durationMinutes": 300,
+  "difficulty": "",
+  "durationMinutes": 15,
   "skills": []
 }

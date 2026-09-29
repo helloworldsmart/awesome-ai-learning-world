@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "DataTalks.Club",
-  "creator": "DataTalks.Club",
+  "creator": "Alexey Grigorev",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 2400,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

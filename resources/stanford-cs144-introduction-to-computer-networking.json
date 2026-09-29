@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "Stanford",
-  "creator": "Stanford CS144",
+  "creator": "Keith Winstein",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 4200,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

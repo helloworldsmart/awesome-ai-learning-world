@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "CMU",
-  "creator": "CMU 11-785",
+  "creator": "",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 5400,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

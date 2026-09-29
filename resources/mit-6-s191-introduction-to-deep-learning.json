@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "MIT OpenCourseWare",
-  "creator": "MIT",
+  "creator": "Alexander Amini, Ava Soleimany",
   "language": "en",
   "difficulty": "beginner",
-  "durationMinutes": 1800,
+  "durationMinutes": 0,
   "skills": []
 }

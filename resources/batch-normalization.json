@@ -1,5 +1,5 @@
 {
-  "title": "Batch Normalization",
+  "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
   "url": "https://arxiv.org/abs/1502.03167",
   "kind": "resource",
   "status": "todo",
@@ -7,7 +7,7 @@
   "provider": "arXiv",
   "creator": "Ioffe & Szegedy",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 60,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

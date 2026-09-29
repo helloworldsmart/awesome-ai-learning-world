@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "Hugging Face",
-  "creator": "Hugging Face",
+  "creator": "Ben Burtenshaw, Sergio Paniego",
   "language": "en",
-  "difficulty": "beginner",
-  "durationMinutes": 1800,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

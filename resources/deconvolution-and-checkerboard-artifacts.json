@@ -7,7 +7,7 @@
   "provider": "Distill",
   "creator": "Odena et al.",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 30,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

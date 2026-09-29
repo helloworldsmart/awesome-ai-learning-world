@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "Hugging Face",
-  "creator": "Hugging Face",
+  "creator": "Ben Burtenshaw",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 1200,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

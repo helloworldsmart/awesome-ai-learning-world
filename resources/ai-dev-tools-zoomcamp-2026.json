@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "DataTalks.Club",
-  "creator": "DataTalks.Club",
+  "creator": "Alexey Grigorev, Bhavani Ravi, Moein Foroughi",
   "language": "en",
-  "difficulty": "beginner",
-  "durationMinutes": 1200,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

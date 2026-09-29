@@ -1,13 +1,13 @@
 {
-  "title": "Kubernetes Basics",
+  "title": "Learn Kubernetes Basics",
   "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/",
   "kind": "resource",
   "status": "todo",
   "type": "docs",
   "provider": "Kubernetes",
-  "creator": "CNCF",
+  "creator": "The Kubernetes Authors",
   "language": "en",
-  "difficulty": "beginner",
-  "durationMinutes": 360,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

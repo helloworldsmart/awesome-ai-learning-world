@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "Stanford",
-  "creator": "Stanford CS149",
+  "creator": "Kayvon Fatahalian, Kunle Olukotun",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 3600,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

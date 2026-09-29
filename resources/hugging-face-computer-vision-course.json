@@ -1,13 +1,13 @@
 {
-  "title": "Hugging Face Computer Vision Course",
+  "title": "Community Computer Vision Course",
   "url": "https://huggingface.co/learn/computer-vision-course/unit0/welcome/welcome",
   "kind": "resource",
   "status": "todo",
   "type": "course",
   "provider": "Hugging Face",
-  "creator": "Hugging Face",
+  "creator": "Hugging Face Community",
   "language": "en",
   "difficulty": "beginner",
-  "durationMinutes": 2400,
+  "durationMinutes": 0,
   "skills": []
 }

@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "UC Berkeley",
-  "creator": "UC Berkeley EECS",
+  "creator": "Emma Pierson, Peyrin Kao",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 3000,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

@@ -7,7 +7,7 @@
   "provider": "OpenAI",
   "creator": "OpenAI Academy",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 600,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

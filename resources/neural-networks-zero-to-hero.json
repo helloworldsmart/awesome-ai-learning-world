@@ -3,11 +3,11 @@
   "url": "https://karpathy.ai/zero-to-hero.html",
   "kind": "resource",
   "status": "todo",
-  "type": "video",
+  "type": "course",
   "provider": "Andrej Karpathy",
   "creator": "Andrej Karpathy",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 900,
+  "difficulty": "",
+  "durationMinutes": 872,
   "skills": []
 }

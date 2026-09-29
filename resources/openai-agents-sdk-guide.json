@@ -1,5 +1,5 @@
 {
-  "title": "OpenAI Agents SDK Guide",
+  "title": "OpenAI — Agents",
   "url": "https://developers.openai.com/api/docs/guides/agents",
   "kind": "resource",
   "status": "todo",
@@ -7,7 +7,7 @@
   "provider": "OpenAI",
   "creator": "OpenAI",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 240,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

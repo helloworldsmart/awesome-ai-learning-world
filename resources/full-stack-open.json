@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "University of Helsinki",
-  "creator": "University of Helsinki",
+  "creator": "Matti Luukkainen",
   "language": "en",
-  "difficulty": "beginner",
-  "durationMinutes": 6000,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

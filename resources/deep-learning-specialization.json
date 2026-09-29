@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "DeepLearning.AI",
-  "creator": "DeepLearning.AI",
+  "creator": "Andrew Ng",
   "language": "en",
-  "difficulty": "beginner",
-  "durationMinutes": 6000,
+  "difficulty": "intermediate",
+  "durationMinutes": 7649,
   "skills": []
 }

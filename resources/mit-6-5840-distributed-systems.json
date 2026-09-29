@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "MIT",
-  "creator": "MIT PDOS",
+  "creator": "Robert Morris, Frans Kaashoek",
   "language": "en",
   "difficulty": "advanced",
-  "durationMinutes": 5400,
+  "durationMinutes": 0,
   "skills": []
 }

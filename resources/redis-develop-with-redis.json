@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "docs",
   "provider": "Redis",
-  "creator": "Redis Ltd.",
+  "creator": "",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 300,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

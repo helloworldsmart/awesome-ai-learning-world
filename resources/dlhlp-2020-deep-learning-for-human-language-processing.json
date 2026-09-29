@@ -1,5 +1,5 @@
 {
-  "title": "DLHLP 2020 — Deep Learning for Human Language Processing",
+  "title": "Deep Learning for Human Language Processing 2020 Spring",
   "url": "https://speech.ee.ntu.edu.tw/~hylee/dlhlp/2020-spring.php",
   "kind": "resource",
   "status": "todo",
@@ -7,7 +7,7 @@
   "provider": "國立臺灣大學",
   "creator": "李宏毅",
   "language": "zh-TW",
-  "difficulty": "advanced",
-  "durationMinutes": 3600,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

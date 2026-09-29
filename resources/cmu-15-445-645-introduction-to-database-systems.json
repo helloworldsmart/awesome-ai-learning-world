@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "CMU",
-  "creator": "Andy Pavlo",
+  "creator": "Jignesh Patel",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 4800,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

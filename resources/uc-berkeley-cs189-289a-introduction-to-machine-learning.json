@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "UC Berkeley",
-  "creator": "UC Berkeley EECS",
+  "creator": "Jonathan Shewchuk",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 4200,
+  "difficulty": "",
+  "durationMinutes": 2250,
   "skills": []
 }

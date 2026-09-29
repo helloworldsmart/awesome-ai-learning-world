@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "Stanford",
-  "creator": "Stanford",
+  "creator": "Chip Huyen",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 3000,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

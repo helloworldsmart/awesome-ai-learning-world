@@ -7,7 +7,7 @@
   "provider": "HashiCorp",
   "creator": "HashiCorp",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 420,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

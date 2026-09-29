@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "Stanford",
-  "creator": "Stanford CS224N",
+  "creator": "Diyi Yang, Yejin Choi",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 5400,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

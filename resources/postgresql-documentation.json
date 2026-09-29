@@ -7,7 +7,7 @@
   "provider": "PostgreSQL",
   "creator": "PostgreSQL Global Development Group",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 900,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

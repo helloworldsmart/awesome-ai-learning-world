@@ -8,7 +8,8 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 export const TYPES = ["video", "course", "article", "book", "paper", "docs", "github"];
-export const DIFFICULTIES = ["beginner", "intermediate", "advanced"];
+// "" means unknown: the official page does not state a level, so we do not guess.
+export const DIFFICULTIES = ["", "beginner", "intermediate", "advanced"];
 export const STATUSES = ["todo", "in_progress", "done"];
 export const KINDS = ["resource", "feed"];
 export const ROLES = ["primary", "supplementary"];
@@ -73,7 +74,7 @@ export function validate(entries) {
     if (!STATUSES.includes(e.status)) problems.push(`${at}: status must be one of ${STATUSES.join(", ")}`);
     if (!TYPES.includes(e.type)) problems.push(`${at}: type must be one of ${TYPES.join(", ")}`);
     if (!DIFFICULTIES.includes(e.difficulty))
-      problems.push(`${at}: difficulty must be one of ${DIFFICULTIES.join(", ")}`);
+      problems.push(`${at}: difficulty must be one of ${DIFFICULTIES.map((d) => JSON.stringify(d)).join(", ")}`);
     if (!Number.isInteger(e.durationMinutes) || e.durationMinutes < 0)
       problems.push(`${at}: durationMinutes must be a whole number ≥ 0 (0 = unknown)`);
     for (const k of ["provider", "creator", "language"]) {

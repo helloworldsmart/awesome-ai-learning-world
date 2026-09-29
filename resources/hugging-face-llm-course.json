@@ -7,7 +7,7 @@
   "provider": "Hugging Face",
   "creator": "Hugging Face",
   "language": "en",
-  "difficulty": "beginner",
-  "durationMinutes": 2400,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

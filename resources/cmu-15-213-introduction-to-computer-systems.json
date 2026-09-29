@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "CMU",
-  "creator": "CMU 15-213",
+  "creator": "Phillip Gibbons, Seth Goldstein",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 6000,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

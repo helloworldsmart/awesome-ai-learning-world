@@ -1,13 +1,13 @@
 {
-  "title": "Deep Learning Systems",
+  "title": "Deep Learning Systems: Algorithms and Implementation",
   "url": "https://dlsyscourse.org/",
   "kind": "resource",
   "status": "todo",
   "type": "course",
   "provider": "CMU",
-  "creator": "Tianqi Chen, Zico Kolter",
+  "creator": "Tim Dettmers, Tianqi Chen",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 4800,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

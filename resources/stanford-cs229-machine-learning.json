@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "Stanford",
-  "creator": "Stanford CS229",
+  "creator": "Jehangir Amjad, Anand Avati",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 4800,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

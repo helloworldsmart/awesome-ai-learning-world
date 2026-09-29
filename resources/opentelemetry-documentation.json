@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "docs",
   "provider": "OpenTelemetry",
-  "creator": "CNCF",
+  "creator": "OpenTelemetry Authors",
   "language": "en",
-  "difficulty": "advanced",
-  "durationMinutes": 360,
+  "difficulty": "",
+  "durationMinutes": 0,
   "skills": []
 }

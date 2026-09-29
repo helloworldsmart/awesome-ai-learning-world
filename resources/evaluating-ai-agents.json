@@ -5,9 +5,9 @@
   "status": "todo",
   "type": "course",
   "provider": "DeepLearning.AI",
-  "creator": "DeepLearning.AI",
+  "creator": "John Gilhuly, Aman Khan",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 120,
+  "difficulty": "beginner",
+  "durationMinutes": 156,
   "skills": []
 }

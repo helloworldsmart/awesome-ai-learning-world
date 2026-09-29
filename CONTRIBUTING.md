@@ -39,7 +39,7 @@ A resource is listed only if it meets **all** of these:
 | `kind` | `resource` · `feed` |
 | `status` | always `todo` in a pull request — maintainers move it along |
 | `type` | `course` · `book` · `paper` · `docs` · `video` · `article` · `github` |
-| `difficulty` | `beginner` · `intermediate` · `advanced` |
+| `difficulty` | `beginner` · `intermediate` · `advanced`, only if the official page states a level; otherwise `""` (unknown). **Never estimate.** |
 | `durationMinutes` | only if the official page states it; otherwise `0` (unknown). **Never estimate.** |
 | `skills` | what it teaches, e.g. `Deep Learning`, `PyTorch`. A resource can have several. |
 | `units` | courses only: the lectures, each with its `resources` (the video, the paper that goes with it…) |

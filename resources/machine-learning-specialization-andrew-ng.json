@@ -1,13 +1,13 @@
 {
-  "title": "Machine Learning Specialization — Andrew Ng",
+  "title": "Machine Learning Specialization",
   "url": "https://www.deeplearning.ai/specializations/machine-learning/",
   "kind": "resource",
   "status": "todo",
   "type": "course",
-  "provider": "DeepLearning.AI",
-  "creator": "DeepLearning.AI",
+  "provider": "DeepLearning.AI, Stanford Online",
+  "creator": "Andrew Ng",
   "language": "en",
   "difficulty": "beginner",
-  "durationMinutes": 5400,
+  "durationMinutes": 5698,
   "skills": []
 }

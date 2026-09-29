@@ -1,13 +1,13 @@
 {
-  "title": "Deep Learning for Computer Vision",
-  "url": "https://web.eecs.umich.edu/~justincj/teaching/eecs498/WI2022/",
+  "title": "Deep Learning for Computer Vision (Fall 2019)",
+  "url": "https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r",
   "kind": "resource",
   "status": "todo",
   "type": "course",
   "provider": "University of Michigan",
-  "creator": "Justin Johnson",
+  "creator": "",
   "language": "en",
-  "difficulty": "intermediate",
-  "durationMinutes": 4800,
+  "difficulty": "",
+  "durationMinutes": 1541,
   "skills": []
 }
