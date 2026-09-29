@@ -65,6 +65,7 @@ Every resource here meets the [inclusion criteria](CONTRIBUTING.md#inclusion-cri
 - [OpenAI Builder Bootcamp 2026](https://academy.openai.com/public/clubs/builders-etkn1/resources/builder-bootcamp-2026-04-22) - OpenAI, OpenAI Academy. <sub>course</sub>
 - [Practical Deep Learning for Coders](https://course.fast.ai/) - fast.ai, Jeremy Howard. <sub>course · ~14 h</sub>
 - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html) - fast.ai, Jeremy Howard. <sub>course · ~30 h</sub>
+- [Stanford CME295 — Transformers and Large Language Models (Autumn 2025)](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) - Stanford, Afshine Amidi, Shervine Amidi. <sub>course · ~16 h</sub>
 - [Stanford CS144 — Introduction to Computer Networking](https://cs144.github.io/) - Stanford, Keith Winstein. <sub>course</sub>
 - [Stanford CS149 — Parallel Computing](https://cs149.stanford.edu/) - Stanford, Kayvon Fatahalian, Kunle Olukotun. <sub>course</sub>
 - [Stanford CS221 — Artificial Intelligence: Principles and Techniques](https://cs221.stanford.edu/) - Stanford, Percy Liang. <sub>course</sub>
@@ -112,6 +113,7 @@ Every resource here meets the [inclusion criteria](CONTRIBUTING.md#inclusion-cri
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) - Jay Alammar. <sub>article</sub>
 - [The Twelve-Factor App](https://12factor.net/) - 12factor.net, Adam Wiggins. <sub>article</sub>
 - [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) - Lil'Log, Lilian Weng. <sub>article · 31 min</sub>
+- [斯坦福大学 CME 295 课程：Transformer 与大语言模型速查表](https://github.com/afshinea/stanford-cme-295-transformers-large-language-models/tree/main/zh) - Stanford, Afshine Amidi, Shervine Amidi. <sub>github · zh-CN</sub>
 
 ## Contributing
 
