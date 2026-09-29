@@ -73,6 +73,7 @@ Every resource here meets the [inclusion criteria](CONTRIBUTING.md#inclusion-cri
 - [Practical Deep Learning for Coders](https://course.fast.ai/) - fast.ai, Jeremy Howard. <sub>course · ~14 h</sub>
 - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html) - fast.ai, Jeremy Howard. <sub>course · ~30 h</sub>
 - [Stanford CME295 — Transformers and Large Language Models (Autumn 2025)](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) - Stanford, Afshine Amidi, Shervine Amidi. <sub>course · ~16 h</sub>
+- [Stanford CME295 — Transformers and Large Language Models (Autumn 2026)](https://www.youtube.com/playlist?list=PLakGfbKCei80) - Stanford, Afshine Amidi, Shervine Amidi. <sub>course</sub>
 - [Stanford CS144 — Introduction to Computer Networking](https://cs144.github.io/) - Stanford, Keith Winstein. <sub>course</sub>
 - [Stanford CS149 — Parallel Computing](https://cs149.stanford.edu/) - Stanford, Kayvon Fatahalian, Kunle Olukotun. <sub>course</sub>
 - [Stanford CS221 — Artificial Intelligence: Principles and Techniques](https://cs221.stanford.edu/) - Stanford, Percy Liang. <sub>course</sub>
