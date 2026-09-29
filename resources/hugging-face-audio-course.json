@@ -1,0 +1,13 @@
+{
+  "title": "Hugging Face Audio course",
+  "url": "https://huggingface.co/learn/audio-course",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Hugging Face",
+  "creator": "Sanchit Gandhi, Matthijs Hollemans, Maria Khalusova, Vaibhav Srivastav",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": []
+}

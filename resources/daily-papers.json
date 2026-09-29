@@ -1,0 +1,13 @@
+{
+  "title": "Daily Papers",
+  "url": "https://huggingface.co/papers",
+  "kind": "feed",
+  "status": "todo",
+  "type": "article",
+  "provider": "Hugging Face",
+  "creator": "",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": []
+}

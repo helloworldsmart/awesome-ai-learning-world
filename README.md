@@ -7,11 +7,14 @@ Every resource here meets the [inclusion criteria](CONTRIBUTING.md#inclusion-cri
 ## Contents
 
 - [Not Yet Categorized](#not-yet-categorized)
+- [Staying Current](#staying-current)
 
 ## Not Yet Categorized
 
 - [AI Agents in LangGraph](https://learn.deeplearning.ai/courses/ai-agents-in-langgraph) - DeepLearning.AI, Harrison Chase, Rotem Weiss. <sub>course · intermediate · ~1.7 h</sub>
 - [AI Dev Tools Zoomcamp 2026](https://datatalks.club/blog/ai-dev-tools-zoomcamp.html) - DataTalks.Club, Alexey Grigorev, Bhavani Ravi, Moein Foroughi. <sub>course</sub>
+- [AI Fluency: Framework & Foundations](https://anthropic.skilljar.com/ai-fluency-framework-foundations) - Anthropic, Joseph Feller, Rick Dakan. <sub>course</sub>
+- [AI For Everyone](https://www.coursera.org/learn/ai-for-everyone) - DeepLearning.AI, Andrew Ng. <sub>course · beginner · ~7 h</sub>
 - [CMU 11-785 — Introduction to Deep Learning](https://deeplearning.cs.cmu.edu/) - CMU. <sub>course</sub>
 - [CMU 11-868 — Large Language Model Systems](https://llmsystem.github.io/) - CMU, Lei Li. <sub>course</sub>
 - [CMU 15-213 — Introduction to Computer Systems](https://www.cs.cmu.edu/~213/) - CMU, Phillip Gibbons, Seth Goldstein. <sub>course</sub>
@@ -25,9 +28,12 @@ Every resource here meets the [inclusion criteria](CONTRIBUTING.md#inclusion-cri
 - [Deep Learning for Human Language Processing 2020 Spring](https://speech.ee.ntu.edu.tw/~hylee/dlhlp/2020-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
 - [Deep Learning Specialization](https://www.deeplearning.ai/specializations/deep-learning/) - DeepLearning.AI, Andrew Ng. <sub>course · intermediate · ~127 h</sub>
 - [Deep Learning Systems: Algorithms and Implementation](https://dlsyscourse.org/) - CMU, Tim Dettmers, Tianqi Chen. <sub>course</sub>
+- [Deep Reinforcement Learning Course](https://huggingface.co/learn/deep-rl-course) - Hugging Face, Thomas Simonini, Omar Sanseviero, Sayak Paul. <sub>course</sub>
+- [Elements of AI](https://www.elementsofai.com/) - University of Helsinki, MinnaLearn. <sub>course</sub>
 - [Evaluating AI Agents](https://www.deeplearning.ai/courses/evaluating-ai-agents/) - DeepLearning.AI, John Gilhuly, Aman Khan. <sub>course · beginner · ~2.6 h</sub>
 - [Full Stack Deep Learning](https://fullstackdeeplearning.com/) - Full Stack Deep Learning, Charles Frye et al. <sub>course</sub>
 - [Full Stack Open](https://fullstackopen.com/en/) - University of Helsinki, Matti Luukkainen. <sub>course</sub>
+- [Generative AI for Beginners](https://microsoft.github.io/generative-ai-for-beginners/) - Microsoft, Microsoft Cloud Advocates. <sub>course</sub>
 - [Generative AI with Large Language Models](https://www.deeplearning.ai/courses/generative-ai-with-llms/) - DeepLearning.AI, Antje Barth, Chris Fregly, Shelbee Eigenbrode, Mike Chambers. <sub>course · intermediate · ~13 h</sub>
 - [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course) - Google. <sub>course · ~14 h</sub>
 - [Google Technical Writing One](https://developers.google.com/tech-writing/one) - Google. <sub>course · beginner · ~2 h</sub>
@@ -35,6 +41,7 @@ Every resource here meets the [inclusion criteria](CONTRIBUTING.md#inclusion-cri
 - [Governing AI Agents](https://www.deeplearning.ai/courses/governing-ai-agents/) - DeepLearning.AI, Amber Roberts. <sub>course · beginner · ~1.5 h</sub>
 - [Harvard CS50's Introduction to Artificial Intelligence with Python](https://cs50.harvard.edu/ai/) - Harvard, Brian Yu, David J. Malan. <sub>course</sub>
 - [Hugging Face AI Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction) - Hugging Face, Ben Burtenshaw, Sergio Paniego. <sub>course</sub>
+- [Hugging Face Audio course](https://huggingface.co/learn/audio-course) - Hugging Face, Sanchit Gandhi, Matthijs Hollemans, Maria Khalusova, Vaibhav Srivastav. <sub>course</sub>
 - [Hugging Face Context Course](https://huggingface.co/learn/context-course/unit0/introduction) - Hugging Face, Ben Burtenshaw, Atin Kumar Singh, Maya Nielan, Ryan Whitehead. <sub>course</sub>
 - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter1/1) - Hugging Face. <sub>course</sub>
 - [Hugging Face smol-course](https://huggingface.co/learn/smol-course/unit0/1) - Hugging Face, Ben Burtenshaw. <sub>course</sub>
@@ -81,9 +88,15 @@ Every resource here meets the [inclusion criteria](CONTRIBUTING.md#inclusion-cri
 - [The Missing Semester of Your CS Education — 2026](https://missing.csail.mit.edu/) - MIT, MIT CSAIL. <sub>course</sub>
 - [UC Berkeley CS188 — Introduction to Artificial Intelligence](https://inst.eecs.berkeley.edu/~cs188/) - UC Berkeley, Emma Pierson, Peyrin Kao. <sub>course</sub>
 - [UC Berkeley CS189/289A — Introduction to Machine Learning](https://people.eecs.berkeley.edu/~jrs/189/) - UC Berkeley, Jonathan Shewchuk. <sub>course · ~38 h</sub>
+- [AI Engineering](https://github.com/chiphuyen/aie-book) - O'Reilly, Chip Huyen. <sub>book</sub>
 - [Deep Learning](https://www.deeplearningbook.org/) - MIT Press, Goodfellow, Bengio & Courville. <sub>book</sub>
+- [Designing Machine Learning Systems](https://github.com/chiphuyen/dmls-book) - O'Reilly, Chip Huyen. <sub>book</sub>
 - [Dive into Deep Learning](https://d2l.ai/) - D2L.ai, Zhang, Lipton, Li, Smola. <sub>book</sub>
 - [Machine Learning Systems](https://mlsysbook.ai/) - Harvard, Vijay Janapa Reddi. <sub>book</sub>
+- [Mathematics for Machine Learning](https://mml-book.github.io/) - Cambridge University Press, Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong. <sub>book</sub>
+- [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) - Determination Press, Michael Nielsen. <sub>book</sub>
+- [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) - Stanford University, Dan Jurafsky, James H. Martin. <sub>book</sub>
+- [Understanding Deep Learning](https://udlbook.github.io/udlbook/) - The MIT Press, Simon J.D. Prince. <sub>book</sub>
 - [Use The Index, Luke!](https://use-the-index-luke.com/) - Markus Winand. <sub>book</sub>
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) - arXiv, Dosovitskiy et al. <sub>paper</sub>
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) - arXiv, Vaswani et al. <sub>paper</sub>
@@ -101,6 +114,8 @@ Every resource here meets the [inclusion criteria](CONTRIBUTING.md#inclusion-cri
 - [OpenAI — Agents](https://developers.openai.com/api/docs/guides/agents) - OpenAI. <sub>docs</sub>
 - [OpenTelemetry Documentation](https://opentelemetry.io/docs/) - OpenTelemetry, OpenTelemetry Authors. <sub>docs</sub>
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/current/) - PostgreSQL, PostgreSQL Global Development Group. <sub>docs</sub>
+- [Prompt Engineering Guide](https://www.promptingguide.ai) - DAIR.AI. <sub>docs</sub>
+- [Prompt engineering overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview) - Anthropic. <sub>docs</sub>
 - [PyTorch Tutorials](https://docs.pytorch.org/tutorials/) - PyTorch, PyTorch Team. <sub>docs</sub>
 - [Redis: Develop with Redis](https://redis.io/docs/latest/develop/) - Redis. <sub>docs</sub>
 - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs) - HashiCorp. <sub>docs</sub>
@@ -108,12 +123,25 @@ Every resource here meets the [inclusion criteria](CONTRIBUTING.md#inclusion-cri
 - [Essence of Calculus](https://www.3blue1brown.com/lessons/essence-of-calculus/) - 3Blue1Brown, Grant Sanderson. <sub>video</sub>
 - [Essence of Linear Algebra](https://www.3blue1brown.com/lessons/eola-preview/) - 3Blue1Brown, Grant Sanderson. <sub>video</sub>
 - [GPU MODE Lectures](https://www.gpumode.com/lectures) - GPU MODE. <sub>video</sub>
+- [Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) - 3Blue1Brown, Grant Sanderson. <sub>video · ~3.6 h</sub>
 - [A pattern language for microservices](https://microservices.io/patterns/index.html) - microservices.io, Chris Richardson. <sub>article</sub>
+- [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) - Anthropic, Erik S., Barry Zhang. <sub>article</sub>
 - [Deconvolution and Checkerboard Artifacts](https://distill.pub/2016/deconv-checkerboard/) - Distill, Odena et al. <sub>article</sub>
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) - Jay Alammar. <sub>article</sub>
 - [The Twelve-Factor App](https://12factor.net/) - 12factor.net, Adam Wiggins. <sub>article</sub>
 - [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) - Lil'Log, Lilian Weng. <sub>article · 31 min</sub>
+- [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch) - Manning, Sebastian Raschka. <sub>github</sub>
 - [斯坦福大学 CME 295 课程：Transformer 与大语言模型速查表](https://github.com/afshinea/stanford-cme-295-transformers-large-language-models/tree/main/zh) - Stanford, Afshine Amidi, Shervine Amidi. <sub>github · zh-CN</sub>
+
+## Staying Current
+
+Ongoing sources to follow. They never finish, so they are not courses — read an issue, keep what matters.
+
+- [StatQuest with Josh Starmer](https://www.youtube.com/@statquest) - StatQuest, Josh Starmer. <sub>video</sub>
+- [Ahead of AI](https://magazine.sebastianraschka.com) - Ahead of AI, Sebastian Raschka. <sub>article</sub>
+- [Daily Papers](https://huggingface.co/papers) - Hugging Face. <sub>article</sub>
+- [Interconnects](https://www.interconnects.ai) - Interconnects, Nathan Lambert. <sub>article</sub>
+- [One Useful Thing](https://www.oneusefulthing.org) - One Useful Thing, Ethan Mollick. <sub>article</sub>
 
 ## Contributing
 

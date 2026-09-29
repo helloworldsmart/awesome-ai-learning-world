@@ -1,0 +1,13 @@
+{
+  "title": "Deep Reinforcement Learning Course",
+  "url": "https://huggingface.co/learn/deep-rl-course",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Hugging Face",
+  "creator": "Thomas Simonini, Omar Sanseviero, Sayak Paul",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": []
+}

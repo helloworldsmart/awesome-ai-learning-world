@@ -1,0 +1,13 @@
+{
+  "title": "Mathematics for Machine Learning",
+  "url": "https://mml-book.github.io/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Cambridge University Press",
+  "creator": "Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": []
+}
