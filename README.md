@@ -147,6 +147,7 @@ Neural networks, how they are trained, and the architectures that work.
 - [Machine Learning and having it deep and structured 2018 Spring](https://speech.ee.ntu.edu.tw/~hylee/mlds/2018-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
 - [MIT 6.S191 — Introduction to Deep Learning](https://ocw.mit.edu/courses/6-s191-introduction-to-deep-learning-january-iap-2020/) - MIT OpenCourseWare, Alexander Amini, Ava Soleimany. <sub>course · beginner</sub>
 - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) - Andrej Karpathy. <sub>course · ~15 h</sub>
+- [OpenCV University Free Courses](https://opencv.org/university/free-courses/) - OpenCV.org. <sub>course · 5 units</sub>
 - [Practical Deep Learning for Coders](https://course.fast.ai/) - fast.ai, Jeremy Howard. <sub>course · ~14 h</sub>
 - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html) - fast.ai, Jeremy Howard. <sub>course · ~30 h</sub>
 - [Stanford CME295 — Transformers and Large Language Models (Autumn 2025)](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) - Stanford, Afshine Amidi, Shervine Amidi. <sub>course · ~16 h</sub>
@@ -177,6 +178,7 @@ Getting machines to understand images and video.
 - [Community Computer Vision Course](https://huggingface.co/learn/computer-vision-course/unit0/welcome/welcome) - Hugging Face, Hugging Face Community. <sub>course · beginner</sub>
 - [CS231n: Deep Learning for Computer Vision](https://cs231n.stanford.edu/) - Stanford University, Fei-Fei Li, Ehsan Adeli, Justin Johnson, Zane Durante, Tiange Xiang. <sub>course · ~27 h</sub>
 - [Deep Learning for Computer Vision (Fall 2019)](https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r) - University of Michigan. <sub>course · ~26 h</sub>
+- [OpenCV University Free Courses](https://opencv.org/university/free-courses/) - OpenCV.org. <sub>course · 5 units</sub>
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) - arXiv, Dosovitskiy et al. <sub>paper</sub>
 - [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) - arXiv, He et al. <sub>paper</sub>
 - [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) - arXiv, Radford et al. <sub>paper</sub>
@@ -311,6 +313,7 @@ Writing software well: languages, tools, and the craft of building programs.
 - [AI Dev Tools Zoomcamp 2026](https://datatalks.club/blog/ai-dev-tools-zoomcamp.html) - DataTalks.Club, Alexey Grigorev, Bhavani Ravi, Moein Foroughi. <sub>course</sub>
 - [CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science) - Harvard University, David J. Malan. <sub>course · beginner</sub>
 - [Full Stack Open](https://fullstackopen.com/en/) - University of Helsinki, Matti Luukkainen. <sub>course</sub>
+- [OpenCV University Free Courses](https://opencv.org/university/free-courses/) - OpenCV.org. <sub>course · 5 units</sub>
 - [The Missing Semester of Your CS Education — 2026](https://missing.csail.mit.edu/) - MIT, MIT CSAIL. <sub>course</sub>
 - [Effective Go](https://go.dev/doc/effective_go) - go.dev, The Go Authors. <sub>docs</sub>
 

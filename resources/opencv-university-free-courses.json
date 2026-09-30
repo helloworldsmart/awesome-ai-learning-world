@@ -1,0 +1,78 @@
+{
+  "title": "OpenCV University Free Courses",
+  "url": "https://opencv.org/university/free-courses/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "OpenCV.org",
+  "creator": "",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision",
+    "Deep Learning",
+    "Programming"
+  ],
+  "units": [
+    {
+      "title": "OpenCV Bootcamp",
+      "durationMinutes": 180,
+      "resources": [
+        {
+          "title": "OpenCV Bootcamp",
+          "url": "https://opencv.org/university/free-opencv-course/",
+          "type": "course",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "title": "PyTorch Bootcamp",
+      "durationMinutes": 300,
+      "resources": [
+        {
+          "title": "PyTorch Bootcamp",
+          "url": "https://opencv.org/university/free-pytorch-course/",
+          "type": "course",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "title": "TensorFlow Bootcamp",
+      "durationMinutes": 180,
+      "resources": [
+        {
+          "title": "TensorFlow Bootcamp",
+          "url": "https://opencv.org/university/free-tensorflow-keras-course/",
+          "type": "course",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "title": "Python for Beginners",
+      "durationMinutes": 120,
+      "resources": [
+        {
+          "title": "Python for Beginners",
+          "url": "https://opencv.org/university/python-for-beginners/",
+          "type": "course",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "title": "Vision Language Model Bootcamp",
+      "resources": [
+        {
+          "title": "Vision Language Model Bootcamp",
+          "url": "https://opencv.org/university/vision-language-model-bootcamp/",
+          "type": "course",
+          "role": "primary"
+        }
+      ]
+    }
+  ]
+}
