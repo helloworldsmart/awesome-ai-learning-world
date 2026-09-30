@@ -142,6 +142,7 @@ Ongoing sources to follow. They never finish, so they are not courses — read a
 - [Ahead of AI](https://magazine.sebastianraschka.com) - Ahead of AI, Sebastian Raschka. <sub>article</sub>
 - [Daily Papers](https://huggingface.co/papers) - Hugging Face. <sub>article</sub>
 - [Interconnects](https://www.interconnects.ai) - Interconnects, Nathan Lambert. <sub>article</sub>
+- [Learn Computer Vision: Tutorials and Guides](https://roboflow.com/learn) - Roboflow. <sub>article</sub>
 - [One Useful Thing](https://www.oneusefulthing.org) - One Useful Thing, Ethan Mollick. <sub>article</sub>
 
 ## Contributing
