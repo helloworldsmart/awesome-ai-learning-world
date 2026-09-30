@@ -9,5 +9,8 @@
   "language": "zh-TW",
   "difficulty": "",
   "durationMinutes": 0,
-  "skills": []
+  "skills": [
+    "Machine Learning",
+    "Deep Learning"
+  ]
 }

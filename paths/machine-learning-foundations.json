@@ -1,0 +1,27 @@
+{
+  "title": "Machine Learning Foundations",
+  "summary": "From programming and math to training your first neural network.",
+  "status": "todo",
+  "stages": [
+    {
+      "title": "Programming",
+      "passCriteria": "You can write, run and debug a small program on your own.",
+      "resources": ["cs50-introduction-to-computer-science", "the-missing-semester-of-your-cs-education-2026"]
+    },
+    {
+      "title": "Math",
+      "passCriteria": "You can explain vectors, matrices, derivatives and probability in your own words.",
+      "resources": ["essence-of-linear-algebra", "essence-of-calculus", "mathematics-for-machine-learning-and-data-science"]
+    },
+    {
+      "title": "Core Machine Learning",
+      "passCriteria": "You can train, evaluate and compare regression and classification models.",
+      "resources": ["machine-learning-specialization-andrew-ng", "google-machine-learning-crash-course", "stanford-cs229-machine-learning"]
+    },
+    {
+      "title": "Neural Networks",
+      "passCriteria": "You can implement backpropagation for a small network from scratch.",
+      "resources": ["neural-networks-3blue1brown", "neural-networks-zero-to-hero"]
+    }
+  ]
+}

@@ -41,7 +41,8 @@ A resource is listed only if it meets **all** of these:
 | `type` | `course` · `book` · `paper` · `docs` · `video` · `article` · `github` |
 | `difficulty` | `beginner` · `intermediate` · `advanced`, only if the official page states a level; otherwise `""` (unknown). **Never estimate.** |
 | `durationMinutes` | only if the official page states it; otherwise `0` (unknown). **Never estimate.** |
-| `skills` | what it teaches, e.g. `Deep Learning`, `PyTorch`. A resource can have several. |
+| `skills` | what it teaches: 1–3 names from [`skills.json`](skills.json), e.g. `Deep Learning`. Skills are topics, not tools — a PyTorch tutorial is `Deep Learning`. Need a skill that isn't listed? Propose it in the pull request. |
+| `tags` | optional labels: `intro` (a no-code introduction) · `classic` (the classic technical methods). Leave it out if neither fits. |
 | `units` | courses only: the lectures, each with its `resources` (the video, the paper that goes with it…) |
 
 3. Run the checks and regenerate the README:
@@ -53,15 +54,36 @@ node scripts/build-readme.mjs
 
 4. Open a pull request with both the JSON file and the updated `README.md`.
 
+## Learning paths
+
+A path is a ready-made route through the catalog: `paths/<slug>.json`, a list of stages, each with the resources to study in order.
+
+```json
+{
+  "title": "Machine Learning Foundations",
+  "summary": "From programming and math to training your first neural network.",
+  "status": "todo",
+  "stages": [
+    {
+      "title": "Math",
+      "passCriteria": "You can explain vectors, matrices, derivatives and probability in your own words.",
+      "resources": ["essence-of-linear-algebra", "essence-of-calculus"]
+    }
+  ]
+}
+```
+
+`resources` are file names from `resources/` without `.json`. Only `"kind": "resource"` entries can be on a path. `passCriteria` is optional. On AI Learning World each stage becomes a group on the board, laid out left to right.
+
 ## Status
 
-Every resource moves through **To Do → In Progress → Done**:
+Every resource and path moves through **To Do → In Progress → Done**:
 
 - `todo` — not reviewed yet.
 - `in_progress` — being cleaned up.
 - `done` — a maintainer checked every field against the official page.
 
-**Changes to a `done` resource need a maintainer's explicit OK.** A bot labels pull requests that touch one (`touches-done`) so they are never merged by accident. The status is our workflow, not a quality badge — everything listed meets the criteria.
+**Changes to a `done` resource or path need a maintainer's explicit OK.** A bot labels pull requests that touch one (`touches-done`) so they are never merged by accident. The status is our workflow, not a quality badge — everything listed meets the criteria.
 
 ## Accuracy rules
 

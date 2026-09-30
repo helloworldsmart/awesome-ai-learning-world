@@ -9,5 +9,10 @@
   "language": "en",
   "difficulty": "",
   "durationMinutes": 0,
-  "skills": []
+  "skills": [
+    "AI Foundations"
+  ],
+  "tags": [
+    "classic"
+  ]
 }

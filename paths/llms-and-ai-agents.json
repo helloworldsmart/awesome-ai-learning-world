@@ -1,0 +1,27 @@
+{
+  "title": "LLMs & AI Agents",
+  "summary": "How large language models work, and how to build agents on top of them.",
+  "status": "todo",
+  "stages": [
+    {
+      "title": "Transformers",
+      "passCriteria": "You can build a tiny GPT and explain every part of it.",
+      "resources": ["neural-networks-zero-to-hero", "the-illustrated-transformer", "attention-is-all-you-need"]
+    },
+    {
+      "title": "Large Language Models",
+      "passCriteria": "You can explain pretraining, fine-tuning and LoRA, and fine-tune a small model.",
+      "resources": ["hugging-face-llm-course", "stanford-cme295-transformers-and-large-language-models-autumn-2025", "lora-low-rank-adaptation-of-large-language-models"]
+    },
+    {
+      "title": "Building with LLMs",
+      "passCriteria": "You can build a retrieval-augmented app and measure whether its answers are right.",
+      "resources": ["prompt-engineering-overview", "retrieval-augmented-generation", "llm-zoomcamp"]
+    },
+    {
+      "title": "AI Agents",
+      "passCriteria": "You can build an agent that uses tools, and evaluate it.",
+      "resources": ["building-effective-agents", "hugging-face-ai-agents-course", "evaluating-ai-agents"]
+    }
+  ]
+}

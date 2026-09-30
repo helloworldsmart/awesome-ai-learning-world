@@ -42,7 +42,7 @@ jobs:
             const hits = [];
             for (const f of files) {
               const path = f.previous_filename ?? f.filename;
-              if (!path.startsWith("resources/") || !path.endsWith(".json")) continue;
+              if (!/^(resources|paths)\//.test(path) || !path.endsWith(".json")) continue;
               if ((await statusAt(path, pr.base.sha)) === "done") {
                 hits.push(`- \`${path}\` is **done** on \`${pr.base.ref}\` and this PR ${f.status} it`);
               } else if (f.status !== "removed" && (await statusAt(f.filename, pr.head.sha)) === "done") {

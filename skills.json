@@ -1,0 +1,21 @@
+[
+  { "name": "AI Foundations", "description": "What AI is and the classic ideas behind it: search, planning, reasoning, probability." },
+  { "name": "Machine Learning", "description": "Learning from data: models, training, evaluation, generalization." },
+  { "name": "Deep Learning", "description": "Neural networks, how they are trained, and the architectures that work." },
+  { "name": "Computer Vision", "description": "Getting machines to understand images and video." },
+  { "name": "NLP", "description": "Natural language processing: text and speech, from classic methods to Transformers." },
+  { "name": "LLMs", "description": "Large language models: how they are built, trained, adapted and prompted." },
+  { "name": "Generative AI", "description": "Models that generate: diffusion, VAEs, GANs, and building products on them." },
+  { "name": "AI Agents", "description": "LLM systems that plan, use tools and act — and how to evaluate and govern them." },
+  { "name": "Reinforcement Learning", "description": "Learning by acting: rewards, policies, value functions." },
+  { "name": "MLOps", "description": "Taking models to production: data, deployment, monitoring, iteration." },
+  { "name": "ML Systems", "description": "Making ML fast and scalable: GPUs, kernels, parallelism, training and serving systems." },
+  { "name": "Math", "description": "Linear algebra, calculus, probability and statistics." },
+  { "name": "Programming", "description": "Writing software well: languages, tools, and the craft of building programs." },
+  { "name": "Computer Systems", "description": "How computers, networks and distributed systems actually work." },
+  { "name": "Databases", "description": "Storing and querying data: SQL, indexes, database internals." },
+  { "name": "Backend", "description": "Building services: HTTP, architecture, caching, observability." },
+  { "name": "DevOps", "description": "Containers, orchestration and infrastructure as code." },
+  { "name": "Data Engineering", "description": "Pipelines that move and shape data at scale." },
+  { "name": "Technical Writing", "description": "Writing clear technical documents." }
+]

@@ -1,4 +1,4 @@
-// Build README.md from resources/*.json.
+// Build README.md from skills.json, resources/*.json and paths/*.json.
 //
 //   node scripts/build-readme.mjs          write README.md
 //   node scripts/build-readme.mjs --check  exit 1 if README.md is out of date (CI)
@@ -11,7 +11,8 @@ import { fileURLToPath } from "node:url";
 import { loadCatalog } from "./catalog.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const UNCATEGORIZED = "Not Yet Categorized";
+const PATHS = "Learning Paths";
+const FEEDS = "Staying Current";
 
 // Courses lead each section: a course usually carries its own papers, books and docs.
 const TYPE_ORDER = ["course", "book", "paper", "docs", "video", "article", "github"];
@@ -60,25 +61,21 @@ function sortEntries(list) {
   );
 }
 
-export function buildReadme(entries) {
+export function buildReadme({ skills, entries, paths = [] }) {
   const resources = entries.filter((e) => e.kind === "resource");
   const feeds = entries.filter((e) => e.kind === "feed");
+  const bySlug = new Map(entries.map((e) => [e.slug, e]));
 
   // A resource with several skills appears in each of them: skills have no "main" one.
-  const bySkill = new Map();
-  for (const e of resources) {
-    const skills = e.skills.length > 0 ? e.skills : [UNCATEGORIZED];
-    for (const s of skills) {
-      if (!bySkill.has(s)) bySkill.set(s, []);
-      bySkill.get(s).push(e);
-    }
-  }
-  const sections = [...bySkill.keys()].sort((a, b) => {
-    if (a === UNCATEGORIZED) return 1;
-    if (b === UNCATEGORIZED) return -1;
-    return a.localeCompare(b, "en", { sensitivity: "base" });
-  });
-  if (feeds.length > 0) sections.push("Staying Current");
+  // Sections follow skills.json, which is ordered from foundations outwards.
+  const bySkill = new Map(skills.map((s) => [s.name, []]));
+  for (const e of resources) for (const s of e.skills) bySkill.get(s)?.push(e);
+  const skillSections = skills.filter((s) => bySkill.get(s.name).length > 0);
+
+  const sections = [];
+  if (paths.length > 0) sections.push(PATHS);
+  sections.push(...skillSections.map((s) => s.name));
+  if (feeds.length > 0) sections.push(FEEDS);
 
   const out = [];
   out.push("# Awesome AI Learning World [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)");
@@ -97,16 +94,40 @@ export function buildReadme(entries) {
   for (const s of sections) out.push(`- [${s}](#${anchor(s)})`);
   out.push("");
 
-  for (const s of sections) {
-    out.push(`## ${s}`);
+  if (paths.length > 0) {
+    out.push(`## ${PATHS}`);
     out.push("");
-    if (s === "Staying Current") {
-      out.push("Ongoing sources to follow. They never finish, so they are not courses — read an issue, keep what matters.");
+    out.push("Ready-made routes through the catalog, stage by stage. On [AI Learning World](https://ailearnworld.com) you can start your board from one of them.");
+    out.push("");
+    for (const p of [...paths].sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }))) {
+      out.push(`### ${p.title}`);
       out.push("");
-      for (const e of sortEntries(feeds)) out.push(line(e));
-    } else {
-      for (const e of sortEntries(bySkill.get(s))) out.push(line(e));
+      if (p.summary) out.push(`${p.summary}`, "");
+      p.stages.forEach((st, i) => {
+        out.push(`${i + 1}. **${st.title}**${st.passCriteria ? ` — ${st.passCriteria}` : ""}`);
+        for (const slug of st.resources) {
+          const e = bySlug.get(slug);
+          out.push(`   - [${e.title}](${e.url})`);
+        }
+      });
+      out.push("");
     }
+  }
+
+  for (const s of skillSections) {
+    out.push(`## ${s.name}`);
+    out.push("");
+    if (s.description) out.push(s.description, "");
+    for (const e of sortEntries(bySkill.get(s.name))) out.push(line(e));
+    out.push("");
+  }
+
+  if (feeds.length > 0) {
+    out.push(`## ${FEEDS}`);
+    out.push("");
+    out.push("Ongoing sources to follow. They never finish, so they are not courses — read an issue, keep what matters.");
+    out.push("");
+    for (const e of sortEntries(feeds)) out.push(line(e));
     out.push("");
   }
 
@@ -131,12 +152,13 @@ export function buildReadme(entries) {
 
 const isMain = process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1];
 if (isMain) {
-  const { entries, problems } = loadCatalog(root);
+  const catalog = loadCatalog(root);
+  const { entries, problems } = catalog;
   if (problems.length > 0) {
     console.error(`Fix these first (node scripts/check.mjs):\n  - ${problems.join("\n  - ")}`);
     process.exit(1);
   }
-  const readme = buildReadme(entries);
+  const readme = buildReadme(catalog);
   const path = join(root, "README.md");
   if (process.argv.includes("--check")) {
     let current = "";

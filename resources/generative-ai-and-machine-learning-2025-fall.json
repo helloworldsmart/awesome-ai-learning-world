@@ -9,5 +9,9 @@
   "language": "zh-TW",
   "difficulty": "beginner",
   "durationMinutes": 0,
-  "skills": []
+  "skills": [
+    "Generative AI",
+    "Machine Learning",
+    "LLMs"
+  ]
 }

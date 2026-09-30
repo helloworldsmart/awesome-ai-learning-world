@@ -1,10 +1,10 @@
-// Load and validate resources/*.json.
+// Load and validate skills.json, resources/*.json and paths/*.json.
 //
 // These rules mirror the app's importer (backend/internal/catalog/format.go in the
 // AI Learning World app). The app re-validates everything before it syncs, so a file
 // that passes here but fails there is a bug in one of the two: change them together.
 
-import { readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 export const TYPES = ["video", "course", "article", "book", "paper", "docs", "github"];
@@ -13,39 +13,116 @@ export const DIFFICULTIES = ["", "beginner", "intermediate", "advanced"];
 export const STATUSES = ["todo", "in_progress", "done"];
 export const KINDS = ["resource", "feed"];
 export const ROLES = ["primary", "supplementary"];
+// Each resource teaches 1–3 skills. XP is split evenly across them in the app, so a
+// resource tagged with six gives each one almost nothing (ADR-0044 in the app repo).
+export const MAX_SKILLS = 3;
+// Labels for the maintainer's catalog board, on top of skills. Optional, fixed list:
+// intro = no-code introduction, classic = the classic technical methods.
+export const TAGS = ["intro", "classic"];
 
 const ENTRY_KEYS = [
   "title", "url", "kind", "status", "type", "provider", "creator",
-  "language", "difficulty", "durationMinutes", "skills", "units",
+  "language", "difficulty", "durationMinutes", "skills", "tags", "units",
 ];
 const UNIT_KEYS = [
   "title", "completionCriterion", "durationMinutes", "durationSeconds", "sourceUrl", "sourceKey", "resources",
 ];
 const UNIT_RESOURCE_KEYS = ["title", "url", "type", "role", "provider", "creator", "language"];
+const SKILL_KEYS = ["name", "description"];
+const PATH_KEYS = ["title", "summary", "status", "stages"];
+const STAGE_KEYS = ["title", "passCriteria", "resources"];
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const isURL = (u) => typeof u === "string" && /^https?:\/\//.test(u);
 const blank = (s) => typeof s !== "string" || s.trim() === "";
 
-/** Read every resource file. Returns { entries, problems } — never throws on bad content. */
+function readJSON(path, where, problems) {
+  try {
+    return JSON.parse(readFileSync(path, "utf8"));
+  } catch (err) {
+    problems.push(`${where}: not valid JSON (${err.message})`);
+    return undefined;
+  }
+}
+
+function readDir(root, name, problems) {
+  const dir = join(root, name);
+  if (!existsSync(dir)) return [];
+  const out = [];
+  for (const file of readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
+    const data = readJSON(join(dir, file), `${name}/${file}`, problems);
+    if (data !== undefined) out.push({ slug: file.slice(0, -".json".length), ...data });
+  }
+  return out;
+}
+
+/**
+ * Read the whole catalog. Returns { skills, entries, paths, problems } — never throws on
+ * bad content.
+ */
 export function loadCatalog(root) {
-  const dir = join(root, "resources");
-  const files = readdirSync(dir).filter((f) => f.endsWith(".json")).sort();
-  const entries = [];
   const problems = [];
-  for (const file of files) {
-    const slug = file.slice(0, -".json".length);
-    let data;
-    try {
-      data = JSON.parse(readFileSync(join(dir, file), "utf8"));
-    } catch (err) {
-      problems.push(`${file}: not valid JSON (${err.message})`);
+  const skills = readJSON(join(root, "skills.json"), "skills.json", problems) ?? [];
+  const entries = readDir(root, "resources", problems);
+  const paths = readDir(root, "paths", problems);
+  problems.push(...validateSkills(skills));
+  problems.push(...validate(entries, skills));
+  problems.push(...validatePaths(paths, entries));
+  return { skills, entries, paths, problems };
+}
+
+/** skills.json: the fixed list every resource picks its skills from. */
+export function validateSkills(skills) {
+  const problems = [];
+  if (!Array.isArray(skills)) return ["skills.json: must be a list"];
+  const seen = new Set();
+  skills.forEach((s, i) => {
+    const at = `skills.json #${i + 1}`;
+    unknownKeys(s, SKILL_KEYS, at, problems);
+    if (blank(s.name)) problems.push(`${at}: name is required`);
+    else if (seen.has(s.name.toLowerCase())) problems.push(`${at}: "${s.name}" is listed twice`);
+    else seen.add(s.name.toLowerCase());
+    if (typeof s.description !== "string") problems.push(`${at}: description must be a string`);
+  });
+  return problems;
+}
+
+/** paths/*.json: an ordered list of stages, each a list of resource slugs. */
+export function validatePaths(paths, entries) {
+  const problems = [];
+  const bySlug = new Map(entries.map((e) => [e.slug, e]));
+  for (const p of paths) {
+    const at = `paths/${p.slug}`;
+    unknownKeys(p, PATH_KEYS, at, problems);
+    if (!SLUG.test(p.slug)) problems.push(`${at}: file name must be lowercase letters, digits and -`);
+    if (blank(p.title)) problems.push(`${at}: title is required`);
+    if (typeof p.summary !== "string") problems.push(`${at}: summary must be a string`);
+    if (!STATUSES.includes(p.status)) problems.push(`${at}: status must be one of ${STATUSES.join(", ")}`);
+    if (!Array.isArray(p.stages) || p.stages.length === 0) {
+      problems.push(`${at}: needs at least one stage`);
       continue;
     }
-    entries.push({ slug, ...data });
+    const used = new Set();
+    p.stages.forEach((st, i) => {
+      const sat = `${at} stage ${i + 1}`;
+      unknownKeys(st, STAGE_KEYS, sat, problems);
+      if (blank(st.title)) problems.push(`${sat}: title is required`);
+      if (st.passCriteria !== undefined && typeof st.passCriteria !== "string")
+        problems.push(`${sat}: passCriteria must be a string`);
+      if (!Array.isArray(st.resources) || st.resources.length === 0) {
+        problems.push(`${sat}: needs at least one resource`);
+        return;
+      }
+      for (const slug of st.resources) {
+        const e = bySlug.get(slug);
+        if (!e) problems.push(`${sat}: no resource "${slug}"`);
+        else if (e.kind !== "resource") problems.push(`${sat}: "${slug}" is a feed — feeds never finish, so they can't be on a path`);
+        if (used.has(slug)) problems.push(`${sat}: "${slug}" is already on this path`);
+        used.add(slug);
+      }
+    });
   }
-  problems.push(...validate(entries));
-  return { entries, problems };
+  return problems;
 }
 
 function unknownKeys(obj, allowed, where, problems) {
@@ -54,8 +131,9 @@ function unknownKeys(obj, allowed, where, problems) {
   }
 }
 
-export function validate(entries) {
+export function validate(entries, skills = []) {
   const problems = [];
+  const vocabulary = new Map(skills.filter((s) => !blank(s.name)).map((s) => [s.name.toLowerCase(), s.name]));
   const urls = new Map();
   const claim = (url, owner) => {
     const prev = urls.get(url);
@@ -81,6 +159,26 @@ export function validate(entries) {
       if (typeof e[k] !== "string") problems.push(`${at}: ${k} must be a string (can be empty)`);
     }
     if (!Array.isArray(e.skills) || e.skills.some(blank)) problems.push(`${at}: skills must be a list of names`);
+    else {
+      if (e.skills.length === 0 || e.skills.length > MAX_SKILLS)
+        problems.push(`${at}: needs 1–${MAX_SKILLS} skills (has ${e.skills.length})`);
+      const seen = new Set();
+      for (const name of e.skills) {
+        const canonical = vocabulary.get(name.toLowerCase());
+        if (!canonical) problems.push(`${at}: skill "${name}" is not in skills.json`);
+        else if (canonical !== name) problems.push(`${at}: write "${canonical}", not "${name}"`);
+        if (seen.has(name.toLowerCase())) problems.push(`${at}: skill "${name}" is listed twice`);
+        seen.add(name.toLowerCase());
+      }
+    }
+
+    if (e.tags !== undefined) {
+      if (!Array.isArray(e.tags)) problems.push(`${at}: tags must be a list`);
+      else {
+        for (const t of e.tags) if (!TAGS.includes(t)) problems.push(`${at}: tag "${t}" must be one of ${TAGS.join(", ")}`);
+        if (new Set(e.tags).size !== e.tags.length) problems.push(`${at}: a tag is listed twice`);
+      }
+    }
 
     const units = e.units ?? [];
     if (units.length > 0 && e.type !== "course") problems.push(`${at}: only type "course" can have units`);

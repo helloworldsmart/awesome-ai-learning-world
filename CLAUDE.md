@@ -21,11 +21,19 @@ merged here reaches users only after a tag and a release.
 6. **Never edit `README.md` by hand.** Edit `resources/*.json`, then run `node scripts/build-readme.mjs`.
 7. **Before every commit**: `node scripts/check.mjs` and `node scripts/build-readme.mjs --check` must pass.
 8. **Don't copy prose from other lists** (e.g. h9-tec/Awesome_ai_learning). Facts are fine.
+9. **Skills come from `skills.json` only**, 1–3 per resource. Adding a skill to `skills.json` is a
+   maintainer decision — propose it, don't just add it. Skills are topics (Deep Learning), not
+   tools (PyTorch).
+10. **Paths follow the same status rules as resources** (`todo` → `in_progress` → `done`; ask
+    before changing a `done` path; never move one to `done`). A path only lists `kind: "resource"`
+    entries — a feed never finishes.
 
 ## Layout
 
 ```
+skills.json             the fixed list of skills (README sections, in this order)
 resources/<slug>.json   one resource per file (the source of truth)
+paths/<slug>.json       learning paths: ordered stages of resource slugs
 scripts/catalog.mjs     load + validate (mirrors the app's importer — change both together)
 scripts/check.mjs       validate everything
 scripts/build-readme.mjs  generate README.md (--check in CI)

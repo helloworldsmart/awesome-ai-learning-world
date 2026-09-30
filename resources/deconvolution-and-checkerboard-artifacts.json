@@ -9,5 +9,8 @@
   "language": "en",
   "difficulty": "",
   "durationMinutes": 0,
-  "skills": []
+  "skills": [
+    "Deep Learning",
+    "Computer Vision"
+  ]
 }

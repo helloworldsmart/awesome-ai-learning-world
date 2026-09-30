@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
-      - name: Validate resources
+      - name: Validate skills, resources and paths
         run: node scripts/check.mjs
       - name: README is generated from the resources
         run: node scripts/build-readme.mjs --check
