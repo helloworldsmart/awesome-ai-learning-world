@@ -10,12 +10,14 @@
       "stages": [
         {
           "title": "Programming",
+          "passCriteria": "You can write, test and debug a Python program on your own.",
           "resources": [
             "cs50-s-introduction-to-programming-with-python"
           ]
         },
         {
           "title": "Python for Data",
+          "passCriteria": "You can work with NumPy arrays, and load, clean, explore and plot a dataset with pandas in a notebook.",
           "resources": [
             "python-programming-for-economics-and-finance",
             "kaggle-learn-pandas"
@@ -30,6 +32,7 @@
       "stages": [
         {
           "title": "Calculus",
+          "passCriteria": "You can take derivatives and partial derivatives, compute a gradient, and apply the chain rule.",
           "resources": [
             "khan-academy-precalculus",
             "khan-academy-differential-calculus",
@@ -38,6 +41,7 @@
         },
         {
           "title": "Linear Algebra",
+          "passCriteria": "You can multiply matrices and explain, geometrically, what a matrix does to a vector.",
           "resources": [
             "khan-academy-linear-algebra",
             "essence-of-linear-algebra"
@@ -45,6 +49,7 @@
         },
         {
           "title": "Probability & Statistics",
+          "passCriteria": "You can work with probability, random variables and distributions, and test a hypothesis.",
           "resources": [
             "khan-academy-statistics-and-probability"
           ]
@@ -58,6 +63,7 @@
       "stages": [
         {
           "title": "Core Machine Learning",
+          "passCriteria": "You can train, evaluate and compare regression and classification models.",
           "resources": [
             "google-machine-learning-crash-course"
           ]
@@ -71,6 +77,7 @@
       "stages": [
         {
           "title": "Neural Networks",
+          "passCriteria": "You can implement backpropagation from scratch and build a small GPT.",
           "resources": [
             "neural-networks-3blue1brown",
             "neural-networks-zero-to-hero"
@@ -78,6 +85,7 @@
         },
         {
           "title": "Practice",
+          "passCriteria": "You can train an image or text model in PyTorch and explain each step.",
           "resources": [
             "practical-deep-learning-for-coders",
             "dive-into-deep-learning"
@@ -85,18 +93,21 @@
         },
         {
           "title": "Theory",
+          "passCriteria": "You can explain why deep networks train: optimization, initialization, regularization and normalization.",
           "resources": [
             "understanding-deep-learning"
           ]
         },
         {
           "title": "Attention",
+          "passCriteria": "You can explain how attention works and why Transformers replaced recurrent networks.",
           "resources": [
             "the-illustrated-transformer"
           ]
         },
         {
           "title": "Generative Models",
+          "passCriteria": "You can explain how a diffusion model turns noise into an image, and implement one.",
           "resources": [
             "deep-learning-foundations-to-stable-diffusion"
           ]
@@ -110,24 +121,28 @@
       "stages": [
         {
           "title": "Transformers & NLP",
+          "passCriteria": "You can explain attention and implement a Transformer-based NLP model.",
           "resources": [
             "stanford-cs224n-natural-language-processing-with-deep-learning"
           ]
         },
         {
           "title": "LLM Training",
+          "passCriteria": "You can explain pretraining, fine-tuning and LoRA, and fine-tune a small model.",
           "resources": [
             "hugging-face-llm-course"
           ]
         },
         {
           "title": "RAG & Evaluation",
+          "passCriteria": "You can build a retrieval-augmented app and measure whether its answers are right.",
           "resources": [
             "llm-zoomcamp"
           ]
         },
         {
           "title": "Agents",
+          "passCriteria": "You can build an agent that uses tools, and evaluate it.",
           "resources": [
             "hugging-face-ai-agents-course"
           ]
@@ -141,18 +156,21 @@
       "stages": [
         {
           "title": "MLOps",
+          "passCriteria": "You can deploy a model, track experiments and monitor it in production.",
           "resources": [
             "mlops-zoomcamp"
           ]
         },
         {
           "title": "ML System Design",
+          "passCriteria": "You can design an ML system end to end and explain its trade-offs.",
           "resources": [
             "cmu-17-445-645-machine-learning-in-production"
           ]
         },
         {
           "title": "Training at Scale",
+          "passCriteria": "You can explain mixed precision, data and model parallelism, and quantization, and when each one helps.",
           "resources": [
             "the-ultra-scale-playbook-training-llms-on-gpu-clusters"
           ]
@@ -166,6 +184,7 @@
       "stages": [
         {
           "title": "Classical CV",
+          "passCriteria": "You can explain image formation, filtering, edges, features, camera calibration and stereo.",
           "resources": [
             "first-principles-of-computer-vision",
             "cs131-computer-vision-foundations-and-applications"
@@ -173,12 +192,14 @@
         },
         {
           "title": "CNNs",
+          "passCriteria": "You can explain how a CNN sees an image and why residual connections help.",
           "resources": [
             "cs231n-deep-learning-for-computer-vision"
           ]
         },
         {
           "title": "Vision Transformers",
+          "passCriteria": "You can explain how ViT and CLIP apply attention to images.",
           "resources": [
             "an-image-is-worth-16x16-words-vit"
           ]
@@ -192,12 +213,14 @@
       "stages": [
         {
           "title": "Coding",
+          "passCriteria": "You can solve timed coding problems on data structures and algorithms.",
           "resources": [
             "tech-interview-handbook"
           ]
         },
         {
           "title": "ML & DL Questions",
+          "passCriteria": "You can answer machine learning and deep learning knowledge and system design questions under time pressure.",
           "resources": [
             "introduction-to-machine-learning-interviews-book",
             "machine-learning-q-and-ai",

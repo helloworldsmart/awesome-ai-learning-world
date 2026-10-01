@@ -38,79 +38,79 @@ The whole map in one board: programming and math, machine learning, deep learnin
 
 **Programming**
 
-1. **Programming**
+1. **Programming** — You can write, test and debug a Python program on your own.
    - [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/)
-2. **Python for Data**
+2. **Python for Data** — You can work with NumPy arrays, and load, clean, explore and plot a dataset with pandas in a notebook.
    - [Python Programming for Economics and Finance](https://python-programming.quantecon.org/intro.html)
    - [Kaggle Learn: Pandas](https://www.kaggle.com/learn/pandas)
 
 **Math**
 
-1. **Calculus**
+1. **Calculus** — You can take derivatives and partial derivatives, compute a gradient, and apply the chain rule.
    - [Precalculus](https://www.khanacademy.org/math/precalculus)
    - [Differential Calculus](https://www.khanacademy.org/math/differential-calculus)
    - [Multivariable calculus](https://www.khanacademy.org/math/multivariable-calculus)
-2. **Linear Algebra**
+2. **Linear Algebra** — You can multiply matrices and explain, geometrically, what a matrix does to a vector.
    - [Linear algebra](https://www.khanacademy.org/math/linear-algebra)
    - [Essence of Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra)
-3. **Probability & Statistics**
+3. **Probability & Statistics** — You can work with probability, random variables and distributions, and test a hypothesis.
    - [Statistics and probability](https://www.khanacademy.org/math/statistics-probability)
 
 **Machine Learning**
 
-1. **Core Machine Learning**
+1. **Core Machine Learning** — You can train, evaluate and compare regression and classification models.
    - [Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
 
 **Deep Learning**
 
-1. **Neural Networks**
+1. **Neural Networks** — You can implement backpropagation from scratch and build a small GPT.
    - [Neural Networks](https://www.3blue1brown.com/topics/neural-networks)
    - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
-2. **Practice**
+2. **Practice** — You can train an image or text model in PyTorch and explain each step.
    - [Practical Deep Learning for Coders](https://course.fast.ai/)
    - [Dive into Deep Learning](https://d2l.ai/)
-3. **Theory**
+3. **Theory** — You can explain why deep networks train: optimization, initialization, regularization and normalization.
    - [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
-4. **Attention**
+4. **Attention** — You can explain how attention works and why Transformers replaced recurrent networks.
    - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
-5. **Generative Models**
+5. **Generative Models** — You can explain how a diffusion model turns noise into an image, and implement one.
    - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html)
 
 **Large Language Models**
 
-1. **Transformers & NLP**
+1. **Transformers & NLP** — You can explain attention and implement a Transformer-based NLP model.
    - [CS224N: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/)
-2. **LLM Training**
+2. **LLM Training** — You can explain pretraining, fine-tuning and LoRA, and fine-tune a small model.
    - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter1/1)
-3. **RAG & Evaluation**
+3. **RAG & Evaluation** — You can build a retrieval-augmented app and measure whether its answers are right.
    - [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp)
-4. **Agents**
+4. **Agents** — You can build an agent that uses tools, and evaluate it.
    - [Hugging Face AI Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction)
 
 **ML Systems**
 
-1. **MLOps**
+1. **MLOps** — You can deploy a model, track experiments and monitor it in production.
    - [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp)
-2. **ML System Design**
+2. **ML System Design** — You can design an ML system end to end and explain its trade-offs.
    - [CMU 17-445/645 — Machine Learning in Production](https://mlip-cmu.github.io/)
-3. **Training at Scale**
+3. **Training at Scale** — You can explain mixed precision, data and model parallelism, and quantization, and when each one helps.
    - [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook)
 
 **Computer Vision**
 
-1. **Classical CV**
+1. **Classical CV** — You can explain image formation, filtering, edges, features, camera calibration and stereo.
    - [First Principles of Computer Vision](https://fpcv.cs.columbia.edu/)
    - [CS131: Computer Vision: Foundations and Applications](https://stanford-cs131.github.io/winter2025/)
-2. **CNNs**
+2. **CNNs** — You can explain how a CNN sees an image and why residual connections help.
    - [CS231n: Deep Learning for Computer Vision](https://cs231n.stanford.edu/)
-3. **Vision Transformers**
+3. **Vision Transformers** — You can explain how ViT and CLIP apply attention to images.
    - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
 
 **Interview Prep**
 
-1. **Coding**
+1. **Coding** — You can solve timed coding problems on data structures and algorithms.
    - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
-2. **ML & DL Questions**
+2. **ML & DL Questions** — You can answer machine learning and deep learning knowledge and system design questions under time pressure.
    - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
    - [Machine Learning Q and AI](https://sebastianraschka.com/books/ml-q-and-ai/)
    - [Deep Learning Interviews](https://arxiv.org/abs/2201.00650)
