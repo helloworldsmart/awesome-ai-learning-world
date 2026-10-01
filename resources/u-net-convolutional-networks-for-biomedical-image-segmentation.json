@@ -1,0 +1,15 @@
+{
+  "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+  "url": "https://arxiv.org/abs/1505.04597",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Olaf Ronneberger, Philipp Fischer, Thomas Brox",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

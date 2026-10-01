@@ -1,0 +1,15 @@
+{
+  "title": "Data 100: Principles and Techniques of Data Science",
+  "url": "https://ds100.org/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "UC Berkeley",
+  "creator": "UC Berkeley Data 100 staff",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Machine Learning"
+  ]
+}

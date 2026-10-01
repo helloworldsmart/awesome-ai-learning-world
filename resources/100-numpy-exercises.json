@@ -1,0 +1,15 @@
+{
+  "title": "100 numpy exercises",
+  "url": "https://github.com/rougier/numpy-100",
+  "kind": "resource",
+  "status": "todo",
+  "type": "github",
+  "provider": "Nicolas P. Rougier",
+  "creator": "Nicolas P. Rougier",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Programming"
+  ]
+}

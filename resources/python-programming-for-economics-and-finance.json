@@ -1,0 +1,15 @@
+{
+  "title": "Python Programming for Economics and Finance",
+  "url": "https://python-programming.quantecon.org/intro.html",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "QuantEcon",
+  "creator": "Thomas J. Sargent, John Stachurski",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Programming"
+  ]
+}

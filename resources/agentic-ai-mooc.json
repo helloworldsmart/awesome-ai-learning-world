@@ -1,0 +1,15 @@
+{
+  "title": "Agentic AI MOOC",
+  "url": "https://agenticai-learning.org/f25",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "UC Berkeley",
+  "creator": "Dawn Song",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "AI Agents"
+  ]
+}

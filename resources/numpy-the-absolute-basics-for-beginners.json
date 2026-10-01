@@ -1,0 +1,15 @@
+{
+  "title": "NumPy: the absolute basics for beginners",
+  "url": "https://numpy.org/doc/stable/user/absolute_beginners.html",
+  "kind": "resource",
+  "status": "todo",
+  "type": "docs",
+  "provider": "NumPy",
+  "creator": "NumPy Developers",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Programming"
+  ]
+}

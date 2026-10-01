@@ -1,0 +1,15 @@
+{
+  "title": "Kaggle Learn: Pandas",
+  "url": "https://www.kaggle.com/learn/pandas",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Kaggle",
+  "creator": "Aleksey Bilogur",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 240,
+  "skills": [
+    "Programming"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "CS131: Computer Vision: Foundations and Applications",
+  "url": "https://stanford-cs131.github.io/winter2025/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Stanford University",
+  "creator": "Juan Carlos Niebles, Adrien Gaidon, Silvio Savarese",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

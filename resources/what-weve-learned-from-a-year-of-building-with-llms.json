@@ -1,0 +1,15 @@
+{
+  "title": "What We've Learned From A Year of Building with LLMs",
+  "url": "https://applied-llms.org/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "article",
+  "provider": "Applied LLMs",
+  "creator": "Eugene Yan, Bryan Bischof, Charles Frye, Hamel Husain, Jason Liu, Shreya Shankar",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "LLMs"
+  ]
+}

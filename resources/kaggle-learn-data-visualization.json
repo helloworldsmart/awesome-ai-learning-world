@@ -1,0 +1,15 @@
+{
+  "title": "Kaggle Learn: Data Visualization",
+  "url": "https://www.kaggle.com/learn/data-visualization",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Kaggle",
+  "creator": "Alexis Cook",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 240,
+  "skills": [
+    "Programming"
+  ]
+}

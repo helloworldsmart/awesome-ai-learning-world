@@ -1,0 +1,15 @@
+{
+  "title": "Machine Learning FAQ",
+  "url": "https://sebastianraschka.com/faq/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "article",
+  "provider": "Sebastian Raschka",
+  "creator": "Sebastian Raschka",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Machine Learning"
+  ]
+}

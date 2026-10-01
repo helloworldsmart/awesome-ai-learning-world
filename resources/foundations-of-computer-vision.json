@@ -1,0 +1,15 @@
+{
+  "title": "Foundations of Computer Vision",
+  "url": "https://visionbook.mit.edu/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "MIT Press",
+  "creator": "Antonio Torralba, Phillip Isola, William Freeman",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

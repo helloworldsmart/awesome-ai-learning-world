@@ -1,0 +1,15 @@
+{
+  "title": "Tech Interview Handbook",
+  "url": "https://www.techinterviewhandbook.org/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "docs",
+  "provider": "Tech Interview Handbook",
+  "creator": "Yangshun Tay",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Programming"
+  ]
+}

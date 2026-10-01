@@ -1,0 +1,15 @@
+{
+  "title": "Transformers & LLMs cheatsheet for Stanford's CME 295",
+  "url": "https://github.com/afshinea/stanford-cme-295-transformers-large-language-models/tree/main/en",
+  "kind": "resource",
+  "status": "todo",
+  "type": "github",
+  "provider": "Stanford University",
+  "creator": "Afshine Amidi, Shervine Amidi",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "LLMs"
+  ]
+}

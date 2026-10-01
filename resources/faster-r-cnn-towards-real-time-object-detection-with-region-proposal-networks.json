@@ -1,0 +1,15 @@
+{
+  "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+  "url": "https://arxiv.org/abs/1506.01497",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

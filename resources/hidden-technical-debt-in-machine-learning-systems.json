@@ -1,0 +1,15 @@
+{
+  "title": "Hidden Technical Debt in Machine Learning Systems",
+  "url": "https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "Google",
+  "creator": "D. Sculley et al.",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "ML Systems"
+  ]
+}

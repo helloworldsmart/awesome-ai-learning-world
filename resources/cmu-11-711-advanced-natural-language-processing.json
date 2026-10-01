@@ -1,0 +1,16 @@
+{
+  "title": "CMU 11-711 — Advanced Natural Language Processing",
+  "url": "https://cmu-l3.github.io/anlp-spring2026/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Carnegie Mellon University",
+  "creator": "Sean Welleck",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "NLP",
+    "LLMs"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Python for Data Analysis, 3E",
+  "url": "https://wesmckinney.com/book/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Wes McKinney",
+  "creator": "Wes McKinney",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Programming"
+  ]
+}

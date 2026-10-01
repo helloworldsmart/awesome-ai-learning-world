@@ -1,0 +1,15 @@
+{
+  "title": "The Little Book of Deep Learning",
+  "url": "https://fleuret.org/francois/lbdl.html",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "François Fleuret",
+  "creator": "François Fleuret",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Deep Learning"
+  ]
+}

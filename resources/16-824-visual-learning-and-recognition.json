@@ -1,0 +1,15 @@
+{
+  "title": "16-824: Visual Learning and Recognition",
+  "url": "https://visual-learning.cs.cmu.edu/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Carnegie Mellon University",
+  "creator": "Jun-Yan Zhu",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

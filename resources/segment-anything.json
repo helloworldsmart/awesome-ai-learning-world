@@ -1,0 +1,15 @@
+{
+  "title": "Segment Anything",
+  "url": "https://arxiv.org/abs/2304.02643",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Alexander Kirillov et al.",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

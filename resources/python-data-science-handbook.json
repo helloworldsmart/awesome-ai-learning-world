@@ -1,0 +1,15 @@
+{
+  "title": "Python Data Science Handbook",
+  "url": "https://jakevdp.github.io/PythonDataScienceHandbook/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Jake VanderPlas",
+  "creator": "Jake VanderPlas",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Programming"
+  ]
+}

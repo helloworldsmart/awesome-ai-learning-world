@@ -1,0 +1,15 @@
+{
+  "title": "Patterns for Building LLM-based Systems & Products",
+  "url": "https://eugeneyan.com/writing/llm-patterns/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "article",
+  "provider": "Eugene Yan",
+  "creator": "Eugene Yan",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 66,
+  "skills": [
+    "LLMs"
+  ]
+}

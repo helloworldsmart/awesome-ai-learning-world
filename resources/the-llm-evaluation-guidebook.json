@@ -1,0 +1,15 @@
+{
+  "title": "The LLM Evaluation Guidebook",
+  "url": "https://huggingface.co/spaces/OpenEvals/evaluation-guidebook",
+  "kind": "resource",
+  "status": "todo",
+  "type": "article",
+  "provider": "Hugging Face",
+  "creator": "Clémentine Fourrier, Thibaud Frere, Guilherme Penedo, Thomas Wolf",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "LLMs"
+  ]
+}

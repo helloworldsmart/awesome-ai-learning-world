@@ -1,0 +1,15 @@
+{
+  "title": "Reinforcement Learning from Human Feedback and LLM Post-Training",
+  "url": "https://rlhfbook.com/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Nathan Lambert",
+  "creator": "Nathan Lambert",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "LLMs"
+  ]
+}

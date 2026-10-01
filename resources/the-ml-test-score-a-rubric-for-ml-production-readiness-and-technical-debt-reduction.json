@@ -1,0 +1,15 @@
+{
+  "title": "The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction",
+  "url": "https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "Google",
+  "creator": "Eric Breck, Shanqing Cai, Eric Nielsen, Michael Salib, D. Sculley",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "MLOps"
+  ]
+}

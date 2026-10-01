@@ -1,0 +1,15 @@
+{
+  "title": "CS4780: Machine Learning for Intelligent Systems",
+  "url": "https://www.cs.cornell.edu/courses/cs4780/2018fa/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Cornell University",
+  "creator": "Kilian Weinberger",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Machine Learning"
+  ]
+}

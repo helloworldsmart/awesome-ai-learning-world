@@ -1,0 +1,15 @@
+{
+  "title": "CS180/280A: Intro to Computer Vision and Computational Photography",
+  "url": "https://cal-cs180.github.io/fa25/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "UC Berkeley",
+  "creator": "Alexei Efros",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

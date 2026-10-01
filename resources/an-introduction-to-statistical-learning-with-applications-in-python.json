@@ -1,0 +1,16 @@
+{
+  "title": "An Introduction to Statistical Learning with Applications in Python",
+  "url": "https://www.statlearning.com/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Stanford University",
+  "creator": "Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, Jonathan Taylor",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Machine Learning",
+    "Math"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "The Annotated Transformer",
+  "url": "https://nlp.seas.harvard.edu/annotated-transformer/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "article",
+  "provider": "Harvard NLP",
+  "creator": "Sasha Rush, Austin Huang, Suraj Subramanian, Jonathan Sum, Khalid Almubarak, Stella Biderman",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "NLP",
+    "LLMs"
+  ]
+}

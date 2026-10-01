@@ -1,0 +1,15 @@
+{
+  "title": "MIT 6.S184 — Introduction to Flow Matching and Diffusion Models",
+  "url": "https://diffusion.csail.mit.edu/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "MIT",
+  "creator": "Peter Holderrieth, Ezra Erives",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Generative AI"
+  ]
+}

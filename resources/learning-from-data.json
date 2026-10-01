@@ -1,0 +1,15 @@
+{
+  "title": "Learning From Data",
+  "url": "https://work.caltech.edu/telecourse",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Caltech",
+  "creator": "Yaser Abu-Mostafa",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Machine Learning"
+  ]
+}

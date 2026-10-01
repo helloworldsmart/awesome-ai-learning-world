@@ -1,0 +1,15 @@
+{
+  "title": "Python for Everybody",
+  "url": "https://www.py4e.com/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Charles R. Severance",
+  "creator": "Charles R. Severance",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Programming"
+  ]
+}

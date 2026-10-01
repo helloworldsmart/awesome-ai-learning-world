@@ -1,0 +1,15 @@
+{
+  "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+  "url": "https://arxiv.org/abs/2210.03629",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Shunyu Yao et al.",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "AI Agents"
+  ]
+}

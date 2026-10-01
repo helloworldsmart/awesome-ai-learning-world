@@ -1,0 +1,15 @@
+{
+  "title": "Training language models to follow instructions with human feedback",
+  "url": "https://arxiv.org/abs/2203.02155",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Long Ouyang et al.",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "LLMs"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Deep Learning: Foundations and Concepts",
+  "url": "https://www.bishopbook.com/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Christopher M. Bishop",
+  "creator": "Christopher M. Bishop, Hugh Bishop",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Deep Learning"
+  ]
+}

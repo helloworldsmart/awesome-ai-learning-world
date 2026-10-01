@@ -1,0 +1,15 @@
+{
+  "title": "Mask R-CNN",
+  "url": "https://arxiv.org/abs/1703.06870",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

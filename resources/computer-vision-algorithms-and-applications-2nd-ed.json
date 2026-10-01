@@ -1,0 +1,15 @@
+{
+  "title": "Computer Vision: Algorithms and Applications, 2nd ed.",
+  "url": "https://szeliski.org/Book/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Richard Szeliski",
+  "creator": "Richard Szeliski",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

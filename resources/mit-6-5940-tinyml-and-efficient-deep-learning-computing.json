@@ -1,0 +1,16 @@
+{
+  "title": "MIT 6.5940 — TinyML and Efficient Deep Learning Computing",
+  "url": "https://hanlab.mit.edu/courses/2024-fall-65940",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "MIT",
+  "creator": "Song Han",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "ML Systems",
+    "Deep Learning"
+  ]
+}

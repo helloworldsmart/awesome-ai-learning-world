@@ -1,0 +1,16 @@
+{
+  "title": "CMU 17-445/645 — Machine Learning in Production",
+  "url": "https://mlip-cmu.github.io/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Carnegie Mellon University",
+  "creator": "Christian Kästner, Bogdan Vasilescu",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "MLOps",
+    "ML Systems"
+  ]
+}

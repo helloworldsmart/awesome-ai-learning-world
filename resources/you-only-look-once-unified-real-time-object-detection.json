@@ -1,0 +1,15 @@
+{
+  "title": "You Only Look Once: Unified, Real-Time Object Detection",
+  "url": "https://arxiv.org/abs/1506.02640",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

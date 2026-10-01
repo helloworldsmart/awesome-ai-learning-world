@@ -1,0 +1,15 @@
+{
+  "title": "Kaggle Learn: Python",
+  "url": "https://www.kaggle.com/learn/python",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Kaggle",
+  "creator": "Colin Morris",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 300,
+  "skills": [
+    "Programming"
+  ]
+}

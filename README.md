@@ -100,11 +100,17 @@ What AI is and the classic ideas behind it: search, planning, reasoning, probabi
 
 Learning from data: models, training, evaluation, generalization.
 
+- [18.065 Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) - MIT OpenCourseWare, Gilbert Strang. <sub>course</sub>
+- [6.036 Introduction to Machine Learning](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/about) - MIT Open Learning Library, MIT. <sub>course</sub>
 - [CS 228 - Probabilistic Graphical Models](https://ermongroup.github.io/cs228/) - Stanford, Stefano Ermon. <sub>course</sub>
 - [CS221: Artificial Intelligence: Principles and Techniques](https://cs221.stanford.edu/) - Stanford, Percy Liang. <sub>course</sub>
 - [CS229: Machine Learning](https://cs229.stanford.edu/) - Stanford, Jehangir Amjad, Anand Avati. <sub>course</sub>
+- [CS4780: Machine Learning for Intelligent Systems](https://www.cs.cornell.edu/courses/cs4780/2018fa/) - Cornell University, Kilian Weinberger. <sub>course</sub>
 - [CS50's Introduction to Artificial Intelligence with Python](https://cs50.harvard.edu/ai/) - Harvard, Brian Yu, David J. Malan. <sub>course</sub>
+- [Data 100: Principles and Techniques of Data Science](https://ds100.org/) - UC Berkeley, UC Berkeley Data 100 staff. <sub>course</sub>
 - [Introduction to GenAI and ML 2025 Fall](https://speech.ee.ntu.edu.tw/~hylee/GenAI-ML/2025-fall.php) - 國立臺灣大學, 李宏毅. <sub>course · beginner · zh-TW</sub>
+- [Kaggle Learn: Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) - Kaggle, Dan Becker. <sub>course · ~3 h</sub>
+- [Learning From Data](https://work.caltech.edu/telecourse) - Caltech, Yaser Abu-Mostafa. <sub>course</sub>
 - [Machine Learning 2019 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2019-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
 - [Machine Learning 2020 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2020-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
 - [Machine Learning 2021 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
@@ -117,6 +123,11 @@ Learning from data: models, training, evaluation, generalization.
 - [Machine Learning Specialization](https://www.deeplearning.ai/specializations/machine-learning/) - DeepLearning.AI, Stanford Online, Andrew Ng. <sub>course · beginner · ~95 h</sub>
 - [Machine Learning Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) - DataTalks.Club. <sub>course</sub>
 - [UC Berkeley CS189/289A — Introduction to Machine Learning](https://people.eecs.berkeley.edu/~jrs/189/) - UC Berkeley, Jonathan Shewchuk. <sub>course · ~38 h</sub>
+- [An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/) - Stanford University, Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, Jonathan Taylor. <sub>book</sub>
+- [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/) - Chip Huyen. <sub>book</sub>
+- [Machine Learning Q and AI](https://sebastianraschka.com/books/ml-q-and-ai/) - Sebastian Raschka. <sub>book</sub>
+- [Machine Learning FAQ](https://sebastianraschka.com/faq/) - Sebastian Raschka. <sub>article</sub>
+- [Stanford CS 229 Machine Learning Cheatsheets](https://stanford.edu/~shervine/teaching/cs-229/) - Stanford University, Afshine Amidi, Shervine Amidi. <sub>article</sub>
 
 ## Deep Learning
 
@@ -141,13 +152,19 @@ Neural networks, how they are trained, and the architectures that work.
 - [Machine Learning 2022 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2022-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
 - [Machine Learning 2023 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
 - [Machine Learning and having it deep and structured 2018 Spring](https://speech.ee.ntu.edu.tw/~hylee/mlds/2018-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
+- [MIT 6.5940 — TinyML and Efficient Deep Learning Computing](https://hanlab.mit.edu/courses/2024-fall-65940) - MIT, Song Han. <sub>course</sub>
 - [MIT 6.S191 — Introduction to Deep Learning](https://introtodeeplearning.com/) - MIT OpenCourseWare, Alexander Amini, Ava Soleimany. <sub>course · beginner</sub>
 - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) - Andrej Karpathy. <sub>course · ~15 h</sub>
 - [Practical Deep Learning for Coders](https://course.fast.ai/) - fast.ai, Jeremy Howard. <sub>course · ~14 h</sub>
 - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html) - fast.ai, Jeremy Howard. <sub>course · ~30 h</sub>
+- [UvA Deep Learning Tutorials](https://uvadlc-notebooks.readthedocs.io/en/latest/) - University of Amsterdam, Phillip Lippe. <sub>course</sub>
 - [Deep Learning](https://www.deeplearningbook.org/) - MIT Press, Goodfellow, Bengio & Courville. <sub>book</sub>
+- [Deep Learning Interviews](https://arxiv.org/abs/2201.00650) - Shlomo Kashani, Amir Ivry. <sub>book</sub>
+- [Deep Learning: Foundations and Concepts](https://www.bishopbook.com/) - Christopher M. Bishop, Christopher M. Bishop, Hugh Bishop. <sub>book</sub>
 - [Dive into Deep Learning](https://d2l.ai/) - D2L.ai, Zhang, Lipton, Li, Smola. <sub>book</sub>
+- [Machine Learning Q and AI](https://sebastianraschka.com/books/ml-q-and-ai/) - Sebastian Raschka. <sub>book</sub>
 - [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) - Determination Press, Michael Nielsen. <sub>book</sub>
+- [The Little Book of Deep Learning](https://fleuret.org/francois/lbdl.html) - François Fleuret. <sub>book</sub>
 - [Understanding Deep Learning](https://udlbook.github.io/udlbook/) - The MIT Press, Simon J.D. Prince. <sub>book</sub>
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) - arXiv, Dosovitskiy et al. <sub>paper</sub>
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) - arXiv, Vaswani et al. <sub>paper</sub>
@@ -165,26 +182,42 @@ Neural networks, how they are trained, and the architectures that work.
 
 Getting machines to understand images and video.
 
+- [16-824: Visual Learning and Recognition](https://visual-learning.cs.cmu.edu/) - Carnegie Mellon University, Jun-Yan Zhu. <sub>course</sub>
 - [Community Computer Vision Course](https://huggingface.co/learn/computer-vision-course/unit0/welcome/welcome) - Hugging Face, Hugging Face Community. <sub>course · beginner</sub>
+- [CS131: Computer Vision: Foundations and Applications](https://stanford-cs131.github.io/winter2025/) - Stanford University, Juan Carlos Niebles, Adrien Gaidon, Silvio Savarese. <sub>course</sub>
+- [CS180/280A: Intro to Computer Vision and Computational Photography](https://cal-cs180.github.io/fa25/) - UC Berkeley, Alexei Efros. <sub>course</sub>
 - [CS231n: Deep Learning for Computer Vision](https://cs231n.stanford.edu/) - Stanford University, Fei-Fei Li, Ehsan Adeli, Justin Johnson, Zane Durante, Tiange Xiang. <sub>course · ~27 h</sub>
 - [Deep Learning for Computer Vision](https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r) - University of Michigan. <sub>course · ~26 h</sub>
+- [First Principles of Computer Vision](https://fpcv.cs.columbia.edu/) - Columbia University, Shree Nayar. <sub>course</sub>
 - [Free Computer Vision Courses](https://opencv.org/university/free-courses/) - OpenCV.org. <sub>course · 5 units</sub>
+- [Computer Vision: Algorithms and Applications, 2nd ed.](https://szeliski.org/Book/) - Richard Szeliski. <sub>book</sub>
+- [Foundations of Computer Vision](https://visionbook.mit.edu/) - MIT Press, Antonio Torralba, Phillip Isola, William Freeman. <sub>book</sub>
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) - arXiv, Dosovitskiy et al. <sub>paper</sub>
 - [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) - arXiv, He et al. <sub>paper</sub>
+- [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497) - arXiv, Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun. <sub>paper</sub>
 - [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) - arXiv, Radford et al. <sub>paper</sub>
+- [Mask R-CNN](https://arxiv.org/abs/1703.06870) - arXiv, Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick. <sub>paper</sub>
+- [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861) - arXiv, Andrew G. Howard et al. <sub>paper</sub>
+- [Segment Anything](https://arxiv.org/abs/2304.02643) - arXiv, Alexander Kirillov et al. <sub>paper</sub>
+- [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597) - arXiv, Olaf Ronneberger, Philipp Fischer, Thomas Brox. <sub>paper</sub>
+- [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640) - arXiv, Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi. <sub>paper</sub>
 - [Deconvolution and Checkerboard Artifacts](https://distill.pub/2016/deconv-checkerboard/) - Distill, Odena et al. <sub>article</sub>
 
 ## NLP
 
 Natural language processing: text and speech, from classic methods to Transformers.
 
+- [CMU 11-711 — Advanced Natural Language Processing](https://cmu-l3.github.io/anlp-spring2026/) - Carnegie Mellon University, Sean Welleck. <sub>course</sub>
 - [CS224N: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/) - Stanford, Diyi Yang, Yejin Choi. <sub>course</sub>
 - [Deep Learning for Human Language Processing 2020 Spring](https://speech.ee.ntu.edu.tw/~hylee/dlhlp/2020-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
 - [Hugging Face Audio course](https://huggingface.co/learn/audio-course) - Hugging Face, Sanchit Gandhi, Matthijs Hollemans, Maria Khalusova, Vaibhav Srivastav. <sub>course</sub>
 - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter1/1) - Hugging Face. <sub>course</sub>
+- [NLP Course | For You](https://lena-voita.github.io/nlp_course.html) - Lena Voita. <sub>course</sub>
+- [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) - Stanford University, Christopher D. Manning, Prabhakar Raghavan, Hinrich Schütze. <sub>book</sub>
 - [Speech and Language Processing (3rd ed. draft)](https://web.stanford.edu/~jurafsky/slp3/) - Stanford University, Dan Jurafsky, James H. Martin. <sub>book</sub>
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) - arXiv, Vaswani et al. <sub>paper</sub>
 - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) - arXiv, Lewis et al. <sub>paper</sub>
+- [The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer/) - Harvard NLP, Sasha Rush, Austin Huang, Suraj Subramanian, Jonathan Sum, Khalid Almubarak, Stella Biderman. <sub>article</sub>
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) - Jay Alammar. <sub>article</sub>
 
 ## LLMs
@@ -194,6 +227,7 @@ Large language models: how they are built, trained, adapted and prompted.
 - [AI Fluency: Framework and foundations](https://academy.claude.com/courses/ai-fluency-framework-foundations) - Anthropic, Joseph Feller, Rick Dakan. <sub>course</sub>
 - [CME 295 - Transformers & Large Language Models (Autumn 2025)](https://cme295.stanford.edu/syllabus/2025/) - Stanford, Afshine Amidi, Shervine Amidi. <sub>course · ~16 h</sub>
 - [CME 295 - Transformers & Large Language Models (Autumn 2026)](https://cme295.stanford.edu/) - Stanford, Afshine Amidi, Shervine Amidi. <sub>course</sub>
+- [CMU 11-711 — Advanced Natural Language Processing](https://cmu-l3.github.io/anlp-spring2026/) - Carnegie Mellon University, Sean Welleck. <sub>course</sub>
 - [CS 224V Agentic AI](https://cs224v.stanford.edu/) - Stanford, Monica Lam. <sub>course</sub>
 - [CS25: Transformers United](https://web.stanford.edu/class/cs25/) - Stanford. <sub>course</sub>
 - [CS329A Self-Improving AI Agents](https://cs329a.stanford.edu/) - Stanford, Aakanksha Chowdhery, Azalia Mirhoseini. <sub>course</sub>
@@ -213,13 +247,24 @@ Large language models: how they are built, trained, adapted and prompted.
 - [OpenAI Builder Bootcamp 2026](https://academy.openai.com/public/clubs/builders-etkn1/resources/builder-bootcamp-2026-04-22) - OpenAI, OpenAI Academy. <sub>course</sub>
 - [The Context Course](https://huggingface.co/learn/context-course/unit0/introduction) - Hugging Face, Ben Burtenshaw, Atin Kumar Singh, Maya Nielan, Ryan Whitehead. <sub>course</sub>
 - [AI Engineering](https://github.com/chiphuyen/aie-book) - O'Reilly, Chip Huyen. <sub>book</sub>
+- [Foundations of Large Language Models](https://arxiv.org/abs/2501.09223) - arXiv, Tong Xiao, Jingbo Zhu. <sub>book</sub>
+- [Reinforcement Learning from Human Feedback and LLM Post-Training](https://rlhfbook.com/) - Nathan Lambert. <sub>book</sub>
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) - arXiv, Vaswani et al. <sub>paper</sub>
+- [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290) - arXiv, Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon et al. <sub>paper</sub>
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) - arXiv, Hu et al. <sub>paper</sub>
 - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) - arXiv, Lewis et al. <sub>paper</sub>
+- [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) - arXiv, Long Ouyang et al. <sub>paper</sub>
 - [Prompt Engineering Guide](https://www.promptingguide.ai) - DAIR.AI. <sub>docs</sub>
 - [Prompt engineering overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview) - Anthropic. <sub>docs</sub>
+- [Building A Generative AI Platform](https://huyenchip.com/2024/07/25/genai-platform.html) - Chip Huyen. <sub>article</sub>
+- [Patterns for Building LLM-based Systems & Products](https://eugeneyan.com/writing/llm-patterns/) - Eugene Yan. <sub>article · ~1.1 h</sub>
+- [The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer/) - Harvard NLP, Sasha Rush, Austin Huang, Suraj Subramanian, Jonathan Sum, Khalid Almubarak, Stella Biderman. <sub>article</sub>
+- [The LLM Evaluation Guidebook](https://huggingface.co/spaces/OpenEvals/evaluation-guidebook) - Hugging Face, Clémentine Fourrier, Thibaud Frere, Guilherme Penedo, Thomas Wolf. <sub>article</sub>
+- [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook) - Hugging Face, Nouamane Tazi, Ferdinand Mom, Haojun Zhao, Phuc Nguyen, Mohamed Mekkouri, Leandro von Werra, Thomas Wolf. <sub>article</sub>
+- [What We've Learned From A Year of Building with LLMs](https://applied-llms.org/) - Applied LLMs, Eugene Yan, Bryan Bischof, Charles Frye, Hamel Husain, Jason Liu, Shreya Shankar. <sub>article</sub>
 - [AI Engineering Interview Questions Company Wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) - Outcome School, Pallavi. <sub>github</sub>
 - [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch) - Manning, Sebastian Raschka. <sub>github</sub>
+- [Transformers & LLMs cheatsheet for Stanford's CME 295](https://github.com/afshinea/stanford-cme-295-transformers-large-language-models/tree/main/en) - Stanford University, Afshine Amidi, Shervine Amidi. <sub>github</sub>
 - [斯坦福大学 CME 295 课程：Transformer 与大语言模型速查表](https://github.com/afshinea/stanford-cme-295-transformers-large-language-models/tree/main/zh) - Stanford, Afshine Amidi, Shervine Amidi. <sub>github · zh-CN</sub>
 
 ## Generative AI
@@ -231,14 +276,18 @@ Models that generate: diffusion, VAEs, GANs, and building products on them.
 - [Generative AI with Large Language Models](https://www.deeplearning.ai/courses/generative-ai-with-llms/) - DeepLearning.AI, Antje Barth, Chris Fregly, Shelbee Eigenbrode, Mike Chambers. <sub>course · intermediate · ~13 h</sub>
 - [Introduction to GenAI and ML 2025 Fall](https://speech.ee.ntu.edu.tw/~hylee/GenAI-ML/2025-fall.php) - 國立臺灣大學, 李宏毅. <sub>course · beginner · zh-TW</sub>
 - [Introduction to Generative AI 2024 Spring](https://speech.ee.ntu.edu.tw/~hylee/genai/2024-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · 20 units · zh-TW</sub>
+- [MIT 6.S184 — Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/) - MIT, Peter Holderrieth, Ezra Erives. <sub>course</sub>
 - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html) - fast.ai, Jeremy Howard. <sub>course · ~30 h</sub>
 - [AI Engineering](https://github.com/chiphuyen/aie-book) - O'Reilly, Chip Huyen. <sub>book</sub>
+- [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) - arXiv, Jonathan Ho, Ajay Jain, Pieter Abbeel. <sub>paper</sub>
+- [Understanding Diffusion Models: A Unified Perspective](https://arxiv.org/abs/2208.11970) - arXiv, Calvin Luo. <sub>paper</sub>
 - [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) - Lil'Log, Lilian Weng. <sub>article · 31 min</sub>
 
 ## AI Agents
 
 LLM systems that plan, use tools and act — and how to evaluate and govern them.
 
+- [Agentic AI MOOC](https://agenticai-learning.org/f25) - UC Berkeley, Dawn Song. <sub>course</sub>
 - [AI Agents in LangGraph](https://www.deeplearning.ai/courses/ai-agents-in-langgraph/) - DeepLearning.AI, Harrison Chase, Rotem Weiss. <sub>course · intermediate · ~1.7 h</sub>
 - [AI Dev Tools Zoomcamp](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp) - DataTalks.Club, Alexey Grigorev, Bhavani Ravi, Moein Foroughi. <sub>course</sub>
 - [Building agents](https://developers.openai.com/tracks/building-agents) - OpenAI. <sub>course · beginner</sub>
@@ -251,8 +300,11 @@ LLM systems that plan, use tools and act — and how to evaluate and govern them
 - [OpenAI Academy — Builders](https://academy.openai.com/public/clubs/builders-etkn1/overview) - OpenAI, OpenAI Academy. <sub>course</sub>
 - [OpenAI Builder Bootcamp 2026](https://academy.openai.com/public/clubs/builders-etkn1/resources/builder-bootcamp-2026-04-22) - OpenAI, OpenAI Academy. <sub>course</sub>
 - [The Context Course](https://huggingface.co/learn/context-course/unit0/introduction) - Hugging Face, Ben Burtenshaw, Atin Kumar Singh, Maya Nielan, Ryan Whitehead. <sub>course</sub>
+- [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) - arXiv, Shunyu Yao et al. <sub>paper</sub>
 - [OpenAI — Agents](https://developers.openai.com/api/docs/guides/agents) - OpenAI. <sub>docs</sub>
+- [Agents](https://huyenchip.com/2025/01/07/agents.html) - Chip Huyen. <sub>article</sub>
 - [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) - Anthropic, Erik S., Barry Zhang. <sub>article</sub>
+- [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/) - Lil'Log, Lilian Weng. <sub>article · 31 min</sub>
 - [AI Engineering Interview Questions Company Wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) - Outcome School, Pallavi. <sub>github</sub>
 
 ## Reinforcement Learning
@@ -265,6 +317,7 @@ Learning by acting: rewards, policies, value functions.
 
 Taking models to production: data, deployment, monitoring, iteration.
 
+- [CMU 17-445/645 — Machine Learning in Production](https://mlip-cmu.github.io/) - Carnegie Mellon University, Christian Kästner, Bogdan Vasilescu. <sub>course</sub>
 - [CS 329S: Machine Learning Systems Design](https://stanford-cs329s.github.io/) - Stanford, Chip Huyen. <sub>course</sub>
 - [Machine Learning in Production](https://www.deeplearning.ai/courses/machine-learning-in-production/) - DeepLearning.AI, Andrew Ng. <sub>course · intermediate · ~11 h</sub>
 - [Made With ML — MLOps](https://madewithml.com/courses/mlops/) - Made With ML, Goku Mohandas. <sub>course</sub>
@@ -272,32 +325,49 @@ Taking models to production: data, deployment, monitoring, iteration.
 - [AI Engineering](https://github.com/chiphuyen/aie-book) - O'Reilly, Chip Huyen. <sub>book</sub>
 - [Designing Machine Learning Systems](https://github.com/chiphuyen/dmls-book) - O'Reilly, Chip Huyen. <sub>book</sub>
 - [Machine Learning Systems](https://mlsysbook.ai/) - Harvard, Vijay Janapa Reddi. <sub>book</sub>
+- [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/) - Google, Eric Breck, Shanqing Cai, Eric Nielsen, Michael Salib, D. Sculley. <sub>paper</sub>
+- [MLOps: Continuous delivery and automation pipelines in machine learning](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) - Google Cloud. <sub>article</sub>
 
 ## ML Systems
 
 Making ML fast and scalable: GPUs, kernels, parallelism, training and serving systems.
 
+- [CMU 17-445/645 — Machine Learning in Production](https://mlip-cmu.github.io/) - Carnegie Mellon University, Christian Kästner, Bogdan Vasilescu. <sub>course</sub>
 - [CS149: Parallel Computing](https://cs149.stanford.edu/) - Stanford, Kayvon Fatahalian, Kunle Olukotun. <sub>course</sub>
 - [CS336: Language Modeling from Scratch](https://cs336.stanford.edu/) - Stanford, Tatsunori Hashimoto, Percy Liang. <sub>course</sub>
 - [Deep Learning Systems: Algorithms and Implementation](https://dlsyscourse.org/) - CMU, Tim Dettmers, Tianqi Chen. <sub>course</sub>
 - [Large Language Model Systems](https://llmsystem.github.io/) - CMU, Lei Li. <sub>course</sub>
+- [MIT 6.5940 — TinyML and Efficient Deep Learning Computing](https://hanlab.mit.edu/courses/2024-fall-65940) - MIT, Song Han. <sub>course</sub>
+- [StaffML](https://mlsysbook.ai/staffml/) - Harvard University, Vijay Janapa Reddi. <sub>course</sub>
+- [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/) - Chip Huyen. <sub>book</sub>
 - [Machine Learning Systems](https://mlsysbook.ai/) - Harvard, Vijay Janapa Reddi. <sub>book</sub>
+- [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html) - Google, D. Sculley et al. <sub>paper</sub>
 - [GPU MODE Lectures](https://github.com/gpu-mode/lectures) - GPU MODE. <sub>video</sub>
+- [Building A Generative AI Platform](https://huyenchip.com/2024/07/25/genai-platform.html) - Chip Huyen. <sub>article</sub>
+- [Rules of Machine Learning: Best Practices for ML Engineering](https://developers.google.com/machine-learning/guides/rules-of-ml) - Google, Martin Zinkevich. <sub>article</sub>
+- [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook) - Hugging Face, Nouamane Tazi, Ferdinand Mom, Haojun Zhao, Phuc Nguyen, Mohamed Mekkouri, Leandro von Werra, Thomas Wolf. <sub>article</sub>
 
 ## Math
 
 Linear algebra, calculus, probability and statistics.
 
+- [18.01SC Single Variable Calculus](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/) - MIT OpenCourseWare, David Jerison. <sub>course</sub>
+- [18.065 Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) - MIT OpenCourseWare, Gilbert Strang. <sub>course</sub>
+- [18.06SC Linear Algebra](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/) - MIT OpenCourseWare, Gilbert Strang. <sub>course</sub>
 - [CS 228 - Probabilistic Graphical Models](https://ermongroup.github.io/cs228/) - Stanford, Stefano Ermon. <sub>course</sub>
 - [CS229: Machine Learning](https://cs229.stanford.edu/) - Stanford, Jehangir Amjad, Anand Avati. <sub>course</sub>
 - [Differential Calculus](https://www.khanacademy.org/math/differential-calculus) - Khan Academy. <sub>course · 6 units</sub>
 - [Linear algebra](https://www.khanacademy.org/math/linear-algebra) - Khan Academy. <sub>course · 3 units</sub>
 - [Mathematics for Machine Learning and Data Science](https://www.deeplearning.ai/specializations/mathematics-for-machine-learning-and-data-science/) - DeepLearning.AI, Luis Serrano. <sub>course · beginner · ~94 h</sub>
+- [MIT 6.041SC — Probabilistic Systems Analysis and Applied Probability](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/) - MIT OpenCourseWare, John Tsitsiklis. <sub>course</sub>
 - [Multivariable calculus](https://www.khanacademy.org/math/multivariable-calculus) - Khan Academy. <sub>course · 5 units</sub>
 - [Precalculus](https://www.khanacademy.org/math/precalculus) - Khan Academy. <sub>course · 10 units</sub>
 - [Statistics and probability](https://www.khanacademy.org/math/statistics-probability) - Khan Academy. <sub>course · 16 units</sub>
+- [An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/) - Stanford University, Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, Jonathan Taylor. <sub>book</sub>
 - [Deep Learning](https://www.deeplearningbook.org/) - MIT Press, Goodfellow, Bengio & Courville. <sub>book</sub>
 - [Mathematics for Machine Learning](https://mml-book.github.io/) - Cambridge University Press, Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong. <sub>book</sub>
+- [Probability for Computer Scientists](https://chrispiech.github.io/probabilityForComputerScientists/en/) - Stanford University, Chris Piech. <sub>book</sub>
+- [Think Stats](https://allendowney.github.io/ThinkStats/) - Green Tea Press, Allen B. Downey. <sub>book</sub>
 - [Essence of Calculus](https://www.3blue1brown.com/topics/calculus) - 3Blue1Brown, Grant Sanderson. <sub>video</sub>
 - [Essence of Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra) - 3Blue1Brown, Grant Sanderson. <sub>video</sub>
 - [Neural Networks](https://www.3blue1brown.com/topics/neural-networks) - 3Blue1Brown, Grant Sanderson. <sub>video</sub>
@@ -306,12 +376,27 @@ Linear algebra, calculus, probability and statistics.
 
 Writing software well: languages, tools, and the craft of building programs.
 
+- [6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) - MIT OpenCourseWare, Erik Demaine, Jason Ku, Justin Solomon. <sub>course</sub>
+- [6.100L Introduction to CS and Programming using Python](https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/) - MIT OpenCourseWare, Ana Bell. <sub>course</sub>
 - [AI Dev Tools Zoomcamp](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp) - DataTalks.Club, Alexey Grigorev, Bhavani Ravi, Moein Foroughi. <sub>course</sub>
 - [CS50's Introduction to Computer Science](https://cs50.harvard.edu/x/) - Harvard University, David J. Malan. <sub>course · beginner</sub>
+- [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/) - Harvard University, David J. Malan. <sub>course</sub>
 - [Free Computer Vision Courses](https://opencv.org/university/free-courses/) - OpenCV.org. <sub>course · 5 units</sub>
 - [Full stack open](https://fullstackopen.com/en/) - University of Helsinki, Matti Luukkainen. <sub>course</sub>
+- [Kaggle Learn: Data Visualization](https://www.kaggle.com/learn/data-visualization) - Kaggle, Alexis Cook. <sub>course · ~4 h</sub>
+- [Kaggle Learn: Pandas](https://www.kaggle.com/learn/pandas) - Kaggle, Aleksey Bilogur. <sub>course · ~4 h</sub>
+- [Kaggle Learn: Python](https://www.kaggle.com/learn/python) - Kaggle, Colin Morris. <sub>course · ~5 h</sub>
+- [Python for Everybody](https://www.py4e.com/) - Charles R. Severance. <sub>course</sub>
+- [Python Programming for Economics and Finance](https://python-programming.quantecon.org/intro.html) - QuantEcon, Thomas J. Sargent, John Stachurski. <sub>course</sub>
 - [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) - MIT, MIT CSAIL. <sub>course</sub>
+- [Elements of Data Science](https://allendowney.github.io/ElementsOfDataScience/) - Green Tea Press, Allen B. Downey. <sub>book</sub>
+- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) - Jake VanderPlas. <sub>book</sub>
+- [Python for Data Analysis, 3E](https://wesmckinney.com/book/) - Wes McKinney. <sub>book</sub>
+- [Think Python](https://allendowney.github.io/ThinkPython/) - Green Tea Press, Allen B. Downey. <sub>book</sub>
 - [Effective Go](https://go.dev/doc/effective_go) - go.dev, The Go Authors. <sub>docs</sub>
+- [NumPy: the absolute basics for beginners](https://numpy.org/doc/stable/user/absolute_beginners.html) - NumPy, NumPy Developers. <sub>docs</sub>
+- [Tech Interview Handbook](https://www.techinterviewhandbook.org/) - Tech Interview Handbook, Yangshun Tay. <sub>docs</sub>
+- [100 numpy exercises](https://github.com/rougier/numpy-100) - Nicolas P. Rougier. <sub>github</sub>
 
 ## Computer Systems
 

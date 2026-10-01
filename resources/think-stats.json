@@ -1,0 +1,15 @@
+{
+  "title": "Think Stats",
+  "url": "https://allendowney.github.io/ThinkStats/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Green Tea Press",
+  "creator": "Allen B. Downey",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Math"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Introduction to Information Retrieval",
+  "url": "https://nlp.stanford.edu/IR-book/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Stanford University",
+  "creator": "Christopher D. Manning, Prabhakar Raghavan, Hinrich Schütze",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "NLP"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "6.006 Introduction to Algorithms",
+  "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "MIT OpenCourseWare",
+  "creator": "Erik Demaine, Jason Ku, Justin Solomon",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Programming"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Introduction to Machine Learning Interviews Book",
+  "url": "https://huyenchip.com/ml-interviews-book/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Chip Huyen",
+  "creator": "Chip Huyen",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Machine Learning",
+    "ML Systems"
+  ]
+}

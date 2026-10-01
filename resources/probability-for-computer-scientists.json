@@ -1,0 +1,15 @@
+{
+  "title": "Probability for Computer Scientists",
+  "url": "https://chrispiech.github.io/probabilityForComputerScientists/en/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Stanford University",
+  "creator": "Chris Piech",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Math"
+  ]
+}

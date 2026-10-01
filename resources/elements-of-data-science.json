@@ -1,0 +1,15 @@
+{
+  "title": "Elements of Data Science",
+  "url": "https://allendowney.github.io/ElementsOfDataScience/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Green Tea Press",
+  "creator": "Allen B. Downey",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Programming"
+  ]
+}

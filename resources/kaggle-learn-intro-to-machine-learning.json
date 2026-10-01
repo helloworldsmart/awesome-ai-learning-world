@@ -1,0 +1,15 @@
+{
+  "title": "Kaggle Learn: Intro to Machine Learning",
+  "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Kaggle",
+  "creator": "Dan Becker",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 180,
+  "skills": [
+    "Machine Learning"
+  ]
+}

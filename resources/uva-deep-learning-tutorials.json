@@ -1,0 +1,15 @@
+{
+  "title": "UvA Deep Learning Tutorials",
+  "url": "https://uvadlc-notebooks.readthedocs.io/en/latest/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "University of Amsterdam",
+  "creator": "Phillip Lippe",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Deep Learning"
+  ]
+}

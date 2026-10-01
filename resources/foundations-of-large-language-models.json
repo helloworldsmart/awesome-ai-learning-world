@@ -1,0 +1,15 @@
+{
+  "title": "Foundations of Large Language Models",
+  "url": "https://arxiv.org/abs/2501.09223",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "arXiv",
+  "creator": "Tong Xiao, Jingbo Zhu",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "LLMs"
+  ]
+}

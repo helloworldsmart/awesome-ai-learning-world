@@ -1,0 +1,15 @@
+{
+  "title": "Stanford CS 229 Machine Learning Cheatsheets",
+  "url": "https://stanford.edu/~shervine/teaching/cs-229/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "article",
+  "provider": "Stanford University",
+  "creator": "Afshine Amidi, Shervine Amidi",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Machine Learning"
+  ]
+}

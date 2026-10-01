@@ -1,0 +1,15 @@
+{
+  "title": "CS50's Introduction to Programming with Python",
+  "url": "https://cs50.harvard.edu/python/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Harvard University",
+  "creator": "David J. Malan",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Programming"
+  ]
+}

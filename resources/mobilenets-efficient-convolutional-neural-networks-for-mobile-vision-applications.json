@@ -1,0 +1,15 @@
+{
+  "title": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+  "url": "https://arxiv.org/abs/1704.04861",
+  "kind": "resource",
+  "status": "todo",
+  "type": "paper",
+  "provider": "arXiv",
+  "creator": "Andrew G. Howard et al.",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

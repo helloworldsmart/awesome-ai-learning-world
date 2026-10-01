@@ -1,0 +1,15 @@
+{
+  "title": "First Principles of Computer Vision",
+  "url": "https://fpcv.cs.columbia.edu/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Columbia University",
+  "creator": "Shree Nayar",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

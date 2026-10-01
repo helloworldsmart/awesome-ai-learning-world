@@ -1,0 +1,16 @@
+{
+  "title": "Machine Learning Q and AI",
+  "url": "https://sebastianraschka.com/books/ml-q-and-ai/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "book",
+  "provider": "Sebastian Raschka",
+  "creator": "Sebastian Raschka",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Machine Learning",
+    "Deep Learning"
+  ]
+}

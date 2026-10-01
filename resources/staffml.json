@@ -1,0 +1,15 @@
+{
+  "title": "StaffML",
+  "url": "https://mlsysbook.ai/staffml/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Harvard University",
+  "creator": "Vijay Janapa Reddi",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "ML Systems"
+  ]
+}
