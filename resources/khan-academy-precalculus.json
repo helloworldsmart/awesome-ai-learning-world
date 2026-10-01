@@ -1,0 +1,175 @@
+{
+  "title": "Precalculus",
+  "url": "https://www.khanacademy.org/math/precalculus",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Khan Academy",
+  "creator": "Khan Academy",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Math"
+  ],
+  "units": [
+    {
+      "title": "Composite and inverse functions",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/precalculus",
+      "sourceKey": "x9e81a4f98389efdf:composite",
+      "resources": [
+        {
+          "title": "Composite and inverse functions",
+          "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:composite",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Trigonometry",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/precalculus",
+      "sourceKey": "x9e81a4f98389efdf:trig",
+      "resources": [
+        {
+          "title": "Trigonometry",
+          "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:trig",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Complex numbers",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/precalculus",
+      "sourceKey": "x9e81a4f98389efdf:complex",
+      "resources": [
+        {
+          "title": "Complex numbers",
+          "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:complex",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Rational functions",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/precalculus",
+      "sourceKey": "x9e81a4f98389efdf:rational-functions",
+      "resources": [
+        {
+          "title": "Rational functions",
+          "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:rational-functions",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Conic sections",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/precalculus",
+      "sourceKey": "x9e81a4f98389efdf:conics",
+      "resources": [
+        {
+          "title": "Conic sections",
+          "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:conics",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Vectors",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/precalculus",
+      "sourceKey": "x9e81a4f98389efdf:vectors",
+      "resources": [
+        {
+          "title": "Vectors",
+          "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:vectors",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Matrices",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/precalculus",
+      "sourceKey": "x9e81a4f98389efdf:matrices",
+      "resources": [
+        {
+          "title": "Matrices",
+          "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:matrices",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Probability and combinatorics",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/precalculus",
+      "sourceKey": "x9e81a4f98389efdf:prob-comb",
+      "resources": [
+        {
+          "title": "Probability and combinatorics",
+          "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:prob-comb",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Series",
+      "sourceUrl": "https://www.khanacademy.org/math/precalculus",
+      "sourceKey": "x9e81a4f98389efdf:series",
+      "resources": [
+        {
+          "title": "Series",
+          "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:series",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Limits and continuity",
+      "sourceUrl": "https://www.khanacademy.org/math/precalculus",
+      "sourceKey": "x9e81a4f98389efdf:limits-and-continuity",
+      "resources": [
+        {
+          "title": "Limits and continuity",
+          "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:limits-and-continuity",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    }
+  ]
+}

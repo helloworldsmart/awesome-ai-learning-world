@@ -22,7 +22,7 @@ export const TAGS = ["intro", "classic"];
 
 const ENTRY_KEYS = [
   "title", "url", "kind", "status", "type", "provider", "creator",
-  "language", "difficulty", "durationMinutes", "skills", "tags", "units",
+  "language", "difficulty", "durationMinutes", "skills", "tags", "nextCohort", "units",
 ];
 const UNIT_KEYS = [
   "title", "completionCriterion", "durationMinutes", "durationSeconds", "sourceUrl", "sourceKey", "resources",
@@ -30,7 +30,7 @@ const UNIT_KEYS = [
 const UNIT_RESOURCE_KEYS = ["title", "url", "type", "role", "provider", "creator", "language"];
 const SKILL_KEYS = ["name", "description"];
 const PATH_KEYS = ["title", "summary", "status", "stages"];
-const STAGE_KEYS = ["title", "passCriteria", "resources"];
+const STAGE_KEYS = ["title", "passCriteria", "resources", "extras"];
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const isURL = (u) => typeof u === "string" && /^https?:\/\//.test(u);
@@ -113,7 +113,9 @@ export function validatePaths(paths, entries) {
         problems.push(`${sat}: needs at least one resource`);
         return;
       }
-      for (const slug of st.resources) {
+      if (st.extras !== undefined && !Array.isArray(st.extras)) problems.push(`${sat}: extras must be a list`);
+      // extras（補充）：想深入再上，不放上白板（app 的 ADR-0047）。跟主課一樣要存在、不能是 feed、不能重複。
+      for (const slug of [...st.resources, ...(Array.isArray(st.extras) ? st.extras : [])]) {
         const e = bySlug.get(slug);
         if (!e) problems.push(`${sat}: no resource "${slug}"`);
         else if (e.kind !== "resource") problems.push(`${sat}: "${slug}" is a feed — feeds never finish, so they can't be on a path`);
@@ -123,6 +125,13 @@ export function validatePaths(paths, entries) {
     });
   }
   return problems;
+}
+
+// YYYY-MM-DD，而且是真的有那一天（2027-02-30 不行 —— Date.parse 會默默進位到 3 月，app 那邊會拒絕）。
+function isDate(s) {
+  if (typeof s !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return false;
+  const d = new Date(`${s}T00:00:00Z`);
+  return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === s;
 }
 
 function unknownKeys(obj, allowed, where, problems) {
@@ -180,6 +189,9 @@ export function validate(entries, skills = []) {
       }
     }
 
+    // nextCohort：梯次制的課下一梯開課日（YYYY-MM-DD），照官方頁面寫；查不到就不寫。
+    if (e.nextCohort !== undefined && !isDate(e.nextCohort))
+      problems.push(`${at}: nextCohort must be a date like 2027-01-12`);
     const units = e.units ?? [];
     if (units.length > 0 && e.type !== "course") problems.push(`${at}: only type "course" can have units`);
     units.forEach((u, i) => {

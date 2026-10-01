@@ -34,64 +34,55 @@ Ready-made routes through the catalog, stage by stage. On [AI Learning World](ht
 
 ### Deep Learning & Computer Vision
 
-Train deep networks, then teach them to see.
+Train deep networks, then teach them to see. Start after Machine Learning Foundations.
 
 1. **Deep Learning Foundations** — You can train an image classifier in PyTorch and explain each step.
    - [Practical Deep Learning for Coders](https://course.fast.ai/)
-   - [PyTorch Tutorials](https://docs.pytorch.org/tutorials/)
-   - [Dive into Deep Learning](https://d2l.ai/)
+   - *Go deeper:* [PyTorch Tutorials](https://docs.pytorch.org/tutorials/) · [Dive into Deep Learning](https://d2l.ai/) · [MIT 6.S191 — Introduction to Deep Learning](https://ocw.mit.edu/courses/6-s191-introduction-to-deep-learning-january-iap-2020/) · [Deep Learning Specialization](https://www.deeplearning.ai/specializations/deep-learning/) · [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
 2. **Computer Vision** — You can explain how a CNN sees an image and why residual connections help.
    - [CS231n: Deep Learning for Computer Vision](https://cs231n.stanford.edu/)
-   - [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
-   - [Community Computer Vision Course](https://huggingface.co/learn/computer-vision-course/unit0/welcome/welcome)
+   - *Go deeper:* [Community Computer Vision Course](https://huggingface.co/learn/computer-vision-course/unit0/welcome/welcome) · [Deep Learning for Computer Vision (Fall 2019)](https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r) · [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) · [OpenCV University Free Courses](https://opencv.org/university/free-courses/)
 3. **Transformers for Vision** — You can explain attention, and how ViT and CLIP apply it to images.
    - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
-   - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-   - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
-   - [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020)
+   - *Go deeper:* [Attention Is All You Need](https://arxiv.org/abs/1706.03762) · [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) · [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020)
 4. **Generative Models** — You can explain how a diffusion model turns noise into an image.
-   - [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
    - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html)
+   - *Go deeper:* [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) · [Stanford CS236 — Deep Generative Models](https://cs236.stanford.edu/)
 
 ### LLMs & AI Agents
 
-How large language models work, and how to build agents on top of them.
+How large language models work, and how to build agents on top of them. Start after Machine Learning Foundations.
 
 1. **Transformers** — You can build a tiny GPT and explain every part of it.
    - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
-   - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
-   - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+   - *Go deeper:* [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) · [Attention Is All You Need](https://arxiv.org/abs/1706.03762) · [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch)
 2. **Large Language Models** — You can explain pretraining, fine-tuning and LoRA, and fine-tune a small model.
    - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter1/1)
-   - [Stanford CME295 — Transformers and Large Language Models (Autumn 2025)](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy)
-   - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
+   - *Go deeper:* [Stanford CME295 — Transformers and Large Language Models (Autumn 2025)](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) · [Generative AI with Large Language Models](https://www.deeplearning.ai/courses/generative-ai-with-llms/) · [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) · [Stanford CS336 — Language Modeling from Scratch](https://cs336.stanford.edu/)
 3. **Building with LLMs** — You can build a retrieval-augmented app and measure whether its answers are right.
-   - [Prompt engineering overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)
-   - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)
-   - [LLM Zoomcamp](https://datatalks.club/blog/llm-zoomcamp.html)
+   - [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp)
+   - *Go deeper:* [Prompt engineering overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview) · [Prompt Engineering Guide](https://www.promptingguide.ai) · [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) · [AI Engineering](https://github.com/chiphuyen/aie-book)
 4. **AI Agents** — You can build an agent that uses tools, and evaluate it.
-   - [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
    - [Hugging Face AI Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction)
-   - [Evaluating AI Agents](https://www.deeplearning.ai/courses/evaluating-ai-agents/)
+   - *Go deeper:* [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) · [Evaluating AI Agents](https://www.deeplearning.ai/courses/evaluating-ai-agents/) · [AI Agents in LangGraph](https://learn.deeplearning.ai/courses/ai-agents-in-langgraph) · [OpenAI — Agents](https://developers.openai.com/api/docs/guides/agents)
 
 ### Machine Learning Foundations
 
-From programming and math to training your first neural network.
+From programming and math to training your first neural network. Every main item is free, exercises included; the rest is optional.
 
 1. **Programming** — You can write, run and debug a small program on your own.
    - [CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)
-   - [The Missing Semester of Your CS Education — 2026](https://missing.csail.mit.edu/)
+   - *Go deeper:* [The Missing Semester of Your CS Education — 2026](https://missing.csail.mit.edu/)
 2. **Math** — You can explain vectors, matrices, derivatives and probability in your own words.
-   - [Essence of Linear Algebra](https://www.3blue1brown.com/lessons/eola-preview/)
-   - [Essence of Calculus](https://www.3blue1brown.com/lessons/essence-of-calculus/)
-   - [Mathematics for Machine Learning and Data Science](https://www.deeplearning.ai/specializations/mathematics-for-machine-learning-and-data-science/)
+   - [Precalculus](https://www.khanacademy.org/math/precalculus)
+   - [Differential Calculus](https://www.khanacademy.org/math/differential-calculus)
+   - *Go deeper:* [Essence of Linear Algebra](https://www.3blue1brown.com/lessons/eola-preview/) · [Essence of Calculus](https://www.3blue1brown.com/lessons/essence-of-calculus/) · [Statistics and probability](https://www.khanacademy.org/math/statistics-probability) · [Linear algebra](https://www.khanacademy.org/math/linear-algebra) · [Multivariable calculus](https://www.khanacademy.org/math/multivariable-calculus) · [Mathematics for Machine Learning and Data Science](https://www.deeplearning.ai/specializations/mathematics-for-machine-learning-and-data-science/) · [Mathematics for Machine Learning](https://mml-book.github.io/)
 3. **Core Machine Learning** — You can train, evaluate and compare regression and classification models.
-   - [Machine Learning Specialization](https://www.deeplearning.ai/specializations/machine-learning/)
    - [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
-   - [Stanford CS229 — Machine Learning](https://cs229.stanford.edu/)
+   - *Go deeper:* [Machine Learning Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) · [Machine Learning Specialization](https://www.deeplearning.ai/specializations/machine-learning/) · [Stanford CS229 — Machine Learning](https://cs229.stanford.edu/) · [UC Berkeley CS189/289A — Introduction to Machine Learning](https://people.eecs.berkeley.edu/~jrs/189/)
 4. **Neural Networks** — You can implement backpropagation for a small network from scratch.
-   - [Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
    - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
+   - *Go deeper:* [Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) · [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
 
 ## AI Foundations
 
@@ -121,7 +112,7 @@ Learning from data: models, training, evaluation, generalization.
 - [Machine Learning 2026 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2026-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
 - [Machine Learning and having it deep and structured 2018 Spring](https://speech.ee.ntu.edu.tw/~hylee/mlds/2018-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
 - [Machine Learning Specialization](https://www.deeplearning.ai/specializations/machine-learning/) - DeepLearning.AI, Stanford Online, Andrew Ng. <sub>course · beginner · ~95 h</sub>
-- [Machine Learning Zoomcamp](https://datatalks.club/blog/machine-learning-zoomcamp.html) - DataTalks.Club. <sub>course</sub>
+- [Machine Learning Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) - DataTalks.Club. <sub>course</sub>
 - [Stanford CS221 — Artificial Intelligence: Principles and Techniques](https://cs221.stanford.edu/) - Stanford, Percy Liang. <sub>course</sub>
 - [Stanford CS228 — Probabilistic Graphical Models](https://cs.stanford.edu/~ermon/cs228/index.html) - Stanford, Stefano Ermon. <sub>course</sub>
 - [Stanford CS229 — Machine Learning](https://cs229.stanford.edu/) - Stanford, Jehangir Amjad, Anand Avati. <sub>course</sub>
@@ -210,7 +201,7 @@ Large language models: how they are built, trained, adapted and prompted.
 - [Hugging Face smol-course](https://huggingface.co/learn/smol-course/unit0/1) - Hugging Face, Ben Burtenshaw. <sub>course</sub>
 - [Introduction to GenAI and ML 2025 Fall](https://speech.ee.ntu.edu.tw/~hylee/GenAI-ML/2025-fall.php) - 國立臺灣大學, 李宏毅. <sub>course · beginner · zh-TW</sub>
 - [Introduction to Generative AI 2024 Spring](https://speech.ee.ntu.edu.tw/~hylee/genai/2024-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · 20 units · zh-TW</sub>
-- [LLM Zoomcamp](https://datatalks.club/blog/llm-zoomcamp.html) - DataTalks.Club, Alexey Grigorev. <sub>course</sub>
+- [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp) - DataTalks.Club, Alexey Grigorev. <sub>course</sub>
 - [Machine Learning 2025 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2025-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
 - [Machine Learning 2026 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2026-spring.php) - 國立臺灣大學, 李宏毅. <sub>course · zh-TW</sub>
 - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) - Andrej Karpathy. <sub>course · ~15 h</sub>
@@ -228,6 +219,7 @@ Large language models: how they are built, trained, adapted and prompted.
 - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) - arXiv, Lewis et al. <sub>paper</sub>
 - [Prompt Engineering Guide](https://www.promptingguide.ai) - DAIR.AI. <sub>docs</sub>
 - [Prompt engineering overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview) - Anthropic. <sub>docs</sub>
+- [AI Engineering Interview Questions Company Wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) - Outcome School, Pallavi. <sub>github</sub>
 - [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch) - Manning, Sebastian Raschka. <sub>github</sub>
 - [斯坦福大学 CME 295 课程：Transformer 与大语言模型速查表](https://github.com/afshinea/stanford-cme-295-transformers-large-language-models/tree/main/zh) - Stanford, Afshine Amidi, Shervine Amidi. <sub>github · zh-CN</sub>
 
@@ -249,7 +241,7 @@ Models that generate: diffusion, VAEs, GANs, and building products on them.
 LLM systems that plan, use tools and act — and how to evaluate and govern them.
 
 - [AI Agents in LangGraph](https://learn.deeplearning.ai/courses/ai-agents-in-langgraph) - DeepLearning.AI, Harrison Chase, Rotem Weiss. <sub>course · intermediate · ~1.7 h</sub>
-- [AI Dev Tools Zoomcamp 2026](https://datatalks.club/blog/ai-dev-tools-zoomcamp.html) - DataTalks.Club, Alexey Grigorev, Bhavani Ravi, Moein Foroughi. <sub>course</sub>
+- [AI Dev Tools Zoomcamp 2026](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp) - DataTalks.Club, Alexey Grigorev, Bhavani Ravi, Moein Foroughi. <sub>course</sub>
 - [Evaluating AI Agents](https://www.deeplearning.ai/courses/evaluating-ai-agents/) - DeepLearning.AI, John Gilhuly, Aman Khan. <sub>course · beginner · ~2.6 h</sub>
 - [Governing AI Agents](https://www.deeplearning.ai/courses/governing-ai-agents/) - DeepLearning.AI, Amber Roberts. <sub>course · beginner · ~1.5 h</sub>
 - [Hugging Face AI Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction) - Hugging Face, Ben Burtenshaw, Sergio Paniego. <sub>course</sub>
@@ -262,6 +254,7 @@ LLM systems that plan, use tools and act — and how to evaluate and govern them
 - [Stanford CS329A — Self-Improving AI Agents](https://cs329a.stanford.edu/) - Stanford, Aakanksha Chowdhery, Azalia Mirhoseini. <sub>course</sub>
 - [OpenAI — Agents](https://developers.openai.com/api/docs/guides/agents) - OpenAI. <sub>docs</sub>
 - [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) - Anthropic, Erik S., Barry Zhang. <sub>article</sub>
+- [AI Engineering Interview Questions Company Wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) - Outcome School, Pallavi. <sub>github</sub>
 
 ## Reinforcement Learning
 
@@ -276,7 +269,7 @@ Taking models to production: data, deployment, monitoring, iteration.
 - [Full Stack Deep Learning](https://fullstackdeeplearning.com/) - Full Stack Deep Learning, Charles Frye et al. <sub>course</sub>
 - [Machine Learning in Production](https://www.deeplearning.ai/courses/machine-learning-in-production/) - DeepLearning.AI, Andrew Ng. <sub>course · intermediate · ~11 h</sub>
 - [Made With ML — MLOps](https://madewithml.com/courses/mlops/) - Made With ML, Goku Mohandas. <sub>course</sub>
-- [MLOps Zoomcamp](https://datatalks.club/docs/courses/mlops-zoomcamp/) - DataTalks.Club, Alexey Grigorev. <sub>course</sub>
+- [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) - DataTalks.Club, Alexey Grigorev. <sub>course</sub>
 - [Stanford CS329S — Machine Learning Systems Design](https://web.stanford.edu/class/cs329s/) - Stanford, Chip Huyen. <sub>course</sub>
 - [AI Engineering](https://github.com/chiphuyen/aie-book) - O'Reilly, Chip Huyen. <sub>book</sub>
 - [Designing Machine Learning Systems](https://github.com/chiphuyen/dmls-book) - O'Reilly, Chip Huyen. <sub>book</sub>
@@ -297,9 +290,14 @@ Making ML fast and scalable: GPUs, kernels, parallelism, training and serving sy
 
 Linear algebra, calculus, probability and statistics.
 
+- [Differential Calculus](https://www.khanacademy.org/math/differential-calculus) - Khan Academy. <sub>course · 6 units</sub>
+- [Linear algebra](https://www.khanacademy.org/math/linear-algebra) - Khan Academy. <sub>course · 3 units</sub>
 - [Mathematics for Machine Learning and Data Science](https://www.deeplearning.ai/specializations/mathematics-for-machine-learning-and-data-science/) - DeepLearning.AI, Luis Serrano. <sub>course · beginner · ~94 h</sub>
+- [Multivariable calculus](https://www.khanacademy.org/math/multivariable-calculus) - Khan Academy. <sub>course · 5 units</sub>
+- [Precalculus](https://www.khanacademy.org/math/precalculus) - Khan Academy. <sub>course · 10 units</sub>
 - [Stanford CS228 — Probabilistic Graphical Models](https://cs.stanford.edu/~ermon/cs228/index.html) - Stanford, Stefano Ermon. <sub>course</sub>
 - [Stanford CS229 — Machine Learning](https://cs229.stanford.edu/) - Stanford, Jehangir Amjad, Anand Avati. <sub>course</sub>
+- [Statistics and probability](https://www.khanacademy.org/math/statistics-probability) - Khan Academy. <sub>course · 16 units</sub>
 - [Deep Learning](https://www.deeplearningbook.org/) - MIT Press, Goodfellow, Bengio & Courville. <sub>book</sub>
 - [Mathematics for Machine Learning](https://mml-book.github.io/) - Cambridge University Press, Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong. <sub>book</sub>
 - [Essence of Calculus](https://www.3blue1brown.com/lessons/essence-of-calculus/) - 3Blue1Brown, Grant Sanderson. <sub>video</sub>
@@ -310,7 +308,7 @@ Linear algebra, calculus, probability and statistics.
 
 Writing software well: languages, tools, and the craft of building programs.
 
-- [AI Dev Tools Zoomcamp 2026](https://datatalks.club/blog/ai-dev-tools-zoomcamp.html) - DataTalks.Club, Alexey Grigorev, Bhavani Ravi, Moein Foroughi. <sub>course</sub>
+- [AI Dev Tools Zoomcamp 2026](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp) - DataTalks.Club, Alexey Grigorev, Bhavani Ravi, Moein Foroughi. <sub>course</sub>
 - [CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science) - Harvard University, David J. Malan. <sub>course · beginner</sub>
 - [Full Stack Open](https://fullstackopen.com/en/) - University of Helsinki, Matti Luukkainen. <sub>course</sub>
 - [OpenCV University Free Courses](https://opencv.org/university/free-courses/) - OpenCV.org. <sub>course · 5 units</sub>
@@ -363,7 +361,7 @@ Containers, orchestration and infrastructure as code.
 
 Pipelines that move and shape data at scale.
 
-- [DataTalks.Club — Data Engineering Zoomcamp](https://datatalks.club/blog/data-engineering-zoomcamp.html) - DataTalks.Club, Alexey Grigorev. <sub>course · beginner</sub>
+- [DataTalks.Club — Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) - DataTalks.Club, Alexey Grigorev. <sub>course · beginner</sub>
 
 ## Technical Writing
 

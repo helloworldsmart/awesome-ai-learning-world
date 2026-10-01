@@ -43,6 +43,7 @@ A resource is listed only if it meets **all** of these:
 | `durationMinutes` | only if the official page states it; otherwise `0` (unknown). **Never estimate.** |
 | `skills` | what it teaches: 1–3 names from [`skills.json`](skills.json), e.g. `Deep Learning`. Skills are topics, not tools — a PyTorch tutorial is `Deep Learning`. Need a skill that isn't listed? Propose it in the pull request. |
 | `tags` | optional labels: `intro` (a no-code introduction) · `classic` (the classic technical methods). Leave it out if neither fits. |
+| `nextCohort` | optional, for courses that run in cohorts: the next start date as `YYYY-MM-DD`, from the official page. Leave it out when unknown. AI Learning World reminds learners before it starts. |
 | `units` | courses only: the lectures, each with its `resources` (the video, the paper that goes with it…) |
 
 3. Run the checks and regenerate the README:

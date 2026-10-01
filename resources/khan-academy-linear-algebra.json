@@ -1,0 +1,62 @@
+{
+  "title": "Linear algebra",
+  "url": "https://www.khanacademy.org/math/linear-algebra",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Khan Academy",
+  "creator": "Khan Academy",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Math"
+  ],
+  "units": [
+    {
+      "title": "Vectors and spaces",
+      "sourceUrl": "https://www.khanacademy.org/math/linear-algebra",
+      "sourceKey": "vectors-and-spaces",
+      "resources": [
+        {
+          "title": "Vectors and spaces",
+          "url": "https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Matrix transformations",
+      "sourceUrl": "https://www.khanacademy.org/math/linear-algebra",
+      "sourceKey": "matrix-transformations",
+      "resources": [
+        {
+          "title": "Matrix transformations",
+          "url": "https://www.khanacademy.org/math/linear-algebra/matrix-transformations",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Alternate coordinate systems (bases)",
+      "sourceUrl": "https://www.khanacademy.org/math/linear-algebra",
+      "sourceKey": "alternate-bases",
+      "resources": [
+        {
+          "title": "Alternate coordinate systems (bases)",
+          "url": "https://www.khanacademy.org/math/linear-algebra/alternate-bases",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "title": "Statistics and probability",
+  "url": "https://www.khanacademy.org/math/statistics-probability",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Khan Academy",
+  "creator": "Khan Academy",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Math"
+  ],
+  "units": [
+    {
+      "title": "Analyzing categorical data",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "analyzing-categorical-data",
+      "resources": [
+        {
+          "title": "Analyzing categorical data",
+          "url": "https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Displaying and comparing quantitative data",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "displaying-describing-data",
+      "resources": [
+        {
+          "title": "Displaying and comparing quantitative data",
+          "url": "https://www.khanacademy.org/math/statistics-probability/displaying-describing-data",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Summarizing quantitative data",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "summarizing-quantitative-data",
+      "resources": [
+        {
+          "title": "Summarizing quantitative data",
+          "url": "https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Modeling data distributions",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "modeling-distributions-of-data",
+      "resources": [
+        {
+          "title": "Modeling data distributions",
+          "url": "https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Exploring bivariate numerical data",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "describing-relationships-quantitative-data",
+      "resources": [
+        {
+          "title": "Exploring bivariate numerical data",
+          "url": "https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Study design",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "designing-studies",
+      "resources": [
+        {
+          "title": "Study design",
+          "url": "https://www.khanacademy.org/math/statistics-probability/designing-studies",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Probability",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "probability-library",
+      "resources": [
+        {
+          "title": "Probability",
+          "url": "https://www.khanacademy.org/math/statistics-probability/probability-library",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Counting, permutations, and combinations",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "counting-permutations-and-combinations",
+      "resources": [
+        {
+          "title": "Counting, permutations, and combinations",
+          "url": "https://www.khanacademy.org/math/statistics-probability/counting-permutations-and-combinations",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Random variables",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "random-variables-stats-library",
+      "resources": [
+        {
+          "title": "Random variables",
+          "url": "https://www.khanacademy.org/math/statistics-probability/random-variables-stats-library",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Sampling distributions",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "sampling-distributions-library",
+      "resources": [
+        {
+          "title": "Sampling distributions",
+          "url": "https://www.khanacademy.org/math/statistics-probability/sampling-distributions-library",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Confidence intervals",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "confidence-intervals-one-sample",
+      "resources": [
+        {
+          "title": "Confidence intervals",
+          "url": "https://www.khanacademy.org/math/statistics-probability/confidence-intervals-one-sample",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Significance tests (hypothesis testing)",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "significance-tests-one-sample",
+      "resources": [
+        {
+          "title": "Significance tests (hypothesis testing)",
+          "url": "https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Two-sample inference for the difference between groups",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "significance-tests-confidence-intervals-two-samples",
+      "resources": [
+        {
+          "title": "Two-sample inference for the difference between groups",
+          "url": "https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Inference for categorical data (chi-square tests)",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "inference-categorical-data-chi-square-tests",
+      "resources": [
+        {
+          "title": "Inference for categorical data (chi-square tests)",
+          "url": "https://www.khanacademy.org/math/statistics-probability/inference-categorical-data-chi-square-tests",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Advanced regression (inference and transforming)",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "advanced-regression-inference-transforming",
+      "resources": [
+        {
+          "title": "Advanced regression (inference and transforming)",
+          "url": "https://www.khanacademy.org/math/statistics-probability/advanced-regression-inference-transforming",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Analysis of variance (ANOVA)",
+      "sourceUrl": "https://www.khanacademy.org/math/statistics-probability",
+      "sourceKey": "analysis-of-variance-anova-library",
+      "resources": [
+        {
+          "title": "Analysis of variance (ANOVA)",
+          "url": "https://www.khanacademy.org/math/statistics-probability/analysis-of-variance-anova-library",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    }
+  ]
+}

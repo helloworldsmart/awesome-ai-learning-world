@@ -1,27 +1,58 @@
 {
   "title": "LLMs & AI Agents",
-  "summary": "How large language models work, and how to build agents on top of them.",
+  "summary": "How large language models work, and how to build agents on top of them. Start after Machine Learning Foundations.",
   "status": "todo",
   "stages": [
     {
       "title": "Transformers",
       "passCriteria": "You can build a tiny GPT and explain every part of it.",
-      "resources": ["neural-networks-zero-to-hero", "the-illustrated-transformer", "attention-is-all-you-need"]
+      "resources": [
+        "neural-networks-zero-to-hero"
+      ],
+      "extras": [
+        "the-illustrated-transformer",
+        "attention-is-all-you-need",
+        "build-a-large-language-model-from-scratch"
+      ]
     },
     {
       "title": "Large Language Models",
       "passCriteria": "You can explain pretraining, fine-tuning and LoRA, and fine-tune a small model.",
-      "resources": ["hugging-face-llm-course", "stanford-cme295-transformers-and-large-language-models-autumn-2025", "lora-low-rank-adaptation-of-large-language-models"]
+      "resources": [
+        "hugging-face-llm-course"
+      ],
+      "extras": [
+        "stanford-cme295-transformers-and-large-language-models-autumn-2025",
+        "generative-ai-with-large-language-models",
+        "lora-low-rank-adaptation-of-large-language-models",
+        "stanford-cs336-language-modeling-from-scratch"
+      ]
     },
     {
       "title": "Building with LLMs",
       "passCriteria": "You can build a retrieval-augmented app and measure whether its answers are right.",
-      "resources": ["prompt-engineering-overview", "retrieval-augmented-generation", "llm-zoomcamp"]
+      "resources": [
+        "llm-zoomcamp"
+      ],
+      "extras": [
+        "prompt-engineering-overview",
+        "prompt-engineering-guide",
+        "retrieval-augmented-generation",
+        "ai-engineering"
+      ]
     },
     {
       "title": "AI Agents",
       "passCriteria": "You can build an agent that uses tools, and evaluate it.",
-      "resources": ["building-effective-agents", "hugging-face-ai-agents-course", "evaluating-ai-agents"]
+      "resources": [
+        "hugging-face-ai-agents-course"
+      ],
+      "extras": [
+        "building-effective-agents",
+        "evaluating-ai-agents",
+        "ai-agents-in-langgraph",
+        "openai-agents-sdk-guide"
+      ]
     }
   ]
 }

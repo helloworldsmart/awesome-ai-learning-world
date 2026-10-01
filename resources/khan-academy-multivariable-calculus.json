@@ -1,0 +1,96 @@
+{
+  "title": "Multivariable calculus",
+  "url": "https://www.khanacademy.org/math/multivariable-calculus",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Khan Academy",
+  "creator": "Khan Academy",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Math"
+  ],
+  "units": [
+    {
+      "title": "Thinking about multivariable functions",
+      "sourceUrl": "https://www.khanacademy.org/math/multivariable-calculus",
+      "sourceKey": "thinking-about-multivariable-function",
+      "resources": [
+        {
+          "title": "Thinking about multivariable functions",
+          "url": "https://www.khanacademy.org/math/multivariable-calculus/thinking-about-multivariable-function",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Derivatives of multivariable functions",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/multivariable-calculus",
+      "sourceKey": "multivariable-derivatives",
+      "resources": [
+        {
+          "title": "Derivatives of multivariable functions",
+          "url": "https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Applications of multivariable derivatives",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/multivariable-calculus",
+      "sourceKey": "applications-of-multivariable-derivatives",
+      "resources": [
+        {
+          "title": "Applications of multivariable derivatives",
+          "url": "https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Integrating multivariable functions",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/multivariable-calculus",
+      "sourceKey": "integrating-multivariable-functions",
+      "resources": [
+        {
+          "title": "Integrating multivariable functions",
+          "url": "https://www.khanacademy.org/math/multivariable-calculus/integrating-multivariable-functions",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Green's, Stokes', and the divergence theorems",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/multivariable-calculus",
+      "sourceKey": "greens-theorem-and-stokes-theorem",
+      "resources": [
+        {
+          "title": "Green's, Stokes', and the divergence theorems",
+          "url": "https://www.khanacademy.org/math/multivariable-calculus/greens-theorem-and-stokes-theorem",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    }
+  ]
+}

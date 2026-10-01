@@ -1,0 +1,113 @@
+{
+  "title": "Differential Calculus",
+  "url": "https://www.khanacademy.org/math/differential-calculus",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "Khan Academy",
+  "creator": "Khan Academy",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Math"
+  ],
+  "units": [
+    {
+      "title": "Limits and continuity",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/differential-calculus",
+      "sourceKey": "dc-limits",
+      "resources": [
+        {
+          "title": "Limits and continuity",
+          "url": "https://www.khanacademy.org/math/differential-calculus/dc-limits",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Derivatives: definition and basic rules",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/differential-calculus",
+      "sourceKey": "dc-diff-intro",
+      "resources": [
+        {
+          "title": "Derivatives: definition and basic rules",
+          "url": "https://www.khanacademy.org/math/differential-calculus/dc-diff-intro",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Derivatives: chain rule and other advanced topics",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/differential-calculus",
+      "sourceKey": "dc-chain",
+      "resources": [
+        {
+          "title": "Derivatives: chain rule and other advanced topics",
+          "url": "https://www.khanacademy.org/math/differential-calculus/dc-chain",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Applications of derivatives",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/differential-calculus",
+      "sourceKey": "dc-context-app",
+      "resources": [
+        {
+          "title": "Applications of derivatives",
+          "url": "https://www.khanacademy.org/math/differential-calculus/dc-context-app",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Analyzing functions",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/differential-calculus",
+      "sourceKey": "dc-analytic-app",
+      "resources": [
+        {
+          "title": "Analyzing functions",
+          "url": "https://www.khanacademy.org/math/differential-calculus/dc-analytic-app",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Parametric equations, polar coordinates, and vector-valued functions",
+      "completionCriterion": "Pass the unit test.",
+      "sourceUrl": "https://www.khanacademy.org/math/differential-calculus",
+      "sourceKey": "dc-adv-funcs",
+      "resources": [
+        {
+          "title": "Parametric equations, polar coordinates, and vector-valued functions",
+          "url": "https://www.khanacademy.org/math/differential-calculus/dc-adv-funcs",
+          "type": "course",
+          "role": "primary",
+          "provider": "Khan Academy",
+          "language": "en"
+        }
+      ]
+    }
+  ]
+}

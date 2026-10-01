@@ -1,27 +1,57 @@
 {
   "title": "Deep Learning & Computer Vision",
-  "summary": "Train deep networks, then teach them to see.",
+  "summary": "Train deep networks, then teach them to see. Start after Machine Learning Foundations.",
   "status": "todo",
   "stages": [
     {
       "title": "Deep Learning Foundations",
       "passCriteria": "You can train an image classifier in PyTorch and explain each step.",
-      "resources": ["practical-deep-learning-for-coders", "pytorch-tutorials", "dive-into-deep-learning"]
+      "resources": [
+        "practical-deep-learning-for-coders"
+      ],
+      "extras": [
+        "pytorch-tutorials",
+        "dive-into-deep-learning",
+        "mit-6-s191-introduction-to-deep-learning",
+        "deep-learning-specialization",
+        "understanding-deep-learning"
+      ]
     },
     {
       "title": "Computer Vision",
       "passCriteria": "You can explain how a CNN sees an image and why residual connections help.",
-      "resources": ["cs231n-deep-learning-for-computer-vision", "deep-residual-learning-for-image-recognition", "hugging-face-computer-vision-course"]
+      "resources": [
+        "cs231n-deep-learning-for-computer-vision"
+      ],
+      "extras": [
+        "hugging-face-computer-vision-course",
+        "deep-learning-for-computer-vision",
+        "deep-residual-learning-for-image-recognition",
+        "opencv-university-free-courses"
+      ]
     },
     {
       "title": "Transformers for Vision",
       "passCriteria": "You can explain attention, and how ViT and CLIP apply it to images.",
-      "resources": ["the-illustrated-transformer", "attention-is-all-you-need", "an-image-is-worth-16x16-words-vit", "learning-transferable-visual-models-clip"]
+      "resources": [
+        "the-illustrated-transformer"
+      ],
+      "extras": [
+        "attention-is-all-you-need",
+        "an-image-is-worth-16x16-words-vit",
+        "learning-transferable-visual-models-clip"
+      ]
     },
     {
       "title": "Generative Models",
       "passCriteria": "You can explain how a diffusion model turns noise into an image.",
-      "resources": ["what-are-diffusion-models", "deep-learning-foundations-to-stable-diffusion"]
+      "resources": [
+        "deep-learning-foundations-to-stable-diffusion"
+      ],
+      "extras": [
+        "what-are-diffusion-models",
+        "stanford-cs236-deep-generative-models"
+      ]
     }
   ]
 }

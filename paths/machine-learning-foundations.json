@@ -1,27 +1,58 @@
 {
   "title": "Machine Learning Foundations",
-  "summary": "From programming and math to training your first neural network.",
+  "summary": "From programming and math to training your first neural network. Every main item is free, exercises included; the rest is optional.",
   "status": "todo",
   "stages": [
     {
       "title": "Programming",
       "passCriteria": "You can write, run and debug a small program on your own.",
-      "resources": ["cs50-introduction-to-computer-science", "the-missing-semester-of-your-cs-education-2026"]
+      "resources": [
+        "cs50-introduction-to-computer-science"
+      ],
+      "extras": [
+        "the-missing-semester-of-your-cs-education-2026"
+      ]
     },
     {
       "title": "Math",
       "passCriteria": "You can explain vectors, matrices, derivatives and probability in your own words.",
-      "resources": ["essence-of-linear-algebra", "essence-of-calculus", "mathematics-for-machine-learning-and-data-science"]
+      "resources": [
+        "khan-academy-precalculus",
+        "khan-academy-differential-calculus"
+      ],
+      "extras": [
+        "essence-of-linear-algebra",
+        "essence-of-calculus",
+        "khan-academy-statistics-and-probability",
+        "khan-academy-linear-algebra",
+        "khan-academy-multivariable-calculus",
+        "mathematics-for-machine-learning-and-data-science",
+        "mathematics-for-machine-learning"
+      ]
     },
     {
       "title": "Core Machine Learning",
       "passCriteria": "You can train, evaluate and compare regression and classification models.",
-      "resources": ["machine-learning-specialization-andrew-ng", "google-machine-learning-crash-course", "stanford-cs229-machine-learning"]
+      "resources": [
+        "google-machine-learning-crash-course"
+      ],
+      "extras": [
+        "machine-learning-zoomcamp",
+        "machine-learning-specialization-andrew-ng",
+        "stanford-cs229-machine-learning",
+        "uc-berkeley-cs189-289a-introduction-to-machine-learning"
+      ]
     },
     {
       "title": "Neural Networks",
       "passCriteria": "You can implement backpropagation for a small network from scratch.",
-      "resources": ["neural-networks-3blue1brown", "neural-networks-zero-to-hero"]
+      "resources": [
+        "neural-networks-zero-to-hero"
+      ],
+      "extras": [
+        "neural-networks-3blue1brown",
+        "neural-networks-and-deep-learning"
+      ]
     }
   ]
 }

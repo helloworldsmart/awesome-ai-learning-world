@@ -109,6 +109,14 @@ export function buildReadme({ skills, entries, paths = [] }) {
           const e = bySlug.get(slug);
           out.push(`   - [${e.title}](${e.url})`);
         }
+        // 補充：想深入再上，一行列完，跟主課分得出來。
+        if (st.extras?.length) {
+          const links = st.extras.map((slug) => {
+            const e = bySlug.get(slug);
+            return `[${e.title}](${e.url})`;
+          });
+          out.push(`   - *Go deeper:* ${links.join(" · ")}`);
+        }
       });
       out.push("");
     }
