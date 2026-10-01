@@ -29,7 +29,13 @@ const UNIT_KEYS = [
 ];
 const UNIT_RESOURCE_KEYS = ["title", "url", "type", "role", "provider", "creator", "language"];
 const SKILL_KEYS = ["name", "description"];
-const PATH_KEYS = ["title", "summary", "status", "stages"];
+const PATH_KEYS = ["title", "summary", "status", "stages", "domains", "links"];
+const DOMAIN_KEYS = ["title", "color", "outline", "stages"];
+const LINK_KEYS = ["from", "fromStage", "to"];
+// 領域色票（app 的 --swatch-<color>，ADR-0051）。
+export const WORLD_COLORS = ["green", "teal", "blue", "purple", "rose", "red", "orange", "slate", "gold", "cyan", "brown", "indigo"];
+// 世界路徑去重後的主課上限 ＝ app 免費帳號的 node 額度（ADR-0049／0050）：主角要放得進免費白板。
+export const WORLD_NODE_LIMIT = 35;
 const STAGE_KEYS = ["title", "passCriteria", "resources", "extras"];
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -98,31 +104,109 @@ export function validatePaths(paths, entries) {
     if (blank(p.title)) problems.push(`${at}: title is required`);
     if (typeof p.summary !== "string") problems.push(`${at}: summary must be a string`);
     if (!STATUSES.includes(p.status)) problems.push(`${at}: status must be one of ${STATUSES.join(", ")}`);
+    const used = new Set();
+    const checkStages = (where, stages) => {
+      stages.forEach((st, i) => {
+        const sat = `${where} stage ${i + 1}`;
+        unknownKeys(st, STAGE_KEYS, sat, problems);
+        if (blank(st.title)) problems.push(`${sat}: title is required`);
+        if (st.passCriteria !== undefined && typeof st.passCriteria !== "string")
+          problems.push(`${sat}: passCriteria must be a string`);
+        if (!Array.isArray(st.resources) || st.resources.length === 0) {
+          problems.push(`${sat}: needs at least one resource`);
+          return;
+        }
+        if (st.extras !== undefined && !Array.isArray(st.extras)) problems.push(`${sat}: extras must be a list`);
+        // extras（補充）：想深入再上，不放上白板（app 的 ADR-0047）。跟主課一樣要存在、不能是 feed、不能重複。
+        for (const slug of [...st.resources, ...(Array.isArray(st.extras) ? st.extras : [])]) {
+          const e = bySlug.get(slug);
+          if (!e) problems.push(`${sat}: no resource "${slug}"`);
+          else if (e.kind !== "resource") problems.push(`${sat}: "${slug}" is a feed — feeds never finish, so they can't be on a path`);
+          if (used.has(slug)) problems.push(`${sat}: "${slug}" is already on this path`);
+          used.add(slug);
+        }
+      });
+    };
+    if (Array.isArray(p.domains) && p.domains.length > 0) {
+      if (Array.isArray(p.stages) && p.stages.length > 0) problems.push(`${at}: use either stages or domains, not both`);
+      problems.push(...validateWorld(at, p, checkStages));
+      continue;
+    }
+    if (p.links !== undefined) problems.push(`${at}: links are only for world paths (with domains)`);
     if (!Array.isArray(p.stages) || p.stages.length === 0) {
       problems.push(`${at}: needs at least one stage`);
       continue;
     }
-    const used = new Set();
-    p.stages.forEach((st, i) => {
-      const sat = `${at} stage ${i + 1}`;
-      unknownKeys(st, STAGE_KEYS, sat, problems);
-      if (blank(st.title)) problems.push(`${sat}: title is required`);
-      if (st.passCriteria !== undefined && typeof st.passCriteria !== "string")
-        problems.push(`${sat}: passCriteria must be a string`);
-      if (!Array.isArray(st.resources) || st.resources.length === 0) {
-        problems.push(`${sat}: needs at least one resource`);
-        return;
-      }
-      if (st.extras !== undefined && !Array.isArray(st.extras)) problems.push(`${sat}: extras must be a list`);
-      // extras（補充）：想深入再上，不放上白板（app 的 ADR-0047）。跟主課一樣要存在、不能是 feed、不能重複。
-      for (const slug of [...st.resources, ...(Array.isArray(st.extras) ? st.extras : [])]) {
-        const e = bySlug.get(slug);
-        if (!e) problems.push(`${sat}: no resource "${slug}"`);
-        else if (e.kind !== "resource") problems.push(`${sat}: "${slug}" is a feed — feeds never finish, so they can't be on a path`);
-        if (used.has(slug)) problems.push(`${sat}: "${slug}" is already on this path`);
-        used.add(slug);
-      }
-    });
+    checkStages(at, p.stages);
+  }
+  problems.push(...validateWorldCoverage(paths));
+  return problems;
+}
+
+/**
+ * 世界路徑（app 的 ADR-0050）：好幾個領域，每個領域自己有段落；領域之間有先後線。
+ * 領域名不重複、顏色在色票裡、線的兩端指得到、fromStage 是那個領域的段落、不成環、
+ * 去重後的主課不超過免費額度。跟 app 的 internal/catalog/format.go validateWorld 一致。
+ */
+function validateWorld(at, p, checkStages) {
+  const problems = [];
+  const stagesOf = new Map();
+  p.domains.forEach((d, i) => {
+    const dat = `${at} domain "${d.title}"`;
+    unknownKeys(d, DOMAIN_KEYS, dat, problems);
+    if (blank(d.title)) problems.push(`${at} domain ${i + 1}: title is required`);
+    if (stagesOf.has(d.title)) problems.push(`${dat}: duplicate domain title`);
+    if (!WORLD_COLORS.includes(d.color)) problems.push(`${dat}: color must be one of ${WORLD_COLORS.join(", ")}`);
+    if (d.outline !== undefined && typeof d.outline !== "boolean") problems.push(`${dat}: outline must be true or false`);
+    if (!Array.isArray(d.stages) || d.stages.length === 0) {
+      problems.push(`${dat}: needs at least one stage`);
+      stagesOf.set(d.title, new Set());
+      return;
+    }
+    stagesOf.set(d.title, new Set(d.stages.map((st) => st.title)));
+    checkStages(dat, d.stages);
+  });
+  const next = new Map();
+  (Array.isArray(p.links) ? p.links : []).forEach((lk, i) => {
+    const lat = `${at} link ${i + 1}`;
+    unknownKeys(lk, LINK_KEYS, lat, problems);
+    if (!stagesOf.has(lk.from)) problems.push(`${lat}: no domain "${lk.from}"`);
+    else if (lk.fromStage !== undefined && !stagesOf.get(lk.from).has(lk.fromStage))
+      problems.push(`${lat}: domain "${lk.from}" has no stage "${lk.fromStage}"`);
+    if (!stagesOf.has(lk.to)) problems.push(`${lat}: no domain "${lk.to}"`);
+    if (lk.from === lk.to) problems.push(`${lat}: can't link a domain to itself`);
+    next.set(lk.from, [...(next.get(lk.from) ?? []), lk.to]);
+  });
+  const state = new Map(); // 1 visiting, 2 done
+  const visit = (d) => {
+    if (state.get(d) === 1) return true;
+    if (state.get(d) === 2) return false;
+    state.set(d, 1);
+    for (const n of next.get(d) ?? []) if (visit(n)) return true;
+    state.set(d, 2);
+    return false;
+  };
+  if (p.domains.some((d) => visit(d.title))) problems.push(`${at}: the links between domains form a cycle`);
+  const mains = new Set(p.domains.flatMap((d) => (d.stages ?? []).flatMap((st) => st.resources ?? [])));
+  if (mains.size > WORLD_NODE_LIMIT)
+    problems.push(`${at}: ${mains.size} main items, over the free limit of ${WORLD_NODE_LIMIT} nodes — the flagship must fit a free board`);
+  return problems;
+}
+
+/** 世界路徑的主課必須剛好是其他路徑主課的聯集（app 的 ADR-0050 決定四）。 */
+function validateWorldCoverage(paths) {
+  const problems = [];
+  const worlds = paths.filter((p) => Array.isArray(p.domains) && p.domains.length > 0);
+  if (worlds.length === 0) return problems;
+  const union = new Set(
+    paths.filter((p) => !worlds.includes(p)).flatMap((p) => (p.stages ?? []).flatMap((st) => st.resources ?? [])),
+  );
+  for (const w of worlds) {
+    const mains = new Set(w.domains.flatMap((d) => (d.stages ?? []).flatMap((st) => st.resources ?? [])));
+    const missing = [...union].filter((s) => !mains.has(s)).sort();
+    const extra = [...mains].filter((s) => !union.has(s)).sort();
+    if (missing.length) problems.push(`paths/${w.slug}: main items of other paths are missing here: ${missing.join(", ")}`);
+    if (extra.length) problems.push(`paths/${w.slug}: these are not a main item of any path: ${extra.join(", ")}`);
   }
   return problems;
 }

@@ -1,0 +1,78 @@
+{
+  "title": "Deep Learning Engineer",
+  "summary": "Design, train and scale neural networks, and know what happens underneath the framework. Start after Foundations.",
+  "status": "todo",
+  "stages": [
+    {
+      "title": "Deep Learning",
+      "passCriteria": "You can train an image or text model in PyTorch, explain each step, and explain how attention works.",
+      "resources": [
+        "practical-deep-learning-for-coders",
+        "the-illustrated-transformer"
+      ],
+      "extras": [
+        "mit-6-s191-introduction-to-deep-learning"
+      ]
+    },
+    {
+      "title": "Deep Learning in Depth",
+      "passCriteria": "You can derive and implement optimization, regularization and normalization for deep networks.",
+      "resources": [
+        "dive-into-deep-learning",
+        "understanding-deep-learning"
+      ],
+      "extras": [
+        "cmu-11-785-introduction-to-deep-learning",
+        "deep-learning-foundations-and-concepts",
+        "deep-learning-goodfellow-bengio-courville"
+      ]
+    },
+    {
+      "title": "Architectures",
+      "passCriteria": "You can explain and implement CNNs and Transformers, and say when to use each.",
+      "resources": [
+        "cs231n-deep-learning-for-computer-vision",
+        "stanford-cs224n-natural-language-processing-with-deep-learning"
+      ],
+      "extras": [
+        "deep-residual-learning-for-image-recognition",
+        "attention-is-all-you-need"
+      ]
+    },
+    {
+      "title": "Training & Efficiency",
+      "passCriteria": "You can explain mixed precision, data and model parallelism, and quantization, and when each one helps.",
+      "resources": [
+        "the-ultra-scale-playbook-training-llms-on-gpu-clusters"
+      ],
+      "extras": [
+        "deep-learning-systems",
+        "mit-6-5940-tinyml-and-efficient-deep-learning-computing",
+        "gpu-mode-lectures"
+      ]
+    },
+    {
+      "title": "Generative Models",
+      "passCriteria": "You can explain how a diffusion model turns noise into an image, and implement one.",
+      "resources": [
+        "deep-learning-foundations-to-stable-diffusion"
+      ],
+      "extras": [
+        "mit-6-s184-introduction-to-flow-matching-and-diffusion-models",
+        "denoising-diffusion-probabilistic-models"
+      ]
+    },
+    {
+      "title": "Interview Prep",
+      "passCriteria": "You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.",
+      "resources": [
+        "tech-interview-handbook",
+        "introduction-to-machine-learning-interviews-book",
+        "deep-learning-interviews"
+      ],
+      "extras": [
+        "machine-learning-q-and-ai"
+      ]
+    }
+  ]
+}

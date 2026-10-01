@@ -1,0 +1,98 @@
+{
+  "title": "Computer Vision Engineer",
+  "summary": "From image formation to CNNs, vision transformers and generative models. Start after Foundations.",
+  "status": "todo",
+  "stages": [
+    {
+      "title": "Deep Learning",
+      "passCriteria": "You can train an image or text model in PyTorch, explain each step, and explain how attention works.",
+      "resources": [
+        "practical-deep-learning-for-coders",
+        "the-illustrated-transformer"
+      ],
+      "extras": [
+        "pytorch-tutorials",
+        "mit-6-s191-introduction-to-deep-learning",
+        "uva-deep-learning-tutorials"
+      ]
+    },
+    {
+      "title": "Classical Computer Vision",
+      "passCriteria": "You can explain image formation, edges, features, camera calibration and stereo.",
+      "resources": [
+        "first-principles-of-computer-vision",
+        "cs131-computer-vision-foundations-and-applications"
+      ],
+      "extras": [
+        "cs180-280a-intro-to-computer-vision-and-computational-photography",
+        "computer-vision-algorithms-and-applications-2nd-ed",
+        "foundations-of-computer-vision"
+      ]
+    },
+    {
+      "title": "CNNs for Vision",
+      "passCriteria": "You can explain how a CNN sees an image and why residual connections help.",
+      "resources": [
+        "cs231n-deep-learning-for-computer-vision"
+      ],
+      "extras": [
+        "hugging-face-computer-vision-course",
+        "deep-residual-learning-for-image-recognition"
+      ]
+    },
+    {
+      "title": "Detection & Segmentation",
+      "passCriteria": "You can explain and implement object detection and semantic segmentation (Dive into Deep Learning, chapter 14).",
+      "resources": [
+        "dive-into-deep-learning"
+      ],
+      "extras": [
+        "mit-6-5940-tinyml-and-efficient-deep-learning-computing",
+        "16-824-visual-learning-and-recognition",
+        "you-only-look-once-unified-real-time-object-detection",
+        "mask-r-cnn",
+        "u-net-convolutional-networks-for-biomedical-image-segmentation",
+        "mobilenets-efficient-convolutional-neural-networks-for-mobile-vision-applications",
+        "faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+        "segment-anything"
+      ]
+    },
+    {
+      "title": "Transformers for Vision",
+      "passCriteria": "You can explain how ViT and CLIP apply attention to images.",
+      "resources": [
+        "an-image-is-worth-16x16-words-vit"
+      ],
+      "extras": [
+        "learning-transferable-visual-models-clip"
+      ]
+    },
+    {
+      "title": "Generative Models (optional)",
+      "passCriteria": "You can explain how a diffusion model turns noise into an image.",
+      "resources": [
+        "deep-learning-foundations-to-stable-diffusion"
+      ],
+      "extras": [
+        "what-are-diffusion-models",
+        "stanford-cs236-deep-generative-models",
+        "mit-6-s184-introduction-to-flow-matching-and-diffusion-models",
+        "denoising-diffusion-probabilistic-models",
+        "understanding-diffusion-models-a-unified-perspective"
+      ]
+    },
+    {
+      "title": "Interview Prep",
+      "passCriteria": "You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.",
+      "resources": [
+        "tech-interview-handbook",
+        "introduction-to-machine-learning-interviews-book"
+      ],
+      "extras": [
+        "mit-6-006-introduction-to-algorithms",
+        "deep-learning-interviews",
+        "stanford-cs-229-machine-learning-cheatsheets"
+      ]
+    }
+  ]
+}

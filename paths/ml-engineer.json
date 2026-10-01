@@ -1,0 +1,64 @@
+{
+  "title": "ML Engineer",
+  "summary": "Train, ship and run models in production, and prepare for ML engineering interviews. Start after Foundations.",
+  "status": "todo",
+  "stages": [
+    {
+      "title": "Deep Learning",
+      "passCriteria": "You can train an image or text model in PyTorch, explain each step, and explain how attention works.",
+      "resources": [
+        "practical-deep-learning-for-coders",
+        "the-illustrated-transformer"
+      ],
+      "extras": [
+        "pytorch-tutorials",
+        "dive-into-deep-learning",
+        "mit-6-s191-introduction-to-deep-learning",
+        "deep-learning-specialization",
+        "understanding-deep-learning",
+        "uva-deep-learning-tutorials",
+        "deep-learning-foundations-and-concepts"
+      ]
+    },
+    {
+      "title": "Deployment & MLOps",
+      "passCriteria": "You can deploy a model, track experiments and monitor it in production.",
+      "resources": [
+        "mlops-zoomcamp"
+      ],
+      "extras": [
+        "made-with-ml-mlops",
+        "mlops-continuous-delivery-and-automation-pipelines-in-machine-learning",
+        "the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction"
+      ]
+    },
+    {
+      "title": "ML System Design",
+      "passCriteria": "You can design an ML system end to end and explain its trade-offs.",
+      "resources": [
+        "cmu-17-445-645-machine-learning-in-production"
+      ],
+      "extras": [
+        "stanford-cs329s-machine-learning-systems-design",
+        "designing-machine-learning-systems",
+        "hidden-technical-debt-in-machine-learning-systems",
+        "rules-of-machine-learning-best-practices-for-ml-engineering"
+      ]
+    },
+    {
+      "title": "Interview Prep",
+      "passCriteria": "You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.",
+      "resources": [
+        "tech-interview-handbook",
+        "introduction-to-machine-learning-interviews-book",
+        "machine-learning-q-and-ai"
+      ],
+      "extras": [
+        "mit-6-006-introduction-to-algorithms",
+        "deep-learning-interviews",
+        "staffml",
+        "stanford-cs-229-machine-learning-cheatsheets"
+      ]
+    }
+  ]
+}

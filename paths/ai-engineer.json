@@ -1,0 +1,84 @@
+{
+  "title": "AI Engineer",
+  "summary": "How large language models work, and how to build, evaluate and debug systems on top of them. Start after Foundations.",
+  "status": "todo",
+  "stages": [
+    {
+      "title": "Transformers & NLP",
+      "passCriteria": "You can explain attention and implement a Transformer-based NLP model.",
+      "resources": [
+        "stanford-cs224n-natural-language-processing-with-deep-learning"
+      ],
+      "extras": [
+        "the-illustrated-transformer",
+        "stanford-cme295-transformers-and-large-language-models-autumn-2025",
+        "attention-is-all-you-need",
+        "cmu-11-711-advanced-natural-language-processing",
+        "the-annotated-transformer",
+        "nlp-course-for-you"
+      ]
+    },
+    {
+      "title": "LLM Training & Fine-tuning",
+      "passCriteria": "You can explain pretraining, fine-tuning and LoRA, and fine-tune a small model.",
+      "resources": [
+        "hugging-face-llm-course"
+      ],
+      "extras": [
+        "stanford-cs336-language-modeling-from-scratch",
+        "lora-low-rank-adaptation-of-large-language-models",
+        "hugging-face-smol-course",
+        "build-a-large-language-model-from-scratch",
+        "reinforcement-learning-from-human-feedback-and-llm-post-training",
+        "the-ultra-scale-playbook-training-llms-on-gpu-clusters",
+        "training-language-models-to-follow-instructions-with-human-feedback",
+        "direct-preference-optimization-your-language-model-is-secretly-a-reward-model",
+        "foundations-of-large-language-models"
+      ]
+    },
+    {
+      "title": "RAG & Evaluation",
+      "passCriteria": "You can build a retrieval-augmented app and measure whether its answers are right.",
+      "resources": [
+        "llm-zoomcamp"
+      ],
+      "extras": [
+        "retrieval-augmented-generation",
+        "introduction-to-information-retrieval",
+        "what-weve-learned-from-a-year-of-building-with-llms",
+        "the-llm-evaluation-guidebook",
+        "patterns-for-building-llm-based-systems-products"
+      ]
+    },
+    {
+      "title": "AI Agents",
+      "passCriteria": "You can build an agent that uses tools, and evaluate it.",
+      "resources": [
+        "hugging-face-ai-agents-course"
+      ],
+      "extras": [
+        "building-effective-agents",
+        "evaluating-ai-agents",
+        "llm-powered-autonomous-agents",
+        "agents",
+        "agentic-ai-mooc",
+        "react-synergizing-reasoning-and-acting-in-language-models"
+      ]
+    },
+    {
+      "title": "Interview Prep",
+      "passCriteria": "You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.",
+      "resources": [
+        "tech-interview-handbook",
+        "machine-learning-q-and-ai"
+      ],
+      "extras": [
+        "introduction-to-machine-learning-interviews-book",
+        "mit-6-006-introduction-to-algorithms",
+        "transformers-llms-cheatsheet-for-stanfords-cme-295",
+        "building-a-generative-ai-platform",
+        "machine-learning-faq"
+      ]
+    }
+  ]
+}

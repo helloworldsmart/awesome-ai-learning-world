@@ -32,57 +32,213 @@ Every resource here meets the [inclusion criteria](CONTRIBUTING.md#inclusion-cri
 
 Ready-made routes through the catalog, stage by stage. On [AI Learning World](https://ailearnworld.com) you can start your board from one of them.
 
-### Deep Learning & Computer Vision
+### Hello AI World
 
-Train deep networks, then teach them to see. Start after Machine Learning Foundations.
+The whole map in one board: programming and math, machine learning, deep learning, then large language models, ML systems or computer vision — and interview prep at the end. Pick the branch that matches the job you want.
 
-1. **Deep Learning Foundations** — You can train an image classifier in PyTorch and explain each step.
-   - [Practical Deep Learning for Coders](https://course.fast.ai/)
-   - *Go deeper:* [PyTorch Tutorials](https://docs.pytorch.org/tutorials/) · [Dive into Deep Learning](https://d2l.ai/) · [MIT 6.S191 — Introduction to Deep Learning](https://introtodeeplearning.com/) · [Deep Learning Specialization](https://www.deeplearning.ai/specializations/deep-learning/) · [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
-2. **Computer Vision** — You can explain how a CNN sees an image and why residual connections help.
-   - [CS231n: Deep Learning for Computer Vision](https://cs231n.stanford.edu/)
-   - *Go deeper:* [Community Computer Vision Course](https://huggingface.co/learn/computer-vision-course/unit0/welcome/welcome) · [Deep Learning for Computer Vision](https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r) · [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) · [Free Computer Vision Courses](https://opencv.org/university/free-courses/)
-3. **Transformers for Vision** — You can explain attention, and how ViT and CLIP apply it to images.
-   - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
-   - *Go deeper:* [Attention Is All You Need](https://arxiv.org/abs/1706.03762) · [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) · [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020)
-4. **Generative Models** — You can explain how a diffusion model turns noise into an image.
-   - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html)
-   - *Go deeper:* [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) · [CS236: Deep Generative Models](https://cs236.stanford.edu/)
+**Programming**
 
-### LLMs & AI Agents
+1. **Programming**
+   - [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/)
+2. **Python for Data**
+   - [Python Programming for Economics and Finance](https://python-programming.quantecon.org/intro.html)
+   - [Kaggle Learn: Pandas](https://www.kaggle.com/learn/pandas)
 
-How large language models work, and how to build agents on top of them. Start after Machine Learning Foundations.
+**Math**
 
-1. **Transformers** — You can build a tiny GPT and explain every part of it.
-   - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
-   - *Go deeper:* [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) · [Attention Is All You Need](https://arxiv.org/abs/1706.03762) · [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch)
-2. **Large Language Models** — You can explain pretraining, fine-tuning and LoRA, and fine-tune a small model.
-   - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter1/1)
-   - *Go deeper:* [CME 295 - Transformers & Large Language Models (Autumn 2025)](https://cme295.stanford.edu/syllabus/2025/) · [Generative AI with Large Language Models](https://www.deeplearning.ai/courses/generative-ai-with-llms/) · [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) · [CS336: Language Modeling from Scratch](https://cs336.stanford.edu/)
-3. **Building with LLMs** — You can build a retrieval-augmented app and measure whether its answers are right.
-   - [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp)
-   - *Go deeper:* [Prompt engineering overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview) · [Prompt Engineering Guide](https://www.promptingguide.ai) · [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) · [AI Engineering](https://github.com/chiphuyen/aie-book)
-4. **AI Agents** — You can build an agent that uses tools, and evaluate it.
-   - [Hugging Face AI Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction)
-   - *Go deeper:* [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) · [Evaluating AI Agents](https://www.deeplearning.ai/courses/evaluating-ai-agents/) · [AI Agents in LangGraph](https://www.deeplearning.ai/courses/ai-agents-in-langgraph/) · [OpenAI — Agents](https://developers.openai.com/api/docs/guides/agents)
-
-### Machine Learning Foundations
-
-From programming and math to training your first neural network. Every main item is free, exercises included; the rest is optional.
-
-1. **Programming** — You can write, run and debug a small program on your own.
-   - [CS50's Introduction to Computer Science](https://cs50.harvard.edu/x/)
-   - *Go deeper:* [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
-2. **Math** — You can explain vectors, matrices, derivatives and probability in your own words.
+1. **Calculus**
    - [Precalculus](https://www.khanacademy.org/math/precalculus)
    - [Differential Calculus](https://www.khanacademy.org/math/differential-calculus)
-   - *Go deeper:* [Essence of Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra) · [Essence of Calculus](https://www.3blue1brown.com/topics/calculus) · [Statistics and probability](https://www.khanacademy.org/math/statistics-probability) · [Linear algebra](https://www.khanacademy.org/math/linear-algebra) · [Multivariable calculus](https://www.khanacademy.org/math/multivariable-calculus) · [Mathematics for Machine Learning and Data Science](https://www.deeplearning.ai/specializations/mathematics-for-machine-learning-and-data-science/) · [Mathematics for Machine Learning](https://mml-book.github.io/)
-3. **Core Machine Learning** — You can train, evaluate and compare regression and classification models.
+   - [Multivariable calculus](https://www.khanacademy.org/math/multivariable-calculus)
+2. **Linear Algebra**
+   - [Linear algebra](https://www.khanacademy.org/math/linear-algebra)
+   - [Essence of Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra)
+3. **Probability & Statistics**
+   - [Statistics and probability](https://www.khanacademy.org/math/statistics-probability)
+
+**Machine Learning**
+
+1. **Core Machine Learning**
    - [Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
-   - *Go deeper:* [Machine Learning Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) · [Machine Learning Specialization](https://www.deeplearning.ai/specializations/machine-learning/) · [CS229: Machine Learning](https://cs229.stanford.edu/) · [UC Berkeley CS189/289A — Introduction to Machine Learning](https://people.eecs.berkeley.edu/~jrs/189/)
-4. **Neural Networks** — You can implement backpropagation for a small network from scratch.
+
+**Deep Learning**
+
+1. **Neural Networks**
+   - [Neural Networks](https://www.3blue1brown.com/topics/neural-networks)
    - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
-   - *Go deeper:* [Neural Networks](https://www.3blue1brown.com/topics/neural-networks) · [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
+2. **Practice**
+   - [Practical Deep Learning for Coders](https://course.fast.ai/)
+   - [Dive into Deep Learning](https://d2l.ai/)
+3. **Theory**
+   - [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
+4. **Attention**
+   - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+5. **Generative Models**
+   - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html)
+
+**Large Language Models**
+
+1. **Transformers & NLP**
+   - [CS224N: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/)
+2. **LLM Training**
+   - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter1/1)
+3. **RAG & Evaluation**
+   - [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp)
+4. **Agents**
+   - [Hugging Face AI Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction)
+
+**ML Systems**
+
+1. **MLOps**
+   - [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp)
+2. **ML System Design**
+   - [CMU 17-445/645 — Machine Learning in Production](https://mlip-cmu.github.io/)
+3. **Training at Scale**
+   - [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook)
+
+**Computer Vision**
+
+1. **Classical CV**
+   - [First Principles of Computer Vision](https://fpcv.cs.columbia.edu/)
+   - [CS131: Computer Vision: Foundations and Applications](https://stanford-cs131.github.io/winter2025/)
+2. **CNNs**
+   - [CS231n: Deep Learning for Computer Vision](https://cs231n.stanford.edu/)
+3. **Vision Transformers**
+   - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
+
+**Interview Prep**
+
+1. **Coding**
+   - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
+2. **ML & DL Questions**
+   - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
+   - [Machine Learning Q and AI](https://sebastianraschka.com/books/ml-q-and-ai/)
+   - [Deep Learning Interviews](https://arxiv.org/abs/2201.00650)
+
+### AI Engineer
+
+How large language models work, and how to build, evaluate and debug systems on top of them. Start after Foundations.
+
+1. **Transformers & NLP** — You can explain attention and implement a Transformer-based NLP model.
+   - [CS224N: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/)
+   - *Go deeper:* [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) · [CME 295 - Transformers & Large Language Models (Autumn 2025)](https://cme295.stanford.edu/syllabus/2025/) · [Attention Is All You Need](https://arxiv.org/abs/1706.03762) · [CMU 11-711 — Advanced Natural Language Processing](https://cmu-l3.github.io/anlp-spring2026/) · [The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer/) · [NLP Course | For You](https://lena-voita.github.io/nlp_course.html)
+2. **LLM Training & Fine-tuning** — You can explain pretraining, fine-tuning and LoRA, and fine-tune a small model.
+   - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter1/1)
+   - *Go deeper:* [CS336: Language Modeling from Scratch](https://cs336.stanford.edu/) · [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) · [Hugging Face smol-course](https://huggingface.co/learn/smol-course/unit0/1) · [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch) · [Reinforcement Learning from Human Feedback and LLM Post-Training](https://rlhfbook.com/) · [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook) · [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) · [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290) · [Foundations of Large Language Models](https://arxiv.org/abs/2501.09223)
+3. **RAG & Evaluation** — You can build a retrieval-augmented app and measure whether its answers are right.
+   - [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp)
+   - *Go deeper:* [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) · [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) · [What We've Learned From A Year of Building with LLMs](https://applied-llms.org/) · [The LLM Evaluation Guidebook](https://huggingface.co/spaces/OpenEvals/evaluation-guidebook) · [Patterns for Building LLM-based Systems & Products](https://eugeneyan.com/writing/llm-patterns/)
+4. **AI Agents** — You can build an agent that uses tools, and evaluate it.
+   - [Hugging Face AI Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction)
+   - *Go deeper:* [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) · [Evaluating AI Agents](https://www.deeplearning.ai/courses/evaluating-ai-agents/) · [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/) · [Agents](https://huyenchip.com/2025/01/07/agents.html) · [Agentic AI MOOC](https://agenticai-learning.org/f25) · [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
+5. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
+   - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
+   - [Machine Learning Q and AI](https://sebastianraschka.com/books/ml-q-and-ai/)
+   - *Go deeper:* [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/) · [6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) · [Transformers & LLMs cheatsheet for Stanford's CME 295](https://github.com/afshinea/stanford-cme-295-transformers-large-language-models/tree/main/en) · [Building A Generative AI Platform](https://huyenchip.com/2024/07/25/genai-platform.html) · [Machine Learning FAQ](https://sebastianraschka.com/faq/)
+
+### Computer Vision Engineer
+
+From image formation to CNNs, vision transformers and generative models. Start after Foundations.
+
+1. **Deep Learning** — You can train an image or text model in PyTorch, explain each step, and explain how attention works.
+   - [Practical Deep Learning for Coders](https://course.fast.ai/)
+   - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+   - *Go deeper:* [PyTorch Tutorials](https://docs.pytorch.org/tutorials/) · [MIT 6.S191 — Introduction to Deep Learning](https://introtodeeplearning.com/) · [UvA Deep Learning Tutorials](https://uvadlc-notebooks.readthedocs.io/en/latest/)
+2. **Classical Computer Vision** — You can explain image formation, edges, features, camera calibration and stereo.
+   - [First Principles of Computer Vision](https://fpcv.cs.columbia.edu/)
+   - [CS131: Computer Vision: Foundations and Applications](https://stanford-cs131.github.io/winter2025/)
+   - *Go deeper:* [CS180/280A: Intro to Computer Vision and Computational Photography](https://cal-cs180.github.io/fa25/) · [Computer Vision: Algorithms and Applications, 2nd ed.](https://szeliski.org/Book/) · [Foundations of Computer Vision](https://visionbook.mit.edu/)
+3. **CNNs for Vision** — You can explain how a CNN sees an image and why residual connections help.
+   - [CS231n: Deep Learning for Computer Vision](https://cs231n.stanford.edu/)
+   - *Go deeper:* [Community Computer Vision Course](https://huggingface.co/learn/computer-vision-course/unit0/welcome/welcome) · [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
+4. **Detection & Segmentation** — You can explain and implement object detection and semantic segmentation (Dive into Deep Learning, chapter 14).
+   - [Dive into Deep Learning](https://d2l.ai/)
+   - *Go deeper:* [MIT 6.5940 — TinyML and Efficient Deep Learning Computing](https://hanlab.mit.edu/courses/2024-fall-65940) · [16-824: Visual Learning and Recognition](https://visual-learning.cs.cmu.edu/) · [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640) · [Mask R-CNN](https://arxiv.org/abs/1703.06870) · [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597) · [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861) · [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497) · [Segment Anything](https://arxiv.org/abs/2304.02643)
+5. **Transformers for Vision** — You can explain how ViT and CLIP apply attention to images.
+   - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
+   - *Go deeper:* [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020)
+6. **Generative Models (optional)** — You can explain how a diffusion model turns noise into an image.
+   - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html)
+   - *Go deeper:* [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) · [CS236: Deep Generative Models](https://cs236.stanford.edu/) · [MIT 6.S184 — Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/) · [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) · [Understanding Diffusion Models: A Unified Perspective](https://arxiv.org/abs/2208.11970)
+7. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
+   - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
+   - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
+   - *Go deeper:* [6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) · [Deep Learning Interviews](https://arxiv.org/abs/2201.00650) · [Stanford CS 229 Machine Learning Cheatsheets](https://stanford.edu/~shervine/teaching/cs-229/)
+
+### Deep Learning Engineer
+
+Design, train and scale neural networks, and know what happens underneath the framework. Start after Foundations.
+
+1. **Deep Learning** — You can train an image or text model in PyTorch, explain each step, and explain how attention works.
+   - [Practical Deep Learning for Coders](https://course.fast.ai/)
+   - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+   - *Go deeper:* [MIT 6.S191 — Introduction to Deep Learning](https://introtodeeplearning.com/)
+2. **Deep Learning in Depth** — You can derive and implement optimization, regularization and normalization for deep networks.
+   - [Dive into Deep Learning](https://d2l.ai/)
+   - [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
+   - *Go deeper:* [CMU 11-785 — Introduction to Deep Learning](https://deeplearning.cs.cmu.edu/) · [Deep Learning: Foundations and Concepts](https://www.bishopbook.com/) · [Deep Learning](https://www.deeplearningbook.org/)
+3. **Architectures** — You can explain and implement CNNs and Transformers, and say when to use each.
+   - [CS231n: Deep Learning for Computer Vision](https://cs231n.stanford.edu/)
+   - [CS224N: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/)
+   - *Go deeper:* [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) · [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+4. **Training & Efficiency** — You can explain mixed precision, data and model parallelism, and quantization, and when each one helps.
+   - [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook)
+   - *Go deeper:* [Deep Learning Systems: Algorithms and Implementation](https://dlsyscourse.org/) · [MIT 6.5940 — TinyML and Efficient Deep Learning Computing](https://hanlab.mit.edu/courses/2024-fall-65940) · [GPU MODE Lectures](https://github.com/gpu-mode/lectures)
+5. **Generative Models** — You can explain how a diffusion model turns noise into an image, and implement one.
+   - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html)
+   - *Go deeper:* [MIT 6.S184 — Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/) · [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239)
+6. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
+   - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
+   - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
+   - [Deep Learning Interviews](https://arxiv.org/abs/2201.00650)
+   - *Go deeper:* [Machine Learning Q and AI](https://sebastianraschka.com/books/ml-q-and-ai/)
+
+### Foundations
+
+Programming, math, machine learning and neural networks — the shared base for the ML Engineer, AI Engineer and Computer Vision Engineer paths.
+
+1. **Programming** — You can write, test and debug a Python program on your own.
+   - [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/)
+   - *Go deeper:* [CS50's Introduction to Computer Science](https://cs50.harvard.edu/x/) · [6.100L Introduction to CS and Programming using Python](https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/) · [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) · [Think Python](https://allendowney.github.io/ThinkPython/) · [Python for Everybody](https://www.py4e.com/)
+2. **Python for Data** — You can work with NumPy arrays, and load, clean, explore and plot a dataset with pandas in a notebook.
+   - [Python Programming for Economics and Finance](https://python-programming.quantecon.org/intro.html)
+   - [Kaggle Learn: Pandas](https://www.kaggle.com/learn/pandas)
+   - *Go deeper:* [Elements of Data Science](https://allendowney.github.io/ElementsOfDataScience/) · [Kaggle Learn: Python](https://www.kaggle.com/learn/python) · [Kaggle Learn: Data Visualization](https://www.kaggle.com/learn/data-visualization) · [100 numpy exercises](https://github.com/rougier/numpy-100) · [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) · [Python for Data Analysis, 3E](https://wesmckinney.com/book/) · [NumPy: the absolute basics for beginners](https://numpy.org/doc/stable/user/absolute_beginners.html)
+3. **Math** — You can work with vectors, matrices, derivatives, partial derivatives and gradients, probability and basic statistics.
+   - [Precalculus](https://www.khanacademy.org/math/precalculus)
+   - [Differential Calculus](https://www.khanacademy.org/math/differential-calculus)
+   - [Statistics and probability](https://www.khanacademy.org/math/statistics-probability)
+   - [Linear algebra](https://www.khanacademy.org/math/linear-algebra)
+   - [Essence of Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra)
+   - [Multivariable calculus](https://www.khanacademy.org/math/multivariable-calculus)
+   - *Go deeper:* [MIT 6.041SC — Probabilistic Systems Analysis and Applied Probability](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/) · [Essence of Calculus](https://www.3blue1brown.com/topics/calculus) · [18.06SC Linear Algebra](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/) · [18.01SC Single Variable Calculus](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/) · [18.065 Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) · [Mathematics for Machine Learning](https://mml-book.github.io/) · [Mathematics for Machine Learning and Data Science](https://www.deeplearning.ai/specializations/mathematics-for-machine-learning-and-data-science/) · [Think Stats](https://allendowney.github.io/ThinkStats/) · [Probability for Computer Scientists](https://chrispiech.github.io/probabilityForComputerScientists/en/)
+4. **Core Machine Learning** — You can train, evaluate and compare regression and classification models.
+   - [Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
+   - *Go deeper:* [Machine Learning Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) · [Machine Learning Specialization](https://www.deeplearning.ai/specializations/machine-learning/) · [CS229: Machine Learning](https://cs229.stanford.edu/) · [UC Berkeley CS189/289A — Introduction to Machine Learning](https://people.eecs.berkeley.edu/~jrs/189/) · [6.036 Introduction to Machine Learning](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/about) · [An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/) · [Kaggle Learn: Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) · [Data 100: Principles and Techniques of Data Science](https://ds100.org/) · [Learning From Data](https://work.caltech.edu/telecourse) · [CS4780: Machine Learning for Intelligent Systems](https://www.cs.cornell.edu/courses/cs4780/2018fa/)
+5. **Neural Networks** — You can implement backpropagation from scratch and build a small GPT.
+   - [Neural Networks](https://www.3blue1brown.com/topics/neural-networks)
+   - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
+   - *Go deeper:* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) · [The Little Book of Deep Learning](https://fleuret.org/francois/lbdl.html)
+
+### ML Engineer
+
+Train, ship and run models in production, and prepare for ML engineering interviews. Start after Foundations.
+
+1. **Deep Learning** — You can train an image or text model in PyTorch, explain each step, and explain how attention works.
+   - [Practical Deep Learning for Coders](https://course.fast.ai/)
+   - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+   - *Go deeper:* [PyTorch Tutorials](https://docs.pytorch.org/tutorials/) · [Dive into Deep Learning](https://d2l.ai/) · [MIT 6.S191 — Introduction to Deep Learning](https://introtodeeplearning.com/) · [Deep Learning Specialization](https://www.deeplearning.ai/specializations/deep-learning/) · [Understanding Deep Learning](https://udlbook.github.io/udlbook/) · [UvA Deep Learning Tutorials](https://uvadlc-notebooks.readthedocs.io/en/latest/) · [Deep Learning: Foundations and Concepts](https://www.bishopbook.com/)
+2. **Deployment & MLOps** — You can deploy a model, track experiments and monitor it in production.
+   - [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp)
+   - *Go deeper:* [Made With ML — MLOps](https://madewithml.com/courses/mlops/) · [MLOps: Continuous delivery and automation pipelines in machine learning](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) · [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/)
+3. **ML System Design** — You can design an ML system end to end and explain its trade-offs.
+   - [CMU 17-445/645 — Machine Learning in Production](https://mlip-cmu.github.io/)
+   - *Go deeper:* [CS 329S: Machine Learning Systems Design](https://stanford-cs329s.github.io/) · [Designing Machine Learning Systems](https://github.com/chiphuyen/dmls-book) · [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html) · [Rules of Machine Learning: Best Practices for ML Engineering](https://developers.google.com/machine-learning/guides/rules-of-ml)
+4. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
+   - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
+   - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
+   - [Machine Learning Q and AI](https://sebastianraschka.com/books/ml-q-and-ai/)
+   - *Go deeper:* [6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) · [Deep Learning Interviews](https://arxiv.org/abs/2201.00650) · [StaffML](https://mlsysbook.ai/staffml/) · [Stanford CS 229 Machine Learning Cheatsheets](https://stanford.edu/~shervine/teaching/cs-229/)
 
 ## AI Foundations
 

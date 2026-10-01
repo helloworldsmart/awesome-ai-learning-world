@@ -1,0 +1,92 @@
+{
+  "title": "Foundations",
+  "summary": "Programming, math, machine learning and neural networks — the shared base for the ML Engineer, AI Engineer and Computer Vision Engineer paths.",
+  "status": "todo",
+  "stages": [
+    {
+      "title": "Programming",
+      "passCriteria": "You can write, test and debug a Python program on your own.",
+      "resources": [
+        "cs50-s-introduction-to-programming-with-python"
+      ],
+      "extras": [
+        "cs50-introduction-to-computer-science",
+        "mit-6-100l-introduction-to-cs-and-programming-using-python",
+        "the-missing-semester-of-your-cs-education-2026",
+        "think-python",
+        "python-for-everybody"
+      ]
+    },
+    {
+      "title": "Python for Data",
+      "passCriteria": "You can work with NumPy arrays, and load, clean, explore and plot a dataset with pandas in a notebook.",
+      "resources": [
+        "python-programming-for-economics-and-finance",
+        "kaggle-learn-pandas"
+      ],
+      "extras": [
+        "elements-of-data-science",
+        "kaggle-learn-python",
+        "kaggle-learn-data-visualization",
+        "100-numpy-exercises",
+        "python-data-science-handbook",
+        "python-for-data-analysis-3e",
+        "numpy-the-absolute-basics-for-beginners"
+      ]
+    },
+    {
+      "title": "Math",
+      "passCriteria": "You can work with vectors, matrices, derivatives, partial derivatives and gradients, probability and basic statistics.",
+      "resources": [
+        "khan-academy-precalculus",
+        "khan-academy-differential-calculus",
+        "khan-academy-statistics-and-probability",
+        "khan-academy-linear-algebra",
+        "essence-of-linear-algebra",
+        "khan-academy-multivariable-calculus"
+      ],
+      "extras": [
+        "mit-6-041sc-probabilistic-systems-analysis-and-applied-probability",
+        "essence-of-calculus",
+        "mit-18-06sc-linear-algebra",
+        "mit-18-01sc-single-variable-calculus",
+        "mit-18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning",
+        "mathematics-for-machine-learning",
+        "mathematics-for-machine-learning-and-data-science",
+        "think-stats",
+        "probability-for-computer-scientists"
+      ]
+    },
+    {
+      "title": "Core Machine Learning",
+      "passCriteria": "You can train, evaluate and compare regression and classification models.",
+      "resources": [
+        "google-machine-learning-crash-course"
+      ],
+      "extras": [
+        "machine-learning-zoomcamp",
+        "machine-learning-specialization-andrew-ng",
+        "stanford-cs229-machine-learning",
+        "uc-berkeley-cs189-289a-introduction-to-machine-learning",
+        "mit-6-036-introduction-to-machine-learning",
+        "an-introduction-to-statistical-learning-with-applications-in-python",
+        "kaggle-learn-intro-to-machine-learning",
+        "data-100-principles-and-techniques-of-data-science",
+        "learning-from-data",
+        "cs4780-machine-learning-for-intelligent-systems"
+      ]
+    },
+    {
+      "title": "Neural Networks",
+      "passCriteria": "You can implement backpropagation from scratch and build a small GPT.",
+      "resources": [
+        "neural-networks-3blue1brown",
+        "neural-networks-zero-to-hero"
+      ],
+      "extras": [
+        "neural-networks-and-deep-learning",
+        "the-little-book-of-deep-learning"
+      ]
+    }
+  ]
+}

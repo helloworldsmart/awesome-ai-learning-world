@@ -99,10 +99,29 @@ export function buildReadme({ skills, entries, paths = [] }) {
     out.push("");
     out.push("Ready-made routes through the catalog, stage by stage. On [AI Learning World](https://ailearnworld.com) you can start your board from one of them.");
     out.push("");
-    for (const p of [...paths].sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }))) {
+    // 世界路徑（app 的 ADR-0050）是主角，排在最前面；它的段落分屬各領域，每個領域一個小標。
+    const isWorld = (p) => Array.isArray(p.domains) && p.domains.length > 0;
+    const sorted = [...paths].sort(
+      (a, b) => Number(isWorld(b)) - Number(isWorld(a)) || a.title.localeCompare(b.title, "en", { sensitivity: "base" }),
+    );
+    for (const p of sorted) {
       out.push(`### ${p.title}`);
       out.push("");
       if (p.summary) out.push(`${p.summary}`, "");
+      if (isWorld(p)) {
+        for (const d of p.domains) {
+          out.push(`**${d.title}**`, "");
+          d.stages.forEach((st, i) => {
+            out.push(`${i + 1}. **${st.title}**${st.passCriteria ? ` — ${st.passCriteria}` : ""}`);
+            for (const slug of st.resources) {
+              const e = bySlug.get(slug);
+              out.push(`   - [${e.title}](${e.url})`);
+            }
+          });
+          out.push("");
+        }
+        continue;
+      }
       p.stages.forEach((st, i) => {
         out.push(`${i + 1}. **${st.title}**${st.passCriteria ? ` — ${st.passCriteria}` : ""}`);
         for (const slug of st.resources) {

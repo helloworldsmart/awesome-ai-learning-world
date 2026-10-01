@@ -1,0 +1,251 @@
+{
+  "title": "Hello AI World",
+  "summary": "The whole map in one board: programming and math, machine learning, deep learning, then large language models, ML systems or computer vision — and interview prep at the end. Pick the branch that matches the job you want.",
+  "status": "todo",
+  "domains": [
+    {
+      "title": "Programming",
+      "color": "slate",
+      "outline": true,
+      "stages": [
+        {
+          "title": "Programming",
+          "resources": [
+            "cs50-s-introduction-to-programming-with-python"
+          ]
+        },
+        {
+          "title": "Python for Data",
+          "resources": [
+            "python-programming-for-economics-and-finance",
+            "kaggle-learn-pandas"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Math",
+      "color": "slate",
+      "outline": true,
+      "stages": [
+        {
+          "title": "Calculus",
+          "resources": [
+            "khan-academy-precalculus",
+            "khan-academy-differential-calculus",
+            "khan-academy-multivariable-calculus"
+          ]
+        },
+        {
+          "title": "Linear Algebra",
+          "resources": [
+            "khan-academy-linear-algebra",
+            "essence-of-linear-algebra"
+          ]
+        },
+        {
+          "title": "Probability & Statistics",
+          "resources": [
+            "khan-academy-statistics-and-probability"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Machine Learning",
+      "color": "teal",
+      "outline": true,
+      "stages": [
+        {
+          "title": "Core Machine Learning",
+          "resources": [
+            "google-machine-learning-crash-course"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deep Learning",
+      "color": "teal",
+      "outline": true,
+      "stages": [
+        {
+          "title": "Neural Networks",
+          "resources": [
+            "neural-networks-3blue1brown",
+            "neural-networks-zero-to-hero"
+          ]
+        },
+        {
+          "title": "Practice",
+          "resources": [
+            "practical-deep-learning-for-coders",
+            "dive-into-deep-learning"
+          ]
+        },
+        {
+          "title": "Theory",
+          "resources": [
+            "understanding-deep-learning"
+          ]
+        },
+        {
+          "title": "Attention",
+          "resources": [
+            "the-illustrated-transformer"
+          ]
+        },
+        {
+          "title": "Generative Models",
+          "resources": [
+            "deep-learning-foundations-to-stable-diffusion"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Large Language Models",
+      "color": "rose",
+      "outline": true,
+      "stages": [
+        {
+          "title": "Transformers & NLP",
+          "resources": [
+            "stanford-cs224n-natural-language-processing-with-deep-learning"
+          ]
+        },
+        {
+          "title": "LLM Training",
+          "resources": [
+            "hugging-face-llm-course"
+          ]
+        },
+        {
+          "title": "RAG & Evaluation",
+          "resources": [
+            "llm-zoomcamp"
+          ]
+        },
+        {
+          "title": "Agents",
+          "resources": [
+            "hugging-face-ai-agents-course"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ML Systems",
+      "color": "orange",
+      "outline": true,
+      "stages": [
+        {
+          "title": "MLOps",
+          "resources": [
+            "mlops-zoomcamp"
+          ]
+        },
+        {
+          "title": "ML System Design",
+          "resources": [
+            "cmu-17-445-645-machine-learning-in-production"
+          ]
+        },
+        {
+          "title": "Training at Scale",
+          "resources": [
+            "the-ultra-scale-playbook-training-llms-on-gpu-clusters"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Computer Vision",
+      "color": "red",
+      "outline": true,
+      "stages": [
+        {
+          "title": "Classical CV",
+          "resources": [
+            "first-principles-of-computer-vision",
+            "cs131-computer-vision-foundations-and-applications"
+          ]
+        },
+        {
+          "title": "CNNs",
+          "resources": [
+            "cs231n-deep-learning-for-computer-vision"
+          ]
+        },
+        {
+          "title": "Vision Transformers",
+          "resources": [
+            "an-image-is-worth-16x16-words-vit"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Interview Prep",
+      "color": "gold",
+      "outline": true,
+      "stages": [
+        {
+          "title": "Coding",
+          "resources": [
+            "tech-interview-handbook"
+          ]
+        },
+        {
+          "title": "ML & DL Questions",
+          "resources": [
+            "introduction-to-machine-learning-interviews-book",
+            "machine-learning-q-and-ai",
+            "deep-learning-interviews"
+          ]
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "from": "Programming",
+      "to": "Machine Learning"
+    },
+    {
+      "from": "Math",
+      "to": "Machine Learning"
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Deep Learning"
+    },
+    {
+      "from": "Deep Learning",
+      "fromStage": "Attention",
+      "to": "Large Language Models"
+    },
+    {
+      "from": "Deep Learning",
+      "fromStage": "Attention",
+      "to": "ML Systems"
+    },
+    {
+      "from": "Deep Learning",
+      "fromStage": "Attention",
+      "to": "Computer Vision"
+    },
+    {
+      "from": "Large Language Models",
+      "to": "Interview Prep"
+    },
+    {
+      "from": "ML Systems",
+      "to": "Interview Prep"
+    },
+    {
+      "from": "Computer Vision",
+      "to": "Interview Prep"
+    }
+  ]
+}
