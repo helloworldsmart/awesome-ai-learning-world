@@ -2,7 +2,7 @@
   "title": "OpenAI — Agents",
   "url": "https://developers.openai.com/api/docs/guides/agents",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "docs",
   "provider": "OpenAI",
   "creator": "OpenAI",

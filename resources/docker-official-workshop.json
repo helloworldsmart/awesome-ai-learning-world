@@ -1,8 +1,8 @@
 {
-  "title": "Docker — Official Workshop",
-  "url": "https://docs.docker.com/get-started/workshop/",
+  "title": "Build and share a containerized application",
+  "url": "https://docs.docker.com/get-started/tutorials/run-an-app/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "docs",
   "provider": "Docker",
   "creator": "Docker",

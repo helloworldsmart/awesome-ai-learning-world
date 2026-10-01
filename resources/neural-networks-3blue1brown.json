@@ -1,6 +1,6 @@
 {
-  "title": "Neural networks",
-  "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",
+  "title": "Neural Networks",
+  "url": "https://www.3blue1brown.com/topics/neural-networks",
   "kind": "resource",
   "status": "todo",
   "type": "video",
@@ -8,7 +8,7 @@
   "creator": "Grant Sanderson",
   "language": "en",
   "difficulty": "",
-  "durationMinutes": 218,
+  "durationMinutes": 0,
   "skills": [
     "Deep Learning",
     "Math"

@@ -2,7 +2,7 @@
   "title": "Effective Go",
   "url": "https://go.dev/doc/effective_go",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "docs",
   "provider": "go.dev",
   "creator": "The Go Authors",

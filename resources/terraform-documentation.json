@@ -2,7 +2,7 @@
   "title": "Terraform Documentation",
   "url": "https://developer.hashicorp.com/terraform/docs",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "docs",
   "provider": "HashiCorp",
   "creator": "HashiCorp",

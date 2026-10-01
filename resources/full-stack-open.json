@@ -1,8 +1,8 @@
 {
-  "title": "Full Stack Open",
+  "title": "Full stack open",
   "url": "https://fullstackopen.com/en/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "University of Helsinki",
   "creator": "Matti Luukkainen",

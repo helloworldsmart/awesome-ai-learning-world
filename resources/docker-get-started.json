@@ -1,8 +1,8 @@
 {
-  "title": "Docker: Get Started",
+  "title": "Get started with Docker",
   "url": "https://docs.docker.com/get-started/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "docs",
   "provider": "Docker",
   "creator": "Docker Inc.",

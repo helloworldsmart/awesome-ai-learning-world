@@ -2,7 +2,7 @@
   "title": "Kubernetes Documentation",
   "url": "https://kubernetes.io/docs/home/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "docs",
   "provider": "kubernetes.io",
   "creator": "The Kubernetes Authors",

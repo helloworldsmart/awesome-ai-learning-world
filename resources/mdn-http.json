@@ -1,8 +1,8 @@
 {
-  "title": "MDN: HTTP",
+  "title": "HTTP: Hypertext Transfer Protocol",
   "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "docs",
   "provider": "MDN",
   "creator": "Mozilla",

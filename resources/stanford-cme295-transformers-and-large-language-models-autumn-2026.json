@@ -1,8 +1,8 @@
 {
-  "title": "Stanford CME295 — Transformers and Large Language Models (Autumn 2026)",
-  "url": "https://www.youtube.com/playlist?list=PLakGfbKCei80",
+  "title": "CME 295 - Transformers & Large Language Models (Autumn 2026)",
+  "url": "https://cme295.stanford.edu/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "Stanford",
   "creator": "Afshine Amidi, Shervine Amidi",

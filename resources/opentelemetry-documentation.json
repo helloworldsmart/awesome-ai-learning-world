@@ -2,7 +2,7 @@
   "title": "OpenTelemetry Documentation",
   "url": "https://opentelemetry.io/docs/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "docs",
   "provider": "OpenTelemetry",
   "creator": "OpenTelemetry Authors",

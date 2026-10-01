@@ -1,8 +1,8 @@
 {
-  "title": "MIT 6.5840 — Distributed Systems",
+  "title": "6.5840: Distributed Systems",
   "url": "https://pdos.csail.mit.edu/6.824/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "MIT",
   "creator": "Robert Morris, Frans Kaashoek",

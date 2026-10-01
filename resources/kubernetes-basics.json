@@ -2,7 +2,7 @@
   "title": "Learn Kubernetes Basics",
   "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "docs",
   "provider": "Kubernetes",
   "creator": "The Kubernetes Authors",

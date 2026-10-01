@@ -1,8 +1,8 @@
 {
-  "title": "Stanford CS228 — Probabilistic Graphical Models",
-  "url": "https://cs.stanford.edu/~ermon/cs228/index.html",
+  "title": "CS 228 - Probabilistic Graphical Models",
+  "url": "https://ermongroup.github.io/cs228/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "Stanford",
   "creator": "Stefano Ermon",

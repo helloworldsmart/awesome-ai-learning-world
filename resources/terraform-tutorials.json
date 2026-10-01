@@ -2,7 +2,7 @@
   "title": "Terraform Tutorials",
   "url": "https://developer.hashicorp.com/terraform/tutorials",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "docs",
   "provider": "HashiCorp",
   "creator": "HashiCorp",

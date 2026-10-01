@@ -1,8 +1,8 @@
 {
-  "title": "Redis: Develop with Redis",
+  "title": "Develop with Redis",
   "url": "https://redis.io/docs/latest/develop/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "docs",
   "provider": "Redis",
   "creator": "",

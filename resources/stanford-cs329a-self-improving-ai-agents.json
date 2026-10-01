@@ -1,8 +1,8 @@
 {
-  "title": "Stanford CS329A — Self-Improving AI Agents",
+  "title": "CS329A Self-Improving AI Agents",
   "url": "https://cs329a.stanford.edu/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "Stanford",
   "creator": "Aakanksha Chowdhery, Azalia Mirhoseini",

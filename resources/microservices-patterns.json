@@ -2,7 +2,7 @@
   "title": "A pattern language for microservices",
   "url": "https://microservices.io/patterns/index.html",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "article",
   "provider": "microservices.io",
   "creator": "Chris Richardson",

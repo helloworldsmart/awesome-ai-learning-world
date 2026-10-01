@@ -1,8 +1,8 @@
 {
-  "title": "Learn Computer Vision: Tutorials and Guides",
+  "title": "Learn Computer Vision",
   "url": "https://roboflow.com/learn",
   "kind": "feed",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "article",
   "provider": "Roboflow",
   "creator": "",

@@ -1,8 +1,8 @@
 {
-  "title": "OpenCV University Free Courses",
+  "title": "Free Computer Vision Courses",
   "url": "https://opencv.org/university/free-courses/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "OpenCV.org",
   "creator": "",

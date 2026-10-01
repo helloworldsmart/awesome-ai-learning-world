@@ -1,8 +1,8 @@
 {
   "title": "CS50's Introduction to Databases with SQL",
-  "url": "https://pll.harvard.edu/course/cs50s-introduction-databases-sql",
+  "url": "https://cs50.harvard.edu/sql/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "Harvard University",
   "creator": "Carter Zenke, David J. Malan",

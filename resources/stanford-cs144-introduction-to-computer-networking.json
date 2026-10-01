@@ -1,8 +1,8 @@
 {
-  "title": "Stanford CS144 — Introduction to Computer Networking",
+  "title": "CS 144: Introduction to Computer Networking",
   "url": "https://cs144.github.io/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "Stanford",
   "creator": "Keith Winstein",

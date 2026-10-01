@@ -1,8 +1,8 @@
 {
-  "title": "CMU 15-213 — Introduction to Computer Systems",
+  "title": "15-213/15-513/14-513 Introduction to Computer Systems",
   "url": "https://www.cs.cmu.edu/~213/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "CMU",
   "creator": "Phillip Gibbons, Seth Goldstein",

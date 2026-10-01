@@ -1,8 +1,8 @@
 {
-  "title": "DataTalks.Club — Data Engineering Zoomcamp",
+  "title": "Data Engineering Zoomcamp",
   "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "DataTalks.Club",
   "creator": "Alexey Grigorev",

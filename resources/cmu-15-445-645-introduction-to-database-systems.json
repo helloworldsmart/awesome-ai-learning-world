@@ -1,8 +1,8 @@
 {
-  "title": "CMU 15-445/645 — Introduction to Database Systems",
+  "title": "CMU 15-445/645 :: Intro to Database Systems",
   "url": "https://15445.courses.cs.cmu.edu/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "CMU",
   "creator": "Jignesh Patel",

@@ -84,6 +84,10 @@ Every resource and path moves through **To Do → In Progress → Done**:
 - `in_progress` — being cleaned up.
 - `done` — a maintainer checked every field against the official page.
 
+Off to the side there is one more:
+
+- `proposed_removal` — someone thinks it should leave the catalog (the reason goes in the pull request). It stays listed until a maintainer decides; only a maintainer deletes the file.
+
 **Changes to a `done` resource or path need a maintainer's explicit OK.** A bot labels pull requests that touch one (`touches-done`) so they are never merged by accident. The status is our workflow, not a quality badge — everything listed meets the criteria.
 
 ## Accuracy rules

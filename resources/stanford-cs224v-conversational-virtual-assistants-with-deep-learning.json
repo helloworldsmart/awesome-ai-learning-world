@@ -1,8 +1,8 @@
 {
-  "title": "Stanford CS224V — Agentic AI",
+  "title": "CS 224V Agentic AI",
   "url": "https://cs224v.stanford.edu/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "course",
   "provider": "Stanford",
   "creator": "Monica Lam",

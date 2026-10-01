@@ -10,7 +10,7 @@ import { join } from "node:path";
 export const TYPES = ["video", "course", "article", "book", "paper", "docs", "github"];
 // "" means unknown: the official page does not state a level, so we do not guess.
 export const DIFFICULTIES = ["", "beginner", "intermediate", "advanced"];
-export const STATUSES = ["todo", "in_progress", "done"];
+export const STATUSES = ["todo", "in_progress", "done", "proposed_removal"];
 export const KINDS = ["resource", "feed"];
 export const ROLES = ["primary", "supplementary"];
 // Each resource teaches 1–3 skills. XP is split evenly across them in the app, so a

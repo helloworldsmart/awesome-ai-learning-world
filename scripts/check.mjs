@@ -16,5 +16,5 @@ if (problems.length > 0) {
 
 const count = (status) => entries.filter((e) => e.status === status).length;
 console.log(
-  `OK: ${entries.length} resources (todo ${count("todo")} · in progress ${count("in_progress")} · done ${count("done")}) · ${skills.length} skills · ${paths.length} paths`,
+  `OK: ${entries.length} resources (todo ${count("todo")} · in progress ${count("in_progress")} · done ${count("done")} · proposed removal ${count("proposed_removal")}) · ${skills.length} skills · ${paths.length} paths`,
 );

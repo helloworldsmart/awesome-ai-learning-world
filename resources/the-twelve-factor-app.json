@@ -2,7 +2,7 @@
   "title": "The Twelve-Factor App",
   "url": "https://12factor.net/",
   "kind": "resource",
-  "status": "todo",
+  "status": "proposed_removal",
   "type": "article",
   "provider": "12factor.net",
   "creator": "Adam Wiggins",
