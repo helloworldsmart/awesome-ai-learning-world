@@ -82,6 +82,13 @@
       ]
     },
     {
+      "title": "Portfolio Project",
+      "passCriteria": "You can fine-tune a detector on your own dataset, evaluate it per class with mAP, show where it fails, and deploy it behind an API.",
+      "resources": [
+        "fine-tuning-object-detection-model-on-a-custom-dataset"
+      ]
+    },
+    {
       "title": "Interview Prep",
       "passCriteria": "You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.",
       "resources": [

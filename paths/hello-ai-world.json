@@ -135,7 +135,7 @@
         },
         {
           "title": "RAG & Evaluation",
-          "passCriteria": "You can build a retrieval-augmented app and measure whether its answers are right.",
+          "passCriteria": "You can build a retrieval-augmented app end to end, compare at least two retrieval approaches, and write up where its answers fail.",
           "resources": [
             "llm-zoomcamp"
           ]
@@ -174,6 +174,13 @@
           "resources": [
             "the-ultra-scale-playbook-training-llms-on-gpu-clusters"
           ]
+        },
+        {
+          "title": "Portfolio Project",
+          "passCriteria": "You can take one model from raw data to a deployed, tested service, show where it fails, and explain your trade-offs.",
+          "resources": [
+            "made-with-ml-mlops"
+          ]
         }
       ]
     },
@@ -202,6 +209,13 @@
           "passCriteria": "You can explain how ViT and CLIP apply attention to images.",
           "resources": [
             "an-image-is-worth-16x16-words-vit"
+          ]
+        },
+        {
+          "title": "Portfolio Project",
+          "passCriteria": "You can fine-tune a detector on your own dataset, evaluate it per class with mAP, show where it fails, and deploy it behind an API.",
+          "resources": [
+            "fine-tuning-object-detection-model-on-a-custom-dataset"
           ]
         }
       ]

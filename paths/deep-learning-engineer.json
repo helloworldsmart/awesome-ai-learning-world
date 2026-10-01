@@ -63,6 +63,13 @@
       ]
     },
     {
+      "title": "Portfolio Project",
+      "passCriteria": "You can take one model from raw data to a deployed, tested service, show where it fails, and explain your trade-offs.",
+      "resources": [
+        "made-with-ml-mlops"
+      ]
+    },
+    {
       "title": "Interview Prep",
       "passCriteria": "You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.",
       "resources": [

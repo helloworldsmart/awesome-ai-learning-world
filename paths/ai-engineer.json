@@ -38,7 +38,7 @@
     },
     {
       "title": "RAG & Evaluation",
-      "passCriteria": "You can build a retrieval-augmented app and measure whether its answers are right.",
+      "passCriteria": "You can build a retrieval-augmented app end to end, compare at least two retrieval approaches, and write up where its answers fail.",
       "resources": [
         "llm-zoomcamp"
       ],

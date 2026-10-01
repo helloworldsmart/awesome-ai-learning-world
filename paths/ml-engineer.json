@@ -27,7 +27,6 @@
         "mlops-zoomcamp"
       ],
       "extras": [
-        "made-with-ml-mlops",
         "mlops-continuous-delivery-and-automation-pipelines-in-machine-learning",
         "the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction"
       ]
@@ -43,6 +42,13 @@
         "designing-machine-learning-systems",
         "hidden-technical-debt-in-machine-learning-systems",
         "rules-of-machine-learning-best-practices-for-ml-engineering"
+      ]
+    },
+    {
+      "title": "Portfolio Project",
+      "passCriteria": "You can take one model from raw data to a deployed, tested service, show where it fails, and explain your trade-offs.",
+      "resources": [
+        "made-with-ml-mlops"
       ]
     },
     {

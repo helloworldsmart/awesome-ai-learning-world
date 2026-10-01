@@ -1,0 +1,15 @@
+{
+  "title": "Fine-Tuning Object Detection Model on a Custom Dataset, Deployment in Spaces, and Gradio API Integration",
+  "url": "https://huggingface.co/learn/cookbook/fine_tuning_detr_custom_dataset",
+  "kind": "resource",
+  "status": "todo",
+  "type": "article",
+  "provider": "Hugging Face",
+  "creator": "Sergio Paniego",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": [
+    "Computer Vision"
+  ]
+}

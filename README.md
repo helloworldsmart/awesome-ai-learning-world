@@ -82,7 +82,7 @@ The whole map in one board: programming and math, machine learning, deep learnin
    - [CS224N: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/)
 2. **LLM Training** — You can explain pretraining, fine-tuning and LoRA, and fine-tune a small model.
    - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter1/1)
-3. **RAG & Evaluation** — You can build a retrieval-augmented app and measure whether its answers are right.
+3. **RAG & Evaluation** — You can build a retrieval-augmented app end to end, compare at least two retrieval approaches, and write up where its answers fail.
    - [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp)
 4. **Agents** — You can build an agent that uses tools, and evaluate it.
    - [Hugging Face AI Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction)
@@ -95,6 +95,8 @@ The whole map in one board: programming and math, machine learning, deep learnin
    - [CMU 17-445/645 — Machine Learning in Production](https://mlip-cmu.github.io/)
 3. **Training at Scale** — You can explain mixed precision, data and model parallelism, and quantization, and when each one helps.
    - [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook)
+4. **Portfolio Project** — You can take one model from raw data to a deployed, tested service, show where it fails, and explain your trade-offs.
+   - [Made With ML — MLOps](https://madewithml.com/courses/mlops/)
 
 **Computer Vision**
 
@@ -105,6 +107,8 @@ The whole map in one board: programming and math, machine learning, deep learnin
    - [CS231n: Deep Learning for Computer Vision](https://cs231n.stanford.edu/)
 3. **Vision Transformers** — You can explain how ViT and CLIP apply attention to images.
    - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
+4. **Portfolio Project** — You can fine-tune a detector on your own dataset, evaluate it per class with mAP, show where it fails, and deploy it behind an API.
+   - [Fine-Tuning Object Detection Model on a Custom Dataset, Deployment in Spaces, and Gradio API Integration](https://huggingface.co/learn/cookbook/fine_tuning_detr_custom_dataset)
 
 **Interview Prep**
 
@@ -125,7 +129,7 @@ How large language models work, and how to build, evaluate and debug systems on 
 2. **LLM Training & Fine-tuning** — You can explain pretraining, fine-tuning and LoRA, and fine-tune a small model.
    - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter1/1)
    - *Go deeper:* [CS336: Language Modeling from Scratch](https://cs336.stanford.edu/) · [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) · [Hugging Face smol-course](https://huggingface.co/learn/smol-course/unit0/1) · [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch) · [Reinforcement Learning from Human Feedback and LLM Post-Training](https://rlhfbook.com/) · [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook) · [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) · [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290) · [Foundations of Large Language Models](https://arxiv.org/abs/2501.09223)
-3. **RAG & Evaluation** — You can build a retrieval-augmented app and measure whether its answers are right.
+3. **RAG & Evaluation** — You can build a retrieval-augmented app end to end, compare at least two retrieval approaches, and write up where its answers fail.
    - [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp)
    - *Go deeper:* [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) · [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) · [What We've Learned From A Year of Building with LLMs](https://applied-llms.org/) · [The LLM Evaluation Guidebook](https://huggingface.co/spaces/OpenEvals/evaluation-guidebook) · [Patterns for Building LLM-based Systems & Products](https://eugeneyan.com/writing/llm-patterns/)
 4. **AI Agents** — You can build an agent that uses tools, and evaluate it.
@@ -160,7 +164,9 @@ From image formation to CNNs, vision transformers and generative models. Start a
 6. **Generative Models (optional)** — You can explain how a diffusion model turns noise into an image.
    - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html)
    - *Go deeper:* [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) · [CS236: Deep Generative Models](https://cs236.stanford.edu/) · [MIT 6.S184 — Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/) · [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) · [Understanding Diffusion Models: A Unified Perspective](https://arxiv.org/abs/2208.11970)
-7. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
+7. **Portfolio Project** — You can fine-tune a detector on your own dataset, evaluate it per class with mAP, show where it fails, and deploy it behind an API.
+   - [Fine-Tuning Object Detection Model on a Custom Dataset, Deployment in Spaces, and Gradio API Integration](https://huggingface.co/learn/cookbook/fine_tuning_detr_custom_dataset)
+8. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
    - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
    - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
    - *Go deeper:* [6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) · [Deep Learning Interviews](https://arxiv.org/abs/2201.00650) · [Stanford CS 229 Machine Learning Cheatsheets](https://stanford.edu/~shervine/teaching/cs-229/)
@@ -187,7 +193,9 @@ Design, train and scale neural networks, and know what happens underneath the fr
 5. **Generative Models** — You can explain how a diffusion model turns noise into an image, and implement one.
    - [Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion](https://course.fast.ai/Lessons/part2.html)
    - *Go deeper:* [MIT 6.S184 — Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/) · [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239)
-6. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
+6. **Portfolio Project** — You can take one model from raw data to a deployed, tested service, show where it fails, and explain your trade-offs.
+   - [Made With ML — MLOps](https://madewithml.com/courses/mlops/)
+7. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
    - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
    - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
    - [Deep Learning Interviews](https://arxiv.org/abs/2201.00650)
@@ -230,11 +238,13 @@ Train, ship and run models in production, and prepare for ML engineering intervi
    - *Go deeper:* [PyTorch Tutorials](https://docs.pytorch.org/tutorials/) · [Dive into Deep Learning](https://d2l.ai/) · [MIT 6.S191 — Introduction to Deep Learning](https://introtodeeplearning.com/) · [Deep Learning Specialization](https://www.deeplearning.ai/specializations/deep-learning/) · [Understanding Deep Learning](https://udlbook.github.io/udlbook/) · [UvA Deep Learning Tutorials](https://uvadlc-notebooks.readthedocs.io/en/latest/) · [Deep Learning: Foundations and Concepts](https://www.bishopbook.com/)
 2. **Deployment & MLOps** — You can deploy a model, track experiments and monitor it in production.
    - [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp)
-   - *Go deeper:* [Made With ML — MLOps](https://madewithml.com/courses/mlops/) · [MLOps: Continuous delivery and automation pipelines in machine learning](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) · [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/)
+   - *Go deeper:* [MLOps: Continuous delivery and automation pipelines in machine learning](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) · [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/)
 3. **ML System Design** — You can design an ML system end to end and explain its trade-offs.
    - [CMU 17-445/645 — Machine Learning in Production](https://mlip-cmu.github.io/)
    - *Go deeper:* [CS 329S: Machine Learning Systems Design](https://stanford-cs329s.github.io/) · [Designing Machine Learning Systems](https://github.com/chiphuyen/dmls-book) · [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html) · [Rules of Machine Learning: Best Practices for ML Engineering](https://developers.google.com/machine-learning/guides/rules-of-ml)
-4. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
+4. **Portfolio Project** — You can take one model from raw data to a deployed, tested service, show where it fails, and explain your trade-offs.
+   - [Made With ML — MLOps](https://madewithml.com/courses/mlops/)
+5. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
    - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
    - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
    - [Machine Learning Q and AI](https://sebastianraschka.com/books/ml-q-and-ai/)
@@ -358,6 +368,7 @@ Getting machines to understand images and video.
 - [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597) - arXiv, Olaf Ronneberger, Philipp Fischer, Thomas Brox. <sub>paper</sub>
 - [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640) - arXiv, Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi. <sub>paper</sub>
 - [Deconvolution and Checkerboard Artifacts](https://distill.pub/2016/deconv-checkerboard/) - Distill, Odena et al. <sub>article</sub>
+- [Fine-Tuning Object Detection Model on a Custom Dataset, Deployment in Spaces, and Gradio API Integration](https://huggingface.co/learn/cookbook/fine_tuning_detr_custom_dataset) - Hugging Face, Sergio Paniego. <sub>article</sub>
 
 ## NLP
 
