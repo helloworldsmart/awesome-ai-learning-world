@@ -2,6 +2,7 @@
   "title": "ML Engineer",
   "summary": "Train, ship and run models in production, and prepare for ML engineering interviews. Start after Foundations.",
   "status": "todo",
+  "color": "orange",
   "stages": [
     {
       "title": "Deep Learning",

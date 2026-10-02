@@ -2,6 +2,7 @@
   "title": "Foundations",
   "summary": "Programming, math, machine learning and neural networks — the shared base for the ML Engineer, AI Engineer and Computer Vision Engineer paths.",
   "status": "todo",
+  "color": "slate",
   "stages": [
     {
       "title": "Programming",

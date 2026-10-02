@@ -2,6 +2,7 @@
   "title": "Computer Vision Engineer",
   "summary": "From image formation to CNNs, vision transformers and generative models. Start after Foundations.",
   "status": "todo",
+  "color": "red",
   "stages": [
     {
       "title": "Deep Learning",

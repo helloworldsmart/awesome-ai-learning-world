@@ -29,6 +29,13 @@ merged here reaches users only after a tag and a release.
 10. **Paths follow the same status rules as resources** (`todo` → `in_progress` → `done`; ask
     before changing a `done` path; never move one to `done`). A path only lists `kind: "resource"`
     entries — a feed never finishes.
+11. **Every path file stands alone.** No check ties one path to another — in particular
+    `hello-ai-world.json` is *not* forced to equal the union of the job paths. Keeping them in
+    step is your job, by asking: **whenever you add, remove or swap a main resource (or a stage)
+    in one path, stop and ask the maintainer whether the paths that cover the same topic should
+    change too** — name the files and the exact edit (e.g. "AI Engineer gained X; add X to Hello AI
+    World's Large Language Models domain?"). Same in reverse when editing Hello AI World. Don't
+    sync silently, and don't skip asking.
 
 ## Layout
 

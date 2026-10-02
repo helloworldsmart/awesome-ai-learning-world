@@ -65,6 +65,7 @@ A path is a ready-made route through the catalog: `paths/<slug>.json`, a list of
   "title": "Machine Learning Foundations",
   "summary": "From programming and math to training your first neural network.",
   "status": "todo",
+  "color": "slate",
   "stages": [
     {
       "title": "Math",
@@ -75,7 +76,7 @@ A path is a ready-made route through the catalog: `paths/<slug>.json`, a list of
 }
 ```
 
-`resources` are file names from `resources/` without `.json`. Only `"kind": "resource"` entries can be on a path. `passCriteria` is optional. On AI Learning World each stage becomes a group on the board, laid out left to right.
+`resources` are file names from `resources/` without `.json`. Only `"kind": "resource"` entries can be on a path. `passCriteria` is optional. `color` is optional: one of `green`, `teal`, `blue`, `purple`, `rose`, `red`, `orange`, `slate`, `gold`, `cyan`, `brown`, `indigo` (leave it out for neutral gray). On AI Learning World each stage becomes a group on the board, laid out left to right.
 
 ## Status
 

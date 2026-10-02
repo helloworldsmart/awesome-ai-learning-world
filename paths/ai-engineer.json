@@ -2,6 +2,7 @@
   "title": "AI Engineer",
   "summary": "How large language models work, and how to build, evaluate and debug systems on top of them. Start after Foundations.",
   "status": "todo",
+  "color": "rose",
   "stages": [
     {
       "title": "Transformers & NLP",

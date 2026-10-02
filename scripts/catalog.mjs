@@ -29,7 +29,7 @@ const UNIT_KEYS = [
 ];
 const UNIT_RESOURCE_KEYS = ["title", "url", "type", "role", "provider", "creator", "language"];
 const SKILL_KEYS = ["name", "description"];
-const PATH_KEYS = ["title", "summary", "status", "stages", "domains", "links"];
+const PATH_KEYS = ["title", "summary", "status", "color", "stages", "domains", "links"];
 const DOMAIN_KEYS = ["title", "color", "outline", "stages"];
 const LINK_KEYS = ["from", "fromStage", "to"];
 // 領域色票（app 的 --swatch-<color>，ADR-0051）。
@@ -129,9 +129,13 @@ export function validatePaths(paths, entries) {
     };
     if (Array.isArray(p.domains) && p.domains.length > 0) {
       if (Array.isArray(p.stages) && p.stages.length > 0) problems.push(`${at}: use either stages or domains, not both`);
+      if (p.color !== undefined) problems.push(`${at}: color is per domain in a world path — put it on each domain`);
       problems.push(...validateWorld(at, p, checkStages));
       continue;
     }
+    // 一般路徑的顏色：外框與段落框用同一色（app 的 ADR-0052）。省略＝中性灰。
+    if (p.color !== undefined && !WORLD_COLORS.includes(p.color))
+      problems.push(`${at}: color must be one of ${WORLD_COLORS.join(", ")}`);
     if (p.links !== undefined) problems.push(`${at}: links are only for world paths (with domains)`);
     if (!Array.isArray(p.stages) || p.stages.length === 0) {
       problems.push(`${at}: needs at least one stage`);
@@ -139,7 +143,6 @@ export function validatePaths(paths, entries) {
     }
     checkStages(at, p.stages);
   }
-  problems.push(...validateWorldCoverage(paths));
   return problems;
 }
 
@@ -190,24 +193,6 @@ function validateWorld(at, p, checkStages) {
   const mains = new Set(p.domains.flatMap((d) => (d.stages ?? []).flatMap((st) => st.resources ?? [])));
   if (mains.size > WORLD_NODE_LIMIT)
     problems.push(`${at}: ${mains.size} main items, over the free limit of ${WORLD_NODE_LIMIT} nodes — the flagship must fit a free board`);
-  return problems;
-}
-
-/** 世界路徑的主課必須剛好是其他路徑主課的聯集（app 的 ADR-0050 決定四）。 */
-function validateWorldCoverage(paths) {
-  const problems = [];
-  const worlds = paths.filter((p) => Array.isArray(p.domains) && p.domains.length > 0);
-  if (worlds.length === 0) return problems;
-  const union = new Set(
-    paths.filter((p) => !worlds.includes(p)).flatMap((p) => (p.stages ?? []).flatMap((st) => st.resources ?? [])),
-  );
-  for (const w of worlds) {
-    const mains = new Set(w.domains.flatMap((d) => (d.stages ?? []).flatMap((st) => st.resources ?? [])));
-    const missing = [...union].filter((s) => !mains.has(s)).sort();
-    const extra = [...mains].filter((s) => !union.has(s)).sort();
-    if (missing.length) problems.push(`paths/${w.slug}: main items of other paths are missing here: ${missing.join(", ")}`);
-    if (extra.length) problems.push(`paths/${w.slug}: these are not a main item of any path: ${extra.join(", ")}`);
-  }
   return problems;
 }
 
