@@ -1,0 +1,482 @@
+{
+  "title": "AI Engineering from Scratch",
+  "url": "https://aiengineeringfromscratch.com/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "",
+  "creator": "Rohit Ghumare",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 20520,
+  "skills": [
+    "LLMs",
+    "AI Agents",
+    "Deep Learning"
+  ],
+  "links": [
+    "https://github.com/rohitg00/ai-engineering-from-scratch"
+  ],
+  "units": [
+    {
+      "title": "Phase 0: Setup & Tooling",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "00-setup-and-tooling",
+      "resources": [
+        {
+          "title": "Phase 0: Setup & Tooling",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/00-setup-and-tooling/01-dev-environment",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 0: Setup & Tooling (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/00-setup-and-tooling",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 1: Math Foundations",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "01-math-foundations",
+      "resources": [
+        {
+          "title": "Phase 1: Math Foundations",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/01-math-foundations/01-linear-algebra-intuition",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 1: Math Foundations (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/01-math-foundations",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 2: ML Fundamentals",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "02-ml-fundamentals",
+      "resources": [
+        {
+          "title": "Phase 2: ML Fundamentals",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/02-ml-fundamentals/01-what-is-machine-learning",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 2: ML Fundamentals (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/02-ml-fundamentals",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 3: Deep Learning Core",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "03-deep-learning-core",
+      "resources": [
+        {
+          "title": "Phase 3: Deep Learning Core",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/03-deep-learning-core/01-the-perceptron",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 3: Deep Learning Core (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/03-deep-learning-core",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 4: Computer Vision",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "04-computer-vision",
+      "resources": [
+        {
+          "title": "Phase 4: Computer Vision",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/04-computer-vision/01-image-fundamentals",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 4: Computer Vision (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/04-computer-vision",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 5: NLP, Foundations to Advanced",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "05-nlp-foundations-to-advanced",
+      "resources": [
+        {
+          "title": "Phase 5: NLP, Foundations to Advanced",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/05-nlp-foundations-to-advanced/01-text-processing",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 5: NLP, Foundations to Advanced (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/05-nlp-foundations-to-advanced",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 6: Speech & Audio",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "06-speech-and-audio",
+      "resources": [
+        {
+          "title": "Phase 6: Speech & Audio",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/06-speech-and-audio/01-audio-fundamentals",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 6: Speech & Audio (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/06-speech-and-audio",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 7: Transformers Deep Dive",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "07-transformers-deep-dive",
+      "resources": [
+        {
+          "title": "Phase 7: Transformers Deep Dive",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/07-transformers-deep-dive/01-why-transformers",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 7: Transformers Deep Dive (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/07-transformers-deep-dive",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 8: Generative AI",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "08-generative-ai",
+      "resources": [
+        {
+          "title": "Phase 8: Generative AI",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/08-generative-ai/01-generative-models-taxonomy-history",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 8: Generative AI (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/08-generative-ai",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 9: Reinforcement Learning",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "09-reinforcement-learning",
+      "resources": [
+        {
+          "title": "Phase 9: Reinforcement Learning",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/09-reinforcement-learning/01-mdps-states-actions-rewards",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 9: Reinforcement Learning (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/09-reinforcement-learning",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 10: LLMs from Scratch",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "10-llms-from-scratch",
+      "resources": [
+        {
+          "title": "Phase 10: LLMs from Scratch",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/10-llms-from-scratch/01-tokenizers",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 10: LLMs from Scratch (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/10-llms-from-scratch",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 11: LLM Engineering",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "11-llm-engineering",
+      "resources": [
+        {
+          "title": "Phase 11: LLM Engineering",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/11-llm-engineering/01-prompt-engineering",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 11: LLM Engineering (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/11-llm-engineering",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 12: Multimodal AI",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "12-multimodal-ai",
+      "resources": [
+        {
+          "title": "Phase 12: Multimodal AI",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/12-multimodal-ai/01-vision-transformer-patch-tokens",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 12: Multimodal AI (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/12-multimodal-ai",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 13: Tools & Protocols",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "13-tools-and-protocols",
+      "resources": [
+        {
+          "title": "Phase 13: Tools & Protocols",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/13-tools-and-protocols/01-the-tool-interface",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 13: Tools & Protocols (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/13-tools-and-protocols",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 14: Agent Engineering",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "14-agent-engineering",
+      "resources": [
+        {
+          "title": "Phase 14: Agent Engineering",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/01-the-agent-loop",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 14: Agent Engineering (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/14-agent-engineering",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 15: Autonomous Systems",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "15-autonomous-systems",
+      "resources": [
+        {
+          "title": "Phase 15: Autonomous Systems",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/15-autonomous-systems/01-long-horizon-agents",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 15: Autonomous Systems (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/15-autonomous-systems",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 16: Multi-Agent & Swarms",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "16-multi-agent-and-swarms",
+      "resources": [
+        {
+          "title": "Phase 16: Multi-Agent & Swarms",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/16-multi-agent-and-swarms/01-why-multi-agent",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 16: Multi-Agent & Swarms (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/16-multi-agent-and-swarms",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 17: Infrastructure & Production",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "17-infrastructure-and-production",
+      "resources": [
+        {
+          "title": "Phase 17: Infrastructure & Production",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/17-infrastructure-and-production/01-managed-llm-platforms",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 17: Infrastructure & Production (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/17-infrastructure-and-production",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 18: Ethics, Safety & Alignment",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "18-ethics-safety-alignment",
+      "resources": [
+        {
+          "title": "Phase 18: Ethics, Safety & Alignment",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/18-ethics-safety-alignment/01-instruction-following-alignment-signal",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 18: Ethics, Safety & Alignment (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/18-ethics-safety-alignment",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "title": "Phase 19: Capstone Projects",
+      "sourceUrl": "https://aiengineeringfromscratch.com/",
+      "sourceKey": "19-capstone-projects",
+      "resources": [
+        {
+          "title": "Phase 19: Capstone Projects",
+          "url": "https://aiengineeringfromscratch.com/lesson?path=phases/19-capstone-projects/01-terminal-native-coding-agent",
+          "type": "course",
+          "role": "primary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        },
+        {
+          "title": "Phase 19: Capstone Projects (GitHub)",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/19-capstone-projects",
+          "type": "github",
+          "role": "supplementary",
+          "creator": "Rohit Ghumare",
+          "language": "en"
+        }
+      ]
+    }
+  ]
+}

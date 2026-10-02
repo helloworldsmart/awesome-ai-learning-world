@@ -11,7 +11,8 @@
         "the-illustrated-transformer"
       ],
       "extras": [
-        "mit-6-s191-introduction-to-deep-learning"
+        "mit-6-s191-introduction-to-deep-learning",
+        "ai-engineering-from-scratch"
       ]
     },
     {

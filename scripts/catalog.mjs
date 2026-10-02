@@ -22,7 +22,7 @@ export const TAGS = ["intro", "classic"];
 
 const ENTRY_KEYS = [
   "title", "url", "kind", "status", "type", "provider", "creator",
-  "language", "difficulty", "durationMinutes", "skills", "tags", "nextCohort", "units",
+  "language", "difficulty", "durationMinutes", "skills", "tags", "nextCohort", "links", "units",
 ];
 const UNIT_KEYS = [
   "title", "completionCriterion", "durationMinutes", "durationSeconds", "sourceUrl", "sourceKey", "resources",
@@ -276,6 +276,9 @@ export function validate(entries, skills = []) {
     // nextCohort：梯次制的課下一梯開課日（YYYY-MM-DD），照官方頁面寫；查不到就不寫。
     if (e.nextCohort !== undefined && !isDate(e.nextCohort))
       problems.push(`${at}: nextCohort must be a date like 2027-01-12`);
+    // links：url（首頁）之外的其他官方連結，例如 GitHub repo。跟 app 的 validLinks 同一個規則。
+    if (e.links !== undefined && !validLinks(e.url, e.links))
+      problems.push(`${at}: links must be up to 8 full http(s) URLs, no duplicates, none equal to url`);
     const units = e.units ?? [];
     if (units.length > 0 && e.type !== "course") problems.push(`${at}: only type "course" can have units`);
     units.forEach((u, i) => {
@@ -298,4 +301,14 @@ export function validate(entries, skills = []) {
     });
   }
   return problems;
+}
+
+function validLinks(primary, links) {
+  if (!Array.isArray(links) || links.length > 8) return false;
+  const seen = new Set(primary ? [primary] : []);
+  for (const l of links) {
+    if (typeof l !== "string" || !/^https?:\/\//.test(l) || l.trim() !== l || seen.has(l)) return false;
+    seen.add(l);
+  }
+  return true;
 }

@@ -178,7 +178,7 @@ Design, train and scale neural networks, and know what happens underneath the fr
 1. **Deep Learning** — You can train an image or text model in PyTorch, explain each step, and explain how attention works.
    - [Practical Deep Learning for Coders](https://course.fast.ai/)
    - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
-   - *Go deeper:* [MIT 6.S191 — Introduction to Deep Learning](https://introtodeeplearning.com/)
+   - *Go deeper:* [MIT 6.S191 — Introduction to Deep Learning](https://introtodeeplearning.com/) · [AI Engineering from Scratch](https://aiengineeringfromscratch.com/)
 2. **Deep Learning in Depth** — You can derive and implement optimization, regularization and normalization for deep networks.
    - [Dive into Deep Learning](https://d2l.ai/)
    - [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
@@ -226,7 +226,7 @@ Programming, math, machine learning and neural networks — the shared base for 
 5. **Neural Networks** — You can implement backpropagation from scratch and build a small GPT.
    - [Neural Networks](https://www.3blue1brown.com/topics/neural-networks)
    - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
-   - *Go deeper:* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) · [The Little Book of Deep Learning](https://fleuret.org/francois/lbdl.html)
+   - *Go deeper:* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) · [The Little Book of Deep Learning](https://fleuret.org/francois/lbdl.html) · [AI Engineering from Scratch](https://aiengineeringfromscratch.com/)
 
 ### ML Engineer
 
@@ -299,6 +299,27 @@ Learning from data: models, training, evaluation, generalization.
 
 Neural networks, how they are trained, and the architectures that work.
 
+- [AI Engineering from Scratch](https://aiengineeringfromscratch.com/) - Rohit Ghumare. <sub>course · ~342 h · 20 units</sub>
+  - [Phase 0: Setup & Tooling (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/00-setup-and-tooling) <sub>github</sub>
+  - [Phase 1: Math Foundations (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/01-math-foundations) <sub>github</sub>
+  - [Phase 2: ML Fundamentals (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/02-ml-fundamentals) <sub>github</sub>
+  - [Phase 3: Deep Learning Core (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/03-deep-learning-core) <sub>github</sub>
+  - [Phase 4: Computer Vision (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/04-computer-vision) <sub>github</sub>
+  - [Phase 5: NLP, Foundations to Advanced (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/05-nlp-foundations-to-advanced) <sub>github</sub>
+  - [Phase 6: Speech & Audio (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/06-speech-and-audio) <sub>github</sub>
+  - [Phase 7: Transformers Deep Dive (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/07-transformers-deep-dive) <sub>github</sub>
+  - [Phase 8: Generative AI (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/08-generative-ai) <sub>github</sub>
+  - [Phase 9: Reinforcement Learning (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/09-reinforcement-learning) <sub>github</sub>
+  - [Phase 10: LLMs from Scratch (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/10-llms-from-scratch) <sub>github</sub>
+  - [Phase 11: LLM Engineering (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/11-llm-engineering) <sub>github</sub>
+  - [Phase 12: Multimodal AI (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/12-multimodal-ai) <sub>github</sub>
+  - [Phase 13: Tools & Protocols (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/13-tools-and-protocols) <sub>github</sub>
+  - [Phase 14: Agent Engineering (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/14-agent-engineering) <sub>github</sub>
+  - [Phase 15: Autonomous Systems (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/15-autonomous-systems) <sub>github</sub>
+  - [Phase 16: Multi-Agent & Swarms (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/16-multi-agent-and-swarms) <sub>github</sub>
+  - [Phase 17: Infrastructure & Production (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/17-infrastructure-and-production) <sub>github</sub>
+  - [Phase 18: Ethics, Safety & Alignment (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/18-ethics-safety-alignment) <sub>github</sub>
+  - [Phase 19: Capstone Projects (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/19-capstone-projects) <sub>github</sub>
 - [CME 295 - Transformers & Large Language Models (Autumn 2025)](https://cme295.stanford.edu/syllabus/2025/) - Stanford, Afshine Amidi, Shervine Amidi. <sub>course · ~16 h</sub>
 - [CME 295 - Transformers & Large Language Models (Autumn 2026)](https://cme295.stanford.edu/) - Stanford, Afshine Amidi, Shervine Amidi. <sub>course</sub>
 - [CMU 11-785 — Introduction to Deep Learning](https://deeplearning.cs.cmu.edu/) - CMU. <sub>course</sub>
@@ -391,6 +412,27 @@ Natural language processing: text and speech, from classic methods to Transforme
 
 Large language models: how they are built, trained, adapted and prompted.
 
+- [AI Engineering from Scratch](https://aiengineeringfromscratch.com/) - Rohit Ghumare. <sub>course · ~342 h · 20 units</sub>
+  - [Phase 0: Setup & Tooling (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/00-setup-and-tooling) <sub>github</sub>
+  - [Phase 1: Math Foundations (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/01-math-foundations) <sub>github</sub>
+  - [Phase 2: ML Fundamentals (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/02-ml-fundamentals) <sub>github</sub>
+  - [Phase 3: Deep Learning Core (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/03-deep-learning-core) <sub>github</sub>
+  - [Phase 4: Computer Vision (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/04-computer-vision) <sub>github</sub>
+  - [Phase 5: NLP, Foundations to Advanced (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/05-nlp-foundations-to-advanced) <sub>github</sub>
+  - [Phase 6: Speech & Audio (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/06-speech-and-audio) <sub>github</sub>
+  - [Phase 7: Transformers Deep Dive (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/07-transformers-deep-dive) <sub>github</sub>
+  - [Phase 8: Generative AI (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/08-generative-ai) <sub>github</sub>
+  - [Phase 9: Reinforcement Learning (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/09-reinforcement-learning) <sub>github</sub>
+  - [Phase 10: LLMs from Scratch (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/10-llms-from-scratch) <sub>github</sub>
+  - [Phase 11: LLM Engineering (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/11-llm-engineering) <sub>github</sub>
+  - [Phase 12: Multimodal AI (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/12-multimodal-ai) <sub>github</sub>
+  - [Phase 13: Tools & Protocols (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/13-tools-and-protocols) <sub>github</sub>
+  - [Phase 14: Agent Engineering (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/14-agent-engineering) <sub>github</sub>
+  - [Phase 15: Autonomous Systems (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/15-autonomous-systems) <sub>github</sub>
+  - [Phase 16: Multi-Agent & Swarms (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/16-multi-agent-and-swarms) <sub>github</sub>
+  - [Phase 17: Infrastructure & Production (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/17-infrastructure-and-production) <sub>github</sub>
+  - [Phase 18: Ethics, Safety & Alignment (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/18-ethics-safety-alignment) <sub>github</sub>
+  - [Phase 19: Capstone Projects (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/19-capstone-projects) <sub>github</sub>
 - [AI Fluency: Framework and foundations](https://academy.claude.com/courses/ai-fluency-framework-foundations) - Anthropic, Joseph Feller, Rick Dakan. <sub>course</sub>
 - [CME 295 - Transformers & Large Language Models (Autumn 2025)](https://cme295.stanford.edu/syllabus/2025/) - Stanford, Afshine Amidi, Shervine Amidi. <sub>course · ~16 h</sub>
 - [CME 295 - Transformers & Large Language Models (Autumn 2026)](https://cme295.stanford.edu/) - Stanford, Afshine Amidi, Shervine Amidi. <sub>course</sub>
@@ -457,6 +499,27 @@ LLM systems that plan, use tools and act — and how to evaluate and govern them
 - [Agentic AI MOOC](https://agenticai-learning.org/f25) - UC Berkeley, Dawn Song. <sub>course</sub>
 - [AI Agents in LangGraph](https://www.deeplearning.ai/courses/ai-agents-in-langgraph/) - DeepLearning.AI, Harrison Chase, Rotem Weiss. <sub>course · intermediate · ~1.7 h</sub>
 - [AI Dev Tools Zoomcamp](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp) - DataTalks.Club, Alexey Grigorev, Bhavani Ravi, Moein Foroughi. <sub>course</sub>
+- [AI Engineering from Scratch](https://aiengineeringfromscratch.com/) - Rohit Ghumare. <sub>course · ~342 h · 20 units</sub>
+  - [Phase 0: Setup & Tooling (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/00-setup-and-tooling) <sub>github</sub>
+  - [Phase 1: Math Foundations (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/01-math-foundations) <sub>github</sub>
+  - [Phase 2: ML Fundamentals (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/02-ml-fundamentals) <sub>github</sub>
+  - [Phase 3: Deep Learning Core (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/03-deep-learning-core) <sub>github</sub>
+  - [Phase 4: Computer Vision (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/04-computer-vision) <sub>github</sub>
+  - [Phase 5: NLP, Foundations to Advanced (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/05-nlp-foundations-to-advanced) <sub>github</sub>
+  - [Phase 6: Speech & Audio (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/06-speech-and-audio) <sub>github</sub>
+  - [Phase 7: Transformers Deep Dive (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/07-transformers-deep-dive) <sub>github</sub>
+  - [Phase 8: Generative AI (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/08-generative-ai) <sub>github</sub>
+  - [Phase 9: Reinforcement Learning (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/09-reinforcement-learning) <sub>github</sub>
+  - [Phase 10: LLMs from Scratch (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/10-llms-from-scratch) <sub>github</sub>
+  - [Phase 11: LLM Engineering (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/11-llm-engineering) <sub>github</sub>
+  - [Phase 12: Multimodal AI (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/12-multimodal-ai) <sub>github</sub>
+  - [Phase 13: Tools & Protocols (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/13-tools-and-protocols) <sub>github</sub>
+  - [Phase 14: Agent Engineering (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/14-agent-engineering) <sub>github</sub>
+  - [Phase 15: Autonomous Systems (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/15-autonomous-systems) <sub>github</sub>
+  - [Phase 16: Multi-Agent & Swarms (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/16-multi-agent-and-swarms) <sub>github</sub>
+  - [Phase 17: Infrastructure & Production (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/17-infrastructure-and-production) <sub>github</sub>
+  - [Phase 18: Ethics, Safety & Alignment (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/18-ethics-safety-alignment) <sub>github</sub>
+  - [Phase 19: Capstone Projects (GitHub)](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/19-capstone-projects) <sub>github</sub>
 - [Building agents](https://developers.openai.com/tracks/building-agents) - OpenAI. <sub>course · beginner</sub>
 - [CS 224V Agentic AI](https://cs224v.stanford.edu/) - Stanford, Monica Lam. <sub>course</sub>
 - [CS329A Self-Improving AI Agents](https://cs329a.stanford.edu/) - Stanford, Aakanksha Chowdhery, Azalia Mirhoseini. <sub>course</sub>
