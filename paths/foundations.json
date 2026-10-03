@@ -19,6 +19,16 @@
       ]
     },
     {
+      "title": "Data Structures & Algorithms",
+      "passCriteria": "You can implement common data structures and algorithms, analyze their running time, and choose the right one for a problem.",
+      "resources": [
+        "mit-6-006-introduction-to-algorithms"
+      ],
+      "extras": [
+        "princeton-algorithms-part-i"
+      ]
+    },
+    {
       "title": "Python for Data",
       "passCriteria": "You can work with NumPy arrays, and load, clean, explore and plot a dataset with pandas in a notebook.",
       "resources": [

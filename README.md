@@ -40,7 +40,9 @@ The whole map in one board: programming and math, machine learning, deep learnin
 
 1. **Programming** — You can write, test and debug a Python program on your own.
    - [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/)
-2. **Python for Data** — You can work with NumPy arrays, and load, clean, explore and plot a dataset with pandas in a notebook.
+2. **Data Structures & Algorithms** — You can implement common data structures and algorithms, analyze their running time, and choose the right one for a problem.
+   - [6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
+3. **Python for Data** — You can work with NumPy arrays, and load, clean, explore and plot a dataset with pandas in a notebook.
    - [Python Programming for Economics and Finance](https://python-programming.quantecon.org/intro.html)
    - [Kaggle Learn: Pandas](https://www.kaggle.com/learn/pandas)
 
@@ -208,11 +210,14 @@ Programming, math, machine learning and neural networks — the shared base for 
 1. **Programming** — You can write, test and debug a Python program on your own.
    - [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/)
    - *Go deeper:* [CS50's Introduction to Computer Science](https://cs50.harvard.edu/x/) · [6.100L Introduction to CS and Programming using Python](https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/) · [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) · [Think Python](https://allendowney.github.io/ThinkPython/) · [Python for Everybody](https://www.py4e.com/)
-2. **Python for Data** — You can work with NumPy arrays, and load, clean, explore and plot a dataset with pandas in a notebook.
+2. **Data Structures & Algorithms** — You can implement common data structures and algorithms, analyze their running time, and choose the right one for a problem.
+   - [6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
+   - *Go deeper:* [Algorithms, Part I](https://www.coursera.org/learn/algorithms-part1)
+3. **Python for Data** — You can work with NumPy arrays, and load, clean, explore and plot a dataset with pandas in a notebook.
    - [Python Programming for Economics and Finance](https://python-programming.quantecon.org/intro.html)
    - [Kaggle Learn: Pandas](https://www.kaggle.com/learn/pandas)
    - *Go deeper:* [Elements of Data Science](https://allendowney.github.io/ElementsOfDataScience/) · [Kaggle Learn: Python](https://www.kaggle.com/learn/python) · [Kaggle Learn: Data Visualization](https://www.kaggle.com/learn/data-visualization) · [100 numpy exercises](https://github.com/rougier/numpy-100) · [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) · [Python for Data Analysis, 3E](https://wesmckinney.com/book/) · [NumPy: the absolute basics for beginners](https://numpy.org/doc/stable/user/absolute_beginners.html)
-3. **Math** — You can work with vectors, matrices, derivatives, partial derivatives and gradients, probability and basic statistics.
+4. **Math** — You can work with vectors, matrices, derivatives, partial derivatives and gradients, probability and basic statistics.
    - [Precalculus](https://www.khanacademy.org/math/precalculus)
    - [Differential Calculus](https://www.khanacademy.org/math/differential-calculus)
    - [Statistics and probability](https://www.khanacademy.org/math/statistics-probability)
@@ -220,10 +225,10 @@ Programming, math, machine learning and neural networks — the shared base for 
    - [Essence of Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra)
    - [Multivariable calculus](https://www.khanacademy.org/math/multivariable-calculus)
    - *Go deeper:* [MIT 6.041SC — Probabilistic Systems Analysis and Applied Probability](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/) · [Essence of Calculus](https://www.3blue1brown.com/topics/calculus) · [18.06SC Linear Algebra](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/) · [18.01SC Single Variable Calculus](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/) · [18.065 Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) · [Mathematics for Machine Learning](https://mml-book.github.io/) · [Mathematics for Machine Learning and Data Science](https://www.deeplearning.ai/specializations/mathematics-for-machine-learning-and-data-science/) · [Think Stats](https://allendowney.github.io/ThinkStats/) · [Probability for Computer Scientists](https://chrispiech.github.io/probabilityForComputerScientists/en/)
-4. **Core Machine Learning** — You can train, evaluate and compare regression and classification models.
+5. **Core Machine Learning** — You can train, evaluate and compare regression and classification models.
    - [Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
    - *Go deeper:* [Machine Learning Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) · [Machine Learning Specialization](https://www.deeplearning.ai/specializations/machine-learning/) · [CS229: Machine Learning](https://cs229.stanford.edu/) · [UC Berkeley CS189/289A — Introduction to Machine Learning](https://people.eecs.berkeley.edu/~jrs/189/) · [6.036 Introduction to Machine Learning](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/about) · [An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/) · [Kaggle Learn: Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) · [Data 100: Principles and Techniques of Data Science](https://ds100.org/) · [Learning From Data](https://work.caltech.edu/telecourse) · [CS4780: Machine Learning for Intelligent Systems](https://www.cs.cornell.edu/courses/cs4780/2018fa/)
-5. **Neural Networks** — You can implement backpropagation from scratch and build a small GPT.
+6. **Neural Networks** — You can implement backpropagation from scratch and build a small GPT.
    - [Neural Networks](https://www.3blue1brown.com/topics/neural-networks)
    - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
    - *Go deeper:* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) · [The Little Book of Deep Learning](https://fleuret.org/francois/lbdl.html) · [AI Engineering from Scratch](https://aiengineeringfromscratch.com/)
@@ -609,6 +614,7 @@ Writing software well: languages, tools, and the craft of building programs.
 - [6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) - MIT OpenCourseWare, Erik Demaine, Jason Ku, Justin Solomon. <sub>course</sub>
 - [6.100L Introduction to CS and Programming using Python](https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/) - MIT OpenCourseWare, Ana Bell. <sub>course</sub>
 - [AI Dev Tools Zoomcamp](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp) - DataTalks.Club, Alexey Grigorev, Bhavani Ravi, Moein Foroughi. <sub>course</sub>
+- [Algorithms, Part I](https://www.coursera.org/learn/algorithms-part1) - Princeton University, Kevin Wayne, Robert Sedgewick. <sub>course · ~50 h</sub>
 - [CS50's Introduction to Computer Science](https://cs50.harvard.edu/x/) - Harvard University, David J. Malan. <sub>course · beginner</sub>
 - [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/) - Harvard University, David J. Malan. <sub>course</sub>
 - [Free Computer Vision Courses](https://opencv.org/university/free-courses/) - OpenCV.org. <sub>course · 5 units</sub>
