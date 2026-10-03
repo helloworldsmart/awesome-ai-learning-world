@@ -91,7 +91,7 @@
     },
     {
       "title": "Interview Prep",
-      "passCriteria": "You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.",
+      "passCriteria": "You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure. You have 3–5 STAR stories ready that show what you did on a team, the result in numbers, and what you learned.",
       "resources": [
         "tech-interview-handbook",
         "introduction-to-machine-learning-interviews-book"

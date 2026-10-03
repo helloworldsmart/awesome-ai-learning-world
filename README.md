@@ -114,7 +114,7 @@ The whole map in one board: programming and math, machine learning, deep learnin
 
 **Interview Prep**
 
-1. **Coding** — You can solve timed coding problems on data structures and algorithms.
+1. **Coding & Behavioral** — You can solve timed coding problems on data structures and algorithms. You have 3–5 STAR stories ready that show what you did on a team, the result in numbers, and what you learned.
    - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
 2. **ML & DL Questions** — You can answer machine learning and deep learning knowledge and system design questions under time pressure.
    - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
@@ -137,7 +137,7 @@ How large language models work, and how to build, evaluate and debug systems on 
 4. **AI Agents** — You can build an agent that uses tools, and evaluate it.
    - [Hugging Face AI Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction)
    - *Go deeper:* [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) · [Evaluating AI Agents](https://www.deeplearning.ai/courses/evaluating-ai-agents/) · [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/) · [Agents](https://huyenchip.com/2025/01/07/agents.html) · [Agentic AI MOOC](https://agenticai-learning.org/f25) · [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
-5. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
+5. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure. You have 3–5 STAR stories ready that show what you did on a team, the result in numbers, and what you learned.
    - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
    - [Machine Learning Q and AI](https://sebastianraschka.com/books/ml-q-and-ai/)
    - *Go deeper:* [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/) · [6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) · [Transformers & LLMs cheatsheet for Stanford's CME 295](https://github.com/afshinea/stanford-cme-295-transformers-large-language-models/tree/main/en) · [Building A Generative AI Platform](https://huyenchip.com/2024/07/25/genai-platform.html) · [Machine Learning FAQ](https://sebastianraschka.com/faq/)
@@ -168,7 +168,7 @@ From image formation to CNNs, vision transformers and generative models. Start a
    - *Go deeper:* [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) · [CS236: Deep Generative Models](https://cs236.stanford.edu/) · [MIT 6.S184 — Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/) · [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) · [Understanding Diffusion Models: A Unified Perspective](https://arxiv.org/abs/2208.11970)
 7. **Portfolio Project** — You can fine-tune a detector on your own dataset, evaluate it per class with mAP, show where it fails, and deploy it behind an API.
    - [Fine-Tuning Object Detection Model on a Custom Dataset, Deployment in Spaces, and Gradio API Integration](https://huggingface.co/learn/cookbook/fine_tuning_detr_custom_dataset)
-8. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
+8. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure. You have 3–5 STAR stories ready that show what you did on a team, the result in numbers, and what you learned.
    - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
    - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
    - *Go deeper:* [6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) · [Deep Learning Interviews](https://arxiv.org/abs/2201.00650) · [Stanford CS 229 Machine Learning Cheatsheets](https://stanford.edu/~shervine/teaching/cs-229/)
@@ -197,7 +197,7 @@ Design, train and scale neural networks, and know what happens underneath the fr
    - *Go deeper:* [MIT 6.S184 — Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/) · [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239)
 6. **Portfolio Project** — You can take one model from raw data to a deployed, tested service, show where it fails, and explain your trade-offs.
    - [Made With ML — MLOps](https://madewithml.com/courses/mlops/)
-7. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
+7. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure. You have 3–5 STAR stories ready that show what you did on a team, the result in numbers, and what you learned.
    - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
    - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
    - [Deep Learning Interviews](https://arxiv.org/abs/2201.00650)
@@ -249,7 +249,7 @@ Train, ship and run models in production, and prepare for ML engineering intervi
    - *Go deeper:* [CS 329S: Machine Learning Systems Design](https://stanford-cs329s.github.io/) · [Designing Machine Learning Systems](https://github.com/chiphuyen/dmls-book) · [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html) · [Rules of Machine Learning: Best Practices for ML Engineering](https://developers.google.com/machine-learning/guides/rules-of-ml)
 4. **Portfolio Project** — You can take one model from raw data to a deployed, tested service, show where it fails, and explain your trade-offs.
    - [Made With ML — MLOps](https://madewithml.com/courses/mlops/)
-5. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure.
+5. **Interview Prep** — You can solve timed coding problems on data structures and algorithms, and answer ML knowledge and system design questions under time pressure. You have 3–5 STAR stories ready that show what you did on a team, the result in numbers, and what you learned.
    - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
    - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/)
    - [Machine Learning Q and AI](https://sebastianraschka.com/books/ml-q-and-ai/)
