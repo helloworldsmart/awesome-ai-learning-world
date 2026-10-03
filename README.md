@@ -273,6 +273,7 @@ Learning from data: models, training, evaluation, generalization.
 
 - [18.065 Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) - MIT OpenCourseWare, Gilbert Strang. <sub>course</sub>
 - [6.036 Introduction to Machine Learning](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/about) - MIT Open Learning Library, MIT. <sub>course</sub>
+- [AMD AI Academy](https://www.amd.com/en/developer/resources/training/amd-ai-academy.html) - AMD. <sub>course</sub>
 - [CS 228 - Probabilistic Graphical Models](https://ermongroup.github.io/cs228/) - Stanford, Stefano Ermon. <sub>course</sub>
 - [CS221: Artificial Intelligence: Principles and Techniques](https://cs221.stanford.edu/) - Stanford, Percy Liang. <sub>course</sub>
 - [CS229: Machine Learning](https://cs229.stanford.edu/) - Stanford, Jehangir Amjad, Anand Avati. <sub>course</sub>
@@ -298,7 +299,9 @@ Learning from data: models, training, evaluation, generalization.
 - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/) - Chip Huyen. <sub>book</sub>
 - [Machine Learning Q and AI](https://sebastianraschka.com/books/ml-q-and-ai/) - Sebastian Raschka. <sub>book</sub>
 - [Machine Learning FAQ](https://sebastianraschka.com/faq/) - Sebastian Raschka. <sub>article</sub>
+- [MLU-Explain](https://mlu-explain.github.io/) - Amazon, Amazon Machine Learning University. <sub>article</sub>
 - [Stanford CS 229 Machine Learning Cheatsheets](https://stanford.edu/~shervine/teaching/cs-229/) - Stanford University, Afshine Amidi, Shervine Amidi. <sub>article</sub>
+- [Machine Learning for Beginners](https://github.com/microsoft/ML-For-Beginners) - Microsoft, Microsoft Cloud Advocates. <sub>github</sub>
 
 ## Deep Learning
 
@@ -485,6 +488,7 @@ Large language models: how they are built, trained, adapted and prompted.
 
 Models that generate: diffusion, VAEs, GANs, and building products on them.
 
+- [AMD AI Academy](https://www.amd.com/en/developer/resources/training/amd-ai-academy.html) - AMD. <sub>course</sub>
 - [CS236: Deep Generative Models](https://cs236.stanford.edu/) - Stanford, Stefano Ermon. <sub>course</sub>
 - [Generative AI for Beginners](https://microsoft.github.io/generative-ai-for-beginners/) - Microsoft, Microsoft Cloud Advocates. <sub>course</sub>
 - [Generative AI with Large Language Models](https://www.deeplearning.ai/courses/generative-ai-with-llms/) - DeepLearning.AI, Antje Barth, Chris Fregly, Shelbee Eigenbrode, Mike Chambers. <sub>course · intermediate · ~13 h</sub>
@@ -567,6 +571,7 @@ Taking models to production: data, deployment, monitoring, iteration.
 
 Making ML fast and scalable: GPUs, kernels, parallelism, training and serving systems.
 
+- [AMD AI Academy](https://www.amd.com/en/developer/resources/training/amd-ai-academy.html) - AMD. <sub>course</sub>
 - [CMU 17-445/645 — Machine Learning in Production](https://mlip-cmu.github.io/) - Carnegie Mellon University, Christian Kästner, Bogdan Vasilescu. <sub>course</sub>
 - [CS149: Parallel Computing](https://cs149.stanford.edu/) - Stanford, Kayvon Fatahalian, Kunle Olukotun. <sub>course</sub>
 - [CS336: Language Modeling from Scratch](https://cs336.stanford.edu/) - Stanford, Tatsunori Hashimoto, Percy Liang. <sub>course</sub>
@@ -577,7 +582,10 @@ Making ML fast and scalable: GPUs, kernels, parallelism, training and serving sy
 - [Introduction to Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/) - Chip Huyen. <sub>book</sub>
 - [Machine Learning Systems](https://mlsysbook.ai/) - Harvard, Vijay Janapa Reddi. <sub>book</sub>
 - [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html) - Google, D. Sculley et al. <sub>paper</sub>
+- [CUDA C++ Best Practices Guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html) - NVIDIA. <sub>docs</sub>
+- [ROCm Documentation](https://rocm.docs.amd.com/en/latest/) - AMD. <sub>docs</sub>
 - [GPU MODE Lectures](https://github.com/gpu-mode/lectures) - GPU MODE. <sub>video</sub>
+- [An Even Easier Introduction to CUDA](https://developer.nvidia.com/blog/even-easier-introduction-cuda/) - NVIDIA, Mark Harris. <sub>article · beginner</sub>
 - [Building A Generative AI Platform](https://huyenchip.com/2024/07/25/genai-platform.html) - Chip Huyen. <sub>article</sub>
 - [Rules of Machine Learning: Best Practices for ML Engineering](https://developers.google.com/machine-learning/guides/rules-of-ml) - Google, Martin Zinkevich. <sub>article</sub>
 - [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook) - Hugging Face, Nouamane Tazi, Ferdinand Mom, Haojun Zhao, Phuc Nguyen, Mohamed Mekkouri, Leandro von Werra, Thomas Wolf. <sub>article</sub>
@@ -632,6 +640,7 @@ Writing software well: languages, tools, and the craft of building programs.
 - [Effective Go](https://go.dev/doc/effective_go) - go.dev, The Go Authors. <sub>docs</sub>
 - [NumPy: the absolute basics for beginners](https://numpy.org/doc/stable/user/absolute_beginners.html) - NumPy, NumPy Developers. <sub>docs</sub>
 - [Tech Interview Handbook](https://www.techinterviewhandbook.org/) - Tech Interview Handbook, Yangshun Tay. <sub>docs</sub>
+- [An Even Easier Introduction to CUDA](https://developer.nvidia.com/blog/even-easier-introduction-cuda/) - NVIDIA, Mark Harris. <sub>article · beginner</sub>
 - [100 numpy exercises](https://github.com/rougier/numpy-100) - Nicolas P. Rougier. <sub>github</sub>
 
 ## Computer Systems

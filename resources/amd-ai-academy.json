@@ -1,0 +1,13 @@
+{
+  "title": "AMD AI Academy",
+  "url": "https://www.amd.com/en/developer/resources/training/amd-ai-academy.html",
+  "kind": "resource",
+  "status": "todo",
+  "type": "course",
+  "provider": "AMD",
+  "creator": "AMD",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": ["Machine Learning", "Generative AI", "ML Systems"]
+}

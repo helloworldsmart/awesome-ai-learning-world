@@ -1,0 +1,13 @@
+{
+  "title": "Machine Learning for Beginners",
+  "url": "https://github.com/microsoft/ML-For-Beginners",
+  "kind": "resource",
+  "status": "todo",
+  "type": "github",
+  "provider": "Microsoft",
+  "creator": "Microsoft Cloud Advocates",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": ["Machine Learning"]
+}

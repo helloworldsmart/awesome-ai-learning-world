@@ -1,0 +1,13 @@
+{
+  "title": "An Even Easier Introduction to CUDA",
+  "url": "https://developer.nvidia.com/blog/even-easier-introduction-cuda/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "article",
+  "provider": "NVIDIA",
+  "creator": "Mark Harris",
+  "language": "en",
+  "difficulty": "beginner",
+  "durationMinutes": 0,
+  "skills": ["ML Systems", "Programming"]
+}

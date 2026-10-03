@@ -1,0 +1,13 @@
+{
+  "title": "ROCm Documentation",
+  "url": "https://rocm.docs.amd.com/en/latest/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "docs",
+  "provider": "AMD",
+  "creator": "AMD",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": ["ML Systems"]
+}

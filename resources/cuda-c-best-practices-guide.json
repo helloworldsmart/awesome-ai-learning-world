@@ -1,0 +1,13 @@
+{
+  "title": "CUDA C++ Best Practices Guide",
+  "url": "https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html",
+  "kind": "resource",
+  "status": "todo",
+  "type": "docs",
+  "provider": "NVIDIA",
+  "creator": "NVIDIA",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": ["ML Systems"]
+}

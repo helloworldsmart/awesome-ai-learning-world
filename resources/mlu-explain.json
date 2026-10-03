@@ -1,0 +1,13 @@
+{
+  "title": "MLU-Explain",
+  "url": "https://mlu-explain.github.io/",
+  "kind": "resource",
+  "status": "todo",
+  "type": "article",
+  "provider": "Amazon",
+  "creator": "Amazon Machine Learning University",
+  "language": "en",
+  "difficulty": "",
+  "durationMinutes": 0,
+  "skills": ["Machine Learning"]
+}
