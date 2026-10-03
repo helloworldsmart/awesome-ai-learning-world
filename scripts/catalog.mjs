@@ -32,6 +32,11 @@ const SKILL_KEYS = ["name", "description"];
 const PATH_KEYS = ["title", "summary", "status", "color", "stages", "domains", "links"];
 const DOMAIN_KEYS = ["title", "color", "outline", "stages"];
 const LINK_KEYS = ["from", "fromStage", "to"];
+const COMPANY_KEYS = new Set(["name", "status", "careersUrl", "asks", "postings", "ownResources", "interview"]);
+const POSTING_KEYS = new Set(["title", "url", "location", "postedOn", "checkedOn", "paths"]);
+const INTERVIEW_KEYS = new Set(["valuesUrl", "values", "prepUrl", "questions"]);
+const VALUE_KEYS = new Set(["name", "description"]);
+const DATE = /^\d{4}-\d{2}-\d{2}$/;
 // 領域色票（app 的 --swatch-<color>，ADR-0051）。
 export const WORLD_COLORS = ["green", "teal", "blue", "purple", "rose", "red", "orange", "slate", "gold", "cyan", "brown", "indigo"];
 // 世界路徑去重後的主課上限 ＝ app 免費帳號的 node 額度（ADR-0049／0050）：主角要放得進免費白板。
@@ -62,8 +67,67 @@ function readDir(root, name, problems) {
   return out;
 }
 
+/** companies/<slug>.json: Explore page company profiles (ADR-0059 decision 4). */
+export function validateCompanies(companies, entries, paths) {
+  const problems = [];
+  const bySlug = new Map(entries.map((e) => [e.slug, e]));
+  const pathSlugs = new Set(paths.map((p) => p.slug));
+  const isDate = (s) => {
+    if (!DATE.test(s)) return false;
+    const [y, m, d] = s.split("-").map(Number);
+    const date = new Date(y, m - 1, d);
+    return date.getFullYear() === y && date.getMonth() === m - 1 && date.getDate() === d;
+  };
+  const extra = (obj, keys, at) => {
+    for (const k of Object.keys(obj ?? {})) if (!keys.has(k)) problems.push(`${at}: unknown key "${k}"`);
+  };
+  for (const c of companies) {
+    const at = `companies/${c.slug}`;
+    if (!SLUG.test(c.slug)) problems.push(`${at}: file name must be lowercase letters, digits and -`);
+    const { slug: _slug, ...rest } = c;
+    extra(rest, COMPANY_KEYS, at);
+    if (blank(c.name)) problems.push(`${at}: name is empty`);
+    if (!["todo", "in_progress", "done", "proposed_removal"].includes(c.status)) problems.push(`${at}: status must be todo, in_progress, done or proposed_removal`);
+    if (!isURL(c.careersUrl)) problems.push(`${at}: careersUrl must be a URL`);
+    const asks = Array.isArray(c.asks) ? c.asks : [];
+    if (asks.length < 1 || asks.length > 5) problems.push(`${at}: asks must have 1 to 5 items`);
+    if (asks.some(blank) || new Set(asks).size !== asks.length) problems.push(`${at}: asks must be non-empty and unique`);
+    const postings = Array.isArray(c.postings) ? c.postings : [];
+    if (postings.length === 0) problems.push(`${at}: needs at least one posting`);
+    postings.forEach((p, i) => {
+      const pat = `${at} posting ${i + 1}`;
+      extra(p, POSTING_KEYS, pat);
+      if (blank(p.title)) problems.push(`${pat}: title is empty`);
+      if (!isURL(p.url)) problems.push(`${pat}: url must be a URL`);
+      if (!isDate(p.checkedOn ?? "")) problems.push(`${pat}: checkedOn must be YYYY-MM-DD`);
+      if (p.postedOn !== "" && p.postedOn !== undefined && !isDate(p.postedOn)) problems.push(`${pat}: postedOn must be YYYY-MM-DD`);
+      for (const s of p.paths ?? []) if (!pathSlugs.has(s)) problems.push(`${pat}: no path "${s}"`);
+    });
+    for (const s of c.ownResources ?? []) {
+      const e = bySlug.get(s);
+      if (!e) problems.push(`${at}: no resource "${s}"`);
+      else if (e.kind !== "resource") problems.push(`${at}: "${s}" is a feed`);
+      else if (e.status === "proposed_removal") problems.push(`${at}: "${s}" is proposed for removal`);
+    }
+    const iv = c.interview ?? {};
+    extra(iv, INTERVIEW_KEYS, `${at} interview`);
+    if (!isURL(iv.valuesUrl)) problems.push(`${at}: interview.valuesUrl must be a URL`);
+    const values = Array.isArray(iv.values) ? iv.values : [];
+    if (values.length === 0) problems.push(`${at}: interview.values needs at least one value`);
+    values.forEach((v, i) => {
+      extra(v, VALUE_KEYS, `${at} value ${i + 1}`);
+      if (blank(v.name)) problems.push(`${at} value ${i + 1}: name is empty`);
+    });
+    if (iv.prepUrl && typeof iv.prepUrl === "string" && !isURL(iv.prepUrl)) problems.push(`${at}: interview.prepUrl must be a URL`);
+    if (iv.questions !== undefined && !(Array.isArray(iv.questions) && iv.questions.every((q) => typeof q === "string"))) {
+      problems.push(`${at}: interview.questions must be a list of strings`);
+    }
+  }
+  return problems;
+}
+
 /**
- * Read the whole catalog. Returns { skills, entries, paths, problems } — never throws on
+ * Read the whole catalog. Returns { skills, entries, paths, companies, problems } — never throws on
  * bad content.
  */
 export function loadCatalog(root) {
@@ -71,10 +135,12 @@ export function loadCatalog(root) {
   const skills = readJSON(join(root, "skills.json"), "skills.json", problems) ?? [];
   const entries = readDir(root, "resources", problems);
   const paths = readDir(root, "paths", problems);
+  const companies = readDir(root, "companies", problems);
   problems.push(...validateSkills(skills));
   problems.push(...validate(entries, skills));
   problems.push(...validatePaths(paths, entries));
-  return { skills, entries, paths, problems };
+  problems.push(...validateCompanies(companies, entries, paths));
+  return { skills, entries, paths, companies, problems };
 }
 
 /** skills.json: the fixed list every resource picks its skills from. */
