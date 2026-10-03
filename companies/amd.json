@@ -1,0 +1,76 @@
+{
+  "name": "AMD",
+  "status": "todo",
+  "careersUrl": "https://www.amd.com/en/corporate/careers.html",
+  "asks": [
+    "ROCm / HIP",
+    "C++",
+    "PyTorch"
+  ],
+  "postings": [
+    {
+      "title": "2027 Undergrad Machine Learning (ML)/ Artificial Intelligence (AI) intern/co-op",
+      "url": "https://careers.amd.com/careers-home/jobs?keywords=2027%20Undergrad%20Machine%20Learning%20%28ML%29/%20Artificial%20Intelligence%20%28AI%29%20intern/co-op",
+      "location": "Santa Clara, CA; San Jose, CA",
+      "postedOn": "2026-08-20",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ml-engineer",
+        "computer-vision-engineer"
+      ]
+    },
+    {
+      "title": "2027 Masters Machine Learning (ML)/ Artificial Intelligence (AI) intern/co-op",
+      "url": "https://careers.amd.com/careers-home/jobs?keywords=2027%20Masters%20Machine%20Learning%20%28ML%29/%20Artificial%20Intelligence%20%28AI%29%20intern/co-op",
+      "location": "Santa Clara, CA; San Jose, CA",
+      "postedOn": "2026-08-20",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ml-engineer",
+        "computer-vision-engineer"
+      ]
+    },
+    {
+      "title": "2027 PhD AI Systems & GPU Performance Engineering Intern/Co-op",
+      "url": "https://careers.amd.com/careers-home/jobs?keywords=2027%20PhD%20AI%20Systems%20%26%20GPU%20Performance%20Engineering%20Intern/Co-op",
+      "location": "Santa Clara, CA; San Jose, CA",
+      "postedOn": "2026-09-11",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "deep-learning-engineer",
+        "ai-engineer"
+      ]
+    }
+  ],
+  "ownResources": [
+    "amd-ai-academy",
+    "rocm-documentation"
+  ],
+  "interview": {
+    "valuesUrl": "https://www.amd.com/en/corporate/careers.html",
+    "values": [
+      {
+        "name": "Push the Limits",
+        "description": "We challenge assumptions and embrace complexity, turning bold ideas into breakthroughs that redefine industries."
+      },
+      {
+        "name": "Drive Excellence",
+        "description": "We hold ourselves to the highest standards, always focused on delivering real results with quality, precision, and purpose."
+      },
+      {
+        "name": "Be Direct and Humble",
+        "description": "We communicate with clarity and respect, listening first, learning continuously, and staying grounded."
+      },
+      {
+        "name": "Collaborate Deeply",
+        "description": "We value diverse perspectives and trust each other to drive toward shared goals, knowing we’re stronger together."
+      },
+      {
+        "name": "Be Inclusive, Always",
+        "description": "We build teams where everyone belongs and every idea can rise because inclusion fuels innovation."
+      }
+    ],
+    "prepUrl": "",
+    "questions": []
+  }
+}

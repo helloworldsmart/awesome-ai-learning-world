@@ -1,0 +1,81 @@
+{
+  "name": "Meta",
+  "status": "todo",
+  "careersUrl": "https://www.metacareers.com",
+  "asks": [
+    "PyTorch",
+    "Recommender systems",
+    "A/B testing"
+  ],
+  "postings": [
+    {
+      "title": "Research Engineer, AI (University Grad)",
+      "url": "https://www.metacareers.com/profile/job_details/1395718268613427/",
+      "location": "Montreal, Canada",
+      "postedOn": "2026-09-08",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ml-engineer",
+        "deep-learning-engineer"
+      ]
+    },
+    {
+      "title": "Software Engineer, Machine Learning RecSys",
+      "url": "https://www.metacareers.com/profile/job_details/1665891037811282/",
+      "location": "Sunnyvale, CA; Bellevue, WA; Menlo Park, CA; New York, NY; San Francisco, CA",
+      "postedOn": "2026-06-02",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ml-engineer"
+      ]
+    },
+    {
+      "title": "Software Engineer, Machine Learning",
+      "url": "https://www.metacareers.com/profile/job_details/998357492128826/",
+      "location": "Sunnyvale, CA; Bellevue, WA; Menlo Park, CA; Seattle, WA; and other US locations",
+      "postedOn": "2025-06-10",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ml-engineer",
+        "ai-engineer"
+      ]
+    }
+  ],
+  "ownResources": [
+    "pytorch-tutorials"
+  ],
+  "interview": {
+    "valuesUrl": "https://www.metacareers.com/blog/preparing-for-your-software-engineering-interview-at-meta/",
+    "values": [
+      {
+        "name": "Move fast"
+      },
+      {
+        "name": "Focus on long-term impact"
+      },
+      {
+        "name": "Build awesome things"
+      },
+      {
+        "name": "Live in the future"
+      },
+      {
+        "name": "Be direct and respect your colleagues"
+      },
+      {
+        "name": "Meta, Metamates, me"
+      }
+    ],
+    "prepUrl": "https://www.metacareers.com/blog/preparing-for-your-software-engineering-interview-at-meta/",
+    "questions": [
+      "What are some of the best things you've built?",
+      "What are you most proud of?",
+      "What could you have done better?",
+      "What were some excellent collaborations you've had?",
+      "Tell me about a time when you advocated for and pushed your own ideas forward despite opposition.",
+      "How do you deal with conflict?",
+      "How do you like to give and receive feedback?",
+      "What kinds of technologies are you most excited about?"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "name": "NVIDIA",
+  "status": "todo",
+  "careersUrl": "https://www.nvidia.com/en-us/about-nvidia/careers/",
+  "asks": [
+    "CUDA",
+    "C++",
+    "Multi-GPU training"
+  ],
+  "postings": [
+    {
+      "title": "NVIDIA 2027 Internships: Deep Learning",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Deep-Learning_JR2023497-1",
+      "location": "Santa Clara, CA",
+      "postedOn": "2026-08-19",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "deep-learning-engineer"
+      ]
+    },
+    {
+      "title": "Software Engineer, DGX Cloud AI Infrastructure - New College Grad 2026",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Software-Engineer--DGX-Cloud-AI-Infrastructure---New-College-Grad-2026_JR2026477",
+      "location": "Santa Clara, CA",
+      "postedOn": "2026-09-29",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ml-engineer"
+      ]
+    },
+    {
+      "title": "NVIDIA 2027 Internships: Autonomous Vehicles and Robotics",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Autonomous-Vehicles-and-Robotics_JR2023496",
+      "location": "Santa Clara, CA",
+      "postedOn": "2026-08-19",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "computer-vision-engineer"
+      ]
+    }
+  ],
+  "ownResources": [
+    "an-even-easier-introduction-to-cuda",
+    "cuda-c-best-practices-guide"
+  ],
+  "interview": {
+    "valuesUrl": "https://images.nvidia.com/aem-dam/en-zz/Solutions/about-us/NVIDIA-Code-of-Conduct-External.pdf",
+    "values": [
+      {
+        "name": "Innovation",
+        "description": "Dream big, start small. Take risks, learn fast."
+      },
+      {
+        "name": "Intellectual Honesty",
+        "description": "Seek truth, learn from mistakes, share learnings."
+      },
+      {
+        "name": "Speed and Agility",
+        "description": "Learn, adapt, shape the world."
+      },
+      {
+        "name": "Excellence and Determination",
+        "description": "Maintain the highest standards."
+      },
+      {
+        "name": "One Team",
+        "description": "Do what's best for the company."
+      }
+    ],
+    "prepUrl": "",
+    "questions": []
+  }
+}

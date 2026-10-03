@@ -1,0 +1,70 @@
+{
+  "name": "Microsoft",
+  "status": "todo",
+  "careersUrl": "https://careers.microsoft.com",
+  "asks": [
+    "LLMs and RAG",
+    "Model evaluation",
+    "Data structures"
+  ],
+  "postings": [
+    {
+      "title": "Software Engineer: AI/ML & LLM Intern Opportunities for University Students, Redmond",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556922929",
+      "location": "Redmond, WA",
+      "postedOn": "2026-10-01",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ai-engineer"
+      ]
+    },
+    {
+      "title": "Software Engineer: Intern Opportunities for University Students - CoreAI - Redmond, WA",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556951950",
+      "location": "Redmond, WA",
+      "postedOn": "2026-10-01",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ml-engineer",
+        "ai-engineer"
+      ]
+    },
+    {
+      "title": "Applied Science: PhD Internship Opportunities - Multiple Locations",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556986140",
+      "location": "Redmond, WA; Mountain View, CA",
+      "postedOn": "2026-09-16",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ml-engineer"
+      ]
+    }
+  ],
+  "ownResources": [
+    "ml-for-beginners",
+    "generative-ai-for-beginners"
+  ],
+  "interview": {
+    "valuesUrl": "https://careers.microsoft.com/v2/global/en/hiring-tips/interview-tips",
+    "values": [
+      {
+        "name": "Growth mindset",
+        "description": "True learners who can acquire new skills rapidly and connect with others to help bring big ideas to life."
+      },
+      {
+        "name": "Diverse and inclusive",
+        "description": "Being open to learning about your own biases and changing behaviors accordingly."
+      },
+      {
+        "name": "One Microsoft",
+        "description": "Actively seeks collaboration with others and looks for common ground across differences."
+      },
+      {
+        "name": "Customer obsession",
+        "description": "The ability to learn about customers' perspectives, show empathy to their experiences, and incorporate these insights into their decisions and deliverables."
+      }
+    ],
+    "prepUrl": "https://careers.microsoft.com/v2/global/en/hiring-tips/interview-tips",
+    "questions": []
+  }
+}

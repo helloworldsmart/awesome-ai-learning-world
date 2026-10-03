@@ -1,0 +1,127 @@
+{
+  "name": "Amazon",
+  "status": "todo",
+  "careersUrl": "https://www.amazon.jobs",
+  "asks": [
+    "Python",
+    "Experiment design",
+    "Data structures"
+  ],
+  "postings": [
+    {
+      "title": "2027 Applied Science Internship - United States, Undergrad Student Science Recruiting, Frontier AI & Robotics",
+      "url": "https://www.amazon.jobs/en/jobs/10564599",
+      "location": "San Francisco, CA",
+      "postedOn": "2026-09-30",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "deep-learning-engineer"
+      ]
+    },
+    {
+      "title": "Software Development Engineer, ROBOTICS, Early Career - 2027",
+      "url": "https://www.amazon.jobs/en/jobs/10567489",
+      "location": "North Reading, MA",
+      "postedOn": "2026-10-01",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "foundations",
+        "computer-vision-engineer"
+      ]
+    },
+    {
+      "title": "2027 Applied Science Internship - United States - Master's Student Science Recruiting",
+      "url": "https://www.amazon.jobs/en/jobs/10564586",
+      "location": "Seattle, WA",
+      "postedOn": "2026-09-30",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ml-engineer"
+      ]
+    },
+    {
+      "title": "2027 Applied Science Internship - Gen AI & Large Language Models - United States, PhD Student Science Recruiting",
+      "url": "https://www.amazon.jobs/en/jobs/10564589",
+      "location": "Seattle, WA",
+      "postedOn": "2026-09-30",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ai-engineer"
+      ]
+    }
+  ],
+  "ownResources": [
+    "mlu-explain"
+  ],
+  "interview": {
+    "valuesUrl": "https://www.amazon.jobs/content/en/our-workplace/leadership-principles",
+    "values": [
+      {
+        "name": "Customer Obsession",
+        "description": "Leaders start with the customer and work backwards."
+      },
+      {
+        "name": "Ownership",
+        "description": "Leaders are owners."
+      },
+      {
+        "name": "Invent and Simplify",
+        "description": "Leaders expect and require innovation and invention from their teams and always find ways to simplify."
+      },
+      {
+        "name": "Are Right, A Lot",
+        "description": "Leaders are right a lot."
+      },
+      {
+        "name": "Learn and Be Curious",
+        "description": "Leaders are never done learning and always seek to improve themselves."
+      },
+      {
+        "name": "Hire and Develop the Best",
+        "description": "Leaders raise the performance bar with every hire and promotion."
+      },
+      {
+        "name": "Insist on the Highest Standards",
+        "description": "Leaders have relentlessly high standards."
+      },
+      {
+        "name": "Think Big",
+        "description": "Thinking small is a self-fulfilling prophecy."
+      },
+      {
+        "name": "Bias for Action",
+        "description": "Speed matters in business."
+      },
+      {
+        "name": "Frugality",
+        "description": "Accomplish more with less."
+      },
+      {
+        "name": "Earn Trust",
+        "description": "Leaders listen attentively, speak candidly, and treat others respectfully."
+      },
+      {
+        "name": "Dive Deep",
+        "description": "Leaders operate at all levels, stay connected to the details, audit frequently, and are skeptical when metrics and anecdote differ."
+      },
+      {
+        "name": "Have Backbone; Disagree and Commit",
+        "description": "Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting."
+      },
+      {
+        "name": "Deliver Results",
+        "description": "Leaders focus on the key inputs for their business and deliver them with the right quality and in a timely fashion."
+      },
+      {
+        "name": "Strive to be Earth’s Best Employer",
+        "description": "Leaders work every day to create a safer, more productive, higher performing, more diverse, and more just work environment."
+      },
+      {
+        "name": "Success and Scale Bring Broad Responsibility",
+        "description": "We are big, we impact the world, and we are far from perfect."
+      }
+    ],
+    "prepUrl": "https://www.aboutamazon.com/news/workplace/amazon-interview-guide",
+    "questions": []
+  }
+}

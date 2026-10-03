@@ -1,0 +1,72 @@
+{
+  "name": "Google",
+  "status": "todo",
+  "careersUrl": "https://www.google.com/about/careers/applications/",
+  "asks": [
+    "Data structures",
+    "Python",
+    "ML fundamentals"
+  ],
+  "postings": [
+    {
+      "title": "Student Researcher, BS/MS, Fall 2026",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/132362676918461126-student-researcher-bsms-fall-2026",
+      "location": "United States (multiple locations)",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "foundations",
+        "ml-engineer",
+        "deep-learning-engineer"
+      ]
+    },
+    {
+      "title": "Software Engineering BS/MS Intern, 2027",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/83199557986329286-software-engineering-bsms-intern-2027",
+      "location": "Bucharest, Romania",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "foundations"
+      ]
+    },
+    {
+      "title": "Software Engineer, Google Wallet, Multimodal Intelligence",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/72431374895588038-software-engineer-google-wallet-multimodal-intelligence",
+      "location": "Singapore",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ai-engineer"
+      ]
+    },
+    {
+      "title": "Cloud AI Engineer, Google Cloud (English)",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/123391479690207942-cloud-ai-engineer-google-cloud-english",
+      "location": "Mexico City, Mexico; Buenos Aires, Argentina",
+      "checkedOn": "2026-10-04",
+      "paths": [
+        "ml-engineer"
+      ]
+    }
+  ],
+  "ownResources": [
+    "google-machine-learning-crash-course"
+  ],
+  "interview": {
+    "valuesUrl": "https://www.google.com/about/careers/applications/interview-tips/",
+    "values": [
+      {
+        "name": "Demonstrate how you navigate complexity and ambiguity",
+        "description": "How do you deal with ambiguous situations and problems?"
+      },
+      {
+        "name": "Share how you work with people and teams",
+        "description": "Google has a collaborative culture."
+      },
+      {
+        "name": "Think about your leadership style",
+        "description": "Be prepared to discuss how you have used your communication and decision-making skills to mobilize others."
+      }
+    ],
+    "prepUrl": "https://www.google.com/about/careers/applications/interview-tips/",
+    "questions": []
+  }
+}
