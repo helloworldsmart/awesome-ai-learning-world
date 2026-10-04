@@ -135,12 +135,42 @@ export function loadCatalog(root) {
   const skills = readJSON(join(root, "skills.json"), "skills.json", problems) ?? [];
   const entries = readDir(root, "resources", problems);
   const paths = readDir(root, "paths", problems);
-  const companies = readDir(root, "companies", problems);
+  const unordered = readDir(root, "companies", problems);
   problems.push(...validateSkills(skills));
   problems.push(...validate(entries, skills));
   problems.push(...validatePaths(paths, entries));
-  problems.push(...validateCompanies(companies, entries, paths));
+  problems.push(...validateCompanies(unordered, entries, paths));
+  const orderPath = join(root, COMPANY_ORDER_FILE);
+  const order = existsSync(orderPath) ? readJSON(orderPath, COMPANY_ORDER_FILE, problems) : undefined;
+  const { companies, problems: orderProblems } = orderCompanies(unordered, order);
+  problems.push(...orderProblems);
   return { skills, entries, paths, companies, problems };
+}
+
+/** company-order.json: the order of the Companies row on the Explore page (one slug per company). */
+export const COMPANY_ORDER_FILE = "company-order.json";
+
+/**
+ * Sort companies by company-order.json. Without the file, keep file-name order.
+ * With it, every company must be listed exactly once. Same rules as the app's Go OrderCompanies.
+ */
+export function orderCompanies(companies, order) {
+  if (order === undefined) return { companies, problems: [] };
+  if (!Array.isArray(order) || order.some((s) => typeof s !== "string")) {
+    return { companies, problems: [`${COMPANY_ORDER_FILE}: must be a list of company slugs`] };
+  }
+  const problems = [];
+  const bySlug = new Map(companies.map((c) => [c.slug, c]));
+  const seen = new Set();
+  const out = [];
+  for (const slug of order) {
+    if (seen.has(slug)) problems.push(`${COMPANY_ORDER_FILE}: "${slug}" is listed twice`);
+    else if (!bySlug.has(slug)) problems.push(`${COMPANY_ORDER_FILE}: no companies/${slug}.json`);
+    else out.push(bySlug.get(slug));
+    seen.add(slug);
+  }
+  for (const c of companies) if (!seen.has(c.slug)) problems.push(`${COMPANY_ORDER_FILE}: "${c.slug}" is missing`);
+  return problems.length ? { companies, problems } : { companies: out, problems };
 }
 
 /** skills.json: the fixed list every resource picks its skills from. */
