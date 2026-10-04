@@ -9,5 +9,6 @@
   "language": "en",
   "difficulty": "",
   "durationMinutes": 0,
-  "skills": ["Machine Learning", "Generative AI", "ML Systems"]
+  "skills": ["Machine Learning", "Generative AI", "ML Systems"],
+  "note": "Free to join. AMD does not say whether the hands-on labs' compute is free, so it may cost money."
 }
