@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+      - name: Unit tests for the validation rules
+        run: node --test scripts/
       - name: Validate skills, resources and paths
         run: node scripts/check.mjs
       - name: README is generated from the resources

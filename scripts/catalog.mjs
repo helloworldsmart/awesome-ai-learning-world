@@ -43,6 +43,30 @@ export const WORLD_COLORS = ["green", "teal", "blue", "purple", "rose", "red", "
 export const WORLD_NODE_LIMIT = 35;
 const STAGE_KEYS = ["title", "passCriteria", "resources", "extras"];
 
+// questions/technical/*.json and questions/behavioral/*.json: interview questions (app spec
+// 2026-10-05-interview-and-challenge-design.md §4.3). Same lists as the app's format.go.
+export const QUESTION_KINDS = ["technical", "behavioral", "situational"];
+export const TOPICS = [
+  "llm-internals", "inference-gpu", "rag", "agents", "fine-tuning",
+  "evaluation", "safety", "multimodal", "system-design", "ml-fundamentals",
+];
+export const TIERS = ["concept", "mechanism", "trade-off", "boss"];
+export const THEMES = ["conflict", "failure", "ownership", "ambiguity", "fast-learning", "influence"];
+// Amazon's 16 Leadership Principles, spelled exactly as in companies/amazon.json.
+export const LEADERSHIP_PRINCIPLES = [
+  "Customer Obsession", "Ownership", "Invent and Simplify", "Are Right, A Lot", "Learn and Be Curious",
+  "Hire and Develop the Best", "Insist on the Highest Standards", "Think Big", "Bias for Action", "Frugality",
+  "Earn Trust", "Dive Deep", "Have Backbone; Disagree and Commit", "Deliver Results",
+  "Strive to be Earth’s Best Employer", "Success and Scale Bring Broad Responsibility",
+];
+// A Challenge tier needs at least this many questions so a retry can draw a new one.
+// Fewer is a warning, not an error: the app just doesn't open that topic yet.
+export const MIN_PER_TIER = 3;
+const TECHNICAL_KEYS = new Set(["kind", "topic", "tier", "prompt", "keyPoints", "levels", "skills", "source", "status"]);
+const BEHAVIORAL_KEYS = new Set(["kind", "theme", "leadershipPrinciples", "prompt", "levels", "source", "status"]);
+const LEVEL_KEYS = ["weak", "adequate", "strong"];
+const SOURCE_KEYS = new Set(["label", "url"]);
+
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const isURL = (u) => typeof u === "string" && /^https?:\/\//.test(u);
 const blank = (s) => typeof s !== "string" || s.trim() === "";
@@ -126,8 +150,85 @@ export function validateCompanies(companies, entries, paths) {
   return problems;
 }
 
+function readQuestionDir(root, dir, problems) {
+  return readDir(join(root, "questions"), dir, problems).map((q) => ({ ...q, dir }));
+}
+
+/** questions/<dir>/<slug>.json: interview questions. Rules mirror the app's ValidateQuestions. */
+export function validateQuestions(questions, skills) {
+  const problems = [];
+  const skillNames = new Set(skills.map((s) => s.name));
+  const seen = new Map();
+  for (const q of questions) {
+    const { slug, dir, ...data } = q;
+    const at = `questions/${dir}/${slug}`;
+    if (!SLUG.test(slug)) problems.push(`${at}: file name must be lowercase letters, digits and -`);
+    if (seen.has(slug)) problems.push(`${at}: slug "${slug}" is also used by questions/${seen.get(slug)}/${slug}`);
+    seen.set(slug, dir);
+    if (!QUESTION_KINDS.includes(data.kind)) {
+      problems.push(`${at}: kind must be one of ${QUESTION_KINDS.join(", ")}`);
+      continue;
+    }
+    const technical = data.kind === "technical";
+    if (technical !== (dir === "technical")) problems.push(`${at}: ${data.kind} questions go in questions/${technical ? "technical" : "behavioral"}/`);
+    const allowed = technical ? TECHNICAL_KEYS : BEHAVIORAL_KEYS;
+    const extra = Object.keys(data).filter((k) => !allowed.has(k));
+    if (extra.length) problems.push(`${at}: unknown field(s) ${extra.join(", ")}`);
+    if (blank(data.prompt)) problems.push(`${at}: prompt must not be blank`);
+    const levels = data.levels;
+    if (typeof levels !== "object" || levels === null || Array.isArray(levels)) {
+      problems.push(`${at}: levels must have weak, adequate and strong`);
+    } else {
+      for (const k of LEVEL_KEYS) if (blank(levels[k])) problems.push(`${at}: levels.${k} must not be blank`);
+      const extraLevels = Object.keys(levels).filter((k) => !LEVEL_KEYS.includes(k));
+      if (extraLevels.length) problems.push(`${at}: unknown level(s) ${extraLevels.join(", ")}`);
+    }
+    const src = data.source;
+    if (typeof src !== "object" || src === null || blank(src.label) || !isURL(src.url)) {
+      problems.push(`${at}: source needs a label and an http(s) url`);
+    } else {
+      const extraSrc = Object.keys(src).filter((k) => !SOURCE_KEYS.has(k));
+      if (extraSrc.length) problems.push(`${at}: unknown source field(s) ${extraSrc.join(", ")}`);
+    }
+    if (!STATUSES.includes(data.status)) problems.push(`${at}: status must be one of ${STATUSES.join(", ")}`);
+    if (technical) {
+      if (!TOPICS.includes(data.topic)) problems.push(`${at}: topic must be one of ${TOPICS.join(", ")}`);
+      if (!TIERS.includes(data.tier)) problems.push(`${at}: tier must be one of ${TIERS.join(", ")}`);
+      if (!Array.isArray(data.keyPoints) || data.keyPoints.length === 0 || data.keyPoints.some(blank)) {
+        problems.push(`${at}: keyPoints needs at least one non-blank item`);
+      }
+      if (!Array.isArray(data.skills) || data.skills.length < 1 || data.skills.length > MAX_SKILLS) {
+        problems.push(`${at}: skills needs 1 to ${MAX_SKILLS} items`);
+      } else {
+        for (const s of data.skills) if (!skillNames.has(s)) problems.push(`${at}: "${s}" is not in skills.json`);
+        if (new Set(data.skills).size !== data.skills.length) problems.push(`${at}: skills must not repeat`);
+      }
+    } else {
+      if (!THEMES.includes(data.theme)) problems.push(`${at}: theme must be one of ${THEMES.join(", ")}`);
+      const lps = data.leadershipPrinciples;
+      if (!Array.isArray(lps)) problems.push(`${at}: leadershipPrinciples must be a list (can be empty)`);
+      else for (const lp of lps) if (!LEADERSHIP_PRINCIPLES.includes(lp)) problems.push(`${at}: "${lp}" is not one of Amazon's Leadership Principles`);
+    }
+  }
+  return problems;
+}
+
+/** How many usable technical questions each topic × tier has. Every pair is listed, zero included. */
+export function questionCoverage(questions) {
+  const out = [];
+  for (const topic of TOPICS) {
+    for (const tier of TIERS) {
+      const count = questions.filter(
+        (q) => q.kind === "technical" && q.topic === topic && q.tier === tier && q.status !== "proposed_removal",
+      ).length;
+      out.push({ topic, tier, count });
+    }
+  }
+  return out;
+}
+
 /**
- * Read the whole catalog. Returns { skills, entries, paths, companies, problems } — never throws on
+ * Read the whole catalog. Returns { skills, entries, paths, companies, questions, problems } — never throws on
  * bad content.
  */
 export function loadCatalog(root) {
@@ -136,15 +237,17 @@ export function loadCatalog(root) {
   const entries = readDir(root, "resources", problems);
   const paths = readDir(root, "paths", problems);
   const unordered = readDir(root, "companies", problems);
+  const questions = [...readQuestionDir(root, "technical", problems), ...readQuestionDir(root, "behavioral", problems)];
   problems.push(...validateSkills(skills));
   problems.push(...validate(entries, skills));
   problems.push(...validatePaths(paths, entries));
   problems.push(...validateCompanies(unordered, entries, paths));
+  problems.push(...validateQuestions(questions, skills));
   const orderPath = join(root, COMPANY_ORDER_FILE);
   const order = existsSync(orderPath) ? readJSON(orderPath, COMPANY_ORDER_FILE, problems) : undefined;
   const { companies, problems: orderProblems } = orderCompanies(unordered, order);
   problems.push(...orderProblems);
-  return { skills, entries, paths, companies, problems };
+  return { skills, entries, paths, companies, questions, problems };
 }
 
 export const MAX_NOTE_LEN = 160;

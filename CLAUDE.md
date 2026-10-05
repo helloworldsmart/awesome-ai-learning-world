@@ -43,6 +43,8 @@ merged here reaches users only after a tag and a release.
 skills.json             the fixed list of skills (README sections, in this order)
 resources/<slug>.json   one resource per file (the source of truth)
 paths/<slug>.json       learning paths: ordered stages of resource slugs
+questions/technical/<slug>.json, questions/behavioral/<slug>.json
+                        interview questions for the app's Mock interview and Challenge. Same status rules as resources: AI drafts are `todo`, only the maintainer marks `done`. Never copy answers from a source; write `keyPoints` and `levels` yourself.
 scripts/catalog.mjs     load + validate (mirrors the app's importer — change both together)
 scripts/check.mjs       validate everything
 scripts/build-readme.mjs  generate README.md (--check in CI)
