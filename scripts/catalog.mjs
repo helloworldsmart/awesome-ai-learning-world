@@ -150,8 +150,27 @@ export function validateCompanies(companies, entries, paths) {
   return problems;
 }
 
+// Own loop instead of readDir: the slug comes from the file name only, so a "slug" or
+// "dir" key inside the file is a problem, never an override.
 function readQuestionDir(root, dir, problems) {
-  return readDir(join(root, "questions"), dir, problems).map((q) => ({ ...q, dir }));
+  const folder = join(root, "questions", dir);
+  if (!existsSync(folder)) return [];
+  const out = [];
+  for (const file of readdirSync(folder).filter((f) => f.endsWith(".json")).sort()) {
+    const slug = file.slice(0, -".json".length);
+    const data = readJSON(join(folder, file), `questions/${dir}/${file}`, problems);
+    if (data === undefined) continue;
+    if (typeof data === "object" && data !== null && !Array.isArray(data)) {
+      for (const k of ["slug", "dir"]) {
+        if (Object.hasOwn(data, k)) problems.push(`questions/${dir}/${slug}: unknown field(s) ${k}`);
+      }
+      const { slug: _s, dir: _d, ...rest } = data;
+      out.push({ ...rest, slug, dir });
+    } else {
+      out.push({ slug, dir });
+    }
+  }
+  return out;
 }
 
 /** questions/<dir>/<slug>.json: interview questions. Rules mirror the app's ValidateQuestions. */

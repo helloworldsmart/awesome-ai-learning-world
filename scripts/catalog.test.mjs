@@ -84,6 +84,17 @@ test("every behavioral rule is enforced", () => {
   assert.deepEqual(validateQuestions([q("m", "behavioral", behavioral({ kind: "situational", leadershipPrinciples: [] }))], skills), []);
 });
 
+test("a slug or dir key inside a question file is a problem, and the file name wins", () => {
+  const dir = mkdtempSync(join(tmpdir(), "cat-"));
+  mkdirSync(join(dir, "questions/technical"), { recursive: true });
+  writeFileSync(join(dir, "questions/technical/real.json"), JSON.stringify(technical({ slug: "other" })));
+  writeFileSync(join(dir, "questions/technical/real2.json"), JSON.stringify(technical({ dir: "behavioral" })));
+  const cat = loadCatalog(dir);
+  assert.ok(cat.problems.some((p) => p.includes("questions/technical/real") && p.includes("slug")));
+  assert.ok(cat.problems.some((p) => p.includes("questions/technical/real2") && p.includes("dir")));
+  assert.deepEqual(cat.questions.map((x) => x.slug), ["real", "real2"]);
+});
+
 test("a slug can't be used in both folders", () => {
   const p = validateQuestions([q("same", "technical", technical()), q("same", "behavioral", behavioral())], skills);
   assert.ok(p.some((s) => s.includes("same")));

@@ -82,6 +82,8 @@ A path is a ready-made route through the catalog: `paths/<slug>.json`, a list of
 
 Questions for the app's Mock interview and Challenge live in two folders: `questions/technical/<slug>.json` and `questions/behavioral/<slug>.json`. A file name is unique across both folders.
 
+Where questions come from: 375 technical prompts come from [pallavi-shekhar/ai-engineering-interview-questions-company-wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) (Apache-2.0). Take only the prompt; write `keyPoints` and `levels` yourself and never copy answers. Always fill `source` with where the prompt came from. The README's "Question sources & licenses" section states this, so update `scripts/build-readme.mjs` if the sources change.
+
 Technical:
 
 ```json

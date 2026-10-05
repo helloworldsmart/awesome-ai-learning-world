@@ -717,6 +717,10 @@ Found something that meets the criteria? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 The selection criteria were inspired by [The No-Hype AI Learning Guide](https://github.com/h9-tec/Awesome_ai_learning) by h9-tec.
 
+## Question sources & licenses
+
+The interview questions in `questions/` are original work except for one borrowed input: 375 of the technical question prompts come from [ai-engineering-interview-questions-company-wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) by pallavi-shekhar, which is licensed under [Apache-2.0](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise/blob/main/LICENSE). Only the question prompts were taken. The key points and answer levels are written independently, and no answers were copied. The upstream repository has no NOTICE file. Behavioral questions cite their own sources in each file.
+
 ## License
 
 [![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
