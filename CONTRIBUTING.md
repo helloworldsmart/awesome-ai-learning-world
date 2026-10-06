@@ -232,8 +232,9 @@ Minimal examples (common fields shortened to `…`):
 **Fill translations.** A translated `before` or `after` may be `""`: languages that put the verb last (Japanese) often need the blank at the start of the sentence. Both empty is still an error. `accept` and `show` are never translated, so the blank must hold something language-neutral — a technical term, a number, a symbol or code. Don't put spaces next to the blank; the input has its own margin.
 
 ```json
-"before": "During decoding, KV cache memory grows linearly with", "after": ".",
-"i18n": { "ja": { "before": "", "after": "に比例して、decode 中の KV cache のメモリが増えます。" } }
+"before": "During decoding, the", "after": "keeps the keys and values of earlier tokens so they aren't recomputed.",
+"accept": ["KV cache", "kv-cache", "key-value cache"], "show": "KV cache",
+"i18n": { "ja": { "before": "", "after": "は、decode 中に過去の token の K と V を保持して再計算を省きます。" } }
 ```
 
 The full glossary of terms that stay in English, and how they sit in a Chinese or Japanese sentence, is in the app repo's `docs/i18n-tone-guide.md` ("題庫與 Challenge").
@@ -362,7 +363,7 @@ Fix: point at the reason instead — "The scale keeps the variance of the scores
 }
 ```
 
-**Boss — good.** The `block` holds the evidence, and it rules out every wrong option: the 2025 page *was* retrieved (so not `top_k`), and the answer matches a retrieved page (so not hallucination).
+**Boss — good.** The `block` holds the evidence, and it rules out every wrong option: the 2025 page *was* retrieved (so not `top_k`), its chunk still carries the 14-day sentence (so not chunking), and the answer matches a retrieved page (so not hallucination).
 
 ```json
 {
@@ -373,7 +374,7 @@ Fix: point at the reason instead — "The scale keeps the variance of the scores
     "Both versions are in the index and nothing filters or ranks by date",
     "The model hallucinated the 30-day window",
     "top_k is too small to retrieve the 2025 policy",
-    "The embedding model can't represent numbers"
+    "Chunking cut the 14-day sentence out of the 2025 page"
   ],
   "answer": 0,
   "hint": "Check which pages came back, and where the answer's number came from.",
