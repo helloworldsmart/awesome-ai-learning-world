@@ -143,13 +143,112 @@ Behavioral:
 | `levels` | `weak`, `adequate` and `strong`: what each kind of answer looks like. All three are required. |
 | `skills` | Technical only. 1–3 names from `skills.json`, no repeats. |
 | `source` | `label` and an `http(s)` `url` for where the question was seen. |
-| `status` | `todo`, `in_progress`, `done` or `proposed_removal`, same rules as resources. |
+| `status` | `todo`, `in_progress`, `done` or `proposed_removal`, same rules as resources. `in_progress` and `done` technical questions need a `page`. |
+| `page` | Technical only. The fixed-answer version for Challenge, see [Page version](#page-version). |
 
 What we don't take:
 
 - No coding questions.
 - No company-specific questions.
 - No copied answers: write `keyPoints` and `levels` yourself.
+
+### Page version
+
+Challenge grades on the page, with fixed answers, so a technical question can carry a `page`: the same idea asked as something you click or type. Behavioral questions never have one.
+
+- `todo` questions may leave `page` out (it is still being drafted).
+- `in_progress` and `done` technical questions **must** have a `page`. The app serves both and scores them the same, so an `in_progress` question goes live on release.
+- A question is *page-usable* when it is technical, `in_progress` or `done`, and has a `page`. A topic × tier opens its Challenge page round once it has at least 5 page-usable questions (one round is 5); `node scripts/check.mjs` lists the pairs that don't yet.
+
+Every page has these fields, plus the fields of its `type` — any other key is an error:
+
+| Field | Rule |
+| --- | --- |
+| `type` | `choose`, `multi`, `truefalse`, `lines`, `fill`, `codefill`, `order`, `match`, `sort`, `table` or `figure`. |
+| `prompt` | Not blank. A `fill` page may leave it out. |
+| `hint` | Not blank. Points the way without giving the answer. |
+| `why` | Not blank. One line on why the answer is right, shown after answering. |
+| `concept` | `{ "title", "body" }`, both not blank: the "Show me why" card. |
+| `i18n` | Optional translations, see below. |
+
+Indexes (`answer`, `answers`, `reason`, `row`, a sort item's `bucket`) count from 0 and must always be written — `0` is a real answer, so a missing index is an error, never "the first one".
+
+| Type | Fields | Rules |
+| --- | --- | --- |
+| `choose` | `options`, `answer`, `block` (optional), `code` (optional) | 2–6 options, not blank, no repeats; `answer` is an option index. `block` is a snippet shown above the options (not blank if present); `code: true` shows options as code. |
+| `multi` | `options`, `answers` | 3–8 options, not blank, no repeats; at least one answer, fewer answers than options, no repeats, all valid indexes. |
+| `truefalse` | `statement`, `isTrue`, `reasons`, `reason` | `statement` not blank; `isTrue` is `true` or `false`; 2–5 reasons, not blank, no repeats; `reason` is the index of the right reason. |
+| `lines` | `lines`, `answer` | Spot the bug: 2–12 lines, not blank; `answer` is the index of the wrong line. |
+| `fill` | `before`, `after`, `accept`, `show` | At least one of `before` / `after` not blank; answers as below. |
+| `codefill` | `source`, `accept`, `show` | 2–15 code lines; exactly one line contains `___`, once. Answers as below. |
+| `order` | `items`, `code` (optional) | 3–7 items, not blank, no repeats. **The order in the file is the right order**; the app shuffles. |
+| `match` | `pairs` | 3–6 `[left, right]` pairs, not blank; no left repeats, no right repeats. |
+| `sort` | `buckets`, `items` | 2–4 buckets, not blank, no repeats; 3–8 items `{ "text", "bucket" }`, text not blank and no repeats, `bucket` a bucket index; every bucket gets at least one item. |
+| `table` | `head`, `rows` | `head` is two column titles. 2–6 rows, each with a non-blank `label` and **either** `value` (a fixed cell, not blank) **or** `pre` / `post` (may be empty) with `accept` and `show` (a cell to fill). At least one row is a cell to fill. |
+| `figure` | `kind`, `tokens`, `weights`, `row`, `answer` | `kind` is `"attention"`; 2–10 tokens; `weights` is n × n (n = number of tokens), each from 0 to 1; `row` and `answer` are token indexes, and `answer` must be the single largest weight in `weights[row]`. |
+
+**Typed answers** (`fill`, `codefill`, a `table` cell to fill): `accept` lists at least one answer, none blank, and no two the same once normalized; `show` (the answer displayed afterwards) is not blank and, normalized, equals one of `accept`. Normalizing is: Unicode NFKC, lower case, remove all whitespace (including the full-width space), remove one trailing `;`. Nothing else changes, so list every accepted spelling: `["1050624", "1,050,624"]`.
+
+Minimal examples (common fields shortened to `…`):
+
+```json
+{ "type": "choose", "prompt": "…", "hint": "…", "why": "…", "concept": { "title": "…", "body": "…" },
+  "options": ["Q", "K and V", "Logits"], "answer": 1 }
+{ "type": "multi", "…": "…", "options": ["A", "B", "C", "D"], "answers": [0, 2] }
+{ "type": "truefalse", "…": "…", "statement": "The KV cache stores queries.", "isTrue": false,
+  "reasons": ["Queries are never reused", "It stores logits"], "reason": 0 }
+{ "type": "lines", "…": "…", "lines": ["out = model(x)", "opt.step()", "loss.backward()"], "answer": 1 }
+{ "type": "fill", "…": "…", "before": "Attention divides by sqrt(", "after": ")", "accept": ["d_k", "dk"], "show": "d_k" }
+{ "type": "codefill", "…": "…", "source": ["loss = crit(out, y)", "___", "opt.step()"],
+  "accept": ["loss.backward()"], "show": "loss.backward()" }
+{ "type": "order", "…": "…", "items": ["Tokenize", "Embed", "Attend"] }
+{ "type": "match", "…": "…", "pairs": [["Q", "query"], ["K", "key"], ["V", "value"]] }
+{ "type": "sort", "…": "…", "buckets": ["Training", "Inference"],
+  "items": [{ "text": "Backprop", "bucket": 0 }, { "text": "KV cache", "bucket": 1 }, { "text": "Dropout", "bucket": 0 }] }
+{ "type": "table", "…": "…", "head": ["Quantity", "Value"],
+  "rows": [{ "label": "Layers", "value": "32" }, { "label": "Weights", "pre": "", "post": " GB", "accept": ["16"], "show": "16" }] }
+{ "type": "figure", "…": "…", "kind": "attention", "tokens": ["the", "cat", "sat"],
+  "weights": [[0.1, 0.8, 0.1], [0.2, 0.2, 0.6], [0.3, 0.3, 0.4]], "row": 0, "answer": 1 }
+```
+
+(`"…": "…"` stands for the common fields; it is not a real key.)
+
+**Translations.** `page.i18n` is `{ "zh-Hant": { … }, "ja": { … } }` — only those two locales. Each locale may override only the translatable fields of its type; anything missing falls back to English. Strings are not blank, and translated lists have exactly as many entries as the English (otherwise a translated option would point at the wrong answer). Technical terms stay in English.
+
+| Field | Types | Shape |
+| --- | --- | --- |
+| `prompt`, `hint`, `why` | all | string |
+| `concept` | all | `{ "title", "body" }` (either may be left out) |
+| `options` | choose, multi | string list |
+| `statement`, `reasons` | truefalse | string, string list |
+| `before`, `after` | fill | string |
+| `items` | order (not when `code: true`), sort (the texts) | string list |
+| `pairs` | match | list of `[left, right]` |
+| `buckets` | sort | string list |
+| `head`, `rows` | table (`rows` translates the labels) | two strings, string list |
+
+`lines`, `codefill`, `block` and `figure` are code or pictures and are never translated.
+
+### Topic intros
+
+`questions/topics/<topic>.json` holds the "New idea" card shown before a topic's first question at each tier. The file name is one of the topics above.
+
+```json
+{
+  "status": "todo",
+  "intros": {
+    "concept":   { "title": "…", "body": "…" },
+    "mechanism": { "title": "…", "body": "…" },
+    "trade-off": { "title": "…", "body": "…" },
+    "boss":      { "title": "…", "body": "…" }
+  },
+  "i18n": { "zh-Hant": { "concept": { "title": "…", "body": "…" } }, "ja": {} }
+}
+```
+
+- Only `status`, `intros` and `i18n` (optional). All four tiers are required, each with a non-blank `title` and `body`.
+- `i18n` uses the same two locales; under each, only tier names, each `{ "title", "body" }` (either may be left out, neither blank).
+- Status rules are the same as questions. The app shows an intro only when it is `in_progress` or `done`; a topic without one simply skips the card.
 
 ## Status
 

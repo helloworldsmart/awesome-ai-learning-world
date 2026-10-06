@@ -45,6 +45,11 @@ resources/<slug>.json   one resource per file (the source of truth)
 paths/<slug>.json       learning paths: ordered stages of resource slugs
 questions/technical/<slug>.json, questions/behavioral/<slug>.json
                         interview questions for the app's Mock interview and Challenge. Same status rules as resources: AI drafts are `todo`, only the maintainer marks `done`. Never copy answers from a source; write `keyPoints` and `levels` yourself.
+                        A technical question may carry a `page` (its fixed-answer version, format in CONTRIBUTING.md "Page version");
+                        `in_progress` and `done` ones must. **A question reviewed by Codex (page included) may move from `todo`
+                        to `in_progress`; never to `done`.** `in_progress` questions are served and scored like `done` ones.
+questions/topics/<topic>.json
+                        "New idea" intro cards per tier (CONTRIBUTING.md "Topic intros"). Same status rules.
 scripts/catalog.mjs     load + validate (mirrors the app's importer — change both together)
 scripts/check.mjs       validate everything
 scripts/build-readme.mjs  generate README.md (--check in CI)

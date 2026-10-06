@@ -62,7 +62,7 @@ export const LEADERSHIP_PRINCIPLES = [
 // A Challenge tier needs at least this many questions so a retry can draw a new one.
 // Fewer is a warning, not an error: the app just doesn't open that topic yet.
 export const MIN_PER_TIER = 3;
-const TECHNICAL_KEYS = new Set(["kind", "topic", "tier", "prompt", "keyPoints", "levels", "skills", "source", "status"]);
+const TECHNICAL_KEYS = new Set(["kind", "topic", "tier", "prompt", "keyPoints", "levels", "skills", "source", "status", "page"]);
 const BEHAVIORAL_KEYS = new Set(["kind", "theme", "leadershipPrinciples", "prompt", "levels", "source", "status"]);
 const LEVEL_KEYS = ["weak", "adequate", "strong"];
 const SOURCE_KEYS = new Set(["label", "url"]);
@@ -191,8 +191,9 @@ export function validateQuestions(questions, skills) {
     const technical = data.kind === "technical";
     if (technical !== (dir === "technical")) problems.push(`${at}: ${data.kind} questions go in questions/${technical ? "technical" : "behavioral"}/`);
     const allowed = technical ? TECHNICAL_KEYS : BEHAVIORAL_KEYS;
-    const extra = Object.keys(data).filter((k) => !allowed.has(k));
+    const extra = Object.keys(data).filter((k) => !allowed.has(k) && !(k === "page" && !technical));
     if (extra.length) problems.push(`${at}: unknown field(s) ${extra.join(", ")}`);
+    if (!technical && Object.hasOwn(data, "page")) problems.push(`${at}: page is only for technical questions`);
     if (blank(data.prompt)) problems.push(`${at}: prompt must not be blank`);
     const levels = data.levels;
     if (typeof levels !== "object" || levels === null || Array.isArray(levels)) {
@@ -222,6 +223,9 @@ export function validateQuestions(questions, skills) {
         for (const s of data.skills) if (!skillNames.has(s)) problems.push(`${at}: "${s}" is not in skills.json`);
         if (new Set(data.skills).size !== data.skills.length) problems.push(`${at}: skills must not repeat`);
       }
+      // The app serves in_progress and done questions, so they need their page; todo is still a draft.
+      if (Object.hasOwn(data, "page")) problems.push(...validatePage(data.page, at));
+      else if (SERVED.includes(data.status)) problems.push(`${at}: ${data.status} questions need a page`);
     } else {
       if (!THEMES.includes(data.theme)) problems.push(`${at}: theme must be one of ${THEMES.join(", ")}`);
       const lps = data.leadershipPrinciples;
@@ -232,7 +236,473 @@ export function validateQuestions(questions, skills) {
   return problems;
 }
 
-/** How many usable technical questions each topic × tier has. Every pair is listed, zero included. */
+// ---------------------------------------------------------------------------
+// Page versions: the fixed-answer form of a technical question that Challenge grades
+// on the page. Same rules as the app's format.go (validatePage / NormalizeAnswer) —
+// change both together, and keep the test case names identical.
+
+export const PAGE_TYPES = ["choose", "multi", "truefalse", "lines", "fill", "codefill", "order", "match", "sort", "table", "figure"];
+export const LOCALES = ["zh-Hant", "ja"];
+// One Challenge page round is 5 questions, so a topic × tier needs 5 page-usable ones.
+export const MIN_PAGE_PER_TIER = 5;
+// Statuses whose questions (and topic intros) the app serves. A technical question in one of
+// these must carry a page.
+const SERVED = ["in_progress", "done"];
+const PAGE_COMMON_KEYS = ["type", "prompt", "hint", "why", "concept", "i18n"];
+const PAGE_TYPE_KEYS = {
+  choose: ["options", "answer", "block", "code"],
+  multi: ["options", "answers"],
+  truefalse: ["statement", "isTrue", "reasons", "reason"],
+  lines: ["lines", "answer"],
+  fill: ["before", "after", "accept", "show"],
+  codefill: ["source", "accept", "show"],
+  order: ["items", "code"],
+  match: ["pairs"],
+  sort: ["buckets", "items"],
+  table: ["head", "rows"],
+  figure: ["kind", "tokens", "weights", "row", "answer"],
+};
+const CONCEPT_KEYS = ["title", "body"];
+const SORT_ITEM_KEYS = ["text", "bucket"];
+const TABLE_FIXED_KEYS = ["label", "value"];
+const TABLE_FILL_KEYS = ["label", "pre", "post", "accept", "show"];
+// Fields a translation may override, per type. Code, lines and figures are never translated.
+const I18N_COMMON = ["prompt", "hint", "why", "concept"];
+const I18N_TYPE_KEYS = {
+  choose: ["options"],
+  multi: ["options"],
+  truefalse: ["statement", "reasons"],
+  fill: ["before", "after"],
+  order: ["items"], // not when code: true
+  sort: ["buckets", "items"],
+  match: ["pairs"],
+  table: ["head", "rows"],
+};
+const BLANK_MARK = "___";
+
+const isObject = (v) => typeof v === "object" && v !== null && !Array.isArray(v);
+
+/**
+ * The form a typed answer is compared in (fill, codefill and table cells): Unicode NFKC,
+ * lower case, every whitespace character removed (\s, which includes the full-width space),
+ * then one trailing ";" removed. Nothing else changes — "_", "," and "√" stay, so every accepted
+ * spelling is listed in accept. The app's NormalizeAnswer is the same function.
+ */
+export function normalizeAnswer(s) {
+  const out = String(s).normalize("NFKC").toLowerCase().replace(/\s/gu, "");
+  return out.endsWith(";") ? out.slice(0, -1) : out;
+}
+
+/** A technical question the app can serve as a page: in progress or done, with a page. */
+export function pageUsable(q) {
+  return q.kind === "technical" && SERVED.includes(q.status) && isObject(q.page);
+}
+
+/** Validate a question's page object. `at` names the file; every problem starts with it. */
+export function validatePage(page, at) {
+  const problems = [];
+  const bad = (msg) => problems.push(`${at}: page${msg}`);
+  if (!isObject(page)) {
+    bad(" must be an object");
+    return problems;
+  }
+  const type = page.type;
+  const known = PAGE_TYPES.includes(type);
+  if (!known) bad(`.type must be one of ${PAGE_TYPES.join(", ")}`);
+  else {
+    const allowed = [...PAGE_COMMON_KEYS, ...PAGE_TYPE_KEYS[type]];
+    const extra = Object.keys(page).filter((k) => !allowed.includes(k));
+    if (extra.length) bad(`: unknown field(s) ${extra.join(", ")}`);
+  }
+
+  // Common fields.
+  if (type === "fill" && !Object.hasOwn(page, "prompt")) {
+    // A fill question's sentence can be the whole prompt.
+  } else if (blank(page.prompt)) bad(".prompt must not be blank");
+  if (blank(page.hint)) bad(".hint must not be blank");
+  if (blank(page.why)) bad(".why must not be blank");
+  if (!isObject(page.concept)) bad(".concept needs a title and a body");
+  else {
+    keysIn(page.concept, CONCEPT_KEYS, ".concept", bad);
+    for (const k of CONCEPT_KEYS) if (blank(page.concept[k])) bad(`.concept.${k} must not be blank`);
+  }
+  if (!known) return problems;
+
+  const list = (key, min, max, { unique = true, nonBlank = true } = {}) => strings(page[key], `.${key}`, min, max, bad, { unique, nonBlank });
+  const index = (key, n, where = page, name = `.${key}`) => checkIndex(where, key, n, name, bad);
+  const optionalBool = (key) => {
+    if (Object.hasOwn(page, key) && typeof page[key] !== "boolean") bad(`.${key} must be true or false`);
+  };
+
+  switch (type) {
+    case "choose": {
+      const n = list("options", 2, 6);
+      index("answer", n);
+      if (Object.hasOwn(page, "block") && blank(page.block)) bad(".block must not be blank when present");
+      optionalBool("code");
+      break;
+    }
+    case "multi": {
+      const n = list("options", 3, 8);
+      const answers = page.answers;
+      if (!Array.isArray(answers) || answers.length === 0) bad(".answers needs at least one index");
+      else {
+        if (n !== undefined && answers.length >= n) bad(".answers must leave at least one option unpicked");
+        if (new Set(answers).size !== answers.length) bad(".answers must not repeat");
+        for (const a of answers) if (!validIndex(a, n)) bad(`.answers: ${JSON.stringify(a)} is not an option index`);
+      }
+      break;
+    }
+    case "truefalse": {
+      if (blank(page.statement)) bad(".statement must not be blank");
+      if (!Object.hasOwn(page, "isTrue")) bad(".isTrue is missing");
+      else if (typeof page.isTrue !== "boolean") bad(".isTrue must be true or false");
+      const n = list("reasons", 2, 5);
+      index("reason", n);
+      break;
+    }
+    case "lines": {
+      const n = list("lines", 2, 12, { unique: false });
+      index("answer", n);
+      break;
+    }
+    case "fill": {
+      for (const k of ["before", "after"]) {
+        if (Object.hasOwn(page, k) && typeof page[k] !== "string") bad(`.${k} must be a string`);
+      }
+      if (blank(page.before) && blank(page.after)) bad(".before or .after must not be blank");
+      checkAnswers(page, "", bad);
+      break;
+    }
+    case "codefill": {
+      const n = list("source", 2, 15, { unique: false, nonBlank: false });
+      if (n !== undefined) {
+        const marked = page.source.filter((line) => line.includes(BLANK_MARK));
+        if (marked.length !== 1 || marked[0].split(BLANK_MARK).length !== 2) {
+          bad(`.source must have exactly one ${BLANK_MARK}, on one line`);
+        }
+      }
+      checkAnswers(page, "", bad);
+      break;
+    }
+    case "order":
+      list("items", 3, 7);
+      optionalBool("code");
+      break;
+    case "match": {
+      const pairs = page.pairs;
+      if (!Array.isArray(pairs) || pairs.length < 3 || pairs.length > 6) bad(".pairs must have 3 to 6 pairs");
+      else if (!pairs.every((p) => Array.isArray(p) && p.length === 2 && p.every((s) => !blank(s)))) {
+        bad(".pairs must each be two non-blank strings");
+      } else {
+        if (new Set(pairs.map((p) => p[0])).size !== pairs.length) bad(".pairs: left side must not repeat");
+        if (new Set(pairs.map((p) => p[1])).size !== pairs.length) bad(".pairs: right side must not repeat");
+      }
+      break;
+    }
+    case "sort": {
+      const n = list("buckets", 2, 4);
+      const items = page.items;
+      if (!Array.isArray(items) || items.length < 3 || items.length > 8) {
+        bad(".items must have 3 to 8 items");
+        break;
+      }
+      const used = new Set();
+      items.forEach((it, i) => {
+        const where = `.items[${i}]`;
+        if (!isObject(it)) {
+          bad(`${where} must be {text, bucket}`);
+          return;
+        }
+        keysIn(it, SORT_ITEM_KEYS, where, bad);
+        if (blank(it.text)) bad(`${where}.text must not be blank`);
+        if (checkIndex(it, "bucket", n, `${where}.bucket`, bad)) used.add(it.bucket);
+      });
+      const texts = items.filter(isObject).map((it) => it.text);
+      if (new Set(texts).size !== texts.length) bad(".items: text must not repeat");
+      if (n !== undefined) for (let b = 0; b < n; b++) if (!used.has(b)) bad(`.buckets: "${page.buckets[b]}" has no item`);
+      break;
+    }
+    case "table": {
+      if (!Array.isArray(page.head) || page.head.length !== 2 || page.head.some(blank)) bad(".head must be two non-blank strings");
+      const rows = page.rows;
+      if (!Array.isArray(rows) || rows.length < 2 || rows.length > 6) {
+        bad(".rows must have 2 to 6 rows");
+        break;
+      }
+      let fills = 0;
+      rows.forEach((row, i) => {
+        const where = `.rows[${i}]`;
+        if (!isObject(row)) {
+          bad(`${where} must be an object`);
+          return;
+        }
+        if (blank(row.label)) bad(`${where}.label must not be blank`);
+        const fixed = Object.hasOwn(row, "value");
+        const fill = ["pre", "post", "accept", "show"].some((k) => Object.hasOwn(row, k));
+        if (fixed && fill) {
+          bad(`${where} is either a fixed cell (value) or a cell to fill (pre, post, accept, show), not both`);
+          return;
+        }
+        if (!fixed && !fill) {
+          bad(`${where} needs a value or accept and show`);
+          return;
+        }
+        if (fixed) {
+          keysIn(row, TABLE_FIXED_KEYS, where, bad);
+          if (blank(row.value)) bad(`${where}.value must not be blank`);
+          return;
+        }
+        fills++;
+        keysIn(row, TABLE_FILL_KEYS, where, bad);
+        for (const k of ["pre", "post"]) {
+          if (Object.hasOwn(row, k) && typeof row[k] !== "string") bad(`${where}.${k} must be a string`);
+        }
+        checkAnswers(row, where, bad);
+      });
+      if (fills === 0) bad(".rows needs at least one cell to fill");
+      break;
+    }
+    case "figure": {
+      if (page.kind !== "attention") bad('.kind must be "attention"');
+      const n = list("tokens", 2, 10, { unique: false });
+      const w = page.weights;
+      const square =
+        n !== undefined &&
+        Array.isArray(w) &&
+        w.length === n &&
+        w.every((r) => Array.isArray(r) && r.length === n);
+      if (!square) bad(".weights must be n × n, n = the number of tokens");
+      else if (!w.every((r) => r.every((x) => typeof x === "number" && Number.isFinite(x) && x >= 0 && x <= 1))) {
+        bad(".weights must each be a number from 0 to 1");
+      }
+      const rowOK = index("row", n);
+      const answerOK = index("answer", n);
+      if (square && rowOK && answerOK) {
+        const r = w[page.row];
+        const max = Math.max(...r);
+        if (r[page.answer] !== max || r.filter((x) => x === max).length !== 1) {
+          bad(".answer must be the single largest weight in weights[row]");
+        }
+      }
+      break;
+    }
+  }
+
+  if (Object.hasOwn(page, "i18n")) checkPageI18n(page, bad);
+  return problems;
+}
+
+function keysIn(obj, allowed, where, bad) {
+  const extra = Object.keys(obj).filter((k) => !allowed.includes(k));
+  if (extra.length) bad(`${where}: unknown field(s) ${extra.join(", ")}`);
+}
+
+// A list of strings with min..max items. Returns its length when valid, undefined otherwise,
+// so index checks against it are skipped rather than reported twice.
+function strings(v, name, min, max, bad, { unique = true, nonBlank = true } = {}) {
+  if (!Array.isArray(v) || v.length < min || v.length > max) {
+    bad(`${name} must have ${min} to ${max} items`);
+    return undefined;
+  }
+  if (v.some((s) => typeof s !== "string")) {
+    bad(`${name} must be strings`);
+    return undefined;
+  }
+  let ok = true;
+  if (nonBlank && v.some(blank)) {
+    bad(`${name} must not have blank items`);
+    ok = false;
+  }
+  if (unique && new Set(v).size !== v.length) {
+    bad(`${name} must not repeat`);
+    ok = false;
+  }
+  return ok ? v.length : undefined;
+}
+
+const validIndex = (i, n) => Number.isInteger(i) && i >= 0 && (n === undefined || i < n);
+
+// An index must be written out: 0 is a real answer, so a missing key is never read as 0.
+function checkIndex(obj, key, n, name, bad) {
+  if (!Object.hasOwn(obj, key)) {
+    bad(`${name} is missing`);
+    return false;
+  }
+  if (!validIndex(obj[key], n)) {
+    bad(`${name} must be an index into the list`);
+    return false;
+  }
+  return n !== undefined;
+}
+
+// accept and show of a fill, codefill or table cell.
+function checkAnswers(obj, where, bad) {
+  const accept = obj.accept;
+  if (!Array.isArray(accept) || accept.length === 0) {
+    bad(`${where}.accept needs at least one answer`);
+    return;
+  }
+  if (accept.some(blank)) {
+    bad(`${where}.accept must not have blank answers`);
+    return;
+  }
+  const normalized = accept.map(normalizeAnswer);
+  if (new Set(normalized).size !== normalized.length) bad(`${where}.accept repeats an answer once normalized`);
+  if (blank(obj.show)) bad(`${where}.show must not be blank`);
+  else if (!normalized.includes(normalizeAnswer(obj.show))) bad(`${where}.show must be one of accept once normalized`);
+}
+
+function checkPageI18n(page, bad) {
+  const i18n = page.i18n;
+  if (!isObject(i18n)) {
+    bad(".i18n must be an object of locales");
+    return;
+  }
+  const type = page.type;
+  const translatable = [...I18N_COMMON, ...(I18N_TYPE_KEYS[type] ?? [])].filter(
+    (k) => !(type === "order" && k === "items" && page.code === true),
+  );
+  // English list each translated list must line up with.
+  const english = {
+    options: page.options,
+    reasons: page.reasons,
+    items: page.items, // order: the strings; sort: one text per item
+    buckets: page.buckets,
+    pairs: page.pairs,
+    rows: page.rows,
+  };
+  for (const [locale, t] of Object.entries(i18n)) {
+    const at = `.i18n.${locale}`;
+    if (!LOCALES.includes(locale)) {
+      bad(`.i18n: unknown locale "${locale}" (use ${LOCALES.join(", ")})`);
+      continue;
+    }
+    if (!isObject(t)) {
+      bad(`${at} must be an object`);
+      continue;
+    }
+    for (const [k, v] of Object.entries(t)) {
+      const fat = `${at}.${k}`;
+      if (!translatable.includes(k)) {
+        bad(`${at}: "${k}" is not translatable for type ${type}${type === "order" && k === "items" ? " with code: true" : ""}`);
+        continue;
+      }
+      switch (k) {
+        case "prompt": case "hint": case "why": case "statement": case "before": case "after":
+          if (blank(v)) bad(`${fat} must not be blank`);
+          break;
+        case "concept":
+          if (!isObject(v)) bad(`${fat} must be {title, body}`);
+          else {
+            keysIn(v, CONCEPT_KEYS, fat, bad);
+            for (const ck of CONCEPT_KEYS) if (Object.hasOwn(v, ck) && blank(v[ck])) bad(`${fat}.${ck} must not be blank`);
+          }
+          break;
+        case "head":
+          if (!Array.isArray(v) || v.length !== 2 || v.some(blank)) bad(`${fat} must be two non-blank strings`);
+          break;
+        case "pairs":
+          if (!Array.isArray(v) || !Array.isArray(english.pairs) || v.length !== english.pairs.length) bad(`${fat} must have as many pairs as the English`);
+          else if (!v.every((p) => Array.isArray(p) && p.length === 2 && p.every((s) => !blank(s)))) bad(`${fat} must each be two non-blank strings`);
+          break;
+        default: // options, reasons, items, buckets, rows: one string per English entry
+          if (!Array.isArray(v) || !Array.isArray(english[k]) || v.length !== english[k].length) bad(`${fat} must have as many items as the English`);
+          else if (v.some(blank)) bad(`${fat} must not have blank items`);
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Topic intros: questions/topics/<topic>.json, the "New idea" card for each tier.
+
+const TOPIC_KEYS = ["status", "intros", "i18n"];
+
+/** Validate topic intro files, each { topic (from the file name), status, intros, i18n? }. */
+export function validateTopics(topics) {
+  const problems = [];
+  for (const t of topics) {
+    const { topic, ...data } = t;
+    const at = `questions/topics/${topic}`;
+    const bad = (msg) => problems.push(`${at}: ${msg}`);
+    if (!TOPICS.includes(topic)) bad(`file name must be one of ${TOPICS.join(", ")}`);
+    const extra = Object.keys(data).filter((k) => !TOPIC_KEYS.includes(k));
+    if (extra.length) bad(`unknown field(s) ${extra.join(", ")}`);
+    if (!STATUSES.includes(data.status)) bad(`status must be one of ${STATUSES.join(", ")}`);
+    if (!isObject(data.intros)) bad(`intros needs ${TIERS.join(", ")}`);
+    else {
+      for (const tier of TIERS) {
+        const intro = data.intros[tier];
+        if (!isObject(intro)) {
+          bad(`intros.${tier} is missing`);
+          continue;
+        }
+        const ex = Object.keys(intro).filter((k) => !CONCEPT_KEYS.includes(k));
+        if (ex.length) bad(`intros.${tier}: unknown field(s) ${ex.join(", ")}`);
+        for (const k of CONCEPT_KEYS) if (blank(intro[k])) bad(`intros.${tier}.${k} must not be blank`);
+      }
+      const exTiers = Object.keys(data.intros).filter((k) => !TIERS.includes(k));
+      if (exTiers.length) bad(`intros: unknown tier(s) ${exTiers.join(", ")}`);
+    }
+    if (Object.hasOwn(data, "i18n")) {
+      if (!isObject(data.i18n)) bad("i18n must be an object of locales");
+      else {
+        for (const [locale, tr] of Object.entries(data.i18n)) {
+          if (!LOCALES.includes(locale)) {
+            bad(`i18n: unknown locale "${locale}" (use ${LOCALES.join(", ")})`);
+            continue;
+          }
+          if (!isObject(tr)) {
+            bad(`i18n.${locale} must be an object`);
+            continue;
+          }
+          for (const [tier, v] of Object.entries(tr)) {
+            const fat = `i18n.${locale}.${tier}`;
+            if (!TIERS.includes(tier)) {
+              bad(`i18n.${locale}: unknown tier "${tier}"`);
+              continue;
+            }
+            if (!isObject(v)) {
+              bad(`${fat} must be {title, body}`);
+              continue;
+            }
+            const ex = Object.keys(v).filter((k) => !CONCEPT_KEYS.includes(k));
+            if (ex.length) bad(`${fat}: unknown field(s) ${ex.join(", ")}`);
+            for (const k of CONCEPT_KEYS) if (Object.hasOwn(v, k) && blank(v[k])) bad(`${fat}.${k} must not be blank`);
+          }
+        }
+      }
+    }
+  }
+  return problems;
+}
+
+// The topic comes from the file name only; a "topic" key inside the file is a problem.
+function readTopicDir(root, problems) {
+  const folder = join(root, "questions", "topics");
+  if (!existsSync(folder)) return [];
+  const out = [];
+  for (const file of readdirSync(folder).filter((f) => f.endsWith(".json")).sort()) {
+    const topic = file.slice(0, -".json".length);
+    const data = readJSON(join(folder, file), `questions/topics/${file}`, problems);
+    if (data === undefined) continue;
+    if (isObject(data)) {
+      if (Object.hasOwn(data, "topic")) problems.push(`questions/topics/${topic}: unknown field(s) topic`);
+      const { topic: _t, ...rest } = data;
+      out.push({ topic, ...rest });
+    } else {
+      problems.push(`questions/topics/${topic}: must be an object`);
+    }
+  }
+  return out;
+}
+
+/**
+ * How many usable technical questions each topic × tier has. Every pair is listed, zero included.
+ * count: questions for the AI Mock interview (anything but proposed_removal); page: page-usable ones
+ * for the Challenge page round.
+ */
 export function questionCoverage(questions) {
   const out = [];
   for (const topic of TOPICS) {
@@ -240,14 +710,15 @@ export function questionCoverage(questions) {
       const count = questions.filter(
         (q) => q.kind === "technical" && q.topic === topic && q.tier === tier && q.status !== "proposed_removal",
       ).length;
-      out.push({ topic, tier, count });
+      const page = questions.filter((q) => pageUsable(q) && q.topic === topic && q.tier === tier).length;
+      out.push({ topic, tier, count, page });
     }
   }
   return out;
 }
 
 /**
- * Read the whole catalog. Returns { skills, entries, paths, companies, questions, problems } — never throws on
+ * Read the whole catalog. Returns { skills, entries, paths, companies, questions, topics, problems } — never throws on
  * bad content.
  */
 export function loadCatalog(root) {
@@ -257,16 +728,18 @@ export function loadCatalog(root) {
   const paths = readDir(root, "paths", problems);
   const unordered = readDir(root, "companies", problems);
   const questions = [...readQuestionDir(root, "technical", problems), ...readQuestionDir(root, "behavioral", problems)];
+  const topics = readTopicDir(root, problems);
   problems.push(...validateSkills(skills));
   problems.push(...validate(entries, skills));
   problems.push(...validatePaths(paths, entries));
   problems.push(...validateCompanies(unordered, entries, paths));
   problems.push(...validateQuestions(questions, skills));
+  problems.push(...validateTopics(topics));
   const orderPath = join(root, COMPANY_ORDER_FILE);
   const order = existsSync(orderPath) ? readJSON(orderPath, COMPANY_ORDER_FILE, problems) : undefined;
   const { companies, problems: orderProblems } = orderCompanies(unordered, order);
   problems.push(...orderProblems);
-  return { skills, entries, paths, companies, questions, problems };
+  return { skills, entries, paths, companies, questions, topics, problems };
 }
 
 export const MAX_NOTE_LEN = 160;
