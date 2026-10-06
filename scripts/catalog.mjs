@@ -289,7 +289,10 @@ const isObject = (v) => typeof v === "object" && v !== null && !Array.isArray(v)
  * spelling is listed in accept. The app's NormalizeAnswer is the same function.
  */
 export function normalizeAnswer(s) {
-  const out = String(s).normalize("NFKC").toLowerCase().replace(/\s/gu, "");
+  // Lowercase per code point so there is no final-sigma context (AΣ -> aσ, same as Go). The
+  // removed whitespace set is JS's \s (it includes U+FEFF, not U+0085); Go lists the same set.
+  // Known gap: "İ" (U+0130) lowercases to "i̇" here but "i" in Go; do not put it in an answer.
+  const out = Array.from(String(s).normalize("NFKC"), (c) => c.toLowerCase()).join("").replace(/\s/gu, "");
   return out.endsWith(";") ? out.slice(0, -1) : out;
 }
 

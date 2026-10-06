@@ -264,6 +264,9 @@ test("normalizeAnswer", () => {
   assert.equal(normalizeAnswer("１０２４"), "1024");
   assert.equal(normalizeAnswer("a　b"), "ab");
   assert.equal(normalizeAnswer("1,050,624"), "1,050,624");
+  assert.equal(normalizeAnswer("a\uFEFFb"), "ab"); // U+FEFF is removed
+  assert.equal(normalizeAnswer("a\u0085b"), "a\u0085b"); // U+0085 is kept
+  assert.equal(normalizeAnswer("A\u03A3"), "a\u03C3"); // no final sigma
 });
 
 test("pageUsable is a technical in_progress or done question with a page", () => {
