@@ -6,7 +6,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
   loadCatalog, validateQuestions, questionCoverage, MIN_PER_TIER,
-  validatePage, normalizeAnswer, pageUsable, validateTopics, PAGE_TYPES, LOCALES, MIN_PAGE_PER_TIER,
+  validatePage, normalizeAnswer, pageUsable, validateTopics, PAGE_TYPES, LOCALES, MIN_PAGE_PER_TIER, optionLengthLeaks,
 } from "./catalog.mjs";
 
 const skills = [{ name: "LLMs", description: "Large language models." }];
@@ -359,4 +359,23 @@ test("loadCatalog reads topic intros and tolerates a catalog without them", () =
   assert.ok(cat.problems.some((p) => p.startsWith("questions/topics/cooking:")));
   assert.ok(cat.problems.some((p) => p.startsWith("questions/topics/agents:") && p.includes("topic")));
   assert.ok(!cat.problems.some((p) => p.startsWith("questions/topics/rag:")));
+});
+
+test("optionLengthLeaks flags a correct option noticeably longer than every distractor", () => {
+  const long = "K and V of every past token, kept so they are not recomputed";
+  const flagged = [
+    withPage("choose", (p) => { p.options[1] = long; }, {}),
+    withPage("multi", (p) => { p.options[0] = long; }),
+    withPage("truefalse", (p) => { p.reasons[0] = long; }),
+  ].map((x, i) => ({ ...x, slug: `leak-${i}` }));
+  assert.deepEqual(optionLengthLeaks(flagged), ["leak-0", "leak-1", "leak-2"]);
+
+  // Exactly 1.2× is fine; a long distractor is fine; other page types and pageless questions are skipped.
+  const ok = [
+    withPage("choose", (p) => { p.options = ["aaaaaaaaaa", "bbbbbbbbbbbb"]; p.answer = 1; }),
+    withPage("choose", (p) => { p.options[0] = long; }),
+    withPage("order"),
+    q("kv", "technical", technical()),
+  ];
+  assert.deepEqual(optionLengthLeaks(ok), []);
 });

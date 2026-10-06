@@ -255,6 +255,7 @@ Four things make a page bad, and each tier below shows one of them:
 - **The prompt can't be recognized on its own.** The result screen lists missed questions by `prompt` (by `statement` for `truefalse`). "Which one is correct?" or "Put these in order." tells the player nothing there — write "Put the RAG pipeline steps in order."
 - **The hint gives the answer away.** A hint points at where to look; if reading it is enough to answer, it is the answer.
 - **The distractors are implausible.** Every wrong option should be a mistake a real candidate makes. If three of four options can be dismissed without knowing the topic, the page tests reading, not understanding.
+  Length is a tell too: keep the right option about as long as the wrong ones, by giving the distractors the same detail rather than cutting the answer. `node scripts/check.mjs` warns when a correct option is more than 1.2× the longest distractor.
 - **The answer is ambiguous.** Someone who knows the topic must agree on one answer. If a strong engineer could argue for two options, add the evidence that rules one out, or change the question.
 
 **Concept — good.** The wrong options are real misconceptions (the "sums to 1" one is softmax's job, not the scaling's).

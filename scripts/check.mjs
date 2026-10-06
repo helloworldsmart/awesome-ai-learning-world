@@ -5,7 +5,7 @@
 
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { loadCatalog, questionCoverage, MIN_PER_TIER, MIN_PAGE_PER_TIER } from "./catalog.mjs";
+import { loadCatalog, questionCoverage, MIN_PER_TIER, MIN_PAGE_PER_TIER, optionLengthLeaks } from "./catalog.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const { skills, entries, paths, companies, questions, topics, problems } = loadCatalog(root);
@@ -37,4 +37,9 @@ if (technical > 0 && noPage.length > 0) {
     `Challenge 頁面場先不開放 (Challenge page round not open yet): ${noPage.length} topic × tier pair(s) have fewer than ${MIN_PAGE_PER_TIER} page-usable questions:`,
   );
   for (const c of noPage) console.log(`  - ${c.topic} / ${c.tier}: ${c.page}`);
+}
+
+// Not an error: a correct option noticeably longer than the distractors lets a learner pick it by length alone.
+for (const slug of optionLengthLeaks(questions)) {
+  console.warn(`WARNING: 選項長度可能洩答案 (correct option noticeably longer): ${slug}`);
 }

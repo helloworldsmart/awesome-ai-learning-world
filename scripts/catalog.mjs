@@ -728,6 +728,33 @@ export function questionCoverage(questions) {
   return out;
 }
 
+/** A correct option longer than this many times the longest distractor can give the answer away. */
+export const OPTION_LENGTH_RATIO = 1.2;
+
+/**
+ * Slugs of questions whose page has a correct option (English) noticeably longer than every distractor:
+ * choose and multi options, truefalse reasons. A warning, not an error — the app does not check it.
+ */
+export function optionLengthLeaks(questions) {
+  const leaks = [];
+  for (const q of questions) {
+    const p = q.page;
+    if (!p || typeof p !== "object") continue;
+    let options, correct;
+    if (p.type === "choose") [options, correct] = [p.options, [p.answer]];
+    else if (p.type === "multi") [options, correct] = [p.options, p.answers];
+    else if (p.type === "truefalse") [options, correct] = [p.reasons, [p.reason]];
+    else continue;
+    if (!Array.isArray(options) || !Array.isArray(correct)) continue;
+    const len = (i) => String(options[i] ?? "").length;
+    const others = options.map((_, i) => i).filter((i) => !correct.includes(i));
+    if (others.length === 0) continue;
+    const longest = Math.max(...others.map(len));
+    if (correct.some((i) => len(i) > OPTION_LENGTH_RATIO * longest)) leaks.push(q.slug);
+  }
+  return leaks;
+}
+
 /**
  * Read the whole catalog. Returns { skills, entries, paths, companies, questions, topics, problems } — never throws on
  * bad content.
