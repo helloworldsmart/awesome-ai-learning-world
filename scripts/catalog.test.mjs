@@ -233,6 +233,8 @@ const PAGE_CASES = {
   "i18n options length differs": withPage("choose", (p) => (p.i18n = { ja: { options: ["Q", "K と V"] } })),
   "i18n blank string": withPage("choose", (p) => (p.i18n = { "zh-Hant": { hint: " " } })),
   "i18n items on code order": withPage("order", (p) => { p.code = true; p.i18n = { ja: { items: ["a", "b", "c"] } }; }),
+  "i18n fill both sides empty": withPage("fill", (p) => (p.i18n = { ja: { before: "", after: "" } })),
+  "i18n fill side not a string": withPage("fill", (p) => (p.i18n = { ja: { before: 3 } })),
 };
 
 for (const [name, input] of Object.entries(PAGE_CASES)) {
@@ -256,6 +258,15 @@ test("valid i18n of every translatable field passes", () => {
   ];
   assert.deepEqual(LOCALES, ["zh-Hant", "ja"]);
   for (const page of pages) assert.deepEqual(validateQuestions([page], skills), [], page.page.type);
+});
+
+test("i18n empty fill side allowed", () => {
+  // SOV languages put the blank first: the translated before (or after) may be "".
+  const pages = [
+    withPage("fill", (p) => (p.i18n = { ja: { before: "", after: "で割る。" } })),
+    withPage("fill", (p) => (p.i18n = { "zh-Hant": { before: "除以", after: "" } })),
+  ];
+  for (const page of pages) assert.deepEqual(validateQuestions([page], skills), []);
 });
 
 test("normalizeAnswer", () => {

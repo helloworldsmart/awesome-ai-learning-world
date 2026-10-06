@@ -585,6 +585,10 @@ function checkPageI18n(page, bad) {
       bad(`${at} must be an object`);
       continue;
     }
+    if (type === "fill" && (Object.hasOwn(t, "before") || Object.hasOwn(t, "after"))) {
+      const side = (k) => (Object.hasOwn(t, k) ? t[k] : page[k]);
+      if (blank(side("before")) && blank(side("after"))) bad(`${at}: .before or .after must not be blank`);
+    }
     for (const [k, v] of Object.entries(t)) {
       const fat = `${at}.${k}`;
       if (!translatable.includes(k)) {
@@ -592,8 +596,12 @@ function checkPageI18n(page, bad) {
         continue;
       }
       switch (k) {
-        case "prompt": case "hint": case "why": case "statement": case "before": case "after":
+        case "prompt": case "hint": case "why": case "statement":
           if (blank(v)) bad(`${fat} must not be blank`);
+          break;
+        case "before": case "after":
+          // May be "": SOV languages put the blank first (or last). Not both, though.
+          if (typeof v !== "string") bad(`${fat} must be a string`);
           break;
         case "concept":
           if (!isObject(v)) bad(`${fat} must be {title, body}`);
