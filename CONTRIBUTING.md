@@ -213,7 +213,7 @@ Minimal examples (common fields shortened to `…`):
 
 (`"…": "…"` stands for the common fields; it is not a real key.)
 
-**Translations.** `page.i18n` is `{ "zh-Hant": { … }, "ja": { … } }` — only those two locales. Each locale may override only the translatable fields of its type; anything missing falls back to English. Strings are not blank, and translated lists have exactly as many entries as the English (otherwise a translated option would point at the wrong answer). Technical terms stay in English.
+**Translations.** `page.i18n` is `{ "zh-Hant": { … }, "ja": { … } }` — only those two locales. Each locale may override only the translatable fields of its type; anything missing falls back to English. Strings are not blank (except a translated `fill` `before` / `after`, below), and translated lists have exactly as many entries as the English (otherwise a translated option would point at the wrong answer). Technical terms stay in English.
 
 | Field | Types | Shape |
 | --- | --- | --- |
@@ -228,6 +228,176 @@ Minimal examples (common fields shortened to `…`):
 | `head`, `rows` | table (`rows` translates the labels) | two strings, string list |
 
 `lines`, `codefill`, `block` and `figure` are code or pictures and are never translated.
+
+**Fill translations.** A translated `before` or `after` may be `""`: languages that put the verb last (Japanese) often need the blank at the start of the sentence. Both empty is still an error. `accept` and `show` are never translated, so the blank must hold something language-neutral — a technical term, a number, a symbol or code. Don't put spaces next to the blank; the input has its own margin.
+
+```json
+"before": "During decoding, KV cache memory grows linearly with", "after": ".",
+"i18n": { "ja": { "before": "", "after": "に比例して、decode 中の KV cache のメモリが増えます。" } }
+```
+
+The full glossary of terms that stay in English, and how they sit in a Chinese or Japanese sentence, is in the app repo's `docs/i18n-tone-guide.md` ("題庫與 Challenge").
+
+#### Good and bad pages, per tier
+
+What each tier asks:
+
+| Tier | Asks | Fits |
+| --- | --- | --- |
+| `concept` | What is it, and why does it exist? | `choose`, `truefalse`, `match`, `multi` |
+| `mechanism` | How does it work: steps, shapes, numbers. | `fill`, `table`, `order`, `codefill`, `figure` |
+| `trade-off` | In this situation, which one, and what does it cost? | `choose` with a scenario, `sort` comparing options, `multi` |
+| `boss` | Combine it all: find the bug, find the root cause, plan the investigation. | `lines`, `choose` with a `block`, `order` of investigation steps |
+
+Four things make a page bad, and each tier below shows one of them:
+
+- **The prompt can't be recognized on its own.** The result screen lists missed questions by `prompt` (by `statement` for `truefalse`). "Which one is correct?" or "Put these in order." tells the player nothing there — write "Put the RAG pipeline steps in order."
+- **The hint gives the answer away.** A hint points at where to look; if reading it is enough to answer, it is the answer.
+- **The distractors are implausible.** Every wrong option should be a mistake a real candidate makes. If three of four options can be dismissed without knowing the topic, the page tests reading, not understanding.
+- **The answer is ambiguous.** Someone who knows the topic must agree on one answer. If a strong engineer could argue for two options, add the evidence that rules one out, or change the question.
+
+**Concept — good.** The wrong options are real misconceptions (the "sums to 1" one is softmax's job, not the scaling's).
+
+```json
+{
+  "type": "choose",
+  "prompt": "Why does scaled dot-product attention divide QK^T by sqrt(d_k)?",
+  "options": [
+    "To keep dot products from growing with d_k and saturating the softmax",
+    "To make each row of attention weights sum to 1",
+    "To reduce the memory needed to store QK^T",
+    "To make attention independent of token order"
+  ],
+  "answer": 0,
+  "hint": "Think about the variance of a dot product between two random d_k-dimensional vectors.",
+  "why": "With unit-variance entries, q·k has variance d_k; dividing by sqrt(d_k) brings it back to 1, so softmax doesn't collapse onto one token.",
+  "concept": {
+    "title": "Softmax saturation",
+    "body": "Softmax turns scores into weights, but large scores push almost all the weight onto one position. Gradients through a saturated softmax are close to zero, so training stalls. Scaling keeps the scores in a range where softmax stays soft."
+  }
+}
+```
+
+**Concept — bad: the prompt can't be recognized on its own.** On the result screen this shows up as "Which one is correct?" — the player can't tell which question to go back to.
+
+```json
+{
+  "type": "choose",
+  "prompt": "Which one is correct?",
+  "options": ["Embeddings are learned", "Embeddings are one-hot", "Embeddings are random", "Embeddings are fixed"],
+  "answer": 0,
+  "…": "…"
+}
+```
+
+Fix: put the question in the prompt — "How does a transformer get its token embeddings?"
+
+**Mechanism — good.** A number the player computes; the method is in `why`, and `accept` lists the spellings.
+
+```json
+{
+  "type": "fill",
+  "prompt": "Llama 2 7B has 32 layers and 32 KV heads of dimension 128, and keeps its KV cache in FP16. How many bytes of KV cache does one token take?",
+  "before": "One token takes",
+  "after": "bytes of KV cache.",
+  "accept": ["524288", "524,288"],
+  "show": "524,288",
+  "hint": "Both K and V are cached, in every layer and every head.",
+  "why": "2 (K and V) × 32 layers × 32 heads × 128 dims × 2 bytes = 524,288 bytes, or 512 KiB per token.",
+  "concept": {
+    "title": "KV cache grows with every token",
+    "body": "Each generated token adds one K and one V vector per head per layer. Multiply by sequence length and batch size and the cache, not the weights, becomes what limits how many requests fit on a GPU."
+  }
+}
+```
+
+**Mechanism — bad: the hint gives the answer away.**
+
+```json
+{
+  "type": "fill",
+  "prompt": "What does scaled dot-product attention divide QK^T by?",
+  "before": "sqrt(",
+  "after": ")",
+  "accept": ["d_k", "dk"],
+  "show": "d_k",
+  "hint": "It's the dimension of the keys, d_k.",
+  "…": "…"
+}
+```
+
+Fix: point at the reason instead — "The scale keeps the variance of the scores near 1."
+
+**Trade-off — good.** A concrete situation with constraints, and each wrong option is something teams actually try.
+
+```json
+{
+  "type": "choose",
+  "prompt": "A support bot must answer from 20,000 internal policy pages that change every week, and must cite the page it used. Which approach fits?",
+  "options": [
+    "RAG over the policy pages, citing the retrieved page",
+    "Fine-tune the model on the policy pages every week",
+    "Put all the policy pages in the system prompt",
+    "Train a classifier that maps each question to one policy page"
+  ],
+  "answer": 0,
+  "hint": "Two constraints: the pages change weekly, and every answer needs a source.",
+  "why": "Retrieval picks up a changed page as soon as it is re-indexed and hands back the exact page to cite; fine-tuning is slow to update and can't point to a source.",
+  "concept": {
+    "title": "Knowledge in the prompt vs. in the weights",
+    "body": "Fine-tuning changes how a model behaves; it is a poor way to store facts that change, and it can't say where a fact came from. Retrieval keeps facts outside the model, so updating them is re-indexing, and the source travels with the answer."
+  }
+}
+```
+
+**Trade-off — bad: implausible distractors.** Only one option is an engineering choice, so the page is answered by elimination.
+
+```json
+{
+  "type": "choose",
+  "prompt": "A support bot must answer from 20,000 policy pages that change weekly. Which approach fits?",
+  "options": ["RAG over the policy pages", "Delete the old pages", "Ask users to read the pages", "Use a bigger font"],
+  "answer": 0,
+  "…": "…"
+}
+```
+
+**Boss — good.** The `block` holds the evidence, and it rules out every wrong option: the 2025 page *was* retrieved (so not `top_k`), and the answer matches a retrieved page (so not hallucination).
+
+```json
+{
+  "type": "choose",
+  "prompt": "A RAG bot quotes a superseded refund policy. From this trace, what is the root cause?",
+  "block": "query: What is the refund window?\nretrieved[0]: refund-policy-2023.md  score 0.91  \"Refunds within 30 days.\"\nretrieved[1]: refund-policy-2025.md  score 0.90  \"Refunds within 14 days.\"\nanswer: Refunds are accepted within 30 days.",
+  "options": [
+    "Both versions are in the index and nothing filters or ranks by date",
+    "The model hallucinated the 30-day window",
+    "top_k is too small to retrieve the 2025 policy",
+    "The embedding model can't represent numbers"
+  ],
+  "answer": 0,
+  "hint": "Check which pages came back, and where the answer's number came from.",
+  "why": "The old page outranks the new one by 0.01 and the answer copies it; the fix is to remove superseded pages or filter by effective date.",
+  "concept": {
+    "title": "Stale documents win on similarity",
+    "body": "Similarity search ranks by meaning, not by date, so two versions of a policy score almost the same. Ingestion has to delete or mark superseded documents, or retrieval has to filter by metadata such as an effective date."
+  }
+}
+```
+
+**Boss — bad: the answer is ambiguous.** With no evidence, every option is a plausible cause; a strong engineer could defend any of them.
+
+```json
+{
+  "type": "choose",
+  "prompt": "p99 latency of an LLM service doubled after the last deploy. What is the cause?",
+  "options": ["A larger batch size", "Longer prompts", "The KV cache was disabled", "A slower GPU type"],
+  "answer": 2,
+  "…": "…"
+}
+```
+
+Fix: add a `block` (a metric diff, a config diff) that rules three of them out, or turn it into an `order` page: "Put the steps for investigating a p99 latency regression in order."
 
 ### Topic intros
 
