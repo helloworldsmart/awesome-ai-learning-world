@@ -46,7 +46,8 @@ paths/<slug>.json       learning paths: ordered stages of resource slugs
 questions/technical/<slug>.json, questions/behavioral/<slug>.json
                         interview questions for the app's Mock interview and Challenge. Same status rules as resources: AI drafts are `todo`, only the maintainer marks `done`. Never copy answers from a source; write `keyPoints` and `levels` yourself.
                         A technical question may carry a `page` (its fixed-answer version, format in CONTRIBUTING.md "Page version");
-                        `in_progress` and `done` ones must. **A question reviewed by Codex (page included) may move from `todo`
+                        `in_progress` and `done` ones must. **A question that passed an independent reviewer (a separate AI agent that
+                        did not draft it and checked facts against official docs or papers; page included) may move from `todo`
                         to `in_progress`; never to `done`.** `in_progress` questions are served and scored like `done` ones.
 questions/topics/<topic>.json
                         "New idea" intro cards per tier (CONTRIBUTING.md "Topic intros"). Same status rules.
