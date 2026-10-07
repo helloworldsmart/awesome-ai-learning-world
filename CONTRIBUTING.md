@@ -415,24 +415,24 @@ The `topic` of a technical question, and the file name under `questions/topics/`
 | `ml-fundamentals` | ML fundamentals | The classical model families and the basic moves of training. |
 | `data-generalization` | Data & generalization | Splits, overfitting, leakage, distribution shift, imbalance and metrics, calibration: the evaluation basics of classical ML. |
 | `pytorch-basics` | PyTorch basics | Tensors, autograd, train / eval, no_grad, devices and the five steps of a training loop. Questions must not assume NumPy. No `codefill`. |
-| `system-design-basics` | System design I | General system-design building blocks: scaling out, caches, queues, consistency, back-of-envelope estimates. |
+| `system-design-basics` | System design I | Building blocks that need no ML: caching, sharding, replication, queues, idempotency, tail latency, rate limiting, consistency, capacity estimates, and the classic design problems those alone can solve. |
 | `deep-learning` | Deep learning & CNN | MLP and backprop, activations, initialisation, BatchNorm / LayerNorm, dropout, residuals, CNN and convolution shapes, optimizers, training diagnosis. |
 | `embeddings` | Embeddings | Representation itself: one-hot vs dense, lookup, the distributional hypothesis, contrastive learning, similarity, pooling, transfer learning. |
 | `sequence-models` | Sequence models | The relay of language models: N-gram, feed-forward LM, RNN, LSTM / GRU, seq2seq, and where attention comes from (stops at why attention is needed). |
 | `computer-vision` | Computer vision | Images as tensors, convolution as filtering, then the vision tasks: classification, detection, segmentation, ViT vs CNN, self-supervision. |
 | `classical-vision` | Classical vision | Traditional computer vision: image formation, filtering, features, geometric reconstruction, motion. A hidden topic (see below). |
-| `llm-internals` | LLM internals | How a Transformer language model works inside, from attention to decoding. |
-| `fine-tuning` | Post-training | Adapting a pretrained model: fine-tuning and the post-training methods built on it. |
-| `inference-gpu` | Inference & GPU I | Serving a model on a GPU: latency vs throughput, prefill / decode, KV cache, batching. |
-| `inference-gpu-advanced` | Inference & GPU II | Scaling inference across GPUs: tensor / pipeline / expert parallelism, all-reduce, goodput, ZeRO / FSDP. |
-| `multimodal` | Multimodal | Models that take images (and other modalities) together with text. |
+| `llm-internals` | LLM internals | How a Transformer language model works inside, from attention to decoding, and how it is pretrained (corpus filtering and dedup, loss spikes). |
+| `fine-tuning` | Post-training | Adapting a pretrained model: fine-tuning and the post-training methods built on it. Not pretraining and not distributed-training infrastructure. |
+| `inference-gpu` | Inference & GPU I | Serving one model on one GPU: prefill / decode, KV cache memory, batching, latency metrics such as TTFT, the basic gains of quantization, latency budgets, single-machine diagnosis. |
+| `inference-gpu-advanced` | Inference & GPU II | Multi-GPU and special hardware: TP / PP / EP and distributed training, MoE serving, disaggregated prefill / decode, SRAM-only chips, quantization engineering (PTQ / QAT, FP8 training), compilers (TensorRT-LLM), large-scale cost and scheduler design. |
+| `multimodal` | Multimodal | Models that combine modalities: speech, vision-language models, robotics and autonomous driving. |
 | `generative-models` | Generative models | What generative models learn (the data distribution), autoencoders and VAE, GAN, diffusion, latent diffusion, conditional generation and its evaluation. No ELBO derivations; text generation is in LLM internals. |
 | `rag` | RAG | Retrieval-augmented generation: retrieval, chunking, and answering from retrieved passages. |
 | `agents` | Agents | LLMs that call tools and act over several steps. |
 | `evaluation` | Evaluation | Measuring LLM systems. |
 | `safety` | Safety | Keeping LLM systems from misbehaving or being misused. |
-| `ai-system-design` | System design II | System design for AI products: gateways, streaming, routing and caching, guardrails, online evals. |
-| `system-design` | System design III | End-to-end case studies (recommendation, search, ranking). The slug is older than the name, so it is not `system-design-iii`. |
+| `ai-system-design` | System design II | Architecture of LLM / AI products: gateways, multi-model routing, execution environments (sandboxes) for AI editors and agents, enterprise search, LLM-assisted data pipelines. |
+| `system-design` | System design III | Classic ML system case studies: recommendation, search, ranking, ads, fraud, ETA, marketplace pricing, the self-driving data engine. The slug is older than the name, so it is not `system-design-iii`. |
 
 - `python-numpy` and `pytorch-basics` do not use `codefill` pages: the code is the topic itself, so a blank either leaks the answer or tests syntax. `node scripts/check.mjs` reports a `codefill` page in either as an error.
 - `classical-vision` is a *hidden* topic in the app (it only appears on the map once a user has answered one of its questions), but in this repo it is a topic like any other: same file format, same checks.
