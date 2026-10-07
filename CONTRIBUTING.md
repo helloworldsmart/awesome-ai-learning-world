@@ -134,7 +134,7 @@ Behavioral:
 | Field | Meaning |
 | --- | --- |
 | `kind` | `technical` or `behavioral` (`situational` is also allowed, in `behavioral/`). Must match the folder. |
-| `topic` | Technical only. One of `llm-internals`, `inference-gpu`, `rag`, `agents`, `fine-tuning`, `evaluation`, `safety`, `multimodal`, `system-design`, `ml-fundamentals`. |
+| `topic` | Technical only. One of the 26 slugs in [Topics](#topics) below. |
 | `tier` | Technical only. One of `concept`, `mechanism`, `trade-off`, `boss`. Each topic × tier needs at least 3 questions before the app opens it (fewer is a warning). |
 | `theme` | Behavioral only. One of `conflict`, `failure`, `ownership`, `ambiguity`, `fast-learning`, `influence`. |
 | `leadershipPrinciples` | Behavioral only. A list (can be empty) of Amazon's Leadership Principles, spelled as in `companies/amazon.json`. |
@@ -400,6 +400,42 @@ Fix: point at the reason instead — "The scale keeps the variance of the scores
 ```
 
 Fix: add a `block` (a metric diff, a config diff) that rules three of them out, or turn it into an `order` page: "Put the steps for investigating a p99 latency regression in order."
+
+### Topics
+
+The `topic` of a technical question, and the file name under `questions/topics/`, is one of these 26 slugs (this is the curriculum order: stage, then left to right).
+
+| Slug | Name | Scope |
+| --- | --- | --- |
+| `math-notation` | Math notation & algebra | Reading the formulas in papers and CS231n in plain words, and the algebra rules that derivations use. |
+| `python-numpy` | Python & NumPy | The Python core, NumPy arrays, vectorisation and numerical stability that ML code needs; pandas only at the most basic level. |
+| `linear-algebra` | Linear algebra | Vectors, matrix multiplication and shapes, projection, rank, eigendecomposition and SVD intuition; hand calculation stays at 2×2 or 3-D vectors. |
+| `calculus` | Calculus | Derivatives, partial derivatives, gradients, the chain rule and one step of gradient descent; no integration tricks, no long proofs. |
+| `probability-statistics` | Probability & statistics | Conditional probability and Bayes, expectation and variance, common distributions, entropy / cross-entropy / KL, sampling and the intuition of hypothesis tests. |
+| `ml-fundamentals` | ML fundamentals | The classical model families and the basic moves of training. |
+| `data-generalization` | Data & generalization | Splits, overfitting, leakage, distribution shift, imbalance and metrics, calibration: the evaluation basics of classical ML. |
+| `pytorch-basics` | PyTorch basics | Tensors, autograd, train / eval, no_grad, devices and the five steps of a training loop. Questions must not assume NumPy. No `codefill`. |
+| `system-design-basics` | System design I | General system-design building blocks: scaling out, caches, queues, consistency, back-of-envelope estimates. |
+| `deep-learning` | Deep learning & CNN | MLP and backprop, activations, initialisation, BatchNorm / LayerNorm, dropout, residuals, CNN and convolution shapes, optimizers, training diagnosis. |
+| `embeddings` | Embeddings | Representation itself: one-hot vs dense, lookup, the distributional hypothesis, contrastive learning, similarity, pooling, transfer learning. |
+| `sequence-models` | Sequence models | The relay of language models: N-gram, feed-forward LM, RNN, LSTM / GRU, seq2seq, and where attention comes from (stops at why attention is needed). |
+| `computer-vision` | Computer vision | Images as tensors, convolution as filtering, then the vision tasks: classification, detection, segmentation, ViT vs CNN, self-supervision. |
+| `classical-vision` | Classical vision | Traditional computer vision: image formation, filtering, features, geometric reconstruction, motion. A hidden topic (see below). |
+| `llm-internals` | LLM internals | How a Transformer language model works inside, from attention to decoding. |
+| `fine-tuning` | Post-training | Adapting a pretrained model: fine-tuning and the post-training methods built on it. |
+| `inference-gpu` | Inference & GPU I | Serving a model on a GPU: latency vs throughput, prefill / decode, KV cache, batching. |
+| `inference-gpu-advanced` | Inference & GPU II | Scaling inference across GPUs: tensor / pipeline / expert parallelism, all-reduce, goodput, ZeRO / FSDP. |
+| `multimodal` | Multimodal | Models that take images (and other modalities) together with text. |
+| `generative-models` | Generative models | What generative models learn (the data distribution), autoencoders and VAE, GAN, diffusion, latent diffusion, conditional generation and its evaluation. No ELBO derivations; text generation is in LLM internals. |
+| `rag` | RAG | Retrieval-augmented generation: retrieval, chunking, and answering from retrieved passages. |
+| `agents` | Agents | LLMs that call tools and act over several steps. |
+| `evaluation` | Evaluation | Measuring LLM systems. |
+| `safety` | Safety | Keeping LLM systems from misbehaving or being misused. |
+| `ai-system-design` | System design II | System design for AI products: gateways, streaming, routing and caching, guardrails, online evals. |
+| `system-design` | System design III | End-to-end case studies (recommendation, search, ranking). The slug is older than the name, so it is not `system-design-iii`. |
+
+- `python-numpy` and `pytorch-basics` do not use `codefill` pages: the code is the topic itself, so a blank either leaks the answer or tests syntax. `node scripts/check.mjs` reports a `codefill` page in either as an error.
+- `classical-vision` is a *hidden* topic in the app (it only appears on the map once a user has answered one of its questions), but in this repo it is a topic like any other: same file format, same checks.
 
 ### Topic intros
 

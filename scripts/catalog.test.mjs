@@ -1,12 +1,12 @@
 // Run: node --test scripts/
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { mkdtempSync, mkdirSync, writeFileSync } from "node:fs";
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
   loadCatalog, validateQuestions, questionCoverage, MIN_PER_TIER,
-  validatePage, normalizeAnswer, pageUsable, validateTopics, PAGE_TYPES, LOCALES, MIN_PAGE_PER_TIER, optionLengthLeaks,
+  validatePage, normalizeAnswer, TOPICS, pageUsable, validateTopics, PAGE_TYPES, LOCALES, MIN_PAGE_PER_TIER, optionLengthLeaks,
 } from "./catalog.mjs";
 
 const skills = [{ name: "LLMs", description: "Large language models." }];
@@ -112,7 +112,7 @@ test("coverage counts technical questions per topic and tier, ignoring proposed 
   ]);
   assert.deepEqual(cov.find((c) => c.topic === "inference-gpu" && c.tier === "mechanism"), { topic: "inference-gpu", tier: "mechanism", count: 2, page: 0 });
   assert.equal(cov.find((c) => c.topic === "rag" && c.tier === "boss").count, 0);
-  assert.equal(cov.length, 10 * 4);
+  assert.equal(cov.length, 26 * 4);
   assert.equal(MIN_PER_TIER, 3);
 });
 
@@ -405,4 +405,27 @@ test("optionLengthLeaks checks every locale and the shortest-answer tell", () =>
     p.i18n = { "zh-Hant": { options: ["甲乙丙丁戊己", "甲乙丙丁戊", "甲乙丙丁戊己庚", "甲乙丙丁戊己庚辛"] }, ja: { options: ["あいうえお", "あいうえおか", "あいうえお", "あいうえおかき"] } };
   });
   assert.deepEqual(optionLengthLeaks([clean]), []);
+});
+
+// The 26 curriculum topics. The app repo keeps a byte-identical testdata/curriculum-topics.json and its
+// Go tests use the same case names; neither repo reads the other's source.
+const CURRICULUM = JSON.parse(readFileSync(new URL("./testdata/curriculum-topics.json", import.meta.url), "utf8")).topics;
+
+test("every curriculum topic is a valid question topic and intro file name", () => {
+  assert.equal(CURRICULUM.length, 26);
+  assert.deepEqual(TOPICS, CURRICULUM);
+  const questions = CURRICULUM.map((topic) => q(`q-${topic}`, "technical", technical({ topic })));
+  assert.deepEqual(validateQuestions(questions, skills), []);
+  assert.deepEqual(validateTopics(CURRICULUM.map((topic) => topicFile({ topic }))), []);
+});
+
+for (const topic of ["python-numpy", "pytorch-basics"]) {
+  test(`codefill page in ${topic} is rejected`, () => {
+    const problems = validateQuestions([withPage("codefill", () => {}, { topic })], skills);
+    assert.ok(problems.some((p) => p.includes("no codefill")), `got ${problems}`);
+  });
+}
+
+test("codefill page in linear-algebra passes", () => {
+  assert.deepEqual(validateQuestions([withPage("codefill", () => {}, { topic: "linear-algebra" })], skills), []);
 });

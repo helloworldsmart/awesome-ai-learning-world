@@ -1,0 +1,30 @@
+{
+ "topics": [
+  "math-notation",
+  "python-numpy",
+  "linear-algebra",
+  "calculus",
+  "probability-statistics",
+  "ml-fundamentals",
+  "data-generalization",
+  "pytorch-basics",
+  "system-design-basics",
+  "deep-learning",
+  "embeddings",
+  "sequence-models",
+  "computer-vision",
+  "classical-vision",
+  "llm-internals",
+  "fine-tuning",
+  "inference-gpu",
+  "inference-gpu-advanced",
+  "multimodal",
+  "generative-models",
+  "rag",
+  "agents",
+  "evaluation",
+  "safety",
+  "ai-system-design",
+  "system-design"
+ ]
+}
