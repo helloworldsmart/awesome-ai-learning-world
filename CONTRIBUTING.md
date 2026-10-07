@@ -82,6 +82,8 @@ A path is a ready-made route through the catalog: `paths/<slug>.json`, a list of
 
 Questions for the app's Mock interview and Challenge live in two folders: `questions/technical/<slug>.json` and `questions/behavioral/<slug>.json`. A file name is unique across both folders.
 
+**These files are not in this repo.** They live in the private repo `ai-learning-world-questions`, cloned next to this one, and `questions/` here is a symlink to its `questions/` folder (`ln -s ../ai-learning-world-questions/questions questions`; it is excluded from git). Edit them through the symlink, run `node scripts/check.mjs` here, then commit and push **only in the private repo**. Never push questions to this public repo. The format below and the validators stay here.
+
 Where questions come from: 375 technical prompts come from [pallavi-shekhar/ai-engineering-interview-questions-company-wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) (Apache-2.0). Take only the prompt; write `keyPoints` and `levels` yourself and never copy answers. Always fill `source` with where the prompt came from. The README's "Question sources & licenses" section states this, so update `scripts/build-readme.mjs` if the sources change.
 
 Technical:

@@ -43,6 +43,7 @@ merged here reaches users only after a tag and a release.
 skills.json             the fixed list of skills (README sections, in this order)
 resources/<slug>.json   one resource per file (the source of truth)
 paths/<slug>.json       learning paths: ordered stages of resource slugs
+questions/ -> ../ai-learning-world-questions/questions   (local symlink; the files live in the PRIVATE repo)
 questions/technical/<slug>.json, questions/behavioral/<slug>.json
                         interview questions for the app's Mock interview and Challenge. Same status rules as resources: AI drafts are `todo`, only the maintainer marks `done`. Never copy answers from a source; write `keyPoints` and `levels` yourself.
                         A technical question may carry a `page` (its fixed-answer version, format in CONTRIBUTING.md "Page version");
@@ -55,6 +56,15 @@ scripts/catalog.mjs     load + validate (mirrors the app's importer — change b
 scripts/check.mjs       validate everything
 scripts/build-readme.mjs  generate README.md (--check in CI)
 ```
+
+## Questions live in a private repo
+
+`questions/` here is a **symlink** to the private repo `ai-learning-world-questions` (cloned next to this one;
+`.git/info/exclude` hides it, so no question is ever in a commit of this repo). Never `git add` anything under
+`questions/`, never copy question files into this repo, and **commit and push question edits only in the private repo**
+(`git -C ../ai-learning-world-questions ...`). The validators stay here: `node scripts/check.mjs` reads the symlink.
+The app takes questions from the private repo's own date tag (`QUESTIONS_TAG` in the app's `catalog.lock`), not from a tag of this repo.
+Fresh clone: `ln -s ../ai-learning-world-questions/questions questions`.
 
 ## Releasing a version
 
