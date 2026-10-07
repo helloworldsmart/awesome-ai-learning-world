@@ -731,26 +731,42 @@ export function questionCoverage(questions) {
 /** A correct option longer than this many times the longest distractor can give the answer away. */
 export const OPTION_LENGTH_RATIO = 1.2;
 
+/** A correct option shorter than this many times the shortest distractor is also a tell. */
+export const OPTION_SHORT_RATIO = 0.8;
+
 /**
- * Slugs of questions whose page has a correct option (English) noticeably longer than every distractor:
- * choose and multi options, truefalse reasons. A warning, not an error — the app does not check it.
+ * Pages whose correct option gives itself away by length, in English or any translation:
+ * choose and multi options, truefalse reasons. Lengths are in characters. Returns
+ * [{ slug, locale, kind }] with kind "longest" (correct > 1.2× the longest distractor) or "shortest"
+ * (correct < 0.8× the shortest distractor); locale "en" is the page itself. A warning, not an error.
  */
 export function optionLengthLeaks(questions) {
   const leaks = [];
   for (const q of questions) {
     const p = q.page;
     if (!p || typeof p !== "object") continue;
-    let options, correct;
-    if (p.type === "choose") [options, correct] = [p.options, [p.answer]];
-    else if (p.type === "multi") [options, correct] = [p.options, p.answers];
-    else if (p.type === "truefalse") [options, correct] = [p.reasons, [p.reason]];
+    let key, correct;
+    if (p.type === "choose") [key, correct] = ["options", [p.answer]];
+    else if (p.type === "multi") [key, correct] = ["options", p.answers];
+    else if (p.type === "truefalse") [key, correct] = ["reasons", [p.reason]];
     else continue;
-    if (!Array.isArray(options) || !Array.isArray(correct)) continue;
-    const len = (i) => String(options[i] ?? "").length;
-    const others = options.map((_, i) => i).filter((i) => !correct.includes(i));
-    if (others.length === 0) continue;
-    const longest = Math.max(...others.map(len));
-    if (correct.some((i) => len(i) > OPTION_LENGTH_RATIO * longest)) leaks.push(q.slug);
+    if (!Array.isArray(correct)) continue;
+    const variants = [["en", p[key]]];
+    if (p.i18n && typeof p.i18n === "object") {
+      for (const [locale, t] of Object.entries(p.i18n)) {
+        if (t && typeof t === "object" && Array.isArray(t[key])) variants.push([locale, t[key]]);
+      }
+    }
+    for (const [locale, options] of variants) {
+      if (!Array.isArray(options)) continue;
+      const len = (i) => [...String(options[i] ?? "")].length;
+      const others = options.map((_, i) => i).filter((i) => !correct.includes(i));
+      if (others.length === 0) continue;
+      const longest = Math.max(...others.map(len));
+      const shortest = Math.min(...others.map(len));
+      if (correct.some((i) => len(i) > OPTION_LENGTH_RATIO * longest)) leaks.push({ slug: q.slug, locale, kind: "longest" });
+      if (correct.some((i) => len(i) < OPTION_SHORT_RATIO * shortest)) leaks.push({ slug: q.slug, locale, kind: "shortest" });
+    }
   }
   return leaks;
 }

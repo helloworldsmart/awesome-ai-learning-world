@@ -368,7 +368,7 @@ test("optionLengthLeaks flags a correct option noticeably longer than every dist
     withPage("multi", (p) => { p.options[0] = long; }),
     withPage("truefalse", (p) => { p.reasons[0] = long; }),
   ].map((x, i) => ({ ...x, slug: `leak-${i}` }));
-  assert.deepEqual(optionLengthLeaks(flagged), ["leak-0", "leak-1", "leak-2"]);
+  assert.deepEqual(optionLengthLeaks(flagged).map((l) => `${l.slug}:${l.locale}:${l.kind}`), ["leak-0:en:longest", "leak-1:en:longest", "leak-2:en:longest"]);
 
   // Exactly 1.2× is fine; a long distractor is fine; other page types and pageless questions are skipped.
   const ok = [
@@ -378,4 +378,31 @@ test("optionLengthLeaks flags a correct option noticeably longer than every dist
     q("kv", "technical", technical()),
   ];
   assert.deepEqual(optionLengthLeaks(ok), []);
+});
+
+test("optionLengthLeaks checks every locale and the shortest-answer tell", () => {
+  const zh = withPage("choose", (p) => {
+    p.options = ["aaaaaaaaaa", "bbbbbbbbbb", "cccccccccc"]; p.answer = 1;
+    p.i18n = { "zh-Hant": { options: ["甲乙丙丁", "這個正確答案寫得特別特別長長長長", "丙丁戊己"] } };
+  });
+  assert.deepEqual(optionLengthLeaks([{ ...zh, slug: "zh" }]), [{ slug: "zh", locale: "zh-Hant", kind: "longest" }]);
+
+  // Characters, not bytes: 3 CJK chars vs 4 ASCII chars is not a leak.
+  const bytes = withPage("choose", (p) => {
+    p.options = ["aaaa", "bbbb", "cccc"]; p.answer = 1;
+    p.i18n = { ja: { options: ["あいうえ", "あいう", "かきくけ"] } };
+  });
+  assert.deepEqual(optionLengthLeaks([bytes]), []);
+
+  const ja = withPage("choose", (p) => {
+    p.options = ["aaaaaaaaaa", "bbbbbbbbbb", "cccccccccc"]; p.answer = 1;
+    p.i18n = { ja: { options: ["あいうえおかきくけこ", "あいう", "さしすせそたちつてと"] } };
+  });
+  assert.deepEqual(optionLengthLeaks([{ ...ja, slug: "ja" }]), [{ slug: "ja", locale: "ja", kind: "shortest" }]);
+
+  const clean = withPage("multi", (p) => {
+    p.options = ["aaaaaaaaaa", "bbbbbbbbbb", "cccccccccc", "dddddddddd"]; p.answers = [0, 2];
+    p.i18n = { "zh-Hant": { options: ["甲乙丙丁戊己", "甲乙丙丁戊", "甲乙丙丁戊己庚", "甲乙丙丁戊己庚辛"] }, ja: { options: ["あいうえお", "あいうえおか", "あいうえお", "あいうえおかき"] } };
+  });
+  assert.deepEqual(optionLengthLeaks([clean]), []);
 });

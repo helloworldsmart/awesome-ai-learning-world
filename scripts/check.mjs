@@ -40,6 +40,7 @@ if (technical > 0 && noPage.length > 0) {
 }
 
 // Not an error: a correct option noticeably longer than the distractors lets a learner pick it by length alone.
-for (const slug of optionLengthLeaks(questions)) {
-  console.warn(`WARNING: 選項長度可能洩答案 (correct option noticeably longer): ${slug}`);
+for (const { slug, locale, kind } of optionLengthLeaks(questions)) {
+  const what = kind === "shortest" ? "correct option noticeably shorter" : "correct option noticeably longer";
+  console.warn(`WARNING: 選項長度可能洩答案 (${what}): ${slug} [${locale}]`);
 }
