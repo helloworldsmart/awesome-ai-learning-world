@@ -387,10 +387,10 @@ test("optionLengthLeaks checks every locale and the shortest-answer tell", () =>
   });
   assert.deepEqual(optionLengthLeaks([{ ...zh, slug: "zh" }]), [{ slug: "zh", locale: "zh-Hant", kind: "longest" }]);
 
-  // Characters, not bytes: 3 CJK chars vs 4 ASCII chars is not a leak.
+  // Characters, not bytes: 4 CJK chars (12 bytes) vs 4-char distractors is not a leak.
   const bytes = withPage("choose", (p) => {
     p.options = ["aaaa", "bbbb", "cccc"]; p.answer = 1;
-    p.i18n = { ja: { options: ["あいうえ", "あいう", "かきくけ"] } };
+    p.i18n = { ja: { options: ["あいうえ", "あいうえ", "かきくけ"] } };
   });
   assert.deepEqual(optionLengthLeaks([bytes]), []);
 
