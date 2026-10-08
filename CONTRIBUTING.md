@@ -405,18 +405,19 @@ Fix: add a `block` (a metric diff, a config diff) that rules three of them out, 
 
 ### Topics
 
-The `topic` of a technical question, and the file name under `questions/topics/`, is one of these 26 slugs (this is the curriculum order: stage, then left to right).
+The `topic` of a technical question, and the file name under `questions/topics/`, is one of these 27 slugs (this is the curriculum order: stage, then left to right).
 
 | Slug | Name | Scope |
 | --- | --- | --- |
+| `how-models-learn` | How models learn | The intuition of machine learning in plain words: a model as a function with knobs, loss, a step downhill, train / validation / test, overfitting, and what a language model is doing. No formulas and no code; hand calculation uses only the four operations and one decimal place, with everyday examples. |
+| `pytorch-basics` | PyTorch basics | Tensors, autograd, train / eval, no_grad, devices and the five steps of a training loop. Questions must not assume NumPy. No `codefill`. |
 | `math-notation` | Math notation & algebra | Reading the formulas in papers and CS231n in plain words, and the algebra rules that derivations use. |
-| `python-numpy` | Python & NumPy | The Python core, NumPy arrays, vectorization and numerical stability that ML code needs; pandas only at the most basic level. |
 | `linear-algebra` | Linear algebra | Vectors, matrix multiplication and shapes, projection, rank, eigendecomposition and SVD intuition; hand calculation stays at 2×2 or 3-D vectors. |
 | `calculus` | Calculus | Derivatives, partial derivatives, gradients, the chain rule and one step of gradient descent; no integration tricks, no long proofs. |
 | `probability-statistics` | Probability & statistics | Conditional probability and Bayes, expectation and variance, common distributions, entropy / cross-entropy / KL, sampling and the intuition of hypothesis tests. |
+| `python-numpy` | Python & NumPy | The Python core, NumPy arrays, vectorization and numerical stability that ML code needs; pandas only at the most basic level. |
 | `ml-fundamentals` | ML fundamentals | The classical model families and the basic moves of training. |
 | `data-generalization` | Data & generalization | Splits, overfitting, leakage, distribution shift, imbalance and metrics, calibration: the evaluation basics of classical ML. |
-| `pytorch-basics` | PyTorch basics | Tensors, autograd, train / eval, no_grad, devices and the five steps of a training loop. Questions must not assume NumPy. No `codefill`. |
 | `system-design-basics` | System design I | Building blocks that need no ML: caching, sharding, replication, queues, idempotency, tail latency, rate limiting, consistency, capacity estimates, and the classic design problems those alone can solve. |
 | `deep-learning` | Deep learning & CNN | MLP and backprop, activations, initialization, BatchNorm / LayerNorm, dropout, residuals, CNN and convolution shapes, optimizers, training diagnosis. |
 | `embeddings` | Embeddings | Representation itself: one-hot vs dense, lookup, the distributional hypothesis, contrastive learning, similarity, pooling, transfer learning. |

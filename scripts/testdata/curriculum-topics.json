@@ -1,13 +1,14 @@
 {
  "topics": [
+  "how-models-learn",
+  "pytorch-basics",
   "math-notation",
-  "python-numpy",
   "linear-algebra",
   "calculus",
   "probability-statistics",
+  "python-numpy",
   "ml-fundamentals",
   "data-generalization",
-  "pytorch-basics",
   "system-design-basics",
   "deep-learning",
   "embeddings",

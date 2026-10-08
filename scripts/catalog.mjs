@@ -46,15 +46,15 @@ const STAGE_KEYS = ["title", "passCriteria", "resources", "extras"];
 // questions/technical/*.json and questions/behavioral/*.json: interview questions (app spec
 // 2026-10-05-interview-and-challenge-design.md §4.3). Same lists as the app's format.go.
 export const QUESTION_KINDS = ["technical", "behavioral", "situational"];
-// The 26 curriculum topics, in curriculum order (stage, then left to right). Same list as the app's
+// The 27 curriculum topics, in curriculum order (stage, then left to right). Same list as the app's
 // QuestionTopics (backend/internal/catalog/curriculum.go).
 export const TOPICS = [
-  "math-notation", "python-numpy", "linear-algebra", "calculus", "probability-statistics",
-  "ml-fundamentals", "data-generalization", "pytorch-basics", "system-design-basics",
-  "deep-learning", "embeddings", "sequence-models", "computer-vision", "classical-vision",
-  "llm-internals", "fine-tuning", "inference-gpu", "inference-gpu-advanced", "multimodal",
-  "generative-models", "rag", "agents", "evaluation", "safety",
-  "ai-system-design", "system-design",
+  "how-models-learn", "pytorch-basics", "math-notation", "linear-algebra", "calculus",
+  "probability-statistics", "python-numpy", "ml-fundamentals", "data-generalization",
+  "system-design-basics", "deep-learning", "embeddings", "sequence-models", "computer-vision",
+  "classical-vision", "llm-internals", "fine-tuning", "inference-gpu", "inference-gpu-advanced",
+  "multimodal", "generative-models", "rag", "agents", "evaluation", "safety", "ai-system-design",
+  "system-design",
 ];
 // Topics whose page round has no codefill: the code is the topic itself, so a blank would leak or be a quiz on syntax.
 export const NO_CODEFILL_TOPICS = ["python-numpy", "pytorch-basics"];

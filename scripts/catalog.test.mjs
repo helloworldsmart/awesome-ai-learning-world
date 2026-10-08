@@ -112,7 +112,7 @@ test("coverage counts technical questions per topic and tier, ignoring proposed 
   ]);
   assert.deepEqual(cov.find((c) => c.topic === "inference-gpu" && c.tier === "mechanism"), { topic: "inference-gpu", tier: "mechanism", count: 2, page: 0 });
   assert.equal(cov.find((c) => c.topic === "rag" && c.tier === "boss").count, 0);
-  assert.equal(cov.length, 26 * 4);
+  assert.equal(cov.length, 27 * 4);
   assert.equal(MIN_PER_TIER, 3);
 });
 
@@ -407,12 +407,12 @@ test("optionLengthLeaks checks every locale and the shortest-answer tell", () =>
   assert.deepEqual(optionLengthLeaks([clean]), []);
 });
 
-// The 26 curriculum topics. The app repo keeps a byte-identical testdata/curriculum-topics.json and its
+// The 27 curriculum topics. The app repo keeps a byte-identical testdata/curriculum-topics.json and its
 // Go tests use the same case names; neither repo reads the other's source.
 const CURRICULUM = JSON.parse(readFileSync(new URL("./testdata/curriculum-topics.json", import.meta.url), "utf8")).topics;
 
 test("every curriculum topic is a valid question topic and intro file name", () => {
-  assert.equal(CURRICULUM.length, 26);
+  assert.equal(CURRICULUM.length, 27);
   assert.deepEqual(TOPICS, CURRICULUM);
   const questions = CURRICULUM.map((topic) => q(`q-${topic}`, "technical", technical({ topic })));
   assert.deepEqual(validateQuestions(questions, skills), []);
