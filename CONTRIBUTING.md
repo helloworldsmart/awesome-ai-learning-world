@@ -410,7 +410,7 @@ The `topic` of a technical question, and the file name under `questions/topics/`
 | Slug | Name | Scope |
 | --- | --- | --- |
 | `math-notation` | Math notation & algebra | Reading the formulas in papers and CS231n in plain words, and the algebra rules that derivations use. |
-| `python-numpy` | Python & NumPy | The Python core, NumPy arrays, vectorisation and numerical stability that ML code needs; pandas only at the most basic level. |
+| `python-numpy` | Python & NumPy | The Python core, NumPy arrays, vectorization and numerical stability that ML code needs; pandas only at the most basic level. |
 | `linear-algebra` | Linear algebra | Vectors, matrix multiplication and shapes, projection, rank, eigendecomposition and SVD intuition; hand calculation stays at 2×2 or 3-D vectors. |
 | `calculus` | Calculus | Derivatives, partial derivatives, gradients, the chain rule and one step of gradient descent; no integration tricks, no long proofs. |
 | `probability-statistics` | Probability & statistics | Conditional probability and Bayes, expectation and variance, common distributions, entropy / cross-entropy / KL, sampling and the intuition of hypothesis tests. |
@@ -418,7 +418,7 @@ The `topic` of a technical question, and the file name under `questions/topics/`
 | `data-generalization` | Data & generalization | Splits, overfitting, leakage, distribution shift, imbalance and metrics, calibration: the evaluation basics of classical ML. |
 | `pytorch-basics` | PyTorch basics | Tensors, autograd, train / eval, no_grad, devices and the five steps of a training loop. Questions must not assume NumPy. No `codefill`. |
 | `system-design-basics` | System design I | Building blocks that need no ML: caching, sharding, replication, queues, idempotency, tail latency, rate limiting, consistency, capacity estimates, and the classic design problems those alone can solve. |
-| `deep-learning` | Deep learning & CNN | MLP and backprop, activations, initialisation, BatchNorm / LayerNorm, dropout, residuals, CNN and convolution shapes, optimizers, training diagnosis. |
+| `deep-learning` | Deep learning & CNN | MLP and backprop, activations, initialization, BatchNorm / LayerNorm, dropout, residuals, CNN and convolution shapes, optimizers, training diagnosis. |
 | `embeddings` | Embeddings | Representation itself: one-hot vs dense, lookup, the distributional hypothesis, contrastive learning, similarity, pooling, transfer learning. |
 | `sequence-models` | Sequence models | The relay of language models: N-gram, feed-forward LM, RNN, LSTM / GRU, seq2seq, and where attention comes from (stops at why attention is needed). |
 | `computer-vision` | Computer vision | Images as tensors, convolution as filtering, then the vision tasks: classification, detection, segmentation, ViT vs CNN, self-supervision. |
